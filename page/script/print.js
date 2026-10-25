@@ -1,13 +1,20 @@
 /* Shared print selection, browser PDF export and the sheet preview. */
 (function (root) {
   'use strict';
+  var i18n=root.FSI18n,ruStrings=i18n?null:require('../locales/ru/ui.json');
+  // Interface text comes from FSI18n; without it (node) the Russian dictionary is used.
+  function tx(key,vars) {
+    if(i18n)return i18n.t(key,vars);
+    var entry=ruStrings[key];if(entry&&typeof entry==='object')entry=entry.other||entry.many;
+    return String(entry===undefined?key:entry).replace(/\{(\w+)\}/g,function (m,name) {return vars&&vars[name]!==undefined?vars[name]:m;});
+  }
   var catalogAPI=typeof module!=='undefined' && module.exports?require('./catalog.js'):root.FSCatalog;
   var CARD_ID=/^(base|gif|sow)\/[a-z]+\/(combat|orders|events)\/[a-z0-9_]+$/;
-  var TYPES={combat:'Боевая',orders:'Приказ',events:'Событие'};
+  
   var DEFAULTS={paper:'a4',backs:true,flip:'long',marginMm:5,tokenStyle:'images'};
   function validateCart(value) {
-    if(!value || typeof value!=='object' || Array.isArray(value)) throw new Error('Некорректный набор карт');
-    Object.keys(value).forEach(function (id) {if(!CARD_ID.test(id) || !Number.isInteger(value[id]) || value[id]<1 || value[id]>20) throw new Error('Некорректная позиция набора: '+id);});
+    if(!value || typeof value!=='object' || Array.isArray(value)) throw new Error(tx('print.err.cart'));
+    Object.keys(value).forEach(function (id) {if(!CARD_ID.test(id) || !Number.isInteger(value[id]) || value[id]<1 || value[id]>20) throw new Error(tx('print.err.entry')+id);});
     return value;
   }
   function validOptions(value) {
@@ -24,14 +31,14 @@
   function selected(cards,quantities) {
     var byId=new Map(cards.map(function (c) {return [c.id,c];}));
     return Object.keys(quantities).filter(function (id) {
-      var n=quantities[id];if(!Number.isInteger(n) || n<0 || n>20) throw new Error('Количество: целое число от 0 до 20');return n>0;
-    }).map(function (id) {if(!byId.has(id)) throw new Error('Карта недоступна для печати: '+id);return byId.get(id);});
+      var n=quantities[id];if(!Number.isInteger(n) || n<0 || n>20) throw new Error(tx('print.err.qty020'));return n>0;
+    }).map(function (id) {if(!byId.has(id)) throw new Error(tx('print.err.unavailable')+id);return byId.get(id);});
   }
   function total(cards,quantities) {return selected(cards,quantities).reduce(function (sum,c) {return sum+quantities[c.id];},0);}
   function qualityWarnings(card,quality) {
     var warnings=[];
-    if(quality.dpi<300)warnings.push(card.title+': исходная иллюстрация '+Math.round(quality.dpi)+' DPI');
-    if(quality.minimumTextPt!==null && quality.minimumTextPt<6)warnings.push(card.title+': текст '+quality.minimumTextPt.toFixed(1)+' пт');
+    if(quality.dpi<300)warnings.push(tx('print.warn.dpi',{title:card.title,dpi:Math.round(quality.dpi)}));
+    if(quality.minimumTextPt!==null && quality.minimumTextPt<6)warnings.push(tx('print.warn.text',{title:card.title,pt:quality.minimumTextPt.toFixed(1)}));
     return warnings;
   }
   var api={cardsFrom:cardsFrom,dimensions:dimensions,selected:selected,total:total,qualityWarnings:qualityWarnings};
@@ -41,7 +48,7 @@
   function storageKey() {return STORAGE+(displayMode==='updated'?'':'.'+displayMode);}
   var printOptions=Object.assign({},DEFAULTS),importRequested=false;
   try {quantities=validateCart(JSON.parse(localStorage.getItem(storageKey())||'{}'));}
-  catch(error) {warning='Сохранённый набор не прочитан. Выберите карты заново.';}
+  catch(error) {warning=tx('print.warn.unreadable');}
   try {
     var encoded=new URLSearchParams(location.hash.slice(1)).get('print');
     if(encoded) {
@@ -53,17 +60,17 @@
       if(Object.values(incoming).reduce(function (sum,n) {return sum+n;},0)>200) throw new Error();
       displayMode=importMode;quantities=incoming;importRequested=true;
       if(payload.cards) Object.keys(DEFAULTS).forEach(function (key) {if(payload[key]!==undefined) printOptions[key]=payload[key];});
-      try {localStorage.setItem(storageKey(),JSON.stringify(quantities));} catch(error) {warning='Набор сохранится только до перезагрузки страницы.';}
+      try {localStorage.setItem(storageKey(),JSON.stringify(quantities));} catch(error) {warning=tx('print.warn.volatile');}
     }
-  } catch(error) {warning='Ссылка на набор повреждена. Сохранённый набор доступен.';}
+  } catch(error) {warning=tx('print.warn.badLink');}
   function element(tag,text,parent,className) {
     var node=document.createElement(tag);if(text) node.textContent=text;if(className) node.className=className;if(parent) parent.appendChild(node);return node;
   }
   function button(text,parent,action,className) {var node=element('button',text,parent,className);node.type='button';node.onclick=action;return node;}
   function load() {
     var requestedMode=displayMode;
-    if(!loaded) loaded=catalogAPI.loadPrintCatalog(requestedMode).then(function (data) {
-      if(requestedMode!==displayMode)throw new Error('Версия карт изменилась. Откройте печать заново.');
+    if(!loaded) loaded=catalogAPI.loadPrintCatalog(requestedMode,i18n?i18n.lang:'ru').then(function (data) {
+      if(requestedMode!==displayMode)throw new Error(tx('print.err.versionChanged'));
       available=new Map(data.cards.map(function (c) {return [c.id,c];}));sync();return data;
     }).catch(function (error) {if(requestedMode===displayMode)loaded=null;throw error;});
     return loaded;
@@ -76,21 +83,21 @@
     displayMode=value;loaded=null;available=null;mode=false;version++;
     if(previews)previews.clear();
     try {quantities=validateCart(JSON.parse(localStorage.getItem(storageKey())||'{}'));warning='';}
-    catch(error) {quantities={};warning='Сохранённый набор этой версии не прочитан.';}
+    catch(error) {quantities={};warning=tx('print.warn.unreadableVersion');}
     sync();
   };
   api.count=function () {return Object.values(quantities).reduce(function (sum,n) {return sum+n;},0);};
   api.selection=function () {return Object.assign({},quantities);};
   function save(next) {
     quantities=validateCart(next);version++;
-    try {localStorage.setItem(storageKey(),JSON.stringify(quantities));} catch(error) {warning='Набор сохранится только до перезагрузки страницы.';}
+    try {localStorage.setItem(storageKey(),JSON.stringify(quantities));} catch(error) {warning=tx('print.warn.volatile');}
     root.dispatchEvent(new Event('fs-print-change'));
   }
   api.setQuantity=function (id,n) {
-    if(!Number.isInteger(n) || n<0 || n>20 || (n && !CARD_ID.test(id))) throw new Error('Допустимо от 0 до 20 экземпляров');
+    if(!Number.isInteger(n) || n<0 || n>20 || (n && !CARD_ID.test(id))) throw new Error(tx('print.err.copies020'));
     var next=api.selection();if(n) next[id]=n;else delete next[id];
     var count=Object.values(next).reduce(function (sum,q) {return sum+q;},0);
-    if(count>200 && count>api.count()) throw new Error('В одном PDF — до 200 экземпляров');
+    if(count>200 && count>api.count()) throw new Error(tx('print.err.max200'));
     save(next);
   };
   api.clear=function () {save({});};
@@ -98,10 +105,10 @@
   api.setMode=async function (value) {if(value) await load();mode=!!value;sync();};
   api.addFaction=async function (id) {
     var data=await load(),cards=data.cards.filter(function (c) {return c.factionId===id;});
-    if(!cards.length) throw new Error('Эта фракция пока недоступна для печати');
+    if(!cards.length) throw new Error(tx('print.err.factionUnavailable'));
     var next=api.selection(),added=0;
     cards.forEach(function (c) {if(!next[c.id]) {next[c.id]=1;added++;}});
-    if(Object.values(next).reduce(function (sum,n) {return sum+n;},0)>200) throw new Error('Не хватает места: в одном PDF — до 200 экземпляров');
+    if(Object.values(next).reduce(function (sum,n) {return sum+n;},0)>200) throw new Error(tx('print.err.noRoom'));
     if(added) save(next);return added;
   };
   function sync() {
@@ -109,14 +116,14 @@
     document.querySelectorAll('[data-print-id]').forEach(function (node) {
       var id=node.dataset.printId,n=quantities[id]||0,enabled=mode && available && available.has(id);
       node.classList.toggle('is-print-selected',!!n);node.classList.toggle('is-print-selectable',!!enabled);
-      if(enabled) {node.setAttribute('role','checkbox');node.setAttribute('aria-checked',String(!!n));node.setAttribute('aria-label',node._printLabel+(n?' — '+n+' экз.':''));}
+      if(enabled) {node.setAttribute('role','checkbox');node.setAttribute('aria-checked',String(!!n));node.setAttribute('aria-label',node._printLabel+(n?' — '+tx('print.copies',{n:n}):''));}
       else {node.removeAttribute('role');node.removeAttribute('aria-checked');node.setAttribute('aria-label',node._printLabel);}
       node.querySelector('.fs-print-check').textContent=n?(n>1?'✓ ×'+n:'✓'):'';
     });
-    document.querySelectorAll('.fs-print-launch').forEach(function (node) {node.textContent='Печать'+(api.count()?' · '+api.count():'');});
-    document.querySelectorAll('.fs-print-mode-toggle').forEach(function (node) {node.textContent='Режим печати';node.setAttribute('aria-pressed',String(mode));});
+    document.querySelectorAll('.fs-print-launch').forEach(function (node) {node.textContent=tx('print.launch')+(api.count()?' · '+api.count():'');});
+    document.querySelectorAll('.fs-print-mode-toggle').forEach(function (node) {node.textContent=tx('print.mode');node.setAttribute('aria-pressed',String(mode));});
     document.querySelectorAll('.fs-print-modebar').forEach(function (node) {node.hidden=!mode;});
-    document.querySelectorAll('.fs-print-mode-count').forEach(function (node) {node.textContent='Выбрано: '+api.count();});
+    document.querySelectorAll('.fs-print-mode-count').forEach(function (node) {node.textContent=tx('print.selected')+api.count();});
   }
   root.addEventListener('fs-print-change',sync);
   api.decorateCard=function (node,card) {
@@ -141,27 +148,27 @@
   };
   api.controls=function (factionId) {
     var tools=element('div','','','fs-print-tools'),feedback=element('span','',tools,'fs-print-feedback');feedback.setAttribute('role','status');
-    var toggle=button('Режим печати',tools,async function () {
+    var toggle=button(tx('print.mode'),tools,async function () {
       toggle.disabled=true;feedback.textContent='';
       try {await api.setMode(!mode);} catch(error) {feedback.textContent=error.message;} finally {toggle.disabled=false;}
     },'fs-print-mode-toggle');toggle.setAttribute('aria-pressed',String(mode));
-    button('Печать'+(api.count()?' · '+api.count():''),tools,function () {api.open({factionId:factionId});},'fs-print-launch');return tools;
+    button(tx('print.launch')+(api.count()?' · '+api.count():''),tools,function () {api.open({factionId:factionId});},'fs-print-launch');return tools;
   };
   api.factionBar=function (id) {
     var bar=element('div','','','fs-print-modebar');bar.hidden=!mode;
-    element('span','Отметьте нужные карты',bar);element('strong','Выбрано: '+api.count(),bar,'fs-print-mode-count');
+    element('span',tx('print.hint'),bar);element('strong',tx('print.selected')+api.count(),bar,'fs-print-mode-count');
     var feedback=element('span','',bar,'fs-print-feedback');feedback.setAttribute('role','status');
-    var add=button('Вся фракция',bar,async function () {
+    var add=button(tx('print.wholeFaction'),bar,async function () {
       add.disabled=true;
-      try {var n=await api.addFaction(id);feedback.textContent=n?'Добавлено: '+n:'Фракция уже выбрана';}
+      try {var n=await api.addFaction(id);feedback.textContent=n?tx('print.added')+n:tx('print.alreadySelected');}
       catch(error) {feedback.textContent=error.message;} finally {add.disabled=false;}
     },'fs-print-faction');add.disabled=!id || id.startsWith('dl/');
-    if(id && id.startsWith('dl/')) feedback.textContent='Печатный формат TDL пока не подтверждён';return bar;
+    if(id && id.startsWith('dl/')) feedback.textContent=tx('print.tdlPending');return bar;
   };
   function image(src) {
     return new Promise(function (resolve,reject) {
-      var img=new Image(),timer=setTimeout(function () {img.onload=img.onerror=null;img.removeAttribute('src');reject(new Error('Не завершена загрузка изображения'));},15000);
-      img.onload=function () {clearTimeout(timer);resolve(img);};img.onerror=function () {clearTimeout(timer);reject(new Error('Не удалось загрузить '+src));};img.src=src;
+      var img=new Image(),timer=setTimeout(function () {img.onload=img.onerror=null;img.removeAttribute('src');reject(new Error(tx('print.err.imageTimeout')));},15000);
+      img.onload=function () {clearTimeout(timer);resolve(img);};img.onerror=function () {clearTimeout(timer);reject(new Error(tx('print.err.imageFailed')+src));};img.src=src;
     });
   }
   async function front(card,catalog,style) {
@@ -175,17 +182,17 @@
     var minimum=0,png=await root.FSCardRender.compose(Object.assign({},card,{wording:style}),{strict:true,width:size.width,height:size.height,onMetrics:function (m) {
       minimum=m.minimumBodyPx*Math.min(catalog.widthMm/size.width,catalog.heightMm/size.height)*72/25.4;
     }});
-    if(!Number.isFinite(minimum) || minimum<=0 || !png.startsWith('data:image/png;base64,')) throw new Error('Не завершён рендер: '+card.title);
+    if(!Number.isFinite(minimum) || minimum<=0 || !png.startsWith('data:image/png;base64,')) throw new Error(tx('print.err.renderFailed')+card.title);
     return {png:png,minimumTextPt:minimum,dpi:Math.min(native.naturalWidth/catalog.widthMm,native.naturalHeight/catalog.heightMm)*25.4};
   }
   // Preserve the existing rendering request contract for local tooling.
   api.prepare=async function (catalog,cards,chosen,calibration,flip,progress,options) {
-    var settings=Object.assign({},DEFAULTS,options||{},{flip:flip});if(!validOptions(settings)) throw new Error('Проверьте настройки печати');
+    var settings=Object.assign({},DEFAULTS,options||{},{flip:flip});if(!validOptions(settings)) throw new Error(tx('print.err.settings'));
     if(calibration) chosen=Object.fromEntries(catalog.calibrationIds.map(function (id) {return [id,1];}));
-    var selection=selected(cards,chosen),count=total(cards,chosen);if(!count || count>200) throw new Error('Выберите от 1 до 200 экземпляров');
+    var selection=selected(cards,chosen),count=total(cards,chosen);if(!count || count>200) throw new Error(tx('print.err.choose200'));
     var rendered=[];
     for(var i=0;i<selection.length;i++) {
-      var card=selection[i];if(progress) progress('Карта '+(i+1)+' / '+selection.length);await image(card.backSrc);
+      var card=selection[i];if(progress) progress(tx('print.card')+(i+1)+' / '+selection.length);await image(card.backSrc);
       var result=await front(card,catalog,settings.tokenStyle);
       rendered.push({id:card.id,quantity:chosen[card.id],rendered:true,front:result.png,minimumTextPt:result.minimumTextPt,sourceVersion:card.sourceVersion});
     }
@@ -195,26 +202,26 @@
     var img=await image(src),canvas=document.createElement('canvas');canvas.width=img.naturalWidth;canvas.height=img.naturalHeight;
     var ctx=canvas.getContext('2d');ctx.fillStyle='white';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(img,0,0);
     var blob=await new Promise(function (resolve) {canvas.toBlob(resolve,'image/jpeg',.96);});
-    if(!blob) throw new Error('Браузер не смог подготовить изображение');
+    if(!blob) throw new Error(tx('print.err.browserImage'));
     var result={width:canvas.width,height:canvas.height,bytes:new Uint8Array(await blob.arrayBuffer())};canvas.width=canvas.height=0;return result;
   }
   api.exportPdf=async function (chosen,settings,progress,check,calibration) {
-    if(!validOptions(settings)) throw new Error('Проверьте настройки печати');
+    if(!validOptions(settings)) throw new Error(tx('print.err.settings'));
     settings=Object.assign({},DEFAULTS,settings);check=check||function () {};
-    if(settings.displayMode && settings.displayMode!==displayMode)throw new Error('Версия набора не совпадает с выбранной версией карт');
+    if(settings.displayMode && settings.displayMode!==displayMode)throw new Error(tx('print.err.versionMismatch'));
     var data=await load(),catalog=data.catalog;
     if(calibration) chosen=Object.fromEntries(catalog.calibrationIds.map(function (id) {return [id,1];}));
     var selection=selected(data.cards,chosen),count=total(data.cards,chosen);
-    if(!count || count>200) throw new Error('Выберите от 1 до 200 экземпляров');
+    if(!count || count>200) throw new Error(tx('print.err.choose200'));
     var grid=root.FSPaper.layout(catalog,settings),images=new Map(),items=[],warnings=[],quality=[],bytes=0;
     for(var i=0;i<selection.length;i++) {
-      check();var card=selection[i];if(progress) progress('Карта '+(i+1)+' / '+selection.length+' · '+card.title);
+      check();var card=selection[i];if(progress) progress(tx('print.card')+(i+1)+' / '+selection.length+' · '+card.title);
       var rendered=await front(card,catalog,settings.tokenStyle);check();
       var jpg=await jpeg(rendered.png);images.set(card.id,jpg);bytes+=jpg.bytes.length;
       warnings.push.apply(warnings,qualityWarnings(card,rendered));
       quality.push({id:card.id,dpi:rendered.dpi,minimumTextPt:rendered.minimumTextPt});
       if(settings.backs && !images.has(card.backSrc)) {var back=await jpeg(card.backSrc);images.set(card.backSrc,back);bytes+=back.bytes.length;}
-      if(bytes>64*1024*1024) throw new Error('Набор слишком большой для браузера. Разделите его на несколько PDF.');
+      if(bytes>64*1024*1024) throw new Error(tx('print.err.tooBig'));
       for(var q=0;q<chosen[card.id];q++) items.push(card);
       // Let input events run between cards so cancellation stays responsive.
       await new Promise(function (resolve) {setTimeout(resolve,0);});
@@ -253,59 +260,59 @@
     if(document.querySelector('.fs-print')) return;
     options=options||{};
     var returnFocus=document.activeElement,dialog=element('dialog','','','fs-print');dialog.setAttribute('aria-labelledby','fs-print-title');
-    var heading=element('header','',dialog,'fs-print-heading');element('h2','Печать карт',heading).id='fs-print-title';
+    var heading=element('header','',dialog,'fs-print-heading');element('h2',tx('print.title'),heading).id='fs-print-title';
     element('span',root.FSModes.label(displayMode),heading,'fs-mode-badge');
-    var summary=element('p','Загрузка…',heading),closed=false,busy=false,pdfUrl=null,previewVersion=0,job=null,changed,thumbObserver=null,qualityJob=null;
-    button('×',heading,function () {dialog.close();},'fs-print-close').setAttribute('aria-label','Закрыть печать');
+    var summary=element('p',tx('loading'),heading),closed=false,busy=false,pdfUrl=null,previewVersion=0,job=null,changed,thumbObserver=null,qualityJob=null;
+    button('×',heading,function () {dialog.close();},'fs-print-close').setAttribute('aria-label',tx('print.close'));
     dialog.addEventListener('close',function () {
       closed=true;if(job) job.cancelled=true;if(qualityJob)qualityJob.cancelled=true;if(thumbObserver)thumbObserver.disconnect();previewVersion++;if(pdfUrl) URL.revokeObjectURL(pdfUrl);
       root.removeEventListener('fs-print-change',changed);dialog.remove();
       var focus=returnFocus?.isConnected?returnFocus:document.querySelector('.fs-print-launch');if(focus) focus.focus();
     });
     document.body.appendChild(dialog);dialog.showModal();
-    var content=element('div','',dialog,'fs-print-content'),status=element('p','Загрузка каталога…',content);status.setAttribute('role','status');
+    var content=element('div','',dialog,'fs-print-content'),status=element('p',tx('print.loadingCatalog'),content);status.setAttribute('role','status');
     try {
       var data=await load(),catalog=data.catalog,cards=data.cards;if(closed) return;content.replaceChildren();
       heading.querySelector('.fs-mode-badge').textContent=root.FSModes.label(displayMode)+(catalog.ruleVersion?' · '+catalog.ruleVersion:'');
-      var cart=element('section','',content,'fs-print-selection'),cartHead=element('div','',cart,'fs-print-cart-head');element('h3','Карты',cartHead);
-      var chooseCards=button('Выбрать карты',cartHead,async function () {await api.setMode(true);dialog.close();});
+      var cart=element('section','',content,'fs-print-selection'),cartHead=element('div','',cart,'fs-print-cart-head');element('h3',tx('print.cards'),cartHead);
+      var chooseCards=button(tx('print.chooseCards'),cartHead,async function () {await api.setMode(true);dialog.close();});
       var list=element('div','',cart,'fs-print-cart fs-scroll'),rows=new Map();
       if(root.IntersectionObserver)thumbObserver=new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {if(entry.isIntersecting){thumbObserver.unobserve(entry.target);loadThumbnail(entry.target.querySelector('img'));}});
       },{root:list,rootMargin:'120px'});
-      var empty=element('div','',cart,'fs-print-empty');element('p','Набор пуст',empty);element('small','Выберите карты галочками в картотеке.',empty);
+      var empty=element('div','',cart,'fs-print-empty');element('p',tx('print.empty'),empty);element('small',tx('print.emptyHint'),empty);
       var cartActions=element('div','',cart,'fs-print-cart-actions');
-      var addFaction=button('Вся фракция',cartActions,async function () {
+      var addFaction=button(tx('print.wholeFaction'),cartActions,async function () {
         try {await api.addFaction(options.factionId);} catch(error) {status.textContent=error.message;}
-      });addFaction.hidden=!catalog.factions.some(function (f) {return f.id===options.factionId;});addFaction.title='Боевые карты, приказы и события — по одному экземпляру';
-      var clear=button('Очистить',cartActions,api.clear,'fs-print-quiet');
+      });addFaction.hidden=!catalog.factions.some(function (f) {return f.id===options.factionId;});addFaction.title=tx('print.factionTip');
+      var clear=button(tx('print.clear'),cartActions,api.clear,'fs-print-quiet');
       var pane=element('section','',content,'fs-print-sheet-pane'),settings=element('div','',pane,'fs-print-settings');
       function select(label,values,value,parent) {
         var field=element('label',label,parent||settings),node=element('select','',field);node.setAttribute('aria-label',label);
         values.forEach(function (pair) {element('option',pair[1],node).value=pair[0];});node.value=value;return node;
       }
-      var paper=select('Бумага',[['a4','A4 · 210 × 297 мм'],['letter','Letter · 216 × 279 мм']],printOptions.paper);
-      var backLabel=element('label','',settings,'fs-print-back-toggle'),backs=element('input','',backLabel);backs.type='checkbox';backs.checked=printOptions.backs;backLabel.appendChild(document.createTextNode('С рубашками'));
-      var advanced=element('details','',pane,'fs-print-options');element('summary','Настройки',advanced);
+      var paper=select(tx('print.paper'),[['a4',tx('print.paperA4')],['letter',tx('print.paperLetter')]],printOptions.paper);
+      var backLabel=element('label','',settings,'fs-print-back-toggle'),backs=element('input','',backLabel);backs.type='checkbox';backs.checked=printOptions.backs;backLabel.appendChild(document.createTextNode(tx('print.withBacks')));
+      var advanced=element('details','',pane,'fs-print-options');element('summary',tx('print.settings'),advanced);
       var fields=element('div','',advanced,'fs-print-settings');
-      var flip=select('Двусторонняя печать',[['long','Переворот по длинной стороне'],['short','Переворот по короткой стороне']],printOptions.flip,fields);
-      var margin=element('input','',element('label','Поля, мм',fields));margin.type='number';margin.min='5';margin.max='20';margin.step='.5';margin.value=printOptions.marginMm;margin.setAttribute('aria-label','Поля, мм');
-      var token=select('Жетоны',[['images','Изображения'],['icons','Чёрно-белые символы']],printOptions.tokenStyle,fields);
-      element('p','Печатайте в масштабе 100%, без подгонки. Размер карты — 63 × 88 мм. Сначала проверьте совмещение сторон на контрольном листе.',advanced);
-      var calibrate=button('Скачать контрольный лист',advanced,function () {run(true);},'fs-print-quiet');
+      var flip=select(tx('print.duplexLabel'),[['long',tx('print.flipLong')],['short',tx('print.flipShort')]],printOptions.flip,fields);
+      var margin=element('input','',element('label',tx('print.margins'),fields));margin.type='number';margin.min='5';margin.max='20';margin.step='.5';margin.value=printOptions.marginMm;margin.setAttribute('aria-label',tx('print.margins'));
+      var token=select(tx('print.tokens'),[['images',tx('tokens.images')],['icons',tx('print.tokensIcons')]],printOptions.tokenStyle,fields);
+      element('p',tx('print.scaleNote'),advanced);
+      var calibrate=button(tx('print.calibration'),advanced,function () {run(true);},'fs-print-quiet');
       var sides=element('div','',pane,'fs-print-preview-sides'),sheet=0,back=false;
-      var face=button('Лица',sides,function () {back=false;refreshPreview();}),reverse=button('Рубашки',sides,function () {back=true;refreshPreview();});
-      var stage=element('div','',pane,'fs-print-paper'),canvas=element('canvas','',stage);canvas.width=630;canvas.setAttribute('role','img');canvas.setAttribute('aria-label','Предпросмотр раскладки карт на листе');
-      var navigation=element('nav','',pane,'fs-print-preview-nav');navigation.setAttribute('aria-label','Листы для печати');
-      var previous=button('‹',navigation,function () {sheet--;refreshPreview();});previous.setAttribute('aria-label','Предыдущий лист');
+      var face=button(tx('print.fronts'),sides,function () {back=false;refreshPreview();}),reverse=button(tx('print.backs'),sides,function () {back=true;refreshPreview();});
+      var stage=element('div','',pane,'fs-print-paper'),canvas=element('canvas','',stage);canvas.width=630;canvas.setAttribute('role','img');canvas.setAttribute('aria-label',tx('print.previewLabel'));
+      var navigation=element('nav','',pane,'fs-print-preview-nav');navigation.setAttribute('aria-label',tx('print.sheetsNav'));
+      var previous=button('‹',navigation,function () {sheet--;refreshPreview();});previous.setAttribute('aria-label',tx('print.prevSheet'));
       var pageLabel=element('span','',navigation);pageLabel.setAttribute('aria-live','polite');
-      var next=button('›',navigation,function () {sheet++;refreshPreview();});next.setAttribute('aria-label','Следующий лист');
+      var next=button('›',navigation,function () {sheet++;refreshPreview();});next.setAttribute('aria-label',tx('print.nextSheet'));
       var layoutLabel=element('p','',pane,'fs-print-layout-label');
       var duplexLabel=element('p','',pane,'fs-print-layout-label');
       var quality=element('details','',pane,'fs-print-quality');quality.hidden=true;
       var qualityResults=new Map(),qualityError='',qualitySelection=null;
       var footer=element('footer','',dialog,'fs-print-footer');status=element('p',warning||'',footer);status.setAttribute('role','status');status.setAttribute('aria-live','polite');
-      var generate=button('Скачать PDF',footer,function () {if(busy) {job.cancelled=true;status.textContent='Отмена…';} else run(false);},'fs-print-primary');
+      var generate=button(tx('print.download'),footer,function () {if(busy) {job.cancelled=true;status.textContent=tx('print.cancelling');} else run(false);},'fs-print-primary');
       function currentOptions() {return {paper:paper.value,backs:backs.checked,flip:flip.value,marginMm:Number(margin.value),tokenStyle:token.value,displayMode:displayMode};}
       function items() {
         var result=[];selected(cards,quantities).forEach(function (c) {for(var i=0;i<quantities[c.id];i++) result.push(c);});return result;
@@ -321,13 +328,13 @@
         try{chosen=qualitySelection||selected(cards,quantities);}catch(error){quality.hidden=true;return;}
         chosen.forEach(function (card) {var result=qualityResults.get(card.id);if(result?.style===token.value){checked++;if(result.value.minimumTextPt===null)unmeasured++;warnings.push.apply(warnings,qualityWarnings(card,result.value));}});
         quality.hidden=!chosen.length;quality.replaceChildren();if(!chosen.length)return;
-        element('summary',(qualitySelection?'Качество контрольного листа':'Качество перед печатью')+' · '+checked+' / '+chosen.length,quality);
-        element('p','Проверяются текст и иллюстрации лиц. Совмещение сторон и читаемость подтвердите контрольной печатью в масштабе 100%.',quality);
+        element('summary',(qualitySelection?tx('print.quality.calibration'):tx('print.quality.before'))+' · '+checked+' / '+chosen.length,quality);
+        element('p',tx('print.quality.note'),quality);
         if(warnings.length){var warningList=element('ul','',quality);warnings.forEach(function (text) {element('li',text,warningList);});}
-        else if(checked===chosen.length&&!unmeasured)element('p','Нет текста меньше 6 пт или иллюстраций ниже 300 DPI. Это не заменяет контрольную печать.',quality);
-        if(unmeasured)element('p','Размер печатного текста на исходных изображениях ('+unmeasured+') не измеряется автоматически. Проверьте его на контрольном отпечатке.',quality);
+        else if(checked===chosen.length&&!unmeasured)element('p',tx('print.quality.ok'),quality);
+        if(unmeasured)element('p',tx('print.quality.unmeasured',{n:unmeasured}),quality);
         if(qualityError)element('p',qualityError,quality).setAttribute('role','alert');
-        if(checked<chosen.length||qualityJob)button(qualityJob?'Отменить проверку':'Проверить весь набор',quality,checkQuality,'fs-print-quiet');
+        if(checked<chosen.length||qualityJob)button(qualityJob?tx('print.quality.cancel'):tx('print.quality.all'),quality,checkQuality,'fs-print-quiet');
       }
       async function checkQuality() {
         if(qualityJob){qualityJob.cancelled=true;qualityJob=null;showQuality();return;}
@@ -356,17 +363,17 @@
       async function refreshPreview() {
         var revision=++previewVersion;invalidate();
         try {
-          if(!valid()) throw new Error('Укажите целое количество от 1 до 20 и поля от 5 до 20 мм');
+          if(!valid()) throw new Error(tx('print.err.invalidFields'));
           var opts=currentOptions();printOptions=opts;var grid=root.FSPaper.layout(catalog,opts),chosen=items();
           var sheets=Math.max(1,Math.ceil(chosen.length/grid.capacity));sheet=Math.max(0,Math.min(sheet,sheets-1));if(!opts.backs) back=false;
           previous.disabled=busy||!sheet;next.disabled=busy||sheet>=sheets-1;
           reverse.hidden=!opts.backs;face.setAttribute('aria-pressed',String(!back));reverse.setAttribute('aria-pressed',String(back));
-          pageLabel.textContent='Лист '+(sheet+1)+' из '+sheets;
-          layoutLabel.textContent=(opts.paper==='a4'?'A4':'Letter')+' · '+grid.columns+' × '+grid.rows+' · 63 × 88 мм';
+          pageLabel.textContent=tx('print.sheetOf',{n:sheet+1,total:sheets});
+          layoutLabel.textContent=(opts.paper==='a4'?'A4':'Letter')+' · '+grid.columns+' × '+grid.rows+tx('print.cardSize');
           duplexLabel.hidden=!opts.backs;
-          duplexLabel.textContent='PDF: '+(sheet*2+1)+' — лица, '+(sheet*2+2)+' — рубашки · переворот по '+(opts.flip==='long'?'длинной':'короткой')+' стороне';
-          reverse.title='Расположение рубашек зеркальное: при перевороте листа они совмещаются с лицами карт.';
-          canvas.setAttribute('aria-label',layoutLabel.textContent+' · '+(back?'рубашки':'лица')+' · лист '+(sheet+1));
+          duplexLabel.textContent=tx('print.duplex',{front:sheet*2+1,back:sheet*2+2,edge:tx(opts.flip==='long'?'print.edge.long':'print.edge.short')});
+          reverse.title=tx('print.backsMirrored');
+          canvas.setAttribute('aria-label',layoutLabel.textContent+' · '+(back?tx('print.backsLower'):tx('print.frontsLower'))+tx('print.sheetSuffix')+(sheet+1));
           var positions=root.FSPaper.placements(chosen,sheet,back,grid,opts.flip),images=new Map();
           root.FSPaper.drawPreview(canvas,grid,positions,images,false);canvas.setAttribute('aria-busy','true');
           await Promise.all(positions.map(async function (p) {
@@ -389,19 +396,19 @@
             row=element('div','',list,'fs-print-row');row.dataset.cartId=id;rows.set(id,row);
             if(card) {
               var holder=element('span','',row,'fs-print-thumb'),thumb=element('img','',holder);thumb.alt='';thumb.decoding='async';thumb.fsCard=card;
-              var retry=button('↻',holder,async function () {thumb.dataset.previewKey='';if(await loadThumbnail(thumb))refreshPreview();},'fs-print-thumb-retry');retry.hidden=true;retry.setAttribute('aria-label','Повторить миниатюру: '+card.title);thumb.fsRetry=retry;
+              var retry=button('↻',holder,async function () {thumb.dataset.previewKey='';if(await loadThumbnail(thumb))refreshPreview();},'fs-print-thumb-retry');retry.hidden=true;retry.setAttribute('aria-label',tx('print.retryThumb')+card.title);thumb.fsRetry=retry;
             }
-            var label=element('div','',row,'fs-print-row-name');element('strong',card?card.title:id,label);element('small',card?card.factionTitle+' · '+TYPES[card.category]:'Нет печатного источника',label);
+            var label=element('div','',row,'fs-print-row-name');element('strong',card?card.title:id,label);element('small',card?card.factionTitle+' · '+tx('print.type.'+card.category):tx('print.noSource'),label);
             var stepper=element('div','',row,'fs-print-stepper');
             function adjust(delta) {try {api.setQuantity(id,quantities[id]+delta);} catch(error) {status.textContent=error.message;}}
-            var minus=button('−',stepper,function () {adjust(-1);});minus.setAttribute('aria-label','Уменьшить: '+(card?card.title:id));
-            var input=element('input','',stepper);input.type='number';input.min='1';input.max='20';input.step='1';input.setAttribute('aria-label','Экземпляры: '+(card?card.title:id));
+            var minus=button('−',stepper,function () {adjust(-1);});minus.setAttribute('aria-label',tx('print.decrease')+(card?card.title:id));
+            var input=element('input','',stepper);input.type='number';input.min='1';input.max='20';input.step='1';input.setAttribute('aria-label',tx('print.copiesOf')+(card?card.title:id));
             input.oninput=function () {
-              if(!input.value || !input.validity.valid) {generate.disabled=true;previewVersion++;invalidate();status.textContent='Количество: целое число от 1 до 20';return;}
+              if(!input.value || !input.validity.valid) {generate.disabled=true;previewVersion++;invalidate();status.textContent=tx('print.err.qty120');return;}
               try {api.setQuantity(id,Number(input.value));} catch(error) {generate.disabled=true;status.textContent=error.message;previewVersion++;invalidate();}
             };
-            var plus=button('+',stepper,function () {adjust(1);});plus.setAttribute('aria-label','Увеличить: '+(card?card.title:id));
-            button('×',row,function () {api.setQuantity(id,0);},'fs-print-remove').setAttribute('aria-label','Убрать: '+(card?card.title:id));
+            var plus=button('+',stepper,function () {adjust(1);});plus.setAttribute('aria-label',tx('print.increase')+(card?card.title:id));
+            button('×',row,function () {api.setQuantity(id,0);},'fs-print-remove').setAttribute('aria-label',tx('print.remove')+(card?card.title:id));
           }
           var input=row.querySelector('input');if(input!==document.activeElement) input.value=quantities[id];
           row.querySelector('.fs-print-stepper button:last-child').disabled=busy||quantities[id]>=20;
@@ -412,12 +419,12 @@
           }
         });
         empty.hidden=!!ids.length;list.hidden=!ids.length;clear.disabled=busy||!ids.length;
-        chooseCards.textContent=ids.length?'Выбрать ещё':'Выбрать карты';
+        chooseCards.textContent=ids.length?tx('print.chooseMore'):tx('print.chooseCards');
         try {
           var count=total(cards,quantities),grid=root.FSPaper.layout(catalog,currentOptions());
-          summary.textContent=count+' экз. · '+ids.length+' разных карт'+(count?' · '+Math.ceil(count/grid.capacity)+' лист.':'');
+          summary.textContent=tx('print.summary',{copies:tx('print.copies',{n:count}),cards:tx('print.differentCards',{n:ids.length})})+(count?' · '+tx('print.sheetsCount',{n:Math.ceil(count/grid.capacity)}):'');
           generate.disabled=!busy && (!count || count>200 || !valid());calibrate.disabled=busy||!valid();
-        } catch(error) {summary.textContent='Проверьте набор';status.textContent=error.message;generate.disabled=true;}
+        } catch(error) {summary.textContent=tx('print.checkSet');status.textContent=error.message;generate.disabled=true;}
         showQuality();refreshPreview();
       }
       changed=updateCart;root.addEventListener('fs-print-change',changed);
@@ -426,22 +433,22 @@
         if(busy || !valid()) return;busy=true;invalidate();var snapshot=version;job={cancelled:false};var task=job;
         if(qualityJob){qualityJob.cancelled=true;qualityJob=null;}
         dialog.querySelectorAll('button,input,select').forEach(function (control) {if(control!==generate && !control.classList.contains('fs-print-close')) control.disabled=true;});
-        generate.disabled=false;generate.textContent='Отменить';
+        generate.disabled=false;generate.textContent=tx('print.cancel');
         try {
           var result=await api.exportPdf(api.selection(),currentOptions(),function (text) {if(!closed) status.textContent=text;},function () {
-            if(closed || task.cancelled) throw new Error('Создание PDF отменено');if(snapshot!==version) throw new Error('Набор изменился. Подготовьте PDF заново.');
+            if(closed || task.cancelled) throw new Error(tx('print.err.cancelled'));if(snapshot!==version) throw new Error(tx('print.err.setChanged'));
           },calibration);
-          if(closed || task.cancelled) throw new Error('Создание PDF отменено');
+          if(closed || task.cancelled) throw new Error(tx('print.err.cancelled'));
           pdfUrl=URL.createObjectURL(result.blob);
           var link=element('a','',dialog);link.href=pdfUrl;link.download='forbidden-stars-'+displayMode+(catalog.ruleVersion?'-'+catalog.ruleVersion:'')+'-'+(calibration?'control-':'')+paper.value+'-'+flip.value+'.pdf';link.click();link.remove();
           result.quality.forEach(function (entry) {qualityResults.set(entry.id,{style:currentOptions().tokenStyle,value:entry});});
           qualitySelection=calibration?catalog.calibrationIds.map(function (id) {return available.get(id);}):null;
-          status.textContent='PDF готов · '+result.count+' экз. · '+result.pages+' стр. Масштаб 100%'+(backs.checked?' · переворот по '+(flip.value==='long'?'длинной':'короткой')+' стороне.':'.');
+          status.textContent=tx('print.ready',{copies:tx('print.copies',{n:result.count}),pages:tx('print.pages',{n:result.pages})})+(backs.checked?tx('print.readyFlip',{edge:tx(flip.value==='long'?'print.edge.long':'print.edge.short')}):'.');
         } catch(error) {if(!closed) status.textContent=error.message;}
         finally {
           busy=false;job=null;
           if(!closed) {
-            generate.textContent='Скачать PDF';dialog.querySelectorAll('button,input,select').forEach(function (c) {c.disabled=false;});
+            generate.textContent=tx('print.download');dialog.querySelectorAll('button,input,select').forEach(function (c) {c.disabled=false;});
             clear.disabled=!api.count();generate.disabled=!api.count()||!valid();previous.disabled=!sheet;
             try {next.disabled=sheet>=Math.ceil(items().length/root.FSPaper.layout(catalog,currentOptions()).capacity)-1;} catch(error) {generate.disabled=true;}
             rows.forEach(function (row,id) {row.querySelector('.fs-print-stepper button:last-child').disabled=quantities[id]>=20;});
@@ -450,7 +457,7 @@
         }
       }
       updateCart();
-    } catch(error) {status.textContent=error.message;button('Повторить',content,function () {dialog.close();api.open(options);});}
+    } catch(error) {status.textContent=error.message;button(tx('action.retryShort'),content,function () {dialog.close();api.open(options);});}
   };
   if(importRequested) {
     if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',function () {api.open();},{once:true});else api.open();

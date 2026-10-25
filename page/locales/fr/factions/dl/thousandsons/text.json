@@ -1,0 +1,213 @@
+{
+  "materialsText": [
+    {
+      "label": "Tzaangors",
+      "value": "9"
+    },
+    {
+      "label": "Frégates rubriciennes",
+      "value": "3"
+    },
+    {
+      "label": "Marines de la Rubrique",
+      "value": "6"
+    },
+    {
+      "label": "Sorciers exaltés",
+      "value": "2"
+    },
+    {
+      "label": "Tours d'Argent",
+      "value": "2"
+    },
+    {
+      "label": "Seigneurs du Changement",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Bâton du Changement",
+        "general": "Gagnez 1 (B) ou 1 (S). *newpara* Si vous attaquez, votre adversaire défausse sa carte de combat face cachée et choisit une autre carte de combat à jouer face cachée. À la fin de ce round d'exécution, il peut piocher la carte de combat qu'il a défaussée.",
+        "unit": "Tzaangor/Frégate : Gagnez 1 [D] ou 2 (S)."
+      },
+      {
+        "title": "Changement de plans",
+        "general": "Si vous attaquez, gagnez 1 [D] ou forcez votre adversaire à perdre 1 [M]. *newpara* Si vous défendez, vous pouvez jouer n'importe quelle autre carte de votre main. Si vous le faites, ne résolvez pas la capacité d'unité de cette carte.",
+        "unit": "Tzaangor/Frégate : Gagnez 1 [D] et 2 (S)."
+      },
+      {
+        "title": "Embrasser le Chaos",
+        "general": "Gagnez 1 [D]. *newpara* Relancez jusqu'à 2 dés.",
+        "unit": "Tzaangor/Frégate : Gagnez 1 [D] et faites battre en retraite 1 de vos unités. *newpara* Votre adversaire peut choisir 1 de ses unités et la faire battre en retraite pour gagner 1 [D]. S'il ne le fait pas, il perd 1 dé de son choix."
+      },
+      {
+        "title": "Remplacer les pertes",
+        "general": "Convertissez 1 de vos [B] en [M].",
+        "unit": "Tzaangor/Frégate : Si l'une de vos unités est détruite durant ce round d'exécution, placez une unité gratuite de niveau de commandement 0 dans cette zone à la fin de l'étape d'évaluation des dégâts."
+      },
+      {
+        "title": "Criblé de poussière",
+        "general": "Forcez votre adversaire à choisir et à révéler une carte de combat de sa main. Lors de la prochaine étape de choix des cartes de combat, votre adversaire doit jouer cette carte plutôt que toute autre carte de combat. Gagnez les icônes de combat de cette carte durant ce round d'exécution.",
+        "unit": "Tzaangor/Marine de la Rubrique/Frégate : Gagnez 2 (B)."
+      }
+    ],
+    [
+      {
+        "title": "Essaim de Tzaangors",
+        "general": "Placez 1 jeton de renfort gratuit dans cette zone.",
+        "unit": "Tzaangor : Gagnez 1 (B) pour chacun de vos Tzaangors qui ne sont pas en déroute."
+      },
+      {
+        "title": "Illusion terrifiante",
+        "general": "Gagnez 1 [B], 1 [S] ou 1 [M]. *newpara* Dépensez 1 [M] pour forcer votre adversaire à choisir 1 de ses unités et à la mettre en déroute.",
+        "unit": "Tzaangor/Marine de la Rubrique/Frégate : Si votre adversaire a au moins 2 unités, forcez votre adversaire à choisir 1 de ses unités en déroute et à la faire battre en retraite."
+      },
+      {
+        "title": "Tout n'est que poussière",
+        "general": "Durant ce round d'exécution, lorsque 1 de vos Marines de la Rubrique est détruit, vous pouvez le reprendre et le replacer en déroute dans cette zone.",
+        "unit": "Marine de la Rubrique/Frégate : Gagnez 1 [D] ou 2 (B)."
+      },
+      {
+        "title": "Portail sombre",
+        "general": "Prenez 1 Tzaangor ou 1 Marine de la Rubrique sur n'importe quel monde et placez-le sur ce monde. *newpara* Prenez 1 de vos unités et placez-la sur un monde allié.",
+        "unit": "Tzaangor/Marine de la Rubrique/Frégate : Convertissez 1 de vos [B] en [M]. *newpara* Dépensez 1 [S] pour gagner 2 (S)."
+      }
+    ],
+    [
+      {
+        "title": "Renouveau de la mort",
+        "general": "Gagnez 2 (B). *newline* Si l'une de vos unités est détruite durant ce round d'exécution, vous pouvez toutes les prendre et les placer sur un monde allié non disputé contenant une cité à la fin de l'étape d'évaluation des dégâts.",
+        "unit": "Sorcier : Durant ce round d'exécution, la valeur de santé des Marines de la Rubrique est augmentée de 1. *newline* Détruisez 1 de vos unités pour placer 2 jetons de renfort gratuits sur ce monde."
+      },
+      {
+        "title": "Retour à la poussière",
+        "general": "Gagnez 2 (B), ou, pour chaque dégât que vous subissez durant ce round d'exécution, gagnez 1 (B) au prochain round d'exécution, jusqu'à un maximum de 4.",
+        "unit": "Sorcier/Tour d'Argent : Durant ce round d'exécution, la valeur de santé des Marines de la Rubrique est augmentée de 1. *newline* Lorsque 1 de vos unités est détruite durant ce round d'exécution, vous pouvez dépenser 1 de vos dés pour reprendre cette unité et la replacer en déroute dans cette zone."
+      },
+      {
+        "title": "Influence sombre",
+        "general": "Dépensez 1 [M] pour forcer votre adversaire à choisir 1 de ses unités et à la mettre en déroute. *newline* Convertissez 1 des dés de votre adversaire en [M].",
+        "unit": "Sorcier/Tour d'Argent : Durant ce round d'exécution, la valeur de santé des Marines de la Rubrique est augmentée de 1. *newline* Dépensez 1 des [M] de votre adversaire pour le forcer à choisir 1 de ses unités de niveau de commandement 0 et à la détruire."
+      }
+    ],
+    [
+      {
+        "title": "Fin mortelle",
+        "general": "Gagnez 1 [D]. *newpara* Relancez jusqu'à 3 dés.",
+        "unit": "Seigneur du Changement/Tour d'Argent : Gagnez 2 (B). *newpara* Durant ce round d'exécution, si un Seigneur du Changement est détruit, détruisez 1 unité ennemie."
+      },
+      {
+        "title": "Avenir chaotique",
+        "general": "Gagnez 2 (S).",
+        "unit": "Seigneur du Changement/Tour d'Argent : Relancez tous vos dés. Gagnez 1 (B) pour chaque [B] obtenu et 1 (S) pour chaque [S] obtenu. Vous pouvez choisir de relancer chacun de vos dés une fois de plus, mais vous ne gagnez aucun jeton supplémentaire."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Mille complots",
+      "general": "Lorsque vous révélez ce jeton d'ordre, vous pouvez placer 1 de vos jetons d'ordre de votre zone de jeu au-dessus de votre pioche d'événements. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Maître de la tromperie",
+      "general": "Après avoir résolu cet ordre, vous pouvez prendre 1 de vos ordres situé au sommet d'une pile et le placer dans n'importe quel système adjacent ne contenant aucun autre jeton d'ordre. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Sablier de Manat",
+      "general": "Pendant la résolution de cet ordre, une fois au cours d'un combat, chaque fois que 1 de vos unités est détruite, vous pouvez la reprendre et la replacer en déroute dans cette zone. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Écho du passé",
+      "general": "Après avoir résolu cette frappe orbitale, vous pouvez résoudre la capacité de votre faction et placer 1 de vos jetons d'ordre de votre zone de jeu au-dessus de votre pioche d'événements. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Frappe temporelle du Warp",
+      "general": "Les bastions ennemis n'empêchent pas cette frappe orbitale. Durant cette frappe orbitale, vous pouvez à la place lancer un nombre de dés égal à la valeur de combat cumulée de tous vos vaisseaux alliés, en déroute ou non, dans ce système. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Temps de changement",
+      "general": "Placez cette carte dans votre zone de jeu. *newpara* Avant de placer un ordre durant la phase de Planification, vous pouvez défausser cette carte pour révéler 1 de vos ordres de Planification de votre zone de jeu et le placer face cachée au-dessus de n'importe quelle pile d'ordres.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Simple immortalité",
+      "general": "Placez cette carte dans votre zone de jeu. *newpara* Durant un combat, lorsqu'un Marine de la Rubrique est détruit, vous pouvez défausser cette carte pour placer 1 Marine de la Rubrique gratuit sur ce monde.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Effacement de l'existence",
+      "general": "Placez cette carte dans votre zone de jeu. *newpara* Après avoir résolu l'une de vos cartes de combat, vous pouvez défausser cette carte pour forcer votre adversaire à subir immédiatement des dégâts. Ignorez l'étape d'évaluation des dégâts de votre adversaire durant ce round d'exécution.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Changeur de voies",
+      "general": "Placez cette carte dans votre zone de jeu. *newpara* À la fin d'un round de jeu, vous pouvez défausser cette carte pour choisir un joueur. Ce joueur reçoit le jeton de premier joueur au début du prochain round de jeu.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Stase temporelle",
+      "general": "Placez cette carte dans votre zone de jeu. *newpara* Au début d'une étape d'évaluation des dégâts d'un combat, vous pouvez défausser cette carte pour choisir 1 des cartes de combat face visible de votre adversaire. Votre adversaire reprend cette carte de combat en main.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Portail du Changement",
+      "general": "Placez cette carte dans votre zone de jeu. *newpara* Pendant la résolution d'un ordre d'Avancée, après avoir déplacé des unités, vous pouvez prendre jusqu'à 2 unités d'un monde allié et les placer sur 1 monde que vos unités ont quitté.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Changement par la violence",
+      "general": "Placez cette carte dans votre zone de jeu. *newpara* Au lieu de révéler un ordre pendant la phase d'Opérations, vous pouvez défausser cette carte pour retirer 1 de vos ordres situé au sommet d'une pile d'ordres et placer 1 de vos ordres de votre zone de jeu dans n'importe quel système ne contenant aucun jeton d'ordre.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Histoires non écrites",
+      "general": "Placez cette carte dans votre zone de jeu. *newpara* Après une étape de jet de dés d'un combat, vous pouvez défausser cette carte pour remplacer 1 paire de cartes de combat de la pioche de combat de l'adversaire par 1 paire de cartes de combat de même niveau de commandement provenant de sa pioche d'améliorations.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Complot neuf fois",
+      "general": "Placez cette carte dans votre zone de jeu. *newpara* Au lieu de révéler un ordre pendant la phase d'Opérations, vous pouvez défausser cette carte pour piocher 2 cartes au sommet de votre pioche d'événements. Résolvez la capacité de 1 de ces cartes et défaussez l'autre.",
+      "type": "COMPLOT"
+    }
+  ],
+  "tierLabels": [
+    "Départ",
+    "Niveau de commandement 0",
+    "Niveau de commandement 2",
+    "Niveau de commandement 3"
+  ],
+  "factionSheet": {
+    "title": "MILLE FILS",
+    "subtitle": "Culte du Temps",
+    "abilities": [
+      {
+        "title": "Temps changeant",
+        "text": "Lorsque vous résolvez un ordre de Domination, vous pouvez prendre 1 de vos jetons d'ordre non révélés situé au sommet d'une pile et le placer un cran plus bas dans cette pile. Il peut s'agir de la pile où se trouve l'ordre révélé actuel."
+      }
+    ]
+  },
+  "componentsText": {
+    "faction_card/sheet_front_1.jpg": {
+      "title": "MILLE FILS · Plateau de faction : capacités et unités",
+      "regions": []
+    },
+    "faction_card/sheet_back_1.jpg": {
+      "title": "MILLE FILS · Forces initiales et récit",
+      "regions": []
+    },
+    "maps/map_A.jpg": {
+      "title": "MILLE FILS · Système d'origine A",
+      "general": "Le Vortex hurlant *newpara* Dianixis *newpara* Dessimar *newpara* Q'Sal",
+      "notice": ""
+    },
+    "maps/map_B.jpg": {
+      "title": "MILLE FILS · Système d'origine B",
+      "general": "Ultimatus *newpara* Faille immatérielle *newpara* Dessimar *newpara* Sortiarius",
+      "notice": ""
+    }
+  }
+}

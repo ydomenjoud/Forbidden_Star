@@ -1,0 +1,227 @@
+{
+  "materialsText": [
+    {
+      "label": "Hearthkyn Warriors",
+      "value": "6"
+    },
+    {
+      "label": "Bastion Commerce Vessels",
+      "value": "5"
+    },
+    {
+      "label": "Einhyr Hearthguards",
+      "value": "6"
+    },
+    {
+      "label": "Hernkyn Pioneers",
+      "value": "3"
+    },
+    {
+      "label": "Stronghold Commerce Vessels",
+      "value": "3"
+    },
+    {
+      "label": "Hekaton Land Fortresses",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Weavefield Protection",
+        "general": "Gain 1 (S) for each of your unrouted units. *newline* Spend 1 (S) to gain 1 [S].",
+        "unit": ""
+      },
+      {
+        "title": "Medipack Supplies",
+        "general": "Gain 1 [S]. *newpara* During this execution round, the health value of your units is increased by 1.",
+        "unit": "Hearthkyn/Bastion Vessel: Spend 1 [S] to rally 1 of your units and gain 1 (S)."
+      },
+      {
+        "title": "Call For Backup",
+        "general": "Spend 1 [S] to place 1 free reinforcement token in this area.",
+        "unit": "Hearthkyn/Bastion Vessel: Gain 1 [M]."
+      },
+      {
+        "title": "Suppressive Fire",
+        "general": "Gain 1 [B].",
+        "unit": "Hearthkyn/Hearthguard/Bastion Vessel: If you have more [B] than your opponent, convert 1 of your dice into [B]."
+      },
+      {
+        "title": "Scan For Enemies",
+        "general": "Either gain 2 (B) or gain 2 (B) at the start of the next execution round.",
+        "unit": "Hearthkyn/Bastion Vessel: Your opponent discards the top card of his combat deck. Gain 1 of the icons on that card as dice."
+      }
+    ],
+    [
+      {
+        "title": "The Hearth Burns",
+        "general": "Gain 2 [M].",
+        "unit": "Hearthkyn/Hearthguard/Bastion Vessel: Gain either 1 (B) or 1 (S) for each [M] you have more than your opponent."
+      },
+      {
+        "title": "Scanned Shot",
+        "general": "Discard a card from your hand to gain 2 (B).",
+        "unit": "Hearthguard/Bastion Vessel: During the assess damage step of this execution round, your opponent assigns 1 additional damage."
+      },
+      {
+        "title": "It's Kin",
+        "general": "Either convert 1 of your [S] into [M] or convert 1 of your [M] into [S].",
+        "unit": "Bastion/Hearthkyn/Pioneer/Bastion Vessel: Spend 1 [B] to convert 1 of your [B] into [M]. *newline* Gain 1 [M]."
+      },
+      {
+        "title": "Pragmatic Withdrawal",
+        "general": "Retreat 1 of your units.",
+        "unit": "Hearthkyn/Hearthguard/Bastion Vessel: Spend either 1 [B] or 1 [M] to gain 3 (B)."
+      },
+      {
+        "title": "Iron Concussion",
+        "general": "Gain 1 [B], 1 [S], or 1 [M]. *newpara* Force your opponent to choose and discard a combat card from his hand.",
+        "unit": "Hearthguard/Bastion Vessel: Force your opponent to lose 1 [M] and 1 (S)."
+      }
+    ],
+    [
+      {
+        "title": "Armour of the Forge",
+        "general": "Gain 1 [S]. *newpara* Spend up to 2 [S]. For each [S] you spend, gain 1 (S).",
+        "unit": "Pioneer/Stronghold: Gain either 1 [S] or 1 [M]."
+      },
+      {
+        "title": "Teleport Crest",
+        "general": "Gain 1 [B] and 1 (B). *newpara* Reroll 1 of your dice.",
+        "unit": "Pioneer/Stronghold: Gain 2 (S). *newline* Return 1 of your faceup combat cards to your hand to play 1 combat card from your hand. Do not resolve its abilities, but gain its combat icons until the end of this combat."
+      },
+      {
+        "title": "Hearths of Fire",
+        "general": "Gain either 3 (B) or 3 (S) unless your opponent spends 1 [M].",
+        "unit": "Pioneer/Stronghold: Gain 2 (B) and 2 (S) unless your opponent spends 1 [M]."
+      },
+      {
+        "title": "Void in our Veins",
+        "general": "Rally 1 of your units. *newline* Convert 1 of your [M] into either [B] or [S].",
+        "unit": "Stronghold: Take 1 of your routed or unrouted ships from this area and place it on a friendly area. Take 1 unrouted Bastion Commerce Vessel from any area and place it on this area."
+      }
+    ],
+    [
+      {
+        "title": "Ancestors are Watching",
+        "general": "",
+        "unit": "Fortress/Stronghold: Move 1 of your units to this area from this or any adjacent system to gain either 3 (B) or 3 (S). *newpara* At the start of the resolution phase you may move any of your units from this area to any number of friendly or uncontrolled areas in this or adjacent systems."
+      },
+      {
+        "title": "Eye of the Ancestors",
+        "general": "Gain 1 [B], 1 [S], or 1 [M]. *newline* Draw 1 combat card.",
+        "unit": "Fortress/Stronghold: Your opponent loses 3 dice of your choice."
+      },
+      {
+        "title": "Return to Ancestors",
+        "general": "Either convert up to 2 of your [S] into [B] or convert up to 2 of your [M] into [B].",
+        "unit": "Fortress/Stronghold: During this combat, when any of your units are destroyed, gain materiel equal to that unit's materiel cost reduced by 1."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "A.N – VYL Workstation",
+      "general": "While resolving your faction ability, if you purchased a combat card with a maximum command level of 2, you may spend 1 forge token to take a second combat card of either the same or lower command level you purchased and place it in your combat deck. Then remove a combat card from your combat deck and place it in your combat upgrade deck. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Ironkin Wayfinder",
+      "general": "After you resolve this order, you may spend 1 forge token to both place 1 of your order tokens from your play area onto the top of your event deck, and you may move 1 of your ships in the active system to any friendly or uncontrolled void in either the active system or an adjacent system. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Traders of the Void",
+      "general": "While resolving this order, if you have an unrouted ship in the active system gain 1 forge token. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Hold Worlds",
+      "general": "When you purchase a bastion while resolving this order, you may spend 1 forge token to place that bastion on a friendly world that already contains exactly 1 bastion. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Celestial Hammerfall",
+      "general": "During this orbital strike, gain 1 extra [D] for each of your participating ships and ignore dice limit restrictions. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Waste Feeds the Void",
+      "general": "Enemy bastions do not prevent this orbital strike. During this orbital strike, you may spend 2 [S] to choose and destroy 1 structure on this world. *newline* LIMIT ONCE PER ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Prosperous Traders",
+      "general": "Gain 2 different assets of your choice.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Planetary Mining",
+      "general": "Choose a system that contains any of your ships and choose a world in that system. Gain materiel equal to its materiel value.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Sailing to Far-Space",
+      "general": "Purchase 1 order upgrade, ignoring its command level restrictions and reducing its materiel cost by 1 for each friendly void containing your ships.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Toil Earns",
+      "general": "Gain 2 forge tokens and gain 1 materiel for each forge token that would exceed your maximum asset limit.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Oathband",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the start of an execution round of combat, you may discard this card to take 1 of your units with a maximum command level of 2 from any world and place it on this world.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Ancestor Core",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the start of an execution round of combat, you may discard this card to discard a combat card from your hand. Resolve both abilities on that combat card even if you do not have the listed units in the combat.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Targeted Effort",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* While resolving an orbital strike, you may discard this card to choose and rout 1 enemy unit on that world before assessing damage.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Ironkin Support",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the start of a reinforce step of combat, you may discard this card and spend 1 forge token to place 2 free reinforcement tokens in this area.",
+      "type": "SCHEME"
+    }
+  ],
+  "tierLabels": [
+    "Starting",
+    "Command Level 0",
+    "Command Level 2",
+    "Command Level 3"
+  ],
+  "factionSheet": {
+    "title": "LEAGUES OF VOTANN",
+    "subtitle": "Ymyr Conglomerate",
+    "abilities": [
+      {
+        "title": "Hearth of the Forge",
+        "text": "When you resolve a dominate order, you may either purchase an order upgrade, reducing its materiel cost by 1, or purchase a combat upgrade at half the materiel listed on the card. Place only 1 copy of the purchased combat card into your deck. Then remove 1 combat card from your combat deck and place it into your combat upgrade deck. The paired card may only be purchased with this ability and not by a Strategize Order."
+      }
+    ]
+  },
+  "componentsText": {
+    "faction_card/sheet_front_1.jpg": {
+      "title": "LEAGUES OF VOTANN · Faction sheet: abilities and units",
+      "regions": []
+    },
+    "faction_card/sheet_back_1.jpg": {
+      "title": "LEAGUES OF VOTANN · Initial forces and story",
+      "regions": []
+    },
+    "maps/map_A.jpg": {
+      "title": "LEAGUES OF VOTANN · Home system A",
+      "general": "Cynder Span *newpara* The Galactic Core *newpara* Töra *newpara* Tamaikh",
+      "notice": ""
+    },
+    "maps/map_B.jpg": {
+      "title": "LEAGUES OF VOTANN · Home system B",
+      "general": "The Galactic Core *newpara* Cynder Span *newpara* Tamaikh",
+      "notice": ""
+    }
+  }
+}

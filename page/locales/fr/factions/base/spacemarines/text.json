@@ -1,0 +1,219 @@
+{
+  "materialsText": [
+    {
+      "label": "Éclaireurs",
+      "value": "6"
+    },
+    {
+      "label": "Croiseurs d'assaut",
+      "value": "3"
+    },
+    {
+      "label": "Space Marines",
+      "value": "6"
+    },
+    {
+      "label": "Land Raiders",
+      "value": "6"
+    },
+    {
+      "label": "Barges de bataille",
+      "value": "3"
+    },
+    {
+      "label": "Titans Warlord",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Embuscade",
+        "general": "Gagnez 2 (B).",
+        "unit": "Éclaireur/Croiseur d'assaut : Lorsqu'une unité ennemie est mise en déroute durant ce round d'exécution, elle est détruite à moins que votre adversaire ne dépense 1 [M]."
+      },
+      {
+        "title": "Reconnaissance",
+        "general": "Si vous attaquez, regardez la carte de combat face cachée de votre adversaire. *newline* Gagnez 2 (B) ou 2 (S).",
+        "unit": "Éclaireur/Croiseur d'assaut : Dépensez 1 [M] pour faire battre en retraite 1 de vos unités."
+      },
+      {
+        "title": "Fureur d'Ultramar",
+        "general": "Votre adversaire relance 1 [S]. Ensuite, vous pouvez relancer 1 [S].",
+        "unit": "Space Marine/Croiseur d'assaut : Forcez votre adversaire à perdre 1 [S] ou 2 (S)."
+      },
+      {
+        "title": "Armure énergétique bénie",
+        "general": "Gagnez 2 (S).",
+        "unit": "Bastion/Space Marine/Croiseur d'assaut : Convertissez jusqu'à 2 de vos dés en [S]."
+      },
+      {
+        "title": "Foi en l'Empereur",
+        "general": "Gagnez 1 [D].",
+        "unit": "Éclaireur/Space Marine/Croiseur d'assaut : Ralliez 1 de vos unités ou gagnez 1 [M]."
+      }
+    ],
+    [
+      {
+        "title": "Tenir la ligne",
+        "general": "Gagnez 2 (S). *newline* Si vous défendez, ralliez 1 de vos unités.",
+        "unit": "Bastion/Space Marine/Croiseur d'assaut : Gagnez 1 [S] ou 1 [M]."
+      },
+      {
+        "title": "Gloire et mort",
+        "general": "Gagnez 2 (B). *newline* Si vous attaquez, ralliez 1 de vos unités.",
+        "unit": "Space Marine/Croiseur d'assaut : Forcez votre adversaire à perdre 1 [S] ou 1 [M]."
+      },
+      {
+        "title": "Assaut en capsule de largage",
+        "general": "Gagnez 1 [D].",
+        "unit": "Space Marine : Dépensez 1 [M] pour prendre 1 Éclaireur ou 1 Space Marine sur n'importe quel monde et le placer sur ce monde."
+      },
+      {
+        "title": "Éclaireurs vétérans",
+        "general": "Pour chaque [M] que vous avez, gagnez 1 (B) ou 1 (S).",
+        "unit": "Éclaireur/Croiseur d'assaut : Dépensez un nombre quelconque de [M]. Pour chaque [M] dépensé, faites battre en retraite 1 de vos unités."
+      }
+    ],
+    [
+      {
+        "title": "Ne montrez aucune peur",
+        "general": "Durant ce round d'exécution, vos unités ne peuvent pas être mises en déroute.",
+        "unit": "Bastion/Space Marine/Croiseur d'assaut : Dépensez 1 [M] pour rallier toutes vos unités."
+      },
+      {
+        "title": "Briser la ligne",
+        "general": "Dépensez jusqu'à 3 [M]. Pour chaque [M] dépensé, gagnez 1 [B] ou 1 [S].",
+        "unit": "Land Raider/Barge de bataille : Votre adversaire choisit et défausse 1 de ses cartes de combat face visible."
+      },
+      {
+        "title": "Avancée blindée",
+        "general": "Gagnez 1 [D].",
+        "unit": "Land Raider/Barge de bataille : Résolvez 1 étape d'évaluation des dégâts supplémentaire durant ce round d'exécution."
+      }
+    ],
+    [
+      {
+        "title": "Puissance de l'Empereur",
+        "general": "Gagnez 2 [D].",
+        "unit": "Titan Warlord/Barge de bataille : Dépensez un nombre quelconque de [B]. Pour chaque [B] dépensé, gagnez 2 (B)."
+      },
+      {
+        "title": "Gloire de l'Empereur",
+        "general": "Gagnez 2 [D].",
+        "unit": "Titan Warlord/Barge de bataille : Ralliez toutes vos unités. Ensuite, convertissez n'importe lesquels de vos dés en [M]."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Croisade",
+      "general": "Lorsque vous engagez un combat avec cet ordre dans un système où vous n'avez aucun monde allié, gagnez 1 jeton de renfort. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Guider les fidèles",
+      "general": "Lorsque vous révélez ce jeton d'ordre, vous pouvez remplacer 1 de vos structures dans ce système par une structure différente. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Mondes de recrutement",
+      "general": "Pendant la résolution de cet ordre, vous pouvez considérer tous vos bastions du système actif comme des usines, ce qui réduit votre limite de déploiement de 1 pour chaque bastion que vous avez dans ce système. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Pluie de feu",
+      "general": "Durant cette frappe orbitale, gagnez 1 [D], et vous pouvez convertir 1 de vos [M] en 1 [B]. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Capsules de largage",
+      "general": "Les bastions ennemis n'empêchent pas cette frappe orbitale. Durant cette frappe orbitale, vous pouvez dépenser 2 [S] pour placer 1 Space Marine gratuit sur le monde. Cela peut déclencher un combat après la résolution de cette frappe orbitale. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Adeptus Mechanicus",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au début d'une étape d'évaluation des dégâts d'un combat, vous pouvez défausser cette carte pour gagner 2 (S), plus 1 (S) supplémentaire pour chaque jeton de forge que vous avez.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Résolution inébranlable",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au lieu de révéler un ordre pendant la phase d'Opérations, vous pouvez défausser cette carte pour rallier toutes vos unités dans 1 système de votre choix.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Champion de l'Empereur",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au début d'une étape d'évaluation des dégâts d'un combat, vous pouvez défausser cette carte pour rallier 1 de vos unités.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Exterminatus",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Avant d'effectuer une frappe orbitale, vous pouvez défausser cette carte pour convertir tous les dés que vous lancez durant cette frappe orbitale en [B].",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Rites de bataille",
+      "general": "Achetez 1 amélioration d'ordre, en réduisant son coût en matériel de 1 pour chaque monde allié contenant un bastion.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Intervention héroïque",
+      "general": "Placez 1 Space Marine gratuit sur un monde allié contenant une structure, ou placez 1 Éclaireur gratuit sur n'importe quel monde allié.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "L'œuvre des justes",
+      "general": "Choisissez un monde allié. Gagnez les atouts de ce monde ou gagnez du matériel égal à sa valeur en matériel.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "L'Empereur protège",
+      "general": "Placez 1 bastion gratuit sur un monde allié ne contenant aucune structure, ou dépensez 2 matériels pour placer 1 bastion gratuit sur un monde allié ne contenant aucun bastion.",
+      "type": "TACTIQUE"
+    }
+  ],
+  "factionSheet": {
+    "title": "SPACE MARINES",
+    "subtitle": "Chapitre des Ultramarines",
+    "abilities": [
+      {
+        "title": "Pour l'Empereur",
+        "text": "Lorsque vous résolvez un ordre de Domination, vous pouvez dépenser 1 matériel pour remplacer 1 Éclaireur du système actif par 1 Space Marine gratuit, ou remplacer 1 Space Marine du système actif par 1 Land Raider gratuit."
+      }
+    ],
+    "initialForces": [
+      "Éclaireurs",
+      "Space Marine",
+      "Croiseur d'assaut",
+      "Usine",
+      "Matériel"
+    ],
+    "lore": "Commandant, nous avons reçu un relais astropathique de la flotte expéditionnaire d’Ulixes Ithanos, qui a découvert un passage sûr à travers le Warp jusqu’à l’amas d’Herakon. Les tempêtes du Warp qui entouraient cette région perdue se sont apaisées, et les mondes que l’on croyait consumés sont intacts et habités. *newpara* Nos croiseurs d’assaut sont en route vers le passage du capitaine Ulixes. Les ordres ont été transmis à toute la compagnie. Les systèmes habités doivent être sécurisés pour qu’ils se soumettent à l’Imperium. Toute menace traîtresse ou Xenos doit être purgée et les mondes loyaux mis en sûreté. Tout monde rebelle doit être maté. *newpara* Pour l’Empereur, Guilliman et Macragge ! *newpara* Frère-Sergent Corialus *newline* Sergent vétéran des Ultramarines",
+    "objectives": [
+      "Relique impériale : Nous ne pouvons laisser les ossements de sainte Sarissa tomber aux mains de la corruption. Mettez son sanctuaire en sûreté, mes Frères !",
+      "Seigneur du système : Le seigneur Halovar a juré obéissance et déclaré son allégeance à l’Imperium. Il a maintenant besoin de notre aide pour échapper en sécurité aux ténèbres.",
+      "Caveau archéotech : Les artefacts qui reposent dans ce caveau ont été forgés par les prêtres-machines d’antan. Ils doivent être sauvés.",
+      "Balise de navigation du Warp : La lumière de l’Astronomican est faible dans ce secteur reculé. Une fois activée, cette balise nous guidera vers la sécurité.",
+      "Plateforme de défense orbitale : Cet antique édifice témoigne de la volonté de l’humanité. Par sa puissance, nous repousserons les ténèbres.",
+      "Relique des Ultramarines : Venez, mes Frères ! L’Empereur nous a accordé un puissant don. Il nous suffit de prendre la planète en contrebas et le trophée sera à nous !"
+    ],
+    "initialForcesTitle": "Forces initiales",
+    "layout": "base",
+    "units": [
+      "Éclaireurs",
+      "Croiseurs d'assaut",
+      "Space Marines",
+      "Land Raiders",
+      "Barges de bataille",
+      "Titans Warlord"
+    ],
+    "labels": {
+      "objectives": "Jetons d'objectif",
+      "city": "Cité",
+      "factory": "Usine",
+      "bastion": "Bastion"
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/base/spacemarines/faction_card/card.jpg"
+    }
+  }
+}

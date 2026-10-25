@@ -1,0 +1,219 @@
+{
+  "materialsText": [
+    {
+      "label": "Cultistes",
+      "value": "9"
+    },
+    {
+      "label": "Destroyers iconoclastes",
+      "value": "3"
+    },
+    {
+      "label": "Space Marines du Chaos",
+      "value": "6"
+    },
+    {
+      "label": "Helbrutes",
+      "value": "3"
+    },
+    {
+      "label": "Grands croiseurs répugnants",
+      "value": "3"
+    },
+    {
+      "label": "Titans Reaver du Chaos",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Rage de Khorne",
+        "general": "Dépensez 1 [B] pour gagner 3 (B).",
+        "unit": "Space Marine du Chaos/Iconoclaste : Votre adversaire choisit 1 de ses unités et la met en déroute, à moins qu'il ne dépense 1 [S]."
+      },
+      {
+        "title": "Culte impie",
+        "general": "Gagnez 1 [D].",
+        "unit": "Cultiste/Iconoclaste : Si votre adversaire a au moins 1 unité en déroute, gagnez 1 (S) pour chaque Cultiste ou Iconoclaste qui n'est pas en déroute."
+      },
+      {
+        "title": "Zèle impur",
+        "general": "Si vous avez plus de [M] que votre adversaire, ralliez 1 de vos unités.",
+        "unit": "Cultiste/Iconoclaste : Gagnez 1 (B) pour chaque Cultiste ou Iconoclaste qui n'est pas en déroute, à moins que votre adversaire ne choisisse 1 de ses unités et ne la mette en déroute."
+      },
+      {
+        "title": "Foi sombre",
+        "general": "Gagnez 1 [M].",
+        "unit": "Cultiste/Iconoclaste : Si vous avez plus de [M] que votre adversaire, placez 1 Cultiste gratuit sur un autre monde allié ou non contrôlé de ce système."
+      },
+      {
+        "title": "Appel du Chaos",
+        "general": "Votre adversaire peut choisir 1 de ses unités et la mettre en déroute pour gagner 1 [D]. S'il ne le fait pas, placez 1 Cultiste ou Iconoclaste gratuit dans cette zone.",
+        "unit": "Cultiste/Iconoclaste : Gagnez 2 (B) ou 2 (S)."
+      }
+    ],
+    [
+      {
+        "title": "Marque de Khorne",
+        "general": "Dépensez 1 [B] ou 1 [M] pour gagner 3 (B).",
+        "unit": "Space Marine du Chaos/Iconoclaste : Votre adversaire choisit 1 de ses unités en déroute et la détruit, à moins qu'il ne dépense 1 [S]."
+      },
+      {
+        "title": "Marque de Nurgle",
+        "general": "Dépensez 1 [S] ou 1 [M] pour gagner 3 (S).",
+        "unit": "Space Marine du Chaos/Iconoclaste : Gagnez 2 (S), à moins que votre adversaire ne choisisse 1 de ses unités en déroute et ne la détruise."
+      },
+      {
+        "title": "Marque de Slaanesh",
+        "general": "Gagnez 1 [D]. *newline* Si vous avez plus de [M] que votre adversaire, votre adversaire choisit 1 de ses unités et la met en déroute.",
+        "unit": "Space Marine du Chaos : Si votre adversaire a au moins 1 unité en déroute, placez 1 Cultiste gratuit sur ce monde."
+      },
+      {
+        "title": "Marque de Tzeentch",
+        "general": "Gagnez 1 [M]. *newline* Si vous avez plus de [M] que votre adversaire, remplacez 1 de vos Cultistes sur ce monde par 1 Space Marine du Chaos gratuit.",
+        "unit": "Space Marine du Chaos/Iconoclaste : Dépensez jusqu'à 2 [M]. Pour chaque [M] dépensé, gagnez 1 [B] ou 1 [S]."
+      }
+    ],
+    [
+      {
+        "title": "Force inhumaine",
+        "general": "Gagnez 1 [B] ou 1 [M].",
+        "unit": "Helbrute/Grand croiseur : Détruisez 1 de vos unités pour gagner 4 (B)."
+      },
+      {
+        "title": "Résilience démoniaque",
+        "general": "Gagnez 1 [S] ou 1 [M].",
+        "unit": "Helbrute/Grand croiseur : Gagnez 4 (S), à moins que votre adversaire ne choisisse 1 de ses unités et ne la détruise."
+      },
+      {
+        "title": "Chaos uni",
+        "general": "Votre adversaire peut choisir 1 de ses unités et la mettre en déroute. S'il ne le fait pas, gagnez 1 [B], 1 [S] ou 1 [M].",
+        "unit": "Cultiste/Space Marine du Chaos/Helbrute : Prenez 1 de vos unités sur n'importe quel monde et placez-la sur ce monde. Le niveau de commandement de cette unité ne peut pas dépasser le nombre de Cultistes dans ce système."
+      }
+    ],
+    [
+      {
+        "title": "Mort et désespoir",
+        "general": "Gagnez 2 [B] ou 2 [M]. *newline* Dépensez un nombre quelconque de [M]. Pour chaque [M] dépensé, détruisez 1 unité de niveau de commandement 0.",
+        "unit": "Titan du Chaos/Grand croiseur : Si vous avez plus de [M] que votre adversaire, détruisez 1 des unités en déroute de votre adversaire."
+      },
+      {
+        "title": "Victoire du Chaos",
+        "general": "Gagnez 2 [D]. *newline* Si vous avez plus de [M] que votre adversaire, mettez en déroute toutes ses unités de niveau de commandement 0.",
+        "unit": "Titan du Chaos/Grand croiseur : Mettez en déroute 1 des unités de votre adversaire."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Hors du Warp",
+      "general": "Pendant la résolution de cet ordre, vos vaisseaux peuvent traverser les tempêtes du Warp. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Faveur des Dieux Sombres",
+      "general": "Lorsque vous révélez ce jeton d'ordre, vous pouvez placer 2 de vos jetons d'ordre de votre zone de jeu au-dessus de votre pioche d'événements. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Rituel terrifiant",
+      "general": "Après avoir résolu cet ordre, vous pouvez acheter 1 unité de niveau de commandement 2 ou moins et la placer dans une zone alliée du système actif. Réduisez le coût en matériel de cette unité de 1 pour chaque Cultiste de ce système. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "La peur venue d'en haut",
+      "general": "Durant cette frappe orbitale, gagnez 1 [D], et vous pouvez dépenser 1 [M] pour forcer votre adversaire à mettre en déroute toute unité qui subit des dégâts durant cette frappe orbitale. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Destruction totale",
+      "general": "Les bastions ennemis n'empêchent pas cette frappe orbitale. Durant cette frappe orbitale, vous pouvez dépenser 2 [S] pour forcer votre adversaire à choisir et détruire 1 structure ou 1 unité sur ce monde. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Fléau de Nurgle",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au lieu de révéler un ordre pendant la phase d'Opérations, vous pouvez défausser cette carte pour mettre en déroute 1 unité ennemie située dans un système contenant au moins 1 de vos unités.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Prière aux Dieux Sombres",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Lorsqu'un autre joueur déplace une tempête du Warp, vous pouvez défausser cette carte pour empêcher ce déplacement et déplacer à la place cette tempête du Warp dans l'une des 8 directions.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Séduit par le Chaos",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* À la fin d'une étape d'évaluation des dégâts d'un combat, vous pouvez défausser cette carte pour mettre en déroute 1 unité ennemie.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "À travers le Warp",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Pendant la résolution d'un ordre d'Avancée, vous pouvez défausser cette carte pour permettre à vos unités de traverser les tempêtes du Warp. Si cet ordre déclenche un combat, gagnez 1 [M] au début de ce combat.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Butin de guerre",
+      "general": "Gagnez 1 jeton de forge et 1 jeton de renfort.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Incantation de Tzeentch",
+      "general": "Piochez 3 cartes au sommet de votre pioche d'événements. Résolvez la capacité de 1 de ces cartes et défaussez les autres.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Prophètes et présages",
+      "general": "Placez 2 Cultistes gratuits sur 1 monde allié d'un système ne contenant aucun Cultiste, ou placez 1 Cultiste gratuit sur n'importe quel monde allié.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Touché par le Warp",
+      "general": "Détruisez 1 Cultiste dans n'importe quel système pour gagner 1 carte d'amélioration gratuite. Le niveau de commandement de cette carte d'amélioration ne peut pas dépasser le nombre de tempêtes du Warp bordant ce système.",
+      "type": "TACTIQUE"
+    }
+  ],
+  "factionSheet": {
+    "title": "SPACE MARINES DU CHAOS",
+    "subtitle": "Bande de guerre des Dévoreurs de Mondes",
+    "abilities": [
+      {
+        "title": "Souillure du Chaos",
+        "text": "Lorsque vous résolvez un ordre de Domination, vous pouvez prendre 1 Cultiste du système actif et le placer sur un monde allié ou non contrôlé d'un système adjacent."
+      }
+    ],
+    "layout": "base",
+    "initialForcesTitle": "Forces initiales",
+    "initialForces": [
+      "Cultistes",
+      "Space Marines du Chaos",
+      "Destroyer iconoclaste",
+      "Usine",
+      "Matériel"
+    ],
+    "lore": "Une piste sanglante nous a menés ici. L’appel de Khorne nous attire vers ceux dont le sang sera versé en son nom. À chaque nouveau monde, à chaque nouveau système, nous ne trouvons que des victimes, que des proies pour le massacre. *newpara* Dans l’amas d’Herakon, nous nous sommes unis à nos alliés pour entamer une glorieuse Croisade Noire. Un bain de sang nous attend. De grands présents y attendent ceux qui en sont dignes : des reliques démoniaques baignées dans le sang des puissants, une mort de la main d’un adversaire digne de ce nom, et un allié d’une sauvagerie telle que les pions du Faux Empereur ne le connaissent que comme le héraut de l’extermination. *newpara* Du sang pour le Dieu du Sang ! Des crânes pour le Trône des Crânes ! *newpara* Xalus Targ *newline* Space Marine du Chaos de la Légion des Dévoreurs de Mondes",
+    "objectives": [
+      "Arme antique : Iratio Acrior a dormi pendant des millénaires, mais les braises de son esprit guerrier brûlent encore. Je déchaînerai sa fureur sur les pions du Faux Empereur.",
+      "Épée-relique du Chaos : Le babillage d’un millier de mystiques me dit que le Démon Urzrahk G’hor est enchaîné dans cette lame. Sa fureur sera mienne !",
+      "Du sang pour le Dieu du Sang : La population de ce monde est mûre pour le massacre. Son sang coulera comme un fleuve jusqu’au pied du trône de Khorne.",
+      "Des crânes pour le Trône des Crânes : Les masses grouillantes de ce monde n’ont qu’une seule valeur. Leurs crânes orneront la forteresse du Dieu du Sang.",
+      "Forge infernale : Les plus grands guerriers brandissent des armes forgées dans les feux d’une forge infernale. Sur le monde en contrebas, je forgerai ma rage en une lame de haine pure !",
+      "Un adversaire digne de ce nom : Depuis 10 000 ans, je verse le sang de mes ennemis. Je crois avoir enfin trouvé un adversaire véritablement digne de ma lame !"
+    ],
+    "units": [
+      "Cultistes",
+      "Destroyers iconoclastes",
+      "Space Marines du Chaos",
+      "Helbrutes",
+      "Grands croiseurs répugnants",
+      "Titans Reaver du Chaos"
+    ],
+    "labels": {
+      "objectives": "Jetons d'objectif",
+      "city": "Cité",
+      "factory": "Usine",
+      "bastion": "Bastion"
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/base/chaos/faction_card/card.jpg"
+    }
+  }
+}

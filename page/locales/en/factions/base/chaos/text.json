@@ -1,0 +1,219 @@
+{
+  "materialsText": [
+    {
+      "label": "Cultists",
+      "value": "9"
+    },
+    {
+      "label": "Iconoclast Destroyers",
+      "value": "3"
+    },
+    {
+      "label": "Chaos Space Marines",
+      "value": "6"
+    },
+    {
+      "label": "Helbrutes",
+      "value": "3"
+    },
+    {
+      "label": "Repulsive Grand Cruisers",
+      "value": "3"
+    },
+    {
+      "label": "Chaos Reaver Titans",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Khorne's Rage",
+        "general": "Spend 1 [B] to gain 3 (B).",
+        "unit": "Chaos Space Marine/Iconoclast: Your opponent chooses and routs 1 of his units unless he spends 1 [S]."
+      },
+      {
+        "title": "Foul Worship",
+        "general": "Gain 1 [D].",
+        "unit": "Cultist/Iconoclast: If your opponent has at least 1 routed unit, gain 1 (S) for each unrouted Cultist or Iconoclast."
+      },
+      {
+        "title": "Impure Zeal",
+        "general": "If you have more [M] than your opponent, rally 1 of your units.",
+        "unit": "Cultist/Iconoclast: Gain 1 (B) for each unrouted Cultist or Iconoclast unless your opponent chooses and routs 1 of his units."
+      },
+      {
+        "title": "Dark Faith",
+        "general": "Gain 1 [M].",
+        "unit": "Cultist/Iconoclast: If you have more [M] than your opponent, place 1 free Cultist on another friendly or uncontrolled world in this system."
+      },
+      {
+        "title": "Lure of Chaos",
+        "general": "Your opponent may choose and rout 1 of his units to gain 1 [D]. If he does not, place 1 free Cultist or Iconoclast in this area.",
+        "unit": "Cultist/Iconoclast: Gain either 2 (B) or 2 (S)."
+      }
+    ],
+    [
+      {
+        "title": "Mark of Khorne",
+        "general": "Spend either 1 [B] or 1 [M] to gain 3 (B).",
+        "unit": "Chaos Space Marine/Iconoclast: Your opponent chooses and destroys 1 of his routed units unless he spends 1 [S]."
+      },
+      {
+        "title": "Mark of Nurgle",
+        "general": "Spend either 1 [S] or 1 [M] to gain 3 (S).",
+        "unit": "Chaos Space Marine/Iconoclast: Gain 2 (S) unless your opponent chooses and destroys 1 of his routed units."
+      },
+      {
+        "title": "Mark of Slaanesh",
+        "general": "Gain 1 [D]. *newline* If you have more [M] than your opponent, your opponent chooses and routs 1 of his units.",
+        "unit": "Chaos Space Marine: If your opponent has at least 1 routed unit, place 1 free Cultist on this world."
+      },
+      {
+        "title": "Mark of Tzeentch",
+        "general": "Gain 1 [M]. *newline* If you have more [M] than your opponent, replace 1 of your Cultists on this world with 1 free Chaos Space Marine.",
+        "unit": "Chaos Space Marine/Iconoclast: Spend up to 2 [M]. For each [M] you spend, gain either 1 [B] or 1 [S]."
+      }
+    ],
+    [
+      {
+        "title": "Inhuman Strength",
+        "general": "Gain either 1 [B] or 1 [M].",
+        "unit": "Helbrute/Grand Cruiser: Destroy 1 of your units to gain 4 (B)."
+      },
+      {
+        "title": "Daemonic Resilience",
+        "general": "Gain either 1 [S] or 1 [M].",
+        "unit": "Helbrute/Grand Cruiser: Gain 4 (S) unless your opponent chooses and destroys 1 of his units."
+      },
+      {
+        "title": "Chaos United",
+        "general": "Your opponent may choose and rout 1 of his units. If he does not, gain 1 [B], 1 [S], or 1 [M].",
+        "unit": "Cultist/Chaos Space Marine/Helbrute: Take 1 of your units from any world and place it on this world. This unit's command level cannot exceed the number of Cultists in this system."
+      }
+    ],
+    [
+      {
+        "title": "Death and Despair",
+        "general": "Gain either 2 [B] or 2 [M]. *newline* Spend any number of [M]. For each [M] you spend, destroy 1 command level 0 unit.",
+        "unit": "Chaos Titan/Grand Cruiser: If you have more [M] than your opponent, destroy 1 of your opponent's routed units."
+      },
+      {
+        "title": "Chaos Victorious",
+        "general": "Gain 2 [D]. *newline* If you have more [M] than your opponent, rout all of his command level 0 units.",
+        "unit": "Chaos Titan/Grand Cruiser: Rout 1 of your opponent's units."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "From the Warp",
+      "general": "While resolving this order, your ships can move through Warp Storms. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Favour of the Dark Gods",
+      "general": "When you reveal this order token, you may place 2 of your order tokens from your play area onto the top of your event deck. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Dread Ritual",
+      "general": "After you resolve this order, you may purchase 1 unit of command level 2 or less and place it on a friendly area in the active system. Reduce that unit's material cost by 1 for each Cultist in that system. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Fear from Above",
+      "general": "During this orbital strike, gain 1 [D], and you may spend 1 [M] to force your opponent to rout any unit that suffers damage during this orbital strike. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Complete Destruction",
+      "general": "Enemy bastions do not prevent this orbital strike. During this orbital strike, you may spend 2 [S] to force your opponent to choose and destroy either 1 structure or 1 unit on this world. *newline* LIMIT ONCE PER ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Blight of Nurgle",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* Instead of revealing an order during the Operations Phase, you may discard this card to rout 1 enemy unit that is in a system containing at least 1 of your units.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Prayer to the Dark Gods",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* When another player moves a Warp Storm, you may discard this card to prevent that movement and instead move that Warp Storm in any of the 8 directions.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Seduced by Chaos",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the end of an assess damage step of combat, you may discard this card to rout 1 enemy unit.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Through the Warp",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* While resolving an Advance Order, you may discard this card to allow your units to move through Warp Storms. If this order starts a combat, gain 1 [M] at the start of that combat.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Spoils of War",
+      "general": "Gain 1 forge token and 1 reinforcement token.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Incantation of Tzeentch",
+      "general": "Draw 3 cards from the top of your event deck. Resolve the ability of 1 of those cards and discard the others.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Prophets and Signs",
+      "general": "Either place 2 free Cultists on 1 friendly world in a system not containing any Cultists or place 1 free Cultist on any friendly world.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Touched by the Warp",
+      "general": "Destroy 1 Cultist in any system to gain 1 free upgrade card. The command level of that upgrade card cannot exceed the number of Warp Storms bordering that system.",
+      "type": "TACTIC"
+    }
+  ],
+  "factionSheet": {
+    "title": "CHAOS SPACE MARINES",
+    "subtitle": "World Eaters Warband",
+    "abilities": [
+      {
+        "title": "Taint of Chaos",
+        "text": "When you resolve a dominate order, you may take 1 Cultist from the active system and place it on a friendly or uncontrolled world in an adjacent system."
+      }
+    ],
+    "layout": "base",
+    "initialForcesTitle": "Initial Forces",
+    "initialForces": [
+      "Cultists",
+      "Chaos Space Marines",
+      "Iconoclast Destroyer",
+      "Factory",
+      "Materiel"
+    ],
+    "lore": "A bloody trail has led us here. The call of Khorne drawing us to those whose blood will be spilt in his name. With each new world, each new system, we find naught but victims, naught but prey for the slaughter. *newpara* In the Herakon Cluster we united with our allies to begin a glorious Black Crusade. A bloodbath awaits us. Great gifts are there to be taken by those who are worthy: daemonic relics bathed in the blood of the mighty, a death at the hands of a worthy foe, and an ally of such savagery that the pawns of the False Emperor know it only as the herald of extermination. *newpara* Blood for the Blood God! Skulls for the Skull Throne! *newpara* Xalus Targ *newline* World Eaters Legion Chaos Space Marine",
+    "objectives": [
+      "Ancient Weapon: Iratio Acrior has slept for millennia, but the embers of its war spirit yet burn. I shall unleash its fury upon the pawns of the False Emperor.",
+      "Chaos Relic Sword: The babbling of a thousand mystics tells me that the Daemon, Urzrahk G'hor is bound within that blade. His fury shall be mine!",
+      "Blood for the Blood God: The population of this world is ripe for slaughter. Their blood shall flow like a river to the foot of Khorne's throne.",
+      "Skulls for the Skull Throne: The teeming masses of this world have but one worth. Their skulls shall adorn the fortress of the Blood God.",
+      "Hellforge: The greatest warriors wield weapons wrought in the fires of a hellforge. On the world below, I shall forge my rage into a blade of purest hate!",
+      "A Worthy Foe: For 10,000 years, I have spilled the blood of my enemies. I believe I have finally found a foe truly worthy of my blade!"
+    ],
+    "units": [
+      "Cultists",
+      "Iconoclast Destroyers",
+      "Chaos Space Marines",
+      "Helbrutes",
+      "Repulsive Grand Cruisers",
+      "Chaos Reaver Titans"
+    ],
+    "labels": {
+      "objectives": "Objective Tokens",
+      "city": "City",
+      "factory": "Factory",
+      "bastion": "Bastion"
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/base/chaos/faction_card/card.jpg"
+    }
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "materialsText": [
+    {
+      "label": "Guerriers Hearthkyn",
+      "value": "6"
+    },
+    {
+      "label": "Vaisseaux commerciaux Bastion",
+      "value": "5"
+    },
+    {
+      "label": "Gardes-foyer Einhyr",
+      "value": "6"
+    },
+    {
+      "label": "Pionniers Hernkyn",
+      "value": "3"
+    },
+    {
+      "label": "Vaisseaux commerciaux Citadelle",
+      "value": "3"
+    },
+    {
+      "label": "Forteresses terrestres Hekaton",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Protection du Tissage",
+        "general": "Gagnez 1 (S) pour chacune de vos unités qui ne sont pas en déroute. *newline* Dépensez 1 (S) pour gagner 1 [S].",
+        "unit": ""
+      },
+      {
+        "title": "Fournitures médicales",
+        "general": "Gagnez 1 [S]. *newpara* Durant ce round d'exécution, la valeur de santé de vos unités est augmentée de 1.",
+        "unit": "Hearthkyn/Vaisseau Bastion : Dépensez 1 [S] pour rallier 1 de vos unités et gagner 1 (S)."
+      },
+      {
+        "title": "Appel de renforts",
+        "general": "Dépensez 1 [S] pour placer 1 jeton de renfort gratuit dans cette zone.",
+        "unit": "Hearthkyn/Vaisseau Bastion : Gagnez 1 [M]."
+      },
+      {
+        "title": "Tir de suppression",
+        "general": "Gagnez 1 [B].",
+        "unit": "Hearthkyn/Garde-foyer/Vaisseau Bastion : Si vous avez plus de [B] que votre adversaire, convertissez 1 de vos dés en [B]."
+      },
+      {
+        "title": "Repérage des ennemis",
+        "general": "Gagnez 2 (B), ou gagnez 2 (B) au début du prochain round d'exécution.",
+        "unit": "Hearthkyn/Vaisseau Bastion : Votre adversaire défausse la carte du dessus de sa pioche de combat. Gagnez 1 des icônes de cette carte sous forme de dés."
+      }
+    ],
+    [
+      {
+        "title": "Le foyer brûle",
+        "general": "Gagnez 2 [M].",
+        "unit": "Hearthkyn/Garde-foyer/Vaisseau Bastion : Gagnez 1 (B) ou 1 (S) pour chaque [M] que vous avez en plus de votre adversaire."
+      },
+      {
+        "title": "Tir ajusté",
+        "general": "Défaussez une carte de votre main pour gagner 2 (B).",
+        "unit": "Garde-foyer/Vaisseau Bastion : Durant l'étape d'évaluation des dégâts de ce round d'exécution, votre adversaire assigne 1 dégât supplémentaire."
+      },
+      {
+        "title": "Ce sont les siens",
+        "general": "Convertissez 1 de vos [S] en [M], ou convertissez 1 de vos [M] en [S].",
+        "unit": "Bastion/Hearthkyn/Pionnier/Vaisseau Bastion : Dépensez 1 [B] pour convertir 1 de vos [B] en [M]. *newline* Gagnez 1 [M]."
+      },
+      {
+        "title": "Retrait pragmatique",
+        "general": "Faites battre en retraite 1 de vos unités.",
+        "unit": "Hearthkyn/Garde-foyer/Vaisseau Bastion : Dépensez 1 [B] ou 1 [M] pour gagner 3 (B)."
+      },
+      {
+        "title": "Commotion de fer",
+        "general": "Gagnez 1 [B], 1 [S] ou 1 [M]. *newpara* Forcez votre adversaire à choisir et défausser une carte de combat de sa main.",
+        "unit": "Garde-foyer/Vaisseau Bastion : Forcez votre adversaire à perdre 1 [M] et 1 (S)."
+      }
+    ],
+    [
+      {
+        "title": "Armure de la Forge",
+        "general": "Gagnez 1 [S]. *newpara* Dépensez jusqu'à 2 [S]. Pour chaque [S] dépensé, gagnez 1 (S).",
+        "unit": "Pionnier/Citadelle : Gagnez 1 [S] ou 1 [M]."
+      },
+      {
+        "title": "Blason de téléportation",
+        "general": "Gagnez 1 [B] et 1 (B). *newpara* Relancez 1 de vos dés.",
+        "unit": "Pionnier/Citadelle : Gagnez 2 (S). *newline* Reprenez en main 1 de vos cartes de combat face visible pour jouer 1 carte de combat de votre main. Ne résolvez pas ses capacités, mais gagnez ses icônes de combat jusqu'à la fin de ce combat."
+      },
+      {
+        "title": "Foyers de feu",
+        "general": "Gagnez 3 (B) ou 3 (S), à moins que votre adversaire ne dépense 1 [M].",
+        "unit": "Pionnier/Citadelle : Gagnez 2 (B) et 2 (S), à moins que votre adversaire ne dépense 1 [M]."
+      },
+      {
+        "title": "Le vide dans nos veines",
+        "general": "Ralliez 1 de vos unités. *newline* Convertissez 1 de vos [M] en [B] ou en [S].",
+        "unit": "Citadelle : Prenez 1 de vos vaisseaux, en déroute ou non, dans cette zone et placez-le sur une zone alliée. Prenez 1 Vaisseau commercial Bastion qui n'est pas en déroute dans n'importe quelle zone et placez-le dans cette zone."
+      }
+    ],
+    [
+      {
+        "title": "Les ancêtres nous regardent",
+        "general": "",
+        "unit": "Forteresse/Citadelle : Déplacez 1 de vos unités vers cette zone depuis ce système ou n'importe quel système adjacent pour gagner 3 (B) ou 3 (S). *newpara* Au début de la phase de résolution, vous pouvez déplacer n'importe lesquelles de vos unités depuis cette zone vers un nombre quelconque de zones alliées ou non contrôlées de ce système ou des systèmes adjacents."
+      },
+      {
+        "title": "Œil des ancêtres",
+        "general": "Gagnez 1 [B], 1 [S] ou 1 [M]. *newline* Piochez 1 carte de combat.",
+        "unit": "Forteresse/Citadelle : Votre adversaire perd 3 dés de votre choix."
+      },
+      {
+        "title": "Retour aux ancêtres",
+        "general": "Convertissez jusqu'à 2 de vos [S] en [B], ou convertissez jusqu'à 2 de vos [M] en [B].",
+        "unit": "Forteresse/Citadelle : Durant ce combat, lorsque l'une de vos unités est détruite, gagnez du matériel égal au coût en matériel de cette unité diminué de 1."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Poste de travail A.N – VYL",
+      "general": "Pendant la résolution de la capacité de votre faction, si vous avez acheté une carte de combat de niveau de commandement maximal 2, vous pouvez dépenser 1 jeton de forge pour prendre une seconde carte de combat de niveau de commandement identique ou inférieur à celle que vous avez achetée et la placer dans votre pioche de combat. Retirez ensuite une carte de combat de votre pioche de combat et placez-la dans votre pioche d'améliorations de combat. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Guide Ironkin",
+      "general": "Après avoir résolu cet ordre, vous pouvez dépenser 1 jeton de forge pour à la fois placer 1 de vos jetons d'ordre de votre zone de jeu au-dessus de votre pioche d'événements, et déplacer 1 de vos vaisseaux du système actif vers n'importe quel vide allié ou non contrôlé du système actif ou d'un système adjacent. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Marchands du Vide",
+      "general": "Pendant la résolution de cet ordre, si vous avez un vaisseau qui n'est pas en déroute dans le système actif, gagnez 1 jeton de forge. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Tenir les mondes",
+      "general": "Lorsque vous achetez un bastion pendant la résolution de cet ordre, vous pouvez dépenser 1 jeton de forge pour placer ce bastion sur un monde allié qui contient déjà exactement 1 bastion. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Marteau céleste",
+      "general": "Durant cette frappe orbitale, gagnez 1 [D] supplémentaire pour chacun de vos vaisseaux participants et ignorez les restrictions de limite de dés. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Les déchets nourrissent le Vide",
+      "general": "Les bastions ennemis n'empêchent pas cette frappe orbitale. Durant cette frappe orbitale, vous pouvez dépenser 2 [S] pour choisir et détruire 1 structure sur ce monde. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Marchands prospères",
+      "general": "Gagnez 2 atouts différents de votre choix.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Extraction planétaire",
+      "general": "Choisissez un système contenant l'un de vos vaisseaux, puis un monde de ce système. Gagnez du matériel égal à sa valeur en matériel.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Cap sur l'espace lointain",
+      "general": "Achetez 1 amélioration d'ordre, en ignorant ses restrictions de niveau de commandement et en réduisant son coût en matériel de 1 pour chaque vide allié contenant vos vaisseaux.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Le labeur paie",
+      "general": "Gagnez 2 jetons de forge et gagnez 1 matériel pour chaque jeton de forge qui dépasserait votre limite maximale d'atouts.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Fraternité du serment",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au début d'un round d'exécution de combat, vous pouvez défausser cette carte pour prendre 1 de vos unités de niveau de commandement maximal 2 sur n'importe quel monde et la placer sur ce monde.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Noyau ancestral",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au début d'un round d'exécution de combat, vous pouvez défausser cette carte pour défausser une carte de combat de votre main. Résolvez les deux capacités de cette carte de combat même si vous n'avez pas les unités indiquées dans le combat.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Effort ciblé",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Pendant la résolution d'une frappe orbitale, vous pouvez défausser cette carte pour choisir 1 unité ennemie sur ce monde et la mettre en déroute avant l'évaluation des dégâts.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Soutien Ironkin",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au début d'une étape de renfort d'un combat, vous pouvez défausser cette carte et dépenser 1 jeton de forge pour placer 2 jetons de renfort gratuits dans cette zone.",
+      "type": "COMPLOT"
+    }
+  ],
+  "tierLabels": [
+    "Départ",
+    "Niveau de commandement 0",
+    "Niveau de commandement 2",
+    "Niveau de commandement 3"
+  ],
+  "factionSheet": {
+    "title": "LIGUES DE VOTANN",
+    "subtitle": "Conglomérat Ymyr",
+    "abilities": [
+      {
+        "title": "Foyer de la Forge",
+        "text": "Lorsque vous résolvez un ordre de Domination, vous pouvez soit acheter une amélioration d'ordre en réduisant son coût en matériel de 1, soit acheter une amélioration de combat pour la moitié du matériel indiqué sur la carte. Ne placez qu'un seul exemplaire de la carte de combat achetée dans votre pioche. Retirez ensuite 1 carte de combat de votre pioche de combat et placez-la dans votre pioche d'améliorations de combat. La carte jumelée ne peut être achetée qu'avec cette capacité et non par un ordre de Planification."
+      }
+    ]
+  },
+  "componentsText": {
+    "faction_card/sheet_front_1.jpg": {
+      "title": "LIGUES DE VOTANN · Plateau de faction : capacités et unités",
+      "regions": []
+    },
+    "faction_card/sheet_back_1.jpg": {
+      "title": "LIGUES DE VOTANN · Forces initiales et récit",
+      "regions": []
+    },
+    "maps/map_A.jpg": {
+      "title": "LIGUES DE VOTANN · Système d'origine A",
+      "general": "Cynder Span *newpara* Le Noyau galactique *newpara* Töra *newpara* Tamaikh",
+      "notice": ""
+    },
+    "maps/map_B.jpg": {
+      "title": "LIGUES DE VOTANN · Système d'origine B",
+      "general": "Le Noyau galactique *newpara* Cynder Span *newpara* Tamaikh",
+      "notice": ""
+    }
+  }
+}

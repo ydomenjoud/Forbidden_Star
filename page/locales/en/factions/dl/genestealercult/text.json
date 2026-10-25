@@ -1,0 +1,212 @@
+{
+  "materialsText": [
+    {
+      "label": "Neophyte Hybrids",
+      "value": "10"
+    },
+    {
+      "label": "Stolen Freighters",
+      "value": "3"
+    },
+    {
+      "label": "Hybrid Metamorphs",
+      "value": "6"
+    },
+    {
+      "label": "Purestrain Genestealers",
+      "value": "5"
+    },
+    {
+      "label": "Stolen Battleships",
+      "value": "2"
+    },
+    {
+      "label": "Patriarch",
+      "value": "1"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Cultists Arise",
+        "general": "Convert 1 of your dice into [M]. *newpara* If you have more [M] than your opponent gain 1 [M].",
+        "unit": "Neophyte: Gain either 1 (B) or 1 (S) for each [M] you have up to a maximum of 3. You can choose a mix of (B) and (S) to gain."
+      },
+      {
+        "title": "Aberrant Behaviour",
+        "general": "Gain 1 (S). *newpara* Your opponent loses 1 [B].",
+        "unit": "Neophyte: Either gain 1 (S) or convert 1 of your dice into [M]."
+      },
+      {
+        "title": "Cult Ambush",
+        "general": "Gain either 1 (B) or 1 (S). *newline* Spend 1 [M] to place 1 free reinforcement token in this area unless your opponent spends 1 [M].",
+        "unit": "Neophyte: If you have more unrouted units than your opponent, gain 1 [M]. *newline* Spend 1 [M] to force your opponent to choose and rout 1 of his units unless he spends 1 [M]."
+      },
+      {
+        "title": "Locus Bodyguard",
+        "general": "",
+        "unit": "Neophyte: Place 1 free reinforcement token in this area."
+      },
+      {
+        "title": "Worship Awaits",
+        "general": "Rally up to 2 Neophyte Hybrids. *newpara* Convert 1 of your dice into [M].",
+        "unit": "Neophyte: Gain 1 [M] for each unrouted Neophyte Hybrid up to a maximum of 2."
+      }
+    ],
+    [
+      {
+        "title": "Undivided Devotion",
+        "general": "Gain 1 [M]. *newpara* Spend up to 2 [M] and gain 2 (B) for the first [M] spent. Then gain 2 (S) for the second [M] spent.",
+        "unit": "Metamorph: Rally 1 of your units."
+      },
+      {
+        "title": "Relentless Zeal",
+        "general": "Gain 1 [M]. *newpara* Spend 1 [M] to gain 2 (B). *newpara* Rout 1 of your units to rally 1 of your units.",
+        "unit": "Metamorph: Rout 1 of your units to gain 3 (B)."
+      },
+      {
+        "title": "Pureborn Uprising",
+        "general": "Convert 1 of your dice into [M]. *newpara* Rally 1 of your units.",
+        "unit": "Metamorph: Spend 1 [M] to gain 2 (S)."
+      },
+      {
+        "title": "Cult Is Here",
+        "general": "Either gain 1 [M] or convert 1 of your dice into [M]. *newpara* Spend 1 [M] to place 1 free reinforcement token in this area.",
+        "unit": "Metamorph: Spend 1 [M] to place 1 free reinforcement token in this area."
+      }
+    ],
+    [
+      {
+        "title": "Purestrain Stalker",
+        "general": "Gain 2 (B). *newpara* When an enemy unit is routed during this execution round, you may spend 1 [M] to destroy that unit.",
+        "unit": "Purestrain: Spend 1 [M] to force your opponent to choose and rout 1 of his units."
+      },
+      {
+        "title": "Whispers of the Magus",
+        "general": "At the end of this execution round you may convert 1 of your dice into [M]. *newline* Spend 1 [M] to rout 1 enemy unit of either command level 0 or command level 1.",
+        "unit": "Purestrain: Gain 1 [D]. *newline* Spend 1 [M] to force your opponent to choose and retreat 1 of his unrouted command level 0 units."
+      },
+      {
+        "title": "Primus Directive",
+        "general": "Convert 1 of your [M] into [B]. *newpara* Spend 1 [B] to place 1 free reinforcement token in this area.",
+        "unit": "Purestrain: Gain 1 [M]. *newline* Spend any number of [M]. For each [M] you spend, your opponent loses 1 [B]."
+      }
+    ],
+    [
+      {
+        "title": "Beauty of the Patriarch",
+        "general": "Either gain 4 [M] or convert up to 4 of your dice into [M].",
+        "unit": "Patriarch: During this execution round, gain 1 (S) for each [M] you have at the start of an assess damage step."
+      },
+      {
+        "title": "The Purebrood",
+        "general": "During this execution round, each time 1 of your ground units with command level 1 or higher is destroyed, place 1 free reinforcement token in this area.",
+        "unit": "Patriarch: Place 2 free reinforcement tokens in this area. Gain 1 (B) for each of your unrouted units in excess of your opponent's unrouted units."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "The Cult Grows",
+      "general": "When you reveal this order token, you may spend 1 materiel to place 1 free Neophyte Hybrid on any world you have a Neophyte Hybrid on. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "The Cult Spreads",
+      "general": "When you reveal this order token, you may take 1 of your Neophyte Hybrids in this system and place it in an adjacent system on a world that does not contain your objective token. Then rout that unit. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Cultured Influence",
+      "general": "While resolving this order, you may gain assets in this system from any hostile worlds you have a Neophyte Hybrid on. *newline* LIMIT ONCE PER ROUND. *newpara* Planet capacity for your units is increased by 1 to a maximum of 5. This also affects your faction ability."
+    },
+    {
+      "title": "Cultural Decay",
+      "general": "When you reveal this order token, you may destroy 1 of your structures in this system to gain 3 materiel. *newline* LIMIT ONCE PER ROUND. *newpara* Planet capacity for your units is increased by 1 to a maximum of 5. This also affects your faction ability."
+    },
+    {
+      "title": "Hitch a Ride",
+      "general": "While resolving this order, you may treat all enemy voids as friendly voids for any Neophyte Hybrids moving through it. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Tunnel Networks",
+      "general": "After you resolve this order, you may either spend 2 materiel to replace 1 unrouted Neophyte Hybrid in this system with 1 free Hybrid Metamorph or spend 3 materiel to replace that unit with 1 free Purestrain Genestealer. This can start a combat. *newline* LIMIT ONCE PER ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Hidden Tunnels",
+      "general": "Either place 1 free factory on a friendly world not containing a structure or spend 2 materiel to place 1 free factory on a friendly world not containing a factory.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "New Breed",
+      "general": "Replace 1 Neophyte Hybrid on a friendly world with 1 free Purestrain Genestealer.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Desired Icon",
+      "general": "Purchase 1 combat upgrade, reducing its materiel cost by 1 for each different hostile world containing a Neophyte Hybrid.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Day of Ascension",
+      "general": "Either gain 1 materiel or choose a hostile world containing a Neophyte Hybrid. Gain assets from that world.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Primed Instinct",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the start of an execution round of combat, if you have 2 or more unrouted Neophyte Hybrids, you may discard this card to rout 1 enemy unit of command level 2 or less.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Purestrain Broadcast",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the start of a roll dice step of combat, you may discard this card to have 1 of your opponent's command level 0 units instead roll their combat value for you.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Magus Mindreading",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the start of an execution round of combat, you may discard this card to force your opponent to show what card he will play. Gain 1 [B], 1 [S], or 1 [M].",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Atalan Jackals",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the start of an execution round of combat, you may discard this card to gain 2 [M].",
+      "type": "SCHEME"
+    }
+  ],
+  "tierLabels": [
+    "Starting",
+    "Command Level 0",
+    "Command Level 2",
+    "Command Level 3"
+  ],
+  "factionSheet": {
+    "title": "GENESTEALER CULT",
+    "subtitle": "Hive Cult",
+    "abilities": [
+      {
+        "title": "Hiding Amidst",
+        "text": "Passive ability. If a hostile world contains enemy units or structures, does not contain your objective token, and the only units of yours in it are Neophyte Hybrids, do not start combat. Treat this world as hostile to you but friendly to your opponent. If any of your other units enter the hostile world, start combat with all of your units in that world participating in it. Planet capacity for your Neophyte Hybrids in hostile worlds is 2, and your units on that world do not affect the opponent’s planet capacity."
+      }
+    ]
+  },
+  "componentsText": {
+    "faction_card/sheet_front_1.jpg": {
+      "title": "GENESTEALER CULT · Faction sheet: abilities and units",
+      "regions": []
+    },
+    "faction_card/sheet_back_1.jpg": {
+      "title": "GENESTEALER CULT · Initial forces and story",
+      "regions": []
+    },
+    "maps/map_A.jpg": {
+      "title": "GENESTEALER CULT · Home system A",
+      "general": "Ichar IV *newpara* Gatavita *newpara* New Gidlam *newpara* Savlar",
+      "notice": ""
+    },
+    "maps/map_B.jpg": {
+      "title": "GENESTEALER CULT · Home system B",
+      "general": "Ghosar Quintus *newpara* Gatavita *newpara* New Gidlam *newpara* Savlar",
+      "notice": ""
+    }
+  }
+}

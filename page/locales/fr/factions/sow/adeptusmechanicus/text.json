@@ -1,0 +1,229 @@
+{
+  "ordersText": [
+    {
+      "title": "AFFINITÉ CYBERNÉTIQUE",
+      "general": "Lorsque vous révélez ce jeton d'ordre, vous pouvez soit remplacer 1 Skitarii du système actif par 1 Kataphron gratuit, soit détruire 1 de vos unités du système actif pour acheter 1 carte d'amélioration supplémentaire, en réduisant son coût en matériel du coût en matériel de l'unité détruite. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "MAÎTRE DES MACHINES",
+      "general": "Pendant la résolution de cet ordre, vous pouvez soit augmenter votre limite de déploiement de 1, soit réduire de 1 le coût total en matériel des unités et structures achetées. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "CRÂNES INFO-ESCLAVES",
+      "general": "Après avoir pioché des cartes durant l'étape de préparation d'un combat que vous engagez avec cet ordre, vous pouvez soit relancer 1 dé pour chacune de vos unités dans la zone disputée, soit piocher 2 cartes de combat puis défausser 2 cartes de combat. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "CONDUITS BÉNIS",
+      "general": "Après avoir résolu cet ordre, vous pouvez acheter 1 unité et la placer sur le monde de l'usine que vous avez déplacée. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "LA CHAIR EST FAIBLE",
+      "general": "Les bastions ennemis n'empêchent pas cette frappe orbitale. Durant cette frappe orbitale, vous pouvez dépenser 2 [S]. Si vous le faites et qu'il ne reste aucune unité ni aucun bastion ennemi sur ce monde après la résolution de cette frappe orbitale, prenez le contrôle de toutes les structures de ce monde. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "LA QUÊTE DU SAVOIR",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* À la fin de la phase de Planification, vous pouvez défausser cette carte pour prendre 1 de vos jetons d'ordre au sommet d'une pile et le placer dans un système adjacent où vous avez le droit de placer des jetons d'ordre, soit au sommet d'une pile, soit en entamant une nouvelle pile.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "FORGES DE BATAILLE",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Lorsque vous révélez un ordre durant la phase d'Opérations, vous pouvez défausser cette carte pour acheter une usine et la placer sur un monde allié du système actif.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "NÉCROMÉCANIQUE",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Lorsque vous passez votre tour durant la phase d'Opérations, vous pouvez défausser cette carte pour piocher 2 cartes au sommet de votre pioche d'événements et résoudre leurs capacités.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "BOMBARDEMENT RADIOACTIF",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Avant d'effectuer une frappe orbitale, vous pouvez défausser cette carte pour réduire de 1 la valeur de santé des unités ennemies sur le monde durant cette frappe orbitale. Les unités dont la valeur de santé est réduite à 0 sont détruites immédiatement.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "LINGUA-TECHNIS",
+      "general": "Achetez 1 amélioration d'ordre, en réduisant son coût en matériel de 1 pour chaque monde allié contenant une usine.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "SACREMENT D'ENGAGEMENT",
+      "general": "Choisissez un monde allié ayant au maximum 1 icône d'atout. Placez un jeton d'atout de la réserve sur la bannière de ce monde. Ce monde gagne cette icône d'atout.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "BÉNÉDICTION DU DIEU-MACHINE",
+      "general": "Gagnez 1 jeton de cache et 1 jeton de forge.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "MÉCAMORPHOSE",
+      "general": "Remplacez 1 Skitarii par 1 Kataphron gratuit, remplacez 1 Kataphron par 1 Onager gratuit, ou dépensez 1 jeton de forge pour remplacer 1 Onager par 1 Titan Warlord gratuit.",
+      "type": "TACTIQUE"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "RANGERS SKITARII",
+        "general": "Gagnez 1 [D], ou résolvez les capacités générales de votre carte de combat face visible jouée lors du précédent round d'exécution.",
+        "unit": "Skitarii/Croiseur léger : Gagnez 1 (S).",
+        "icons": "S"
+      },
+      {
+        "title": "TECH-PRÊTRE INGÉNIEUR",
+        "general": "Ralliez 1 de vos unités ou gagnez 1 (B) et 1 (S).",
+        "unit": "Skitarii/Croiseur léger : Gagnez 1 [S].",
+        "icons": "M"
+      },
+      {
+        "title": "AVANT-GARDE SKITARII",
+        "general": "Gagnez 2 (S).",
+        "unit": "Skitarii/Croiseur léger : Durant l'étape d'évaluation des dégâts de ce round d'exécution, vous pouvez assigner des dégâts à vos unités en déroute.",
+        "icons": "S"
+      },
+      {
+        "title": "INFILTRATEURS SICARIENS",
+        "general": "Si vous attaquez, regardez la carte de combat face cachée de votre adversaire. *newpara* Gagnez 1 [B] ou 1 [S].",
+        "unit": "Skitarii/Croiseur léger : Gagnez 1 [M], 2 (B) ou 2 (S).",
+        "icons": ""
+      },
+      {
+        "title": "RUSTSTALKERS SICARIENS",
+        "general": "Gagnez 1 [B].",
+        "unit": "Skitarii/Croiseur léger : Gagnez 1 [M], ou choisissez 1 de vos unités qui n'est pas en déroute pour gagner des (B) égaux à son niveau de commandement.",
+        "icons": "B"
+      }
+    ],
+    [
+      {
+        "title": "COGITATION TRANSCENDANTE",
+        "general": "",
+        "unit": "Skitarii/Croiseur léger : Forcez votre adversaire à perdre 1 [B], 1 [S] ou 1 [M]. Ensuite, gagnez 1 [B], 1 [S] ou 1 [M], selon ce que votre adversaire a perdu.",
+        "icons": "SM"
+      },
+      {
+        "title": "BIONIQUES AMÉLIORÉES",
+        "general": "Gagnez 1 [B] ou 1 (B).",
+        "unit": "Kataphron/Croiseur léger : Gagnez 2 (S), à moins que votre adversaire ne dépense 1 [S].",
+        "icons": "SS"
+      },
+      {
+        "title": "SURCHARGE D'AGRESSIVITÉ",
+        "general": "Gagnez 1 [S] ou 1 (S).",
+        "unit": "Kataphron/Croiseur léger : Gagnez 2 (B), à moins que votre adversaire ne dépense 1 [B].",
+        "icons": "BB"
+      },
+      {
+        "title": "VIGUEUR SIPHONNÉE",
+        "general": "Convertissez 1 de vos dés en [M]. *newpara* Gagnez 1 [D], ou résolvez les capacités d'unité de votre carte de combat face visible jouée lors du précédent round d'exécution.",
+        "unit": "",
+        "icons": "BS"
+      }
+    ],
+    [
+      {
+        "title": "SUPÉRIORITÉ MÉCANIQUE",
+        "general": "Gagnez 1 [D], 2 (B) ou 2 (S). *newpara* Dépensez 1 jeton de forge pour rallier toutes vos unités.",
+        "unit": "Onager/Arche Mechanicus : Choisissez [B], [S] ou [M]. Forcez votre adversaire à convertir jusqu'à 2 des dés choisis en une autre icône de votre choix.",
+        "icons": "BSM"
+      },
+      {
+        "title": "ENGIN MANŒUVRABLE",
+        "general": "Convertissez jusqu'à 2 de vos [B] en [M]. *newpara* Dépensez 1 [M] pour gagner 3 (S).",
+        "unit": "Onager/Arche Mechanicus : Ne défaussez pas vos (S) à la fin de ce round d'exécution.",
+        "icons": "BSM"
+      },
+      {
+        "title": "SALVE D'ÉLIMINATION",
+        "general": "Gagnez 1 (B).",
+        "unit": "Skitarii/Kataphron/Onager : Mettez en déroute 1 des unités de votre adversaire. Le niveau de commandement de cette unité ne peut pas dépasser celui de votre unité qui n'est pas en déroute et a le niveau de commandement le plus élevé.",
+        "icons": "BB"
+      }
+    ],
+    [
+      {
+        "title": "VENGEANCE DE L'ESPRIT-MACHINE",
+        "general": "Gagnez 1 [S] ou 1 (S). *newline* Convertissez jusqu'à 2 de vos [B] en [S].",
+        "unit": "Titan/Arche Mechanicus : Si vos unités ou vos bastions ne subissent aucun dégât durant ce round d'exécution, mettez en déroute 1 des unités de votre adversaire. *newpara* Dépensez 2 de vos dés pour détruire 1 unité de niveau de commandement 0 ou 1 structure dans la zone disputée.",
+        "icons": "SSMM"
+      },
+      {
+        "title": "RAGE DE LA MACHINE",
+        "general": "Gagnez 3 (B).",
+        "unit": "Titan/Arche Mechanicus : Ne défaussez pas vos (B) à la fin de ce round d'exécution.",
+        "icons": "BBSM"
+      }
+    ]
+  ],
+  "materialsText": [
+    {
+      "label": "Skitarii",
+      "value": "8"
+    },
+    {
+      "label": "Croiseurs légers Endurance",
+      "value": "3"
+    },
+    {
+      "label": "Serviteurs de bataille Kataphron",
+      "value": "3"
+    },
+    {
+      "label": "Onagers Dunecrawlers",
+      "value": "3"
+    },
+    {
+      "label": "Cuirassés Arche Mechanicus",
+      "value": "3"
+    },
+    {
+      "label": "Titans de bataille Warlord",
+      "value": "3"
+    }
+  ],
+  "factionSheet": {
+    "title": "ADEPTUS MECHANICUS",
+    "subtitle": "Monde-forge de Mars",
+    "abilities": [
+      {
+        "title": "Industrie mobile",
+        "text": "Lorsque vous résolvez un ordre de Domination, vous pouvez déplacer 1 de vos usines du système actif vers un monde allié ou non contrôlé du système actif ou d'un système adjacent, comme s'il s'agissait d'une unité terrestre."
+      }
+    ],
+    "units": [
+      "Skitarii",
+      "Croiseurs légers Endurance",
+      "Serviteurs de bataille Kataphron",
+      "Onagers Dunecrawlers",
+      "Cuirassés Arche Mechanicus",
+      "Titans Warmaster"
+    ],
+    "lore": "L'Omnimessie a empli la galaxie de secrets afin que nous puissions les étudier et nous approcher pas à pas de son être parfait. Les ignorer, même face à la guerre, est une hérésie. *newpara* L'amas d'Herakon nous offre de nouvelles occasions d'élargir notre conscience en nourrissant notre intellect de savoirs nouveaux. Les sales Xenos souillent la Voie véritable de leur essence impure. Ils sont indignes de la technologie qu'ils possèdent. Chantez le chant du Dieu-Machine et laissez la logique impitoyable vous envahir ! Abandonnez le corps faible, car il ne garantit que la mort. Tranchez vos membres, retirez vos organes peu fiables : voilà ce que l'Omnimessie aurait voulu de vous. *newpara* Yuritus Omnicron *newline* Fabricator Locum",
+    "initialForces": [
+      "Skitarii",
+      "Titan Warmaster",
+      "Croiseurs légers Endurance",
+      "Jeton de forge",
+      "Usine",
+      "Matériel"
+    ],
+    "objectives": [
+      "Dark Mechanicum : Menez la gloire de l'Omnimessie et portez un coup juste. Que la joie de son troupeau soit le fléau de ses ennemis.",
+      "Détruire et conquérir : Terrassez les machines impies de l'ennemi et trouvez les moyens d'extraire le minerai de ce monde riche en minéraux.",
+      "Signes de révélation : Des rapports laissent entendre que cette planète présente des signes de forge exploitable. Authentifiez son importance et faites votre rapport à votre maître pour évaluation.",
+      "Quête du savoir : Le Surveillant a reçu les coordonnées de l'emplacement d'une unité STC. Fouillez chaque grain de gravier de cette planète et faites votre rapport au conseil.",
+      "Victoire de la logique : Ceux qui placent leur foi dans le pouvoir contre-nature du Warp doivent être contraints de s'incliner devant la certitude d'acier de la logique. Prouvez la supériorité de la machine.",
+      "La Machine éternelle : Prenez soin des machines sacrées de l'Omnimessie et rendez à leurs corps meurtris leur gloire d'antan, afin qu'elles traquent l'ennemi à jamais."
+    ],
+    "layout": "sow",
+    "labels": {
+      "objectives": "Jetons d'objectif",
+      "city": "Cité",
+      "factory": "Usine",
+      "bastion": "Bastion"
+    },
+    "initialForcesTitle": "Forces initiales"
+  }
+}

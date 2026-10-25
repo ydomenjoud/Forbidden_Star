@@ -1,0 +1,212 @@
+{
+  "materialsText": [
+    {
+      "label": "Hybrides Néophytes",
+      "value": "10"
+    },
+    {
+      "label": "Cargos volés",
+      "value": "3"
+    },
+    {
+      "label": "Métamorphes Hybrides",
+      "value": "6"
+    },
+    {
+      "label": "Genestealers Pur-sang",
+      "value": "5"
+    },
+    {
+      "label": "Cuirassés volés",
+      "value": "2"
+    },
+    {
+      "label": "Patriarche",
+      "value": "1"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Que les cultistes se lèvent",
+        "general": "Convertissez 1 de vos dés en [M]. *newpara* Si vous avez plus de [M] que votre adversaire, gagnez 1 [M].",
+        "unit": "Néophyte : Gagnez 1 (B) ou 1 (S) pour chaque [M] que vous avez, jusqu'à un maximum de 3. Vous pouvez répartir librement les (B) et les (S) gagnés."
+      },
+      {
+        "title": "Comportement aberrant",
+        "general": "Gagnez 1 (S). *newpara* Votre adversaire perd 1 [B].",
+        "unit": "Néophyte : Gagnez 1 (S) ou convertissez 1 de vos dés en [M]."
+      },
+      {
+        "title": "Embuscade du Culte",
+        "general": "Gagnez 1 (B) ou 1 (S). *newline* Dépensez 1 [M] pour placer 1 jeton de renfort gratuit dans cette zone, à moins que votre adversaire ne dépense 1 [M].",
+        "unit": "Néophyte : Si vous avez plus d'unités qui ne sont pas en déroute que votre adversaire, gagnez 1 [M]. *newline* Dépensez 1 [M] pour forcer votre adversaire à choisir 1 de ses unités et à la mettre en déroute, à moins qu'il ne dépense 1 [M]."
+      },
+      {
+        "title": "Garde du corps du Locus",
+        "general": "",
+        "unit": "Néophyte : Placez 1 jeton de renfort gratuit dans cette zone."
+      },
+      {
+        "title": "L'adoration attend",
+        "general": "Ralliez jusqu'à 2 Hybrides Néophytes. *newpara* Convertissez 1 de vos dés en [M].",
+        "unit": "Néophyte : Gagnez 1 [M] pour chaque Hybride Néophyte qui n'est pas en déroute, jusqu'à un maximum de 2."
+      }
+    ],
+    [
+      {
+        "title": "Dévotion indivise",
+        "general": "Gagnez 1 [M]. *newpara* Dépensez jusqu'à 2 [M] et gagnez 2 (B) pour le premier [M] dépensé. Gagnez ensuite 2 (S) pour le second [M] dépensé.",
+        "unit": "Métamorphe : Ralliez 1 de vos unités."
+      },
+      {
+        "title": "Zèle implacable",
+        "general": "Gagnez 1 [M]. *newpara* Dépensez 1 [M] pour gagner 2 (B). *newpara* Mettez en déroute 1 de vos unités pour rallier 1 de vos unités.",
+        "unit": "Métamorphe : Mettez en déroute 1 de vos unités pour gagner 3 (B)."
+      },
+      {
+        "title": "Soulèvement des Sang-pur",
+        "general": "Convertissez 1 de vos dés en [M]. *newpara* Ralliez 1 de vos unités.",
+        "unit": "Métamorphe : Dépensez 1 [M] pour gagner 2 (S)."
+      },
+      {
+        "title": "Le Culte est là",
+        "general": "Gagnez 1 [M] ou convertissez 1 de vos dés en [M]. *newpara* Dépensez 1 [M] pour placer 1 jeton de renfort gratuit dans cette zone.",
+        "unit": "Métamorphe : Dépensez 1 [M] pour placer 1 jeton de renfort gratuit dans cette zone."
+      }
+    ],
+    [
+      {
+        "title": "Traqueur Pur-sang",
+        "general": "Gagnez 2 (B). *newpara* Lorsqu'une unité ennemie est mise en déroute durant ce round d'exécution, vous pouvez dépenser 1 [M] pour détruire cette unité.",
+        "unit": "Pur-sang : Dépensez 1 [M] pour forcer votre adversaire à choisir 1 de ses unités et à la mettre en déroute."
+      },
+      {
+        "title": "Murmures du Magus",
+        "general": "À la fin de ce round d'exécution, vous pouvez convertir 1 de vos dés en [M]. *newline* Dépensez 1 [M] pour mettre en déroute 1 unité ennemie de niveau de commandement 0 ou 1.",
+        "unit": "Pur-sang : Gagnez 1 [D]. *newline* Dépensez 1 [M] pour forcer votre adversaire à choisir 1 de ses unités de niveau de commandement 0 qui n'est pas en déroute et à la faire battre en retraite."
+      },
+      {
+        "title": "Directive Primus",
+        "general": "Convertissez 1 de vos [M] en [B]. *newpara* Dépensez 1 [B] pour placer 1 jeton de renfort gratuit dans cette zone.",
+        "unit": "Pur-sang : Gagnez 1 [M]. *newline* Dépensez un nombre quelconque de [M]. Pour chaque [M] dépensé, votre adversaire perd 1 [B]."
+      }
+    ],
+    [
+      {
+        "title": "Beauté du Patriarche",
+        "general": "Gagnez 4 [M] ou convertissez jusqu'à 4 de vos dés en [M].",
+        "unit": "Patriarche : Durant ce round d'exécution, gagnez 1 (S) pour chaque [M] que vous avez au début d'une étape d'évaluation des dégâts."
+      },
+      {
+        "title": "La Lignée pure",
+        "general": "Durant ce round d'exécution, chaque fois que 1 de vos unités terrestres de niveau de commandement 1 ou plus est détruite, placez 1 jeton de renfort gratuit dans cette zone.",
+        "unit": "Patriarche : Placez 2 jetons de renfort gratuits dans cette zone. Gagnez 1 (B) pour chacune de vos unités qui ne sont pas en déroute au-delà du nombre d'unités de votre adversaire qui ne sont pas en déroute."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Le Culte grandit",
+      "general": "Lorsque vous révélez ce jeton d'ordre, vous pouvez dépenser 1 matériel pour placer 1 Hybride Néophyte gratuit sur n'importe quel monde où vous avez déjà un Hybride Néophyte. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Le Culte se propage",
+      "general": "Lorsque vous révélez ce jeton d'ordre, vous pouvez prendre 1 de vos Hybrides Néophytes dans ce système et le placer dans un système adjacent, sur un monde ne contenant pas votre jeton d'objectif. Mettez ensuite cette unité en déroute. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Influence cultuelle",
+      "general": "Pendant la résolution de cet ordre, vous pouvez gagner les atouts de n'importe quels mondes hostiles de ce système où vous avez un Hybride Néophyte. *newline* LIMITE D'UNE FOIS PAR ROUND. *newpara* La capacité planétaire de vos unités est augmentée de 1, jusqu'à un maximum de 5. Cela affecte également la capacité de votre faction."
+    },
+    {
+      "title": "Déclin cultuel",
+      "general": "Lorsque vous révélez ce jeton d'ordre, vous pouvez détruire 1 de vos structures dans ce système pour gagner 3 matériels. *newline* LIMITE D'UNE FOIS PAR ROUND. *newpara* La capacité planétaire de vos unités est augmentée de 1, jusqu'à un maximum de 5. Cela affecte également la capacité de votre faction."
+    },
+    {
+      "title": "Voyage clandestin",
+      "general": "Pendant la résolution de cet ordre, vous pouvez considérer tous les vides ennemis comme des vides alliés pour les Hybrides Néophytes qui les traversent. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Réseaux de tunnels",
+      "general": "Après avoir résolu cet ordre, vous pouvez soit dépenser 2 matériels pour remplacer 1 Hybride Néophyte qui n'est pas en déroute dans ce système par 1 Métamorphe Hybride gratuit, soit dépenser 3 matériels pour remplacer cette unité par 1 Genestealer Pur-sang gratuit. Cela peut déclencher un combat. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Tunnels cachés",
+      "general": "Placez 1 usine gratuite sur un monde allié ne contenant aucune structure, ou dépensez 2 matériels pour placer 1 usine gratuite sur un monde allié ne contenant aucune usine.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Nouvelle race",
+      "general": "Remplacez 1 Hybride Néophyte sur un monde allié par 1 Genestealer Pur-sang gratuit.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Icône désirée",
+      "general": "Achetez 1 amélioration de combat, en réduisant son coût en matériel de 1 pour chaque monde hostile différent contenant un Hybride Néophyte.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Jour de l'Ascension",
+      "general": "Gagnez 1 matériel, ou choisissez un monde hostile contenant un Hybride Néophyte. Gagnez les atouts de ce monde.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Instinct éveillé",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au début d'un round d'exécution de combat, si vous avez 2 Hybrides Néophytes ou plus qui ne sont pas en déroute, vous pouvez défausser cette carte pour mettre en déroute 1 unité ennemie de niveau de commandement 2 ou moins.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Transmission Pur-sang",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au début d'une étape de jet de dés d'un combat, vous pouvez défausser cette carte pour que 1 des unités de niveau de commandement 0 de votre adversaire lance à la place sa valeur de combat pour vous.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Lecture des pensées du Magus",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au début d'un round d'exécution de combat, vous pouvez défausser cette carte pour forcer votre adversaire à montrer la carte qu'il va jouer. Gagnez 1 [B], 1 [S] ou 1 [M].",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Chacals d'Atalan",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au début d'un round d'exécution de combat, vous pouvez défausser cette carte pour gagner 2 [M].",
+      "type": "COMPLOT"
+    }
+  ],
+  "tierLabels": [
+    "Départ",
+    "Niveau de commandement 0",
+    "Niveau de commandement 2",
+    "Niveau de commandement 3"
+  ],
+  "factionSheet": {
+    "title": "CULTE GENESTEALER",
+    "subtitle": "Culte de la Ruche",
+    "abilities": [
+      {
+        "title": "Se cacher parmi eux",
+        "text": "Capacité passive. Si un monde hostile contient des unités ou structures ennemies, ne contient pas votre jeton d'objectif, et que les seules unités que vous y avez sont des Hybrides Néophytes, ne déclenchez pas de combat. Considérez ce monde comme hostile pour vous mais allié pour votre adversaire. Si une de vos autres unités entre dans le monde hostile, déclenchez un combat avec toutes vos unités présentes sur ce monde. La capacité planétaire de vos Hybrides Néophytes sur les mondes hostiles est de 2, et vos unités sur ce monde n'affectent pas la capacité planétaire de l'adversaire."
+      }
+    ]
+  },
+  "componentsText": {
+    "faction_card/sheet_front_1.jpg": {
+      "title": "CULTE GENESTEALER · Plateau de faction : capacités et unités",
+      "regions": []
+    },
+    "faction_card/sheet_back_1.jpg": {
+      "title": "CULTE GENESTEALER · Forces initiales et récit",
+      "regions": []
+    },
+    "maps/map_A.jpg": {
+      "title": "CULTE GENESTEALER · Système d'origine A",
+      "general": "Ichar IV *newpara* Gatavita *newpara* Nouvelle Gidlam *newpara* Savlar",
+      "notice": ""
+    },
+    "maps/map_B.jpg": {
+      "title": "CULTE GENESTEALER · Système d'origine B",
+      "general": "Ghosar Quintus *newpara* Gatavita *newpara* Nouvelle Gidlam *newpara* Savlar",
+      "notice": ""
+    }
+  }
+}

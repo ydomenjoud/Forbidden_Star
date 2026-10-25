@@ -1,0 +1,219 @@
+{
+  "materialsText": [
+    {
+      "label": "Scouts",
+      "value": "6"
+    },
+    {
+      "label": "Strike Cruisers",
+      "value": "3"
+    },
+    {
+      "label": "Space Marines",
+      "value": "6"
+    },
+    {
+      "label": "Land Raiders",
+      "value": "6"
+    },
+    {
+      "label": "Battle Barges",
+      "value": "3"
+    },
+    {
+      "label": "Warlord Titans",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Ambush",
+        "general": "Gain 2 (B).",
+        "unit": "Scout/Strike Cruiser: When an enemy unit is routed during this execution round, it is destroyed unless your opponent spends 1 [M]."
+      },
+      {
+        "title": "Reconnaissance",
+        "general": "If you are attacking, look at your opponent's facedown combat card. *newline* Gain either 2 (B) or 2 (S).",
+        "unit": "Scout/Strike Cruiser: Spend 1 [M] to retreat 1 of your units."
+      },
+      {
+        "title": "Fury of Ultramar",
+        "general": "Your opponent rerolls 1 [S]. Then you may reroll 1 [S].",
+        "unit": "Space Marine/Strike Cruiser: Force your opponent to lose either 1 [S] or 2 (S)."
+      },
+      {
+        "title": "Blessed Power Armour",
+        "general": "Gain 2 (S).",
+        "unit": "Bastion/Space Marine/Strike Cruiser: Convert up to 2 of your dice into [S]."
+      },
+      {
+        "title": "Faith in the Emperor",
+        "general": "Gain 1 [D].",
+        "unit": "Scout/Space Marine/Strike Cruiser: Either rally 1 of your units or gain 1 [M]."
+      }
+    ],
+    [
+      {
+        "title": "Hold the Line",
+        "general": "Gain 2 (S). *newline* If you are defending, rally 1 of your units.",
+        "unit": "Bastion/Space Marine/Strike Cruiser: Gain either 1 [S] or 1 [M]."
+      },
+      {
+        "title": "Glory and Death",
+        "general": "Gain 2 (B). *newline* If you are attacking, rally 1 of your units.",
+        "unit": "Space Marine/Strike Cruiser: Force your opponent to lose either 1 [S] or 1 [M]."
+      },
+      {
+        "title": "Drop Pod Assault",
+        "general": "Gain 1 [D].",
+        "unit": "Space Marine: Spend 1 [M] to take either 1 Scout or 1 Space Marine from any world and place it on this world."
+      },
+      {
+        "title": "Veteran Scouts",
+        "general": "For each [M] you have, gain either 1 (B) or 1 (S).",
+        "unit": "Scout/Strike Cruiser: Spend any number of [M]. For each [M] you spend, retreat 1 of your units."
+      }
+    ],
+    [
+      {
+        "title": "Show No Fear",
+        "general": "During this execution round, your units cannot become routed.",
+        "unit": "Bastion/Space Marine/Strike Cruiser: Spend 1 [M] to rally all of your units."
+      },
+      {
+        "title": "Break the Line",
+        "general": "Spend up to 3 [M]. For each [M] you spend, gain either 1 [B] or 1 [S].",
+        "unit": "Land Raider/Battle Barge: Your opponent chooses and discards 1 of his faceup combat cards."
+      },
+      {
+        "title": "Armoured Advance",
+        "general": "Gain 1 [D].",
+        "unit": "Land Raider/Battle Barge: Resolve 1 additional assess damage step during this execution round."
+      }
+    ],
+    [
+      {
+        "title": "Emperor's Might",
+        "general": "Gain 2 [D].",
+        "unit": "Warlord Titan/Battle Barge: Spend any number of [B]. For each [B] you spend, gain 2 (B)."
+      },
+      {
+        "title": "Emperor's Glory",
+        "general": "Gain 2 [D].",
+        "unit": "Warlord Titan/Battle Barge: Rally all of your units. Then convert any of your dice into [M]."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Crusade",
+      "general": "When you start a combat with this order in a system in which you have no friendly worlds, gain 1 reinforcement token. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Direct the Faithful",
+      "general": "When you reveal this order token, you may replace 1 of your structures in this system with a different structure. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Recruitment Worlds",
+      "general": "While resolving this order, you may treat all your bastions in the active system as factories, reducing your deploy limit by 1 for each bastion you have in this system. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Rain of Fire",
+      "general": "During this orbital strike, gain 1 [D], and you may convert 1 of your [M] into 1 [B]. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Drop Pods",
+      "general": "Enemy bastions do not prevent this orbital strike. During this orbital strike, you may spend 2 [S] to place 1 free Space Marine on the world. This can start a combat after resolving this orbital strike. *newline* LIMIT ONCE PER ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Adeptus Mechanicus",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the start of an assess damage step of combat, you may discard this card to gain 2 (S) and 1 additional (S) for each forge token you have.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Unwavering Resolve",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* Instead of revealing an order during the Operations Phase, you may discard this card to rally all of your units in any 1 system.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Emperor's Champion",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the start of an assess damage step of combat, you may discard this card to rally 1 of your units.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Exterminatus",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* Before you perform an orbital strike, you may discard this card to convert all dice you roll during this orbital strike into [B].",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Rites of Battle",
+      "general": "Purchase 1 order upgrade, reducing its materiel cost by 1 for each friendly world containing a bastion.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Heroic Intervention",
+      "general": "Either place 1 free Space Marine on a friendly world containing a structure or place 1 free Scout on any friendly world.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Work of the Righteous",
+      "general": "Choose a friendly world. Either gain assets from this world or gain materiel equal to its materiel value.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "The Emperor Protects",
+      "general": "Either place 1 free bastion on a friendly world not containing a structure or spend 2 materiel to place 1 free bastion on a friendly world not containing a bastion.",
+      "type": "TACTIC"
+    }
+  ],
+  "factionSheet": {
+    "title": "SPACE MARINES",
+    "subtitle": "Ultramarines Chapter",
+    "abilities": [
+      {
+        "title": "For the Emperor",
+        "text": "When you resolve a dominate order, you may spend 1 materiel to either replace 1 Scout in the active system with 1 free Space Marine, or replace 1 Space Marine in the active system with 1 free Land Raider."
+      }
+    ],
+    "initialForces": [
+      "Scouts",
+      "Space Marine",
+      "Strike Cruiser",
+      "Factory",
+      "Materiel"
+    ],
+    "lore": "Commander, we have received an astropathic relay from the expeditionary fleet of Ulixes Ithanos who has uncovered a safe Warp passage to the Herakon Cluster. The Warp Storms that surrounded that lost region have abated and the worlds once thought consumed are intact and inhabited. *newpara* Our strike cruisers are en route to Captain Ulixes’s passage. Orders have been disseminated throughout the company. The inhabited systems are to be secured for Imperial compliance. All traitor or Xenos threats are to be purged and the loyal worlds made safe. Any rebellious worlds must be brought to heel. *newpara* For the Emperor, Guilleman, and Macragge! *newpara* Brother-Sergeant Corialus *newline* Ultramarines Veteran Sergeant",
+    "objectives": [
+      "Imperial Relic: We cannot let the bones of St. Sarissa fall into the hands of corruption. Make safe her sanctuary, Brothers!",
+      "System Lord: Lord Halovar has sworn compliance and declared his allegiance to the Imperium. He now requires our aid in safely escaping the darkness.",
+      "Archeotech Vault: The artefacts that reside within that vault were crafted by the machine priests of old. They must be rescued.",
+      "Warp Navigation Beacon: The light of the Astronomican is faint in this far-flung sector. Once activated, this beacon will guide us to safety.",
+      "Orbital Defence Platform: This ancient edifice is a testament to the will of mankind. With its might we shall drive back the darkness.",
+      "Ultramarines Relic: Come, Brothers! The Emperor has granted us a mighty boon. We must but take the planet below and the prize shall be ours!"
+    ],
+    "initialForcesTitle": "Initial Forces",
+    "layout": "base",
+    "units": [
+      "Scouts",
+      "Strike Cruisers",
+      "Space Marines",
+      "Land Raiders",
+      "Battle Barges",
+      "Warlord Titans"
+    ],
+    "labels": {
+      "objectives": "Objective Tokens",
+      "city": "City",
+      "factory": "Factory",
+      "bastion": "Bastion"
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/base/spacemarines/faction_card/card.jpg"
+    }
+  }
+}

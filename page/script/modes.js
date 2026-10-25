@@ -1,10 +1,15 @@
 /* Display variants share card identities, manifests and rendering. */
 (function (root) {
   'use strict';
+  // Labels come from the interface language; the Russian text is the fallback without FSI18n.
+  function text(key,ru) {return root.FSI18n?root.FSI18n.t(key):ru;}
+  function define(id,ru,description) {
+    return {id:id,get label() {return text('mode.'+id+'.label',ru);},get description() {return text('mode.'+id+'.description',description);}};
+  }
   var definitions=[
-    {id:'classic',label:'Классический',description:'Исходные изображения карт. На пустых шаблонах SoW текст остаётся динамическим.'},
-    {id:'updated',label:'Обновлённый',description:'Текущие русские тексты и динамическая вёрстка.'},
-    {id:'rnb',label:'RNB',description:'Правила модификации RNB из FS League. Для TDL используется обновлённая версия.'},
+    define('classic','Классический','Исходные изображения карт. На пустых шаблонах SoW текст остаётся динамическим.'),
+    define('updated','Обновлённый','Текущие русские тексты и динамическая вёрстка.'),
+    define('rnb','RNB','Правила модификации RNB из FS League. Для TDL используется обновлённая версия.'),
   ];
   function normalize(value) {return definitions.some(function (m) {return m.id===value;})?value:'updated';}
   function label(value) {return definitions.find(function (m) {return m.id===normalize(value);}).label;}
@@ -18,7 +23,7 @@
   }
   function load(value) {
     if(normalize(value)!=='rnb')return Promise.resolve(null);
-    return root.FSCache.json('data/rnb.json').then(function (data) {
+    return (root.FSI18n?root.FSI18n.json('data/rnb.json'):root.FSCache.json('locales/ru/data/rnb.json')).then(function (data) {
       if(data.schemaVersion!==1 || !data.cards || !data.factions)throw new Error('Некорректные правила RNB');
       return data;
     });

@@ -1,0 +1,228 @@
+{
+  "ordersText": [
+    {
+      "title": "RAZZIA D'ESCLAVES",
+      "general": "Si vous avez obtenu au moins 2 [B] durant cette frappe orbitale, gagnez 1 jeton de renfort. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "LA MALVEILLANCE INCARNÉE",
+      "general": "Après avoir résolu cet ordre, vous pouvez soit dépenser 1 jeton de renfort pour placer 1 Guerrier Kabalite gratuit sur n'importe quel monde allié, soit remplacer 1 Guerrier Kabalite du système actif par 1 Wyche gratuite. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "TOILE DE TOURMENTS",
+      "general": "Pendant la résolution de cet ordre, vous pouvez déplacer vos unités depuis un nombre quelconque de systèmes adjacents au système actif. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "LA PUISSANCE PAR LA DOULEUR",
+      "general": "Pendant la résolution de cet ordre, augmentez votre niveau de commandement de 1. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "DESCENTE ÉCLIPSANTE",
+      "general": "Les bastions ennemis n'empêchent pas cette frappe orbitale. Durant cette frappe orbitale, vous pouvez dépenser 1 [B] pour déplacer 1 de vos vaisseaux du système actif vers un autre vide du système actif. Cela peut déclencher un nouveau combat après la résolution de cette frappe orbitale. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "RAID DANS L'ESPACE RÉEL",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au lieu de révéler un ordre pendant la phase d'Opérations, vous pouvez défausser cette carte pour choisir un monde non contrôlé. Gagnez les atouts de ce monde et gagnez du matériel égal à sa valeur en matériel.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "PROJECTION DE CHAMP D'OMBRE",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Pendant la résolution d'un ordre d'Avancée, vous pouvez défausser cette carte pour en exécuter les étapes dans n'importe quel ordre. Vous ne pouvez pas créer de zone disputée après l'étape de combat résolu.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "SE DÉLECTER DU MASSACRE",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* À la fin d'un round d'exécution de combat, vous pouvez défausser cette carte et détruire 1 de vos unités de niveau de commandement 1 ou 2 pour déplacer un nombre quelconque de vos unités vers une zone adjacente. Cela peut déclencher un nouveau combat après la résolution de ce combat.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "VISIONS DE COMMORRAGH",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au lieu de placer un ordre durant la phase de Planification, vous pouvez défausser cette carte.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "TRAITE D'ESCLAVES",
+      "general": "Dépensez jusqu'à 2 matériels pour gagner 1 atout de votre choix par matériel dépensé, ou dépensez jusqu'à 2 atouts pour gagner 2 matériels par atout dépensé.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "TROPHÉES MACABRES",
+      "general": "Détruisez 1 de vos unités sur n'importe quel monde. Gagnez du matériel égal à son coût en matériel et gagnez des jetons de renfort égaux à sa valeur de moral.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "SPECTACLE DE MEURTRE",
+      "general": "Achetez 1 amélioration de combat. Vous pouvez dépenser des jetons de renfort pour réduire son coût en matériel de 2 par jeton dépensé.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "PARRAINAGE DU CŒUR NOIR",
+      "general": "Placez 1 Frégate gratuite sur un vide allié, ou dépensez 2 matériels et 1 jeton de forge pour remplacer 1 Frégate par 1 Cuirassé Soleil Mourant gratuit.",
+      "type": "TACTIQUE"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "S'EN PRENDRE AUX FAIBLES",
+        "general": "Gagnez 1 [B], ou dépensez 1 de vos dés pour rallier 1 de vos unités.",
+        "unit": "Guerrier Kabalite/Frégate : Gagnez 1 [D].",
+        "icons": "B"
+      },
+      {
+        "title": "AGENTS DE VECT",
+        "general": "Gagnez 1 [S]. *newpara* Si vous avez au moins 1 vaisseau qui n'est pas en déroute dans le système actif, gagnez 1 jeton de renfort et forcez votre adversaire à défausser 1 de ses jetons de renfort.",
+        "unit": "Guerrier Kabalite : Dépensez 1 de vos jetons de renfort pour placer 1 jeton de renfort gratuit dans cette zone.",
+        "icons": "S"
+      },
+      {
+        "title": "CHASSE DEPUIS LES OMBRES",
+        "general": "",
+        "unit": "Guerrier Kabalite/Frégate : Votre adversaire peut faire battre en retraite 1 de ses unités. S'il ne le fait pas, gagnez 1 (B) pour chaque Guerrier Kabalite ou Frégate qui n'est pas en déroute. *newpara* Défaussez cette carte pour faire battre en retraite 1 de vos unités.",
+        "icons": "B"
+      },
+      {
+        "title": "ALIMENTÉ PAR LA HAINE",
+        "general": "Gagnez 1 (B). *newpara* Convertissez 1 de vos [M] en [B].",
+        "unit": "Guerrier Kabalite/Wyche/Frégate : Gagnez 1 (S). *newpara* Votre adversaire relance 1 dé de votre choix.",
+        "icons": "B"
+      },
+      {
+        "title": "FRAPPE AILÉE",
+        "general": "Gagnez 1 (B) ou piochez 1 carte de combat.",
+        "unit": "Wyche/Frégate : Gagnez 2 (S) ou jouez 1 carte de combat de votre main. Ne résolvez pas ses capacités, mais gagnez ses icônes de combat durant ce combat.",
+        "icons": "M"
+      }
+    ],
+    [
+      {
+        "title": "CARNAGE EXTATIQUE",
+        "general": "Gagnez 2 (B), à moins que votre adversaire ne dépense 1 [S].",
+        "unit": "Wyche/Frégate : Dépensez 1 de vos dés pour gagner soit 1 [B] et 1 (S), soit 1 [S] et 1 (B).",
+        "icons": "BB"
+      },
+      {
+        "title": "TACTIQUES DE RAIDERS",
+        "general": "Si vous attaquez, gagnez 2 (B). La première fois que 1 de vos unités est détruite durant l'étape d'évaluation des dégâts de ce round d'exécution, vous pouvez la faire battre en retraite à la place. *newpara* Si vous défendez, gagnez 2 (S). Lorsqu'une unité ennemie est mise en déroute durant ce round d'exécution, elle est détruite à moins que votre adversaire ne dépense 1 [M].",
+        "unit": "",
+        "icons": "BS"
+      },
+      {
+        "title": "FEU ET DISPARITION",
+        "general": "Gagnez 1 [B] ou 1 [S].",
+        "unit": "Guerrier Kabalite/Frégate : Votre adversaire peut faire battre en retraite 1 de ses unités. Vous pouvez ensuite déplacer 1 de vos unités vers une zone adjacente alliée ou non contrôlée. Si vous le faites, gagnez 1 [M] ou 2 (B).",
+        "icons": "BM"
+      },
+      {
+        "title": "JAMAIS IMMOBILE",
+        "general": "Si vous attaquez, votre adversaire ne peut pas gagner de (B) durant ce round d'exécution. *newpara* Si vous défendez, gagnez 1 [S] et votre adversaire perd 2 (B).",
+        "unit": "Wyche/Frégate : Dépensez 1 [M] pour placer 1 jeton de renfort gratuit dans cette zone.",
+        "icons": "SS"
+      }
+    ],
+    [
+      {
+        "title": "CREUSET DE MALÉDICTION",
+        "general": "Forcez votre adversaire à perdre 1 [M]. *newpara* Durant ce combat, votre adversaire ne peut ni gagner ni dépenser de [M].",
+        "unit": "",
+        "icons": "BBS"
+      },
+      {
+        "title": "ÉTREINTE DÉVASTATRICE",
+        "general": "Votre adversaire peut faire battre en retraite 1 de ses unités. S'il ne le fait pas, forcez votre adversaire à perdre 1 [B] ou 1 [M].",
+        "unit": "Ravageur/Soleil Mourant : Si vous avez moins de [M] que votre adversaire, votre adversaire perd 1 [M]. Sinon, gagnez 2 (B) et 1 (S).",
+        "icons": "SSM"
+      },
+      {
+        "title": "LES DÉPECER",
+        "general": "Votre adversaire peut faire battre en retraite 1 de ses unités. S'il ne le fait pas, forcez votre adversaire à perdre 1 [S] ou 1 [M].",
+        "unit": "Ravageur/Soleil Mourant : Gagnez 1 (B) et 2 (S), à moins que votre adversaire ne choisisse 1 de ses unités et ne la détruise.",
+        "icons": "BBM"
+      }
+    ],
+    [
+      {
+        "title": "PLUIE DE CRUAUTÉ",
+        "general": "Déplacez 1 Ravageur ou 1 de vos vaisseaux d'une zone du système actif ou d'un système adjacent vers cette zone. Si vous le faites, gagnez 2 [D].",
+        "unit": "Ravageur : Placez 1 jeton de renfort gratuit dans cette zone. *newline* Forcez votre adversaire à perdre 1 [S]. *newpara* Soleil Mourant : Gagnez 2 (B).",
+        "icons": "BBSM"
+      },
+      {
+        "title": "FRÉNÉSIE MALVEILLANTE",
+        "general": "Gagnez 2 (B), 2 (S), ou dépensez 1 de vos dés pour gagner 2 (B) et 2 (S).",
+        "unit": "Ravageur/Soleil Mourant : Forcez votre adversaire à perdre 1 [B], 1 [S] et 1 [M].",
+        "icons": "BSM"
+      }
+    ]
+  ],
+  "materialsText": [
+    {
+      "label": "Guerriers Kabalites",
+      "value": "6"
+    },
+    {
+      "label": "Frégates Lame-Venin",
+      "value": "6"
+    },
+    {
+      "label": "Wyches",
+      "value": "4"
+    },
+    {
+      "label": "Ravageurs",
+      "value": "4"
+    },
+    {
+      "label": "Cuirassés Soleil Mourant",
+      "value": "3"
+    }
+  ],
+  "factionSheet": {
+    "title": "ELDARS NOIRS",
+    "subtitle": "Kabale du Cœur Noir",
+    "abilities": [
+      {
+        "title": "Soif inextinguible",
+        "text": "Lorsque vous résolvez un ordre de Domination dans un système contenant au moins 1 de vos vaisseaux qui n'est pas en déroute, vous pouvez gagner 1 jeton de renfort pour chaque monde ennemi ou non contrôlé du système actif. Vous pouvez ensuite prendre 1 de vos vaisseaux dans n'importe quel vide et le placer sur un vide allié du système actif."
+      }
+    ],
+    "layout": "darkeldar",
+    "initialForcesTitle": "Forces initiales",
+    "initialForces": [
+      "Guerriers Kabalites",
+      "Wyches",
+      "Frégate Lame-Venin",
+      "Usine",
+      "Matériel"
+    ],
+    "lore": "La Dimension Labyrinthique ondule et miroite de façon inattendue. La lumière d’un nouveau passage apparaît soudain. Dans tout Commorragh, des Catacombes à la Cour, le nom de l’amas d’Herakon est dans tous les esprits. Préparez les Kabales, mobilisez les Cultes et les Cabales, remplissez de nouveaux esclaves les usines et les ateliers de la Vieille Cité, puis appelez tous les coupe-jarrets, pillards, saccageurs et traîtres. *newpara* Depuis les ombres, nous livrerons nos pires cauchemars, prélèverons notre livre de chair et nous délecterons de la souffrance de nos ennemis. Ravagez ce système et tout ce qu’il contient. Repaissez-vous de votre soif d’angoisse et de désespoir. Mais n’oubliez pas d’en épargner, rien que quelques-uns, pour Celle qui a soif. *newpara* Valossian Sythrac *newline* Archonte de la Kabale du Cœur Noir",
+    "objectives": [
+      "Muse noire : Le don des Muses Noires est caché dans les profondeurs de ce monde condamné. Entendez-vous la litanie de cris des habitants qui se dressent contre vous dans cette mission ?",
+      "Peur et terreur : Semez la terreur et la panique dans les rangs de vos ennemis. Buvez leur peur comme du vin. Nous devons répandre nos cauchemars à travers ce système pour plaire aux Dieux sombres.",
+      "Mort par mille coupures : Regardez l’armée ennemie s’affaiblir et mourir tandis que vous la saignez, un guerrier à la fois. Il est temps de frapper mortellement dans un silence sombre pour ce monde.",
+      "Paralyser la puissance : Un raid punitif contre des routes maritimes dont le cœur se trouve sur ce monde est ordonné, et ce sera un plaisir. Aucun ennemi ne peut nous distancer.",
+      "Portail caché : Un portail oublié et caché, relié à la Toile, doit être révélé. L’abysse sombre de ce monde doit être sondé.",
+      "Chasseur de trophées : Les seigneurs de Commorragh exigent un trophée, soit une pierre-esprit prise sur ce champ de bataille, soit la tête d’un champion ennemi."
+    ],
+    "units": [
+      "Guerriers Kabalites",
+      "Frégates Lame-Venin",
+      "Wyches",
+      "Ravageurs",
+      "Cuirassés Soleil Mourant"
+    ],
+    "labels": {
+      "objectives": "Jetons d'objectif",
+      "city": "Cité",
+      "factory": "Usine",
+      "bastion": "Bastion"
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/sow/darkeldar/faction_card/card.jpg"
+    }
+  }
+}

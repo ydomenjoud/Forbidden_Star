@@ -1,0 +1,247 @@
+{
+  "materialsText": [
+    {
+      "label": "Gaunts",
+      "value": "6"
+    },
+    {
+      "label": "Bio-vaisseaux Dévoreurs",
+      "value": "6"
+    },
+    {
+      "label": "Guerriers Tyranides",
+      "value": "6"
+    },
+    {
+      "label": "Carnifex",
+      "value": "3"
+    },
+    {
+      "label": "Vaisseaux-ruches Léviathan",
+      "value": "3"
+    },
+    {
+      "label": "Bio-titans Hiérophantes",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Nuée d'Hormagaunts",
+        "general": "Gagnez 1 (S).",
+        "unit": "Gaunt/Dévoreur : Détruisez 1 Gaunt ou Dévoreur qui n'est pas en déroute pour gagner 3 (B)."
+      },
+      {
+        "title": "Hybrides Genestealers",
+        "general": "",
+        "unit": "Gaunt/Dévoreur : Forcez votre adversaire à perdre 1 [B], 1 [S] ou 1 [M], selon ce dont il a le plus. En cas d'égalité, vous choisissez. Ensuite, gagnez 1 [B], 1 [S] ou 1 [M], selon ce que votre adversaire a perdu."
+      },
+      {
+        "title": "Tyran de la Ruche",
+        "general": "Jouez 1 carte de combat de votre main. Ne résolvez pas ses capacités, mais gagnez ses icônes de combat durant ce combat.",
+        "unit": "Guerrier/Vaisseau-ruche : Ralliez 1 de vos unités. *newline* Dépensez 1 [M] pour gagner 1 [B] ou 1 [S]."
+      },
+      {
+        "title": "Organismes fouisseurs",
+        "general": "Si vous attaquez, gagnez 2 (S). *newline* Si vous défendez, placez 1 jeton de renfort gratuit dans cette zone, ou détruisez 2 Gaunts qui ne sont pas en déroute pour placer 1 bastion gratuit sur ce monde s'il ne contient pas déjà de structure.",
+        "unit": ""
+      },
+      {
+        "title": "Pluie de spores",
+        "general": "Détruisez 1 Dévoreur qui n'est pas en déroute dans ce système pour placer 1 Guerrier gratuit sur ce monde, puis gagnez 2 [D].",
+        "unit": ""
+      }
+    ],
+    [
+      {
+        "title": "Horreur ailée",
+        "general": "Détruisez 1 de vos unités qui n'est pas en déroute pour gagner 3 (B).",
+        "unit": "Guerrier/Dévoreur : Votre adversaire peut vous laisser gagner 2 (S). S'il ne le fait pas, ajoutez 2 à votre valeur d'attaque au prochain round d'exécution."
+      },
+      {
+        "title": "Nuées de Rippers",
+        "general": "Gagnez 2 (B).",
+        "unit": "Gaunt/Dévoreur : À la fin de ce round d'exécution, gagnez 1 matériel pour chaque unité détruite durant ce round d'exécution, jusqu'à un maximum de 2."
+      },
+      {
+        "title": "Nuée de Termagants",
+        "general": "Gagnez 1 (B) pour chaque Gaunt ou Dévoreur qui n'est pas en déroute, ou placez 1 jeton de renfort gratuit dans cette zone. *newline* Pour chaque Gaunt ou Dévoreur détruit ou mis en déroute durant ce round d'exécution, réduisez de 1 les dégâts que vous subissez au prochain round d'exécution.",
+        "unit": ""
+      },
+      {
+        "title": "Nuée de Guerriers",
+        "general": "Détruisez 1 de vos unités qui n'est pas en déroute pour gagner 2 (S) et réduire de 2 les dégâts que vous subissez au prochain round d'exécution.",
+        "unit": "Guerrier/Vaisseau-ruche : Relancez tous vos [B], [S] ou [M]."
+      }
+    ],
+    [
+      {
+        "title": "Griffes faucheuses",
+        "general": "Durant ce round d'exécution, si votre adversaire doit assigner des dégâts, il assigne 3 dégâts supplémentaires.",
+        "unit": "Carnifex/Vaisseau-ruche : Détruisez 1 Carnifex ou Vaisseau-ruche qui n'est pas en déroute pour gagner 3 (B) et 2 (S)."
+      },
+      {
+        "title": "Griffes écrasantes",
+        "general": "Détruisez 1 de vos unités qui n'est pas en déroute pour gagner 3 (B).",
+        "unit": "Carnifex/Vaisseau-ruche : Dépensez 1 [B] ou 1 [M] pour forcer votre adversaire à perdre 2 [S]."
+      },
+      {
+        "title": "Contrôle synaptique",
+        "general": "Gagnez 1 [D]. *newline* Placez 1 jeton de renfort gratuit dans cette zone.",
+        "unit": "Guerrier/Vaisseau-ruche : Ralliez 1 de vos unités. *newline* Gagnez 1 (B) ou 1 (S) pour chacune de vos unités qui ne sont pas en déroute au-delà du nombre d'unités de votre adversaire qui ne sont pas en déroute."
+      }
+    ],
+    [
+      {
+        "title": "Gloire de la Nuée",
+        "general": "Dépensez un nombre quelconque de [M]. Pour chaque [M] dépensé, gagnez 1 [B] ou 1 [S].",
+        "unit": "Bio-titan/Vaisseau-ruche : Ralliez toutes vos unités. *newline* Durant ce round d'exécution, c'est vous qui assignez les dégâts aux unités et aux bastions de votre adversaire."
+      },
+      {
+        "title": "Présence écrasante",
+        "general": "Détruisez 1 de vos unités qui n'est pas en déroute pour gagner 3 (B) ou 3 (S).",
+        "unit": "Bio-titan/Vaisseau-ruche : Forcez votre adversaire à choisir 3 fois entre choisir 1 de ses unités et la mettre en déroute, ou perdre 1 dé de son choix."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Sans nombre",
+      "general": "Pendant la résolution de cet ordre dans un système où vous avez un vaisseau qui n'est pas en déroute, vous pouvez placer 1 jeton de renfort gratuit dans la zone disputée au début d'une étape de renfort d'un combat. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Chambres de reproduction",
+      "general": "Après avoir résolu cet ordre, vous pouvez acheter jusqu'à 2 unités pour chaque Vaisseau-ruche qui n'est pas en déroute dans le système actif et les placer sur n'importe quels mondes alliés ou non contrôlés du système actif. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Tours capillaires",
+      "general": "Après avoir résolu cet ordre, vous pouvez détruire n'importe lesquelles de vos unités ou structures sur un monde du système actif pour gagner temporairement du matériel égal à leur coût en matériel. Utilisez ensuite ce matériel uniquement pour acheter des vaisseaux, en quantité quelconque, et les placer sur des vides alliés ou non contrôlés du système actif. Les jetons de cache ne peuvent pas être utilisés et tout matériel restant est perdu. Une cité détruite compte pour votre niveau de commandement pendant toute la durée de l'achat. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Infiltration de Genestealers",
+      "general": "Durant cette frappe orbitale, gagnez 1 [D], et vous pouvez dépenser jusqu'à 2 [B] pour gagner 1 jeton de renfort par [B] dépensé. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Spores mycétiques",
+      "general": "Les bastions ennemis n'empêchent pas cette frappe orbitale. Durant cette frappe orbitale, vous pouvez dépenser jusqu'à 2 [B] pour chaque Vaisseau-ruche participant. Pour chaque [B] dépensé, achetez 1 unité de niveau de commandement 2 ou moins et placez-la sur le monde. Cela peut déclencher un combat après la résolution de cette frappe orbitale. *newline* LIMITE D'UNE FOIS PAR ROUND. *newline* NÉCESSITE LES CHAMBRES DE REPRODUCTION."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Soulèvement des fidèles",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au lieu de révéler un ordre pendant la phase d'Opérations, vous pouvez défausser cette carte pour placer 1 bastion gratuit sur un monde allié ne contenant aucune structure.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Nids de nuée",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Avant de révéler un ordre pendant la phase d'Opérations, vous pouvez défausser cette carte pour placer 1 Gaunt gratuit sur chacun de 2 mondes alliés différents.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Esprit-ruche",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Pendant la résolution d'un ordre, vous pouvez défausser cette carte pour augmenter votre niveau de commandement de 1 pour chacun de vos Vaisseaux-ruches.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Ombre dans le Warp",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Vous pouvez défausser cette carte lorsque vous engagez un combat. Si vous le faites, votre adversaire ne peut pas utiliser de jetons de renfort durant ce combat.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Mutation rapide",
+      "general": "Gagnez 2 jetons de forge.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Dévoreur de mondes",
+      "general": "Choisissez un système. Gagnez du matériel égal à la valeur en matériel des mondes alliés de ce système.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Organismes d'infiltration",
+      "general": "Achetez 1 amélioration de combat, en réduisant son coût en matériel de 1 pour chacun de vos Vaisseaux-ruches.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Flotte fragment",
+      "general": "Placez 1 Dévoreur gratuit dans n'importe quel vide allié.",
+      "type": "TACTIQUE"
+    }
+  ],
+  "factionSheet": {
+    "title": "TYRANIDES",
+    "subtitle": "Flotte-ruche Léviathan",
+    "abilities": [
+      {
+        "title": "Le Grand Dévoreur",
+        "text": "Lorsque vous résolvez un ordre de Domination, gagnez 1 jeton d'atout supplémentaire de votre choix. Vous pouvez avoir jusqu'à 4 exemplaires de chaque jeton d'atout dans votre zone de jeu à tout moment."
+      }
+    ],
+    "layout": "gif",
+    "initialForcesTitle": "Forces de départ",
+    "initialForces": [
+      "Gaunts",
+      "Bio-vaisseau Dévoreur",
+      "Vaisseau-ruche Léviathan",
+      "Bastion",
+      "Usine",
+      "Jeton de renfort",
+      "Matériel"
+    ],
+    "lore": "Un cancer ronge l’Imperium. À chaque décennie, il s’enfonce plus profondément, laissant dans son sillage des mondes vidés et morts. Cette horreur, cette abomination, a une pensée et un but qui œuvrent à une échelle galactique inimaginable, et tout ce que nous pouvons faire, c’est tenter d’arrêter les essaims de monstres bio-conçus qu’elle lâche sur nous par instinct. *newpara* Nous avons donné un nom à l’horreur pour apaiser nos peurs ; nous l’appelons la race Tyranide, mais si elle a conscience de nous, elle ne doit nous connaître que comme des Proies. *newpara* Puisse la lumière de l’Empereur nous guider à travers ces temps les plus sombres. *newpara* Bronislaw Cevak *newline* Inquisiteur de l’Ordo Xenos",
+    "objectives": [
+      "Horreurs innombrables : Ce monde est presque submergé par des créatures de cauchemar. Sans aide, il ne tiendra pas longtemps face aux vagues de bio-monstres.",
+      "Cauchemar gelé : Sous les calottes glaciaires de ce monde, une énorme créature dormante a été découverte.",
+      "Activité accrue de Genestealers : Ce monde montre une activité accrue de Genestealers. Ce n’est peut-être que l’avant-garde d’une invasion tyranide.",
+      "Ombre dans le Warp : Les astropathes sentent une immense ombre approcher à travers le Warp. Cela annonce habituellement l’approche d’une flotte-ruche tyranide.",
+      "Abondance de biomasse : Les essaims tyranides des zones environnantes semblent anormalement attirés par ce monde.",
+      "Le ciel est plein de spores : Le ciel s’assombrit tandis que des millions de spores mortelles s’abattent sur ce monde, le préparant à devenir la proie du Grand Dévoreur."
+    ],
+    "units": [
+      "Gaunts",
+      "Bio-vaisseaux Dévoreurs",
+      "Guerriers",
+      "Carnifex",
+      "Vaisseaux-ruches Léviathan",
+      "Bio-titans Hiérophantes"
+    ],
+    "labels": {
+      "objectives": "Jetons d'objectif",
+      "city": "Cité",
+      "factory": "Usine",
+      "bastion": "Bastion"
+    },
+    "frontAbility": {
+      "box": [
+        706,
+        324,
+        350,
+        236
+      ],
+      "title": [
+        720,
+        334,
+        320,
+        40
+      ],
+      "subtitle": [
+        720,
+        376,
+        320,
+        28
+      ],
+      "body": [
+        706,
+        408,
+        350,
+        140
+      ]
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/gif/tyranid/faction_card/card.jpg"
+    }
+  }
+}

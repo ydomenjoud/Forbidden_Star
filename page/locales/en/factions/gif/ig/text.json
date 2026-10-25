@@ -1,0 +1,220 @@
+{
+  "materialsText": [
+    {
+      "label": "Guardsmen",
+      "value": "12"
+    },
+    {
+      "label": "Lunar-Class Cruisers",
+      "value": "3"
+    },
+    {
+      "label": "Ogryns",
+      "value": "6"
+    },
+    {
+      "label": "Leman Russ Tanks",
+      "value": "6"
+    },
+    {
+      "label": "Emperor-Class Battleships",
+      "value": "3"
+    },
+    {
+      "label": "Warhound Titans",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Fire Support",
+        "general": "If you are attacking, your opponent loses 2 (S) at the start of the assess damage step of this execution round. *newline* If you are defending, gain 2 (S).",
+        "unit": "Guardsman/Cruiser: Reroll 1 [S]."
+      },
+      {
+        "title": "For the Emperor!",
+        "general": "Reroll 1 of your dice.",
+        "unit": "Guardsman/Cruiser: Gain 1 (B) for each unrouted Guardsman or Cruiser, to a maximum of 3."
+      },
+      {
+        "title": "Incoming!",
+        "general": "Gain 1 [D].",
+        "unit": "Guardsman/Cruiser: Gain 1 (S) for each unrouted Guardsman or Cruiser, to a maximum of 3."
+      },
+      {
+        "title": "Iron Discipline",
+        "general": "Gain 1 [D] for each of your unrouted units of a different command level.",
+        "unit": "Guardsman/Cruiser: Rally 1 of your units."
+      },
+      {
+        "title": "Ratling Marksmen",
+        "general": "At the start of the assess damage step of this execution round, your opponent loses 2 (B).",
+        "unit": "Guardsman/Cruiser: Your opponent chooses and routs 1 of his units unless he spends 1 die of his choice."
+      }
+    ],
+    [
+      {
+        "title": "Sentinel Reconnaissance",
+        "general": "If you have more unrouted units than your opponent, your opponent chooses and routs 1 of his units unless he spends 1 [M].",
+        "unit": "Ogryn/Cruiser: If you are attacking, look at your opponent's facedown combat card. *newline* Gain either 2 [B] or 2 [S]."
+      },
+      {
+        "title": "Ogryn Shock Troops",
+        "general": "You must reroll 2 [S] or [M].",
+        "unit": "Ogryn/Cruiser: Gain 1 (S) for each unrouted Guardsman or Cruiser, to a maximum of 3."
+      },
+      {
+        "title": "Bullgryn Bulwark",
+        "general": "You must reroll 2 [B] or [M].",
+        "unit": "Ogryn/Cruiser: Gain 1 (B) for each unrouted Guardsman or Cruiser, to a maximum of 3."
+      },
+      {
+        "title": "Mechanised Combat Group",
+        "general": "At the start of the assess damage step of this execution round, your opponent loses either 3 (B) or 3 (S) for each pairing of unrouted Guardsmen with Ogryns or Cruisers with Battleships.",
+        "unit": ""
+      }
+    ],
+    [
+      {
+        "title": "Wyvern Suppression Fire",
+        "general": "If you have more unrouted command level 0 units than your opponent, your opponent chooses and routs 1 of his units.",
+        "unit": "Leman Russ/Battleship: Your opponent chooses and destroys 1 of his routed command level 0 or command level 1 units."
+      },
+      {
+        "title": "Armoured Spearhead",
+        "general": "Either destroy up to 2 unrouted Guardsmen to force your opponent to lose 2 dice of his choice for each destroyed Guardsman or destroy 1 unrouted Cruiser to force your opponent to lose 3 dice of his choice.",
+        "unit": "Leman Russ/Battleship: Choose 1 of your opponent's command level 2 or command level 3 units or bastions. That unit or bastion suffers damage first during this execution round."
+      },
+      {
+        "title": "Combined Arms",
+        "general": "For each of your unrouted ground units of a different command level, gain either 1 (B) or 1 (S). *newline* For each of your unrouted ships of a different command level, gain either 2 (B) or 2 (S). *newline* Gain 1 [D]. Rally 1 of your units.",
+        "unit": ""
+      }
+    ],
+    [
+      {
+        "title": "Hammer of the Emperor",
+        "general": "Force your opponent to lose 1 [S].",
+        "unit": "Warhound Titan: Gain 2 (B) for each of your unrouted units of a different command level, to a maximum of 6. *newline* Battleship: Gain 3 (B) for each of your unrouted units of a different command level."
+      },
+      {
+        "title": "Titan Support",
+        "general": "Your opponent must reroll 1 [B] for each of your unrouted units of a different command level.",
+        "unit": "Warhound Titan/Battleship: During this execution round, your units of command level 2 or less cannot become routed."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Adeptus Astronomica",
+      "general": "While resolving this order, you may move up to 6 units to a world, if at least 1 of those units is a Guardsman. After you resolve this order, you may retreat any Guardsmen in excess of that world's unit capacity. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Forced Recruitment",
+      "general": "While resolving this order, you may treat all your cities in the active system as factories capable of deploying Guardsmen only. *newline* LIMIT ONCE PER ROUND. *newpara* The unit capacity of friendly worlds containing a city is increased by 2, to a maximum of 4. The additional capacity applies to Guardsmen only."
+    },
+    {
+      "title": "Departmento Munitorum",
+      "general": "While resolving this order, you may purchase 1 upgrade only. Then resolve a limited Deploy (deploying in 1 area), Advance (moving from 1 area) or Dominate Order (collecting assets from 1 world and/or resolving your faction ability on the same world) in the active system. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Saturation Bombing",
+      "general": "During this orbital strike, gain 1 [D], and you may convert 1 of your [M] into 1 [B]. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Virus Bombs",
+      "general": "Enemy bastions do not prevent this orbital strike. During this orbital strike, the health value of your opponent's units is reduced to 3. *newline* LIMIT ONCE PER ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Call of the Astropaths",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the end of a reinforce step of combat, if you are defending, you may discard this card to place 2 free reinforcement tokens in the contested area.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Lance Strike",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* Before you perform an orbital strike, you may discard this card to add 2 to the total amount of damage suffered by your opponent's units.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Deathstrike Missile",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* You may discard this card at the start of combat on any world. If you do, either destroy 1 command level 0 or command level 1 unit on that world or rout 1 command level 2 unit on that world at the end of the first assess damage step.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Tactical Genius",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* Instead of playing a combat card from your hand, you may discard this card to play any card from either your combat deck or your upgrade deck, other than a card that has already been played.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Order of the High Command",
+      "general": "Purchase 1 combat upgrade, reducing its materiel cost by 1 for each friendly world containing a factory.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Military Production Shift",
+      "general": "Choose a friendly world. Gain assets from this world and gain materiel equal to its materiel value.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Tempestus Scions",
+      "general": "Rout 1 enemy command level 0 or command level 1 unit that is either in a system containing at least 1 of your units or in an adjacent system.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Imperial Tithe",
+      "general": "Either place 2 free Guardsmen on 1 friendly world in a system containing at least 1 of your factories or place 1 free Guardsman on any friendly world.",
+      "type": "TACTIC"
+    }
+  ],
+  "factionSheet": {
+    "title": "IMPERIAL GUARD",
+    "subtitle": "Herakon Crusade Forces",
+    "abilities": [
+      {
+        "title": "Mass Production",
+        "text": "When you resolve a dominate order, you may resolve a deploy order, only to purchase 2 or more identical units and placing them on either 1 friendly world containing a structure or 1 friendly or uncontrolled void in the active system. Reduce the materiel cost of each unit by 1. You may use cache tokens to reduce the cost of 2 command level 0 units by 1 each."
+      }
+    ],
+    "layout": "gif",
+    "initialForcesTitle": "Starting Forces",
+    "initialForces": [
+      "Guardsmen",
+      "Ogryn",
+      "Lunar-Class Cruiser",
+      "Factory",
+      "Reinforcement Tokens",
+      "Materiel"
+    ],
+    "lore": "Men, we are the first, last and often only line of defence the Imperium has against what is out there. You and that fine piece of Imperial weaponry you hold in your hands is all that is keeping humanity alive. Most of you will probably not live to see your second year in the Guard and the rest of you will probably never see your homeworlds again. But I can guarantee you that when you do fall, with a prayer to the most high and mighty God-Emperor on your lips, you will have earned the right to call yourself a man! *newpara* For the Emperor, for the Imperium of Man! *newpara* Speech during the liberation of Delvidar by *newline* Lord General Militant Barthol Yorin *newline* Commander of the Herakon Crusade Forces",
+    "objectives": [
+      "Heresy: This world has shown allegiance to the archenemy openly. This will not be tolerated and this heretic rebellion has to be stopped immediately!",
+      "Shrine World: This shrine world is of very great importance to the Imperium of Man. Its ancient relics may not be allowed to be desecrated by our enemies.",
+      "Cut Off Supply: If we manage to cut the supply lines from this world, we can deliver to our enemies a devastating blow from which they may not recover.",
+      "Ancient Technology: The machine priests of the Adeptus Mechanicus located an ancient technological artifact. We have to secure it for them.",
+      "Innocence Proves Nothing: There are only varying degrees of guilt. It's time for an inquisition to purge this world.",
+      "Forge World: The weapon forges of this world are able to produce a large number of new warmachines desperately needed for the success of our crusade."
+    ],
+    "units": [
+      "Guardsmen",
+      "Lunar-Class Cruisers",
+      "Ogryns",
+      "Leman Russ Battle Tanks",
+      "Emperor-Class Battleships",
+      "Warhound Titans"
+    ],
+    "labels": {
+      "objectives": "Objective Tokens",
+      "city": "City",
+      "factory": "Factory",
+      "bastion": "Bastion"
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/gif/ig/faction_card/card.jpg"
+    }
+  }
+}

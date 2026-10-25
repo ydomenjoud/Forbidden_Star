@@ -1,0 +1,219 @@
+{
+  "materialsText": [
+    {
+      "label": "Ork Boyz",
+      "value": "9"
+    },
+    {
+      "label": "Onslaught Attack Ships",
+      "value": "3"
+    },
+    {
+      "label": "Nobz",
+      "value": "6"
+    },
+    {
+      "label": "Battlewagons",
+      "value": "3"
+    },
+    {
+      "label": "Kill Kroozers",
+      "value": "3"
+    },
+    {
+      "label": "Gargants",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Gretchin",
+        "general": "Gain 1 (B) and 1 (S). *newline* Your opponent rerolls 1 die of your choice.",
+        "unit": "Onslaught: Destroy 1 Onslaught to force your opponent to choose and destroy 1 of his units."
+      },
+      {
+        "title": "Mek Boyz",
+        "general": "Gain 1 [D].",
+        "unit": "Ork Boyz/Onslaught: Your opponent discards the top card of his combat deck. You gain that card's combat icons until the end of this execution round."
+      },
+      {
+        "title": "'Ard Boyz",
+        "general": "You must reroll all of your [B].",
+        "unit": "Ork Boyz: Your opponent must reroll 1 [B] for each unrouted Ork Boyz."
+      },
+      {
+        "title": "Shoota Boyz",
+        "general": "You must reroll all of your [S].",
+        "unit": "Ork Boyz: Your opponent must reroll 1 [S] for each unrouted Ork Boyz."
+      },
+      {
+        "title": "Slugga Boyz",
+        "general": "You and your opponent must reroll all [M].",
+        "unit": "Ork Boyz/Onslaught: Rally 1 of your units."
+      }
+    ],
+    [
+      {
+        "title": "Waaagh!!!!",
+        "general": "Rally 1 of your units.",
+        "unit": "Ork Boyz/Onslaught: Gain 1 (B) for each unrouted Ork Boyz or Onslaught."
+      },
+      {
+        "title": "Sea of Green",
+        "general": "Place 1 free reinforcement token in this area. *newline* If you have more unrouted units than your opponent, your opponent chooses and routs 1 of his units unless he spends 1 [M].",
+        "unit": ""
+      },
+      {
+        "title": "Mega Nobz",
+        "general": "Your opponent must reroll all [S].",
+        "unit": "Nob/Onslaught: Gain 1 (S)."
+      },
+      {
+        "title": "Biker Nobz",
+        "general": "Your opponent must reroll all [B].",
+        "unit": "Nob/Onslaught: Gain 1 (B)."
+      }
+    ],
+    [
+      {
+        "title": "Weirdboyz",
+        "general": "You and your opponent must reroll all dice.",
+        "unit": "Ork Boyz/Onslaught: During this combat, each time your opponent gains (B), you gain an equal number of (B). Each time your opponent gains (S), you gain an equal number of (S)."
+      },
+      {
+        "title": "Party Wagon",
+        "general": "Place 1 free reinforcement token in this area.",
+        "unit": "Battle Wagon/Kill Kroozer: If you have more unrouted units than your opponent, gain 2 (B) and 2 (S)."
+      },
+      {
+        "title": "Rokkit Wagon",
+        "general": "",
+        "unit": "Battle Wagon/Kill Kroozer: Gain 3 (B). Your opponent may retreat 1 of his units."
+      }
+    ],
+    [
+      {
+        "title": "Snapper Gargant",
+        "general": "",
+        "unit": "Gargant/Kill Kroozer: Discard 1 of your opponent's faceup combat cards."
+      },
+      {
+        "title": "Smasher Gargant",
+        "general": "",
+        "unit": "Gargant/Kill Kroozer: Choose 1 of your opponent's units. Destroy that unit unless your opponent spends dice equal to the chosen unit's command level."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Ork Roks",
+      "general": "While resolving this order, you may move up to 2 of your units through 1 uncontrolled void as if it were a friendly area. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "The Green Tide",
+      "general": "When you reveal this order token, you may resolve it as if it were an Advance, Dominate, or Deploy Order instead. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Werk Fasta!",
+      "general": "While resolving this order, you may purchase your structure before purchasing any units. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Lootin'!",
+      "general": "During this orbital strike, gain 1 [D], and you may spend 1 die of your choice to gain 1 materiel and force your opponent to lose 1 materiel. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Stealin'!",
+      "general": "Enemy bastions do not prevent this orbital strike. During this orbital strike, you may spend 1 [M] to choose and discard 1 of your opponent's asset tokens. Then you gain that asset token. *newline* LIMIT ONCE PER ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Teer It Down!",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the end of an assess damage step of combat, you may discard this card to destroy 1 structure on that world.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Warboss",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* When purchasing a unit, you may discard this card to reduce the materiel cost of that unit by 1 for each reinforcement token you have.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Gitz Dem!",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* When an enemy unit is routed during combat, you may discard this card to destroy that unit.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Mob Up!",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* Instead of revealing an order during the Operations Phase, you may discard this card to resolve an Advance Order in any system containing at least 2 of your units.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Lootin' 'n Stealin'",
+      "general": "Gain 2 materiel then choose a player. He loses 1 asset of his choice.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Letz Get Fightin'",
+      "general": "Either place 2 free Ork Boyz on a friendly world containing a Nob or place 1 free Ork Boyz on any friendly world.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "How We Getz Here?",
+      "general": "Take 1 of your units from any world and place it on any uncontrolled world.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Moar Boyz!",
+      "general": "Gain 2 reinforcement tokens.",
+      "type": "TACTIC"
+    }
+  ],
+  "factionSheet": {
+    "title": "ORKS",
+    "subtitle": "Evil Sunz Clan",
+    "abilities": [
+      {
+        "title": "Ork Spores",
+        "text": "When you resolve a dominate order, you may purchase 1 unit and place it on a friendly world in the active system."
+      }
+    ],
+    "layout": "base",
+    "initialForcesTitle": "Initial Forces",
+    "initialForces": [
+      "Ork Boyz",
+      "Nob",
+      "Factory",
+      "Reinforcement Token",
+      "Materiel"
+    ],
+    "lore": "The beasts are coming! The great green horde, swarming within their twisted hulks, has erupted from the Warp to descend upon us! Nowhere in the Herakon Cluster is safe. Their crude ships shall soon be upon our worlds! *newpara* The Orks cannot be reasoned with. They cannot be turned aside with diplomacy or negotiations. They cannot even be bought! They ravage our worlds for what I can only describe as the simple joy of the fight! How can one stand against such a tide of destruction? What can we do against the greenskins? If we do not receive aid, we will certainly fall, crushed beneath the horde unending! *newpara* Kastor Thrax *newline* Planetary Governor, Medrias",
+    "objectives": [
+      "Good Lootin': Dis 'ere world is full o' dem trukks, wagons, an' tanks da 'umies make, just layin' dere for da takin'!",
+      "Good Fightin': Oi! Down dere is mobs of 'umies just waitin' ter get their 'eads smashed in! Let's get 'em!",
+      "Lotza Boyz!: 'ey Boss! Dis planet's got loads o' boyz just rarin' to get inta' the action!",
+      "Good fer Racin': Down 'at one dere be miles an' miles o' nuthin'! It's perfect fer speedin'! Go get da' trukks!",
+      "Trukk Fuel: We be needin' fuel fer da trukks so we'z can drive fasta to find more fuel fer da trukks, so we'z can drive fasta.",
+      "Gubbins an' Wotnots: Dat scrap world's gots lots a good gubbin's and wotnots fer da mekboyz ta build more stompas wif."
+    ],
+    "units": [
+      "Ork Boyz",
+      "Onslaught Attack Ships",
+      "Nobz",
+      "Battlewagons",
+      "Kill Kroozers",
+      "Gargants"
+    ],
+    "labels": {
+      "objectives": "Objective Tokens",
+      "city": "City",
+      "factory": "Factory",
+      "bastion": "Bastion"
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/base/ork/faction_card/card.jpg"
+    }
+  }
+}

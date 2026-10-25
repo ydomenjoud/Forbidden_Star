@@ -1,0 +1,246 @@
+{
+  "materialsText": [
+    {
+      "label": "Necron Warriors",
+      "value": "4"
+    },
+    {
+      "label": "Scythe-class Harvest Ships",
+      "value": "3"
+    },
+    {
+      "label": "Immortals",
+      "value": "3"
+    },
+    {
+      "label": "Monoliths",
+      "value": "2"
+    },
+    {
+      "label": "Cairn-Class Tomb Ships",
+      "value": "2"
+    },
+    {
+      "label": "C'tan Shard",
+      "value": "1"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Attack Subroutines",
+        "general": "",
+        "unit": "Warrior/Harvest Ship: Gain 1 [M]."
+      },
+      {
+        "title": "Warrior Phalanx",
+        "general": "",
+        "unit": "Warrior/Harvest Ship: Gain 1 [M]."
+      },
+      {
+        "title": "Foretelling Cryptek",
+        "general": "Gain 1 [B], 1 [S], or 1 [M]. *newline* Spend 1 [M] to either take 1 of your units and place it routed on a friendly world containing a structure or take 1 of your command level 0 or command level 1 units from a world containing a structure and place it on this world.",
+        "unit": ""
+      },
+      {
+        "title": "Flayed Ones",
+        "general": "Gain 2 (B).",
+        "unit": "Warrior/Harvest Ship: If your opponent has any [M], gain 1 [M] and force your opponent to lose 1 [M]."
+      },
+      {
+        "title": "Everlasting Conquest",
+        "general": "Gain 1 [M]. *newline* Rally 1 of your units.",
+        "unit": "Warrior/Immortal/Harvest Ship: For each [M] you have, gain either 1 [B] or 1 [S]."
+      }
+    ],
+    [
+      {
+        "title": "Canoptek Swarm",
+        "general": "Gain 1 [D]. *newline* Place 1 free reinforcement token in this area.",
+        "unit": ""
+      },
+      {
+        "title": "Destroyers",
+        "general": "Spend either 1 [S] or 1 [M] to gain 2 (B).",
+        "unit": "Immortal/Harvest Ship: If your opponent has at least 1 routed unit, gain 2 (B)."
+      },
+      {
+        "title": "Lychguard",
+        "general": "Rout 1 of your units. If you do, your opponent chooses and routs 1 of his units.",
+        "unit": "Immortal/Harvest Ship: If your opponent has at least 1 routed unit, gain 2 (S)."
+      },
+      {
+        "title": "Overlord's Will",
+        "general": "Rally 1 of your units. *newline* Reroll up to 2 of your dice.",
+        "unit": ""
+      }
+    ],
+    [
+      {
+        "title": "Monolith Phalanx",
+        "general": "If your units or bastions suffer no damage during this execution round, your opponent chooses and retreats 1 of his units.",
+        "unit": "Monolith/Tomb Ship: Gain 3 (S)."
+      },
+      {
+        "title": "Doomsday Phalanx",
+        "general": "Force your opponent to lose 1 [S].",
+        "unit": "Monolith/Tomb Ship: When an enemy unit is routed during the assess damage step of this execution round, it is destroyed unless your opponent spends 1 [S]."
+      },
+      {
+        "title": "Triarch Praetorians",
+        "general": "Either rally 1 of your units or place 1 free reinforcement token in this area.",
+        "unit": "Warrior/Harvest Ship: For each unrouted Warrior or Harvest Ship, spend up to 1 die to gain 1 [B], 1 [S], or 1 [M]."
+      }
+    ],
+    [
+      {
+        "title": "Shard of the Deceiver",
+        "general": "Play the top card from your combat deck. Do not resolve its abilities, but gain its combat icons during this combat.",
+        "unit": "C'tan Shard: Take your C'tan Shard and place it on any friendly world."
+      },
+      {
+        "title": "Shard of the Nightbringer",
+        "general": "Either gain 3 (B) or destroy 1 command level 0 unit.",
+        "unit": "C'tan Shard/Tomb Ship: Destroy 1 command level 0 or command level 1 unit."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Eternity Gate",
+      "general": "After moving your units, you may take any of your command level 0 or command level 1 units from 1 friendly world containing a structure and place them on any world in the active system containing an unrouted Monolith. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Tomb Worlds",
+      "general": "After you resolve this order, if you purchased at least 1 unit or structure, you may purchase 1 bastion and place it on a friendly or uncontrolled world in either the active system or an adjacent system. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Translocation Crypts",
+      "general": "While resolving this order, you may treat all your cities in the active system as factories. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Reanimation Protocols",
+      "general": "When you reveal this order token, rally all of your units in the active system and all of your ground units in every other system. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Harvest Raid",
+      "general": "During this orbital strike, gain 1 [D], and you may choose 1 command level 0 enemy unit on the world. That unit must suffer damage first during this orbital strike. *newline* LIMIT ONCE PER ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Doom Scythes",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the start of an execution round of combat, you may discard this card and rout up to 2 of your units. If you do, your opponent destroys 1 reinforcement token in this area for each unit you routed.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Remorseless Advance",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the start of an execution round of combat, you may discard this card to resolve 1 additional assess damage step during this execution round.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Deathmarks",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the start of an execution round of combat, you may discard this card to rout 1 enemy command level 0 or command level 1 unit.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Chronomancy",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the start of an execution round of combat, you may discard this card to draw up to 2 combat cards and then discard that many combat cards from your hand.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Wrath of the Void Dragon",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* You may discard this card at the start of an execution round of combat. If you do, you and your opponent suffer an additional 3 damage during this assess damage step.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Resurrection Orb",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* When 1 of your command level 0 or command level 1 units is routed or destroyed during combat, you may discard this card to take it and place it back unrouted in this area at the end of the assess damage step.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Tomb World Awakening",
+      "general": "Purchase 1 structure and place it on a friendly world not containing a structure.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Tomb World Archives",
+      "general": "Purchase 1 combat upgrade.",
+      "type": "TACTIC"
+    }
+  ],
+  "factionSheet": {
+    "title": "NECRONS",
+    "subtitle": "Sautekh Dynasty",
+    "abilities": [
+      {
+        "title": "Dark Portal",
+        "text": "When you resolve a dominate order, you may take any of your units from 1 world and place them on a friendly world containing a structure in the active system."
+      }
+    ],
+    "layout": "gif",
+    "initialForcesTitle": "Starting Forces",
+    "initialForces": [
+      "Warriors",
+      "Immortal",
+      "Factory",
+      "Forge Token",
+      "Reinforcement Token",
+      "Materiel"
+    ],
+    "lore": "You have ruled this galaxy for ten thousand of your years, and yet have so little to show for your efforts. Such failure must be as depressing to bear as it is shameful to behold! *newpara* With a dozen legions of Immortals at my command, I could humble the stars themselves. One will be more than sufficient to crush your pathetic worlds. *newpara* Order. Unity. Obedience. We taught the galaxy these things long ago, and we will do so again. *newpara* Imotekh the Storm Lord *newline* Phaeron of the Sautekh Dynasty",
+    "objectives": [
+      "Former Glory: It is time to make the jewel of our ancient rule over this sector shine like its former magnificence once again.",
+      "Inactive Tomb World: With the support of the sleeping legions on this world we will destroy our mortal foes.",
+      "Touch Of The C'tan: A mighty C'tan Star God once escaped from his eternal prison on this world. A large portion of its essence is still located on this world.",
+      "Ripe For Harvest: This former core world is ripe for a harvest. It will be ours again soon!",
+      "Ancient Weapon: There is an ancient Gauss Annihilator cannon buried on this world, we should retrieve it for our purposes.",
+      "Arcane Knowledge: The knowledge kept on this world may not fall into the hands of the mortals. Protect it at all costs."
+    ],
+    "units": [
+      "Warriors",
+      "Scythe-Class Harvest Ships",
+      "Immortals",
+      "Monoliths",
+      "Cairn-Class Tomb Ships",
+      "C'tan Star God Shard"
+    ],
+    "labels": {
+      "objectives": "Objective Tokens",
+      "city": "City",
+      "factory": "Factory",
+      "bastion": "Bastion"
+    },
+    "frontAbility": {
+      "box": [
+        706,
+        324,
+        350,
+        236
+      ],
+      "title": [
+        720,
+        334,
+        320,
+        40
+      ],
+      "subtitle": [
+        720,
+        376,
+        320,
+        28
+      ],
+      "body": [
+        706,
+        408,
+        350,
+        140
+      ]
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/gif/necron/faction_card/card.jpg"
+    }
+  }
+}

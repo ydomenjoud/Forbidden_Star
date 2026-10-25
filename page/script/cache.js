@@ -39,9 +39,10 @@
     return pending;
   }
   async function json(url, options) { return (await request(url,options)).value; }
-  async function fingerprint(urls) {
+  // `resolve` maps a logical source path to the URL actually fetched; the hash keeps the logical path.
+  async function fingerprint(urls, resolve) {
     if (!root.crypto || !root.crypto.subtle) throw new Error('Для печати откройте справочник по HTTPS или через локальный модуль.');
-    var paths = urls.slice().sort(), sources = await Promise.all(paths.map(function (url) { return request(url); }));
+    var paths = urls.slice().sort(), sources = await Promise.all(paths.map(function (url) { return request(resolve ? resolve(url) : url); }));
     var text = paths.map(function (url,index) { return url+'\n'+sources[index].text; }).join('\n');
     var digest = await root.crypto.subtle.digest('SHA-256',new TextEncoder().encode(text));
     return Array.from(new Uint8Array(digest),function (b) { return b.toString(16).padStart(2,'0'); }).join('');

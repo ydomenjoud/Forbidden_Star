@@ -1,0 +1,877 @@
+[
+  {
+    "Category": "Jeu de base",
+    "items": [
+      {
+        "SubCategory": "Général",
+        "items": [
+          {
+            "Faction": "Précisions de règles",
+            "picture": "pictures/icons/general_3.png",
+            "items": [
+              {
+                "Phrase": "Si toutes les unités des deux joueurs sont détruites avant la fin du combat, qui gagne ?",
+                "Main": "Si les deux camps perdent toutes leurs unités et tous leurs bastions au cours du combat, le combat prend fin immédiatement, puisqu'il ne reste personne pour le mener. Si cela se produit avant l'étape d'assignation des dégâts, ne résolvez ni le reste du round de résolution ni aucune autre étape du combat. Si le défenseur possède une structure dans cette zone, il conserve le contrôle de la structure et de la planète."
+              },
+              {
+                "Phrase": "De nombreuses cartes de complot indiquent : « Au lieu de révéler un ordre pendant la phase d'Opérations... » (par ex. Mob Up!). Un joueur peut-il utiliser une telle carte de complot s'il n'a aucun jeton d'ordre sur le plateau de jeu, ou s'il n'a aucun jeton d'ordre au sommet d'une pile ?",
+                "Main": "Un joueur doit avoir la possibilité de révéler un ordre (en ayant un sur le plateau, au sommet d'une pile) pour utiliser toute capacité du type « Au lieu de révéler un ordre pendant la phase d'Opérations… »."
+              },
+              {
+                "Phrase": "Les jetons de renfort sont-ils limités à 3, même en combat ?",
+                "Main": "L'intention est que chaque joueur ne puisse avoir que 3 jetons de chaque type dans sa zone de jeu à la fois. Si un joueur a 3 jetons dans sa zone de jeu, il peut quand même jouer une carte qui ajoute un jeton au combat depuis la réserve. S'il n'y a plus de jetons dans la réserve, l'effet de la carte est perdu, car on ne peut plus en gagner."
+              },
+              {
+                "Phrase": "Les jetons de renfort comptent-ils comme une unité précise pour les effets des cartes de combat ?",
+                "Main": "Oui. Ce sont des unités de niveau 0, traitées comme une figurine en plastique pour tous les effets durant l'étape d'Exécution du combat. Elles peuvent battre en retraite ou rester jusqu'à la fin du combat, apportent du moral lors de l'étape de Résolution du combat, et retournent dans la réserve lors de la phase de remise en ordre."
+              },
+              {
+                "Phrase": "Puis-je détruire une unité en déroute pour appliquer l'effet d'une carte ?",
+                "Main": "Si l'effet d'une carte ne précise pas « en déroute » ou « qui n'est pas en déroute », alors oui, vous pouvez choisir cette unité."
+              },
+              {
+                "Phrase": "Lorsque je gagne ou déplace une unité (en combat) à cause de l'effet d'une carte de combat, est-ce que je gagne ou perds ses dés ?",
+                "Main": "Non, sauf si la carte l'indique expressément."
+              },
+              {
+                "Phrase": "Y a-t-il une différence entre les tempêtes du Warp verticales et horizontales ?",
+                "Main": "Non. Il n'y a aucune différence entre les tempêtes du Warp. Faites pivoter la carte d'événement et déplacez la tempête du Warp en conséquence."
+              },
+              {
+                "Phrase": "Si vous piochez plusieurs cartes d'événement, devez-vous toutes les montrer ?",
+                "Main": "Non. Révélez simplement celle que vous allez jouer."
+              },
+              {
+                "Phrase": "Puis-je utiliser plusieurs cartes d'amélioration d'ordre sur le même ordre ?",
+                "Main": "Oui. Plusieurs cartes d'amélioration d'ordre peuvent être utilisées pendant le même ordre."
+              },
+              {
+                "Phrase": "Des zones situées dans des systèmes différents mais partageant une bordure dorée sont-elles toujours considérées comme adjacentes ?",
+                "Main": "Oui. Mais soyez prudent, car certains effets de cartes précisent aussi « système actif »."
+              },
+              {
+                "Phrase": "Puis-je placer un ordre que je ne peux pas résoudre (par ex. Planification dans un système sans mes unités) uniquement pour bloquer ?",
+                "Main": "Oui. Mais les autres restrictions de placement des ordres s'appliquent toujours (comme les zones alliées dans un système adjacent)."
+              },
+              {
+                "Phrase": "Dois-je utiliser les ordres améliorés si je résous un ordre ?",
+                "Main": "Non. Un ordre amélioré peut être utilisé une fois par round, et vous devez déclarer au moment approprié (indiqué sur l'amélioration d'ordre) que cet ordre sera un ordre renforcé."
+              },
+              {
+                "Phrase": "Si je choisis de ne pas résoudre l'ordre, dois-je le montrer ?",
+                "Main": "Oui. Vous devez toujours révéler l'ordre avant de choisir de le résoudre ou non."
+              }
+            ]
+          },
+          {
+            "Faction": "Ordre d'Avancée",
+            "picture": "pictures/icons/advance.png",
+            "items": [
+              {
+                "Phrase": "Puis-je attaquer avec plus d'unités que la capacité de la zone ?",
+                "Main": "Oui. Les limites de capacité d'unités sont vérifiées à la fin de l'ordre. L'ordre d'Avancée vous limite seulement à un maximum de 5 unités par déplacement vers une même zone, et à 8 dés par combat."
+              },
+              {
+                "Phrase": "Un joueur est-il éliminé dès que sa dernière zone alliée est disputée ?",
+                "Main": "Non. Le combat se termine, puis on détermine si le joueur est éliminé."
+              },
+              {
+                "Phrase": "Puis-je déplacer les mêmes unités deux fois avec deux ordres d'Avancée ?",
+                "Main": "Oui, tant que ces unités ne sont pas en déroute. Une unité peut participer à plus d'un combat par round."
+              },
+              {
+                "Phrase": "Les vaisseaux situés dans des vides adjacents contribuent-ils au combat terrestre ?",
+                "Main": "Non. Une action d'Avancée ne peut créer qu'une seule zone disputée, et le combat (dans le vide ou au sol) oppose les unités de cette unique zone. Les frappes orbitales permettent aux vaisseaux d'attaquer des unités terrestres dans des zones adjacentes, à condition qu'aucune autre zone disputée n'ait été créée par l'ordre d'Avancée."
+              },
+              {
+                "Phrase": "Des unités peuvent-elles traverser un monde non contrôlé lors d'une seule action d'Avancée, si une autre unité y reste pour le rendre allié ?",
+                "Main": "Non. Le déplacement terrestre exige de tracer un chemin légal au DÉBUT de l'étape de déplacement terrestre. Cela signifie que vous devez vous arrêter sur les mondes non contrôlés si vous ne pouvez pas les contourner par une zone alliée."
+              },
+              {
+                "Phrase": "Puis-je tracer un chemin légal permettant à une unité de traverser plus de 2 systèmes (pour contourner le Warp ou éviter un combat) ?",
+                "Main": "Non. Vous ne pouvez tracer un chemin qu'à travers le système actuel de l'unité et le système actif. Soit 2 systèmes au maximum."
+              },
+              {
+                "Phrase": "Puis-je tracer un chemin légal permettant à une unité de battre en retraite à travers plus de 2 systèmes (pour contourner le Warp) ?",
+                "Main": "Non. La retraite est un type de déplacement et peut s'effectuer soit dans le système actif, soit vers un système adjacent doté d'un chemin légal, qui n'est pas le système d'où l'attaquant est venu."
+              },
+              {
+                "Phrase": "Puis-je déplacer des unités terrestres d'un système à l'autre sans vaisseau ?",
+                "Main": "Oui. Lorsque des planètes sont adjacentes, vous pouvez vous déplacer entre elles, quel que soit le système auquel elles appartiennent."
+              },
+              {
+                "Phrase": "Lorsque je veux déplacer mes unités vers un système adjacent, *toutes* les unités qui se déplacent doivent-elles aller dans ce système, ou puis-je déplacer des unités à l'intérieur du système adjacent (pour les rapprocher du système actif) ?",
+                "Main": "Non. Les déplacements partiels ne sont pas autorisés. Tout déplacement doit se terminer dans le système activé."
+              },
+              {
+                "Phrase": "Puis-je déplacer un vaisseau vers un combat, puis déplacer des unités terrestres à travers ce même vaisseau vers des mondes alliés ou non contrôlés ?",
+                "Main": "Non. Votre vaisseau a créé une zone disputée, et vos unités terrestres ne peuvent donc pas tracer un chemin légal à travers des zones alliées avant la résolution du combat."
+              },
+              {
+                "Phrase": "Combien d'unités puis-je déplacer avec un ordre d'Avancée ?",
+                "Main": "Vous pouvez déplacer un nombre illimité d'unités, mais seules 5 peuvent finir dans une zone disputée. Elles doivent toutes disposer d'un chemin légal au début du déplacement, et vous ne pouvez créer qu'1 seule zone disputée. À la fin du déplacement, toutes les unités qui dépassent la capacité de la zone sont détruites."
+              },
+              {
+                "Phrase": "Lorsque je déplace des vaisseaux dans le système, vont-ils tous dans un même vide ?",
+                "Main": "Non. Chaque vaisseau choisit son propre vide, tant que cela ne crée pas plus d'1 zone disputée."
+              }
+            ]
+          },
+          {
+            "Faction": "Ordre de Déploiement",
+            "picture": "pictures/icons/deploy.png",
+            "items": [
+              {
+                "Phrase": "Puis-je détruire volontairement des unités pour les déployer à nouveau ?",
+                "Main": "En quelque sorte. Vous ne pouvez pas retirer des figurines existantes. Cependant, vous pouvez les détruire à la fin d'un ordre de Déploiement si vous dépassez la capacité d'unités de leur zone. Gardez à l'esprit que de nouvelles unités doivent être placées pour y parvenir.\nUn ordre d'Avancée peut produire le même résultat si vous déplacez assez d'unités vers la même zone pour dépasser sa capacité d'unités."
+              },
+              {
+                "Phrase": "Puis-je déployer des unités dans une zone qui a déjà atteint sa capacité d'unités ?",
+                "Main": "Oui. Cependant, vous devez détruire les unités qui dépassent la capacité d'unités de cette zone."
+              },
+              {
+                "Phrase": "Puis-je retirer volontairement des structures pour construire une structure différente sur ce monde ?",
+                "Main": "Non. Quelqu'un d'autre peut les détruire par des effets, mais sauf carte dont l'effet dit le contraire, une fois que vous avez construit une structure, on ne peut plus rien construire sur ce monde."
+              },
+              {
+                "Phrase": "Puis-je détruire volontairement des structures sur un monde allié ?",
+                "Main": "Non. Quelqu'un d'autre peut les détruire par des effets, mais sauf carte dont l'effet dit le contraire, une fois que vous avez construit une structure, on ne peut plus rien construire sur ce monde."
+              },
+              {
+                "Phrase": "Puis-je déployer des vaisseaux dans un vide ennemi et déclencher un combat ?",
+                "Main": "Non. Vous ne pouvez déployer que dans des zones non contrôlées ou alliées du système actif.\nC'est un problème pour les factions autres que les Eldars, car elles n'ont qu'un seul vide sur leur tuile d'origine. Un ennemi peut vous empêcher d'acheter des vaisseaux en prenant ce vide, si vous n'avez qu'1 usine sur la tuile d'origine."
+              },
+              {
+                "Phrase": "Puis-je utiliser plusieurs jetons de forge pour l'achat d'une unité ?",
+                "Main": "Plus d'1 jeton de forge ne peut être utilisé que dans ce scénario :\n- Le premier sert à abaisser de 1 le niveau de commandement requis de l'unité\n- Le second sert à satisfaire l'exigence de jeton de forge (par ex. l'exigence du Titan)"
+              },
+              {
+                "Phrase": "Peut-on utiliser un jeton de cache pour ramener le coût d'un achat à 0 ?",
+                "Main": "Oui. En gardant à l'esprit qu'un seul jeton de cache peut être utilisé par unité déployée."
+              },
+              {
+                "Phrase": "Si j'ai deux usines dans un système, le nombre maximal d'unités que je peux acheter repose-t-il sur l'usine ayant la plus grande capacité d'unités ?",
+                "Main": "Non. La limite de déploiement est la capacité d'unités cumulée de tous les mondes alliés dotés d'une usine dans le système actif."
+              }
+            ]
+          },
+          {
+            "Faction": "Ordre de Domination",
+            "picture": "pictures/icons/dominate.png",
+            "items": [
+              {
+                "Phrase": "Puis-je encore résoudre le bonus de Domination de ma faction si je choisis de placer le jeton d'ordre au-dessus de la pioche d'événements au lieu de le résoudre normalement ?",
+                "Main": "Non. En plaçant le jeton d'ordre au-dessus de votre pioche d'événements, vous avez choisi de ne pas résoudre la Domination."
+              },
+              {
+                "Phrase": "Est-ce que je gagne encore les atouts des mondes alliés si je choisis de placer le jeton d'ordre au-dessus de la pioche d'événements au lieu de le résoudre normalement ?",
+                "Main": "Non. En plaçant le jeton d'ordre au-dessus de votre pioche d'événements, vous avez choisi de ne pas résoudre la Domination."
+              }
+            ]
+          },
+          {
+            "Faction": "Ordre de Planification",
+            "picture": "pictures/icons/strategize.png",
+            "items": [
+              {
+                "Phrase": "Les résultats de la Planification sont-ils des informations publiques ?",
+                "Main": "Oui. Vous montrez face visible les cartes achetées et celles retirées."
+              }
+            ]
+          },
+          {
+            "Faction": "Frappe orbitale",
+            "picture": "pictures/icons/orbital_strike.png",
+            "items": [
+              {
+                "Phrase": "Les planètes doivent-elles être adjacentes à mes vaisseaux pour effectuer une frappe orbitale ?",
+                "Main": "Oui. Et dans le même système (actif). Cela signifie que la planète d'angle d'un système à 3 mondes ne peut normalement pas être ciblée par une frappe orbitale."
+              },
+              {
+                "Phrase": "Les dégâts d'une frappe orbitale s'appliquent-ils à toutes les unités ?",
+                "Main": "Non. Les dégâts s'appliquent comme en combat. Si vous avez obtenu 4 }, votre adversaire subit 4 dégâts. Votre adversaire doit assigner ces dégâts et détruire les unités en conséquence. Si les dégâts n'étaient pas égaux ou supérieurs aux points de vie de l'unité, cette unité n'est pas mise en déroute."
+              },
+              {
+                "Phrase": "Les frappes orbitales sont-elles limitées à 8 dés ?",
+                "Main": "Oui"
+              },
+              {
+                "Phrase": "Puis-je effectuer une frappe orbitale sur une planète qui n'a qu'une structure ?",
+                "Main": "Oui. Vous pouvez toujours choisir d'effectuer une frappe orbitale sur n'importe quel monde ennemi et utiliser toutes les cartes d'amélioration d'ordre que vous voulez. Si la structure est une cité ou une usine, comme elles n'ont pas de points de vie, elles ne peuvent pas être détruites."
+              },
+              {
+                "Phrase": "Puis-je prendre le contrôle de planètes en détruisant toutes les unités terrestres par des frappes orbitales ?",
+                "Main": "Non. Les structures conservent leur appartenance même si toutes les unités terrestres sont détruites par la frappe orbitale."
+              }
+            ]
+          },
+          {
+            "Faction": "Structures",
+            "picture": "pictures/icons/general_2.png",
+            "items": [
+              {
+                "Phrase": "Que se passe-t-il lorsqu'on assigne des dégâts à un bastion ?",
+                "Main": "Les bastions subissent des dégâts comme une unité, mais ne peuvent pas être mis en déroute comme elle. Cela signifie qu'ils sont toujours disponibles pour se voir assigner des dégâts. Si vous assignez 3 dégâts ou plus, ils sont détruits. Cela implique qu'ils peuvent absorber jusqu'à 2 dégâts par round. Comme vous devez assigner tous les dégâts à une seule cible avant de passer à la suivante, vous assignerez souvent les dégâts au bastion en dernier afin qu'il subsiste. Attention toutefois au moral ennemi, car c'est un moyen facile de céder votre structure à votre adversaire."
+              },
+              {
+                "Phrase": "Un joueur possédant un bastion peut-il le mettre en déroute pour l'effet d'une carte (par ex. Appel du Chaos) ?",
+                "Main": "Non. Les bastions ne peuvent être mis en déroute par aucun effet."
+              },
+              {
+                "Phrase": "Puis-je capturer un bastion ?",
+                "Main": "Si vous remportez un combat grâce au moral, vous prenez le contrôle du bastion."
+              },
+              {
+                "Phrase": "Un bastion peut-il combattre sans aucune autre unité ?",
+                "Main": "Oui. Il fournit 2 dés et active tout de même certaines cartes."
+              },
+              {
+                "Phrase": "Un bastion peut-il combattre lorsqu'il se trouve sur le même monde que seulement des unités en déroute ?",
+                "Main": "Oui. Cela empêche les unités en déroute de battre en retraite. Le bastion fournit toujours 2 dés et les unités en déroute n'en fournissent aucun."
+              },
+              {
+                "Phrase": "Un bastion compte-t-il comme une unité pour le placement des jetons de renfort ?",
+                "Main": "Non. Vous avez le droit d'utiliser 1 jeton par unité, et les bastions ne sont pas des unités."
+              },
+              {
+                "Phrase": "Puis-je ajouter des jetons de renfort si, dans le combat, il y a un bastion avec seulement des unités en déroute ?",
+                "Main": "Oui. Les règles n'exigent pas que les unités ne soient pas en déroute pour compter dans le maximum de jetons pouvant être placés dans le combat."
+              }
+            ]
+          },
+          {
+            "Faction": "Combats et retraites",
+            "picture": "pictures/icons/retreat.png",
+            "items": [
+              {
+                "Phrase": "Puis-je battre en retraite si je me suis déplacé via une carte de combat ou un effet d'amélioration d'ordre ?",
+                "Main": "Si aucune des unités du combat ne s'est déplacée vers la zone disputée dans le cadre de l'ordre d'Avancée (c'est-à-dire qu'elles se sont déplacées vers cette zone dans le cadre du mouvement accordé par l'ordre d'Avancée), elles ne peuvent pas battre en retraite après ou pendant le combat. Cela signifie aussi qu'elles ne peuvent pas battre en retraite grâce aux capacités de retraite des cartes de combat des joueurs ou des adversaires. Seules les cartes de « déplacement » permettent de sortir l'unité du combat. Ainsi, les unités qui engagent le combat avec des cartes comme Serpent d'Onde, Roks orks, Capsules de largage, Spores mycétiques ou Se délecter du massacre ne peuvent pas battre en retraite si elles perdent le combat, et sont donc détruites."
+              },
+              {
+                "Phrase": "En tant qu'attaquant, dois-je toujours battre en retraite vers l'endroit d'où mes unités sont venues ?",
+                "Main": "Si des unités se sont déplacées vers la zone disputée via un ordre d'Avancée, toutes les unités attaquantes doivent se déplacer vers une seule zone d'où au moins une unité est partie pour engager le combat. Si toutes les unités ont été placées dans la zone disputée par un effet autre qu'un ordre d'Avancée, aucune unité attaquante ne peut battre en retraite et elles sont toutes détruites. Notez qu'il est sans importance qu'une zone soit alliée ou non contrôlée au moment de la retraite de l'attaquant."
+              },
+              {
+                "Phrase": "En défense, puis-je choisir de battre en retraite vers une zone non contrôlée s'il existe un chemin légal vers une zone alliée ?",
+                "Main": "Le joueur qui défend doit toujours battre en retraite vers la zone alliée si un chemin légal existe, puis détruire des unités jusqu'à atteindre la capacité d'unités de cette zone. S'il n'existe aucun chemin légal vers une zone alliée mais qu'il en existe un vers une zone non contrôlée, les unités en retraite se déplacent vers la zone non contrôlée."
+              },
+              {
+                "Phrase": "En défense, puis-je choisir de battre en retraite vers une zone non contrôlée s'il y a une zone alliée sur un chemin légal, mais qu'elle est à sa capacité d'unités maximale ?",
+                "Main": "Le joueur qui défend doit toujours battre en retraite vers la zone alliée si un chemin légal existe, puis détruire des unités jusqu'à atteindre la capacité d'unités de cette zone. S'il n'existe aucun chemin légal vers une zone alliée mais qu'il en existe un vers une zone non contrôlée, les unités en retraite se déplacent vers la zone non contrôlée."
+              }
+            ]
+          },
+          {
+            "Faction": "Unités en déroute",
+            "picture": "pictures/icons/routed.png",
+            "items": [
+              {
+                "Phrase": "Peut-on déplacer une unité en déroute par un ordre ou l'effet d'une carte ?",
+                "Main": "Non. Les règles interdisent explicitement de déplacer et de placer une unité en déroute. Les unités en déroute ne peuvent que battre en retraite. La seule exception à cette règle est Prescience, en raison de l'expression singulière « toutes les unités »."
+              },
+              {
+                "Phrase": "Les unités en déroute battent-elles automatiquement en retraite lorsqu'elles sont attaquées ?",
+                "Main": "Si vous attaquez une planète défendue UNIQUEMENT par des unités en déroute et sans structure, elles battent toutes automatiquement en retraite si elles peuvent respecter les règles de retraite, sinon elles sont détruites. Aucun combat n'a lieu."
+              },
+              {
+                "Phrase": "Si je n'ai que des unités en déroute et qu'elle subit des dégâts supplémentaires, est-elle détruite ?",
+                "Main": "Pas nécessairement. Les unités en déroute doivent quand même subir des dégâts égaux ou supérieurs à leurs points de vie pour être détruites."
+              },
+              {
+                "Phrase": "Les unités terrestres peuvent-elles traverser des vaisseaux en déroute ?",
+                "Main": "Oui. Les vaisseaux en déroute créent toujours une zone alliée."
+              },
+              {
+                "Phrase": "Les unités en déroute peuvent-elles récupérer des objectifs ?",
+                "Main": "Oui. En déroute ou non, cela n'a aucune importance pour la récupération des objectifs."
+              },
+              {
+                "Phrase": "Si je gagne un combat avec des unités en déroute, mes unités se rallient-elles immédiatement ?",
+                "Main": "Non. Attendez la fin du round."
+              },
+              {
+                "Phrase": "Une unité avec 1 point de vie peut-elle être mise en déroute ?",
+                "Main": "Oui. Même si elles n'ont subi qu'1 dégât, elles peuvent être mises en déroute par des effets de cartes ou des retraites."
+              }
+            ]
+          },
+          {
+            "Faction": "Mise en place",
+            "picture": "pictures/icons/general.png",
+            "items": [
+              {
+                "Phrase": "Dans une partie à 2 joueurs, la 3e tuile placée par chaque joueur ne comporte-t-elle aucun objectif ?",
+                "Main": "Oui. Vous devez remplir les emplacements d'objectifs avec des objectifs uniques lorsque vous placez une tuile ; comme il n'y a qu'1 objectif unique de l'adversaire par tuile et que vous n'avez que 2 objectifs à placer dans une partie à 2 joueurs, votre dernière tuile ne comportera aucun objectif."
+              },
+              {
+                "Phrase": "Dans une partie à 3 joueurs, la 3e tuile placée par chaque joueur ne comporte-t-elle aucun objectif ?",
+                "Main": "Oui. Vous devez remplir tous les emplacements d'objectifs lorsque vous placez une tuile ; comme il y en a 2 par tuile et que vous n'avez que 4 objectifs à placer dans une partie à 3 joueurs, votre dernière tuile ne comportera aucun objectif."
+              },
+              {
+                "Phrase": "Est-ce que je contrôle les zones de ma tuile de faction sans y avoir d'unités ni de structures ?",
+                "Main": "Non. Les tuiles de faction n'ont rien de spécial, si ce n'est qu'elles constituent une option de mise en place garantie offrant beaucoup de capacité d'unités et d'atouts. Il faut toujours une unité ou une structure pour rendre une zone alliée."
+              },
+              {
+                "Phrase": "Dois-je placer ma tuile de faction en premier ?",
+                "Main": "Non. Vous pouvez choisir n'importe quelle autre tuile en premier."
+              },
+              {
+                "Phrase": "Mes adversaires peuvent-ils m'enfermer dans un coin avec le placement de leurs tempêtes du Warp ?",
+                "Main": "Oui. La seule limite est que deux tempêtes du Warp ne peuvent pas être empilées."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "SubCategory": "Cartes de combat",
+        "items": [
+          {
+            "Faction": "Space Marines",
+            "picture": "pictures/icons/space_marine.png",
+            "items": [
+              {
+                "Phrase": "Avancée blindée",
+                "Main": "Q : Les dégâts des deux « étapes d'évaluation des dégâts » se cumulent-ils ?\nR : Non. Les dégâts ne se cumulent pas ; il s'agit de deux occurrences de dégâts distinctes.\n\nQ : Si une unité a 3 points de vie en combat et que l'ennemi lui inflige 2 dégâts, que se passe-t-il lorsque la capacité d'Avancée blindée est résolue ? L'unité est-elle détruite ?\nR : L'unité subirait 2 occurrences de 2 dégâts. Si elle n'est pas en déroute, la première occurrence la mettrait en déroute. La seconde ne ferait rien, puisqu'elle n'est pas égale ou supérieure aux points de vie de l'unité.\n\nQ : L'étape d'évaluation des dégâts supplémentaire s'applique-t-elle aux deux camps ou seulement à votre adversaire ?\nR : Les deux camps résolvent deux fois l'étape d'évaluation des dégâts. Gardez à l'esprit que les effets sans « doit » sont facultatifs.\n\nQ : Les jetons de combat sont-ils utilisés lors des deux étapes d'évaluation des dégâts ?\nR : Oui. Ils ne sont défaussés qu'à la fin de la seconde étape d'évaluation des dégâts."
+              },
+              {
+                "Phrase": "Briser la ligne",
+                "Main": "Q : Puis-je cibler la carte choisie dans la main du défenseur ?\nR : Non. Briser la ligne ne s'applique qu'aux cartes face visible. Jouer cette carte en tant qu'attaquant pour votre première carte « gaspillerait » l'effet, puisqu'aucune carte face visible n'est présente à ce moment.\n\nQ : Cela peut-il annuler des effets qui durent tout le combat ?\nR : Oui. Briser la ligne peut annuler des effets en cours, comme par ex. Weirdboyz. La plupart des effets sont résolus immédiatement et ne peuvent pas être annulés par la suite."
+              },
+              {
+                "Phrase": "Assaut en capsule de largage",
+                "Main": "Q : Lance-t-on des dés lorsqu'on déplace le Marine à la suite de l'effet de bataille de cette carte ?\nR : Non. Les dés fournis par les unités ne sont lancés que lors de l'étape de préparation du combat, avant les rounds d'exécution."
+              },
+              {
+                "Phrase": "Gloire et mort",
+                "Main": "Q : Qui choisit le dé à perdre ?\nR : Sauf précision explicite, c'est le propriétaire de la carte de combat qui fait le choix."
+              },
+              {
+                "Phrase": "Reconnaissance",
+                "Main": "Q : Si je défends, ai-je encore droit aux jetons d'attaque/de défense ?\nR : Oui. Chaque paragraphe est traité séparément, vous pouvez donc choisir vos deux jetons."
+              }
+            ]
+          },
+          {
+            "Faction": "Chaos",
+            "picture": "pictures/icons/chaos.png",
+            "items": [
+              {
+                "Phrase": "Chaos uni",
+                "Main": "Cette réponse repose sur la position de FFG, selon une logique de « règles telles qu'écrites ».\n\nQ : Mon adversaire peut-il choisir de mettre en déroute une unité déjà en déroute ?\nR : Non. Les règles précisent qu'on ne peut pas mettre en déroute une unité déjà en déroute.\n\nQ : Si mon adversaire n'a aucune unité à mettre en déroute, est-ce que je gagne un dé ?\nR : Oui.\n\nQ : Si mon adversaire n'a qu'un bastion, est-ce que je gagne un dé ?\nR : Oui.\n\nQ : Dois-je annoncer le dé que je choisirais avant que mon adversaire décide s'il met une unité en déroute ?\nR : Non. Votre adversaire doit choisir de mettre ou non une de ses unités en déroute avant que le joueur du Chaos choisisse le dé qu'il gagne grâce à la capacité générale de cette carte."
+              },
+              {
+                "Phrase": "Rage de Khorne",
+                "Main": "Q : Mon adversaire peut-il choisir de mettre en déroute une unité déjà en déroute ?\nR : Non. Cependant, si toutes ses unités sont déjà en déroute, il n'y a alors aucun autre effet."
+              },
+              {
+                "Phrase": "Appel du Chaos",
+                "Main": "Ces réponses reposent sur la position de FFG, selon une logique de « règles telles qu'écrites ».\n\nQ : Mon adversaire peut-il choisir de mettre en déroute une unité déjà en déroute pour gagner le dé ?\nR : Non. Les règles précisent qu'on ne peut pas mettre en déroute une unité déjà en déroute.\n\nQ : Si mon adversaire n'a aucune unité à mettre en déroute, est-ce que je gagne un Cultiste/Iconoclaste gratuit ?\nR : Oui.\n\nQ : Si mon adversaire n'a qu'un bastion, est-ce que je gagne un Cultiste/Iconoclaste gratuit ?\nR : Oui.\n\nQ : Le cultiste est-il ajouté au combat ou simplement placé sur le monde ?\nR : Le nouveau cultiste entre dans le combat, mais il ne lance pas de dés supplémentaires.\n\nQ : Si mon adversaire a déjà 8 dés, peut-il quand même mettre une unité en déroute pour m'empêcher de gagner une unité gratuite ?\nR : Oui. Le « ne… pas » ne se rapporte qu'à « choisir 1 de ses unités et la mettre en déroute »."
+              },
+              {
+                "Phrase": "Marque de Nurgle",
+                "Main": "Cette réponse repose sur la dernière page du livret de règles.\n\nQ : Que se passe-t-il si mon adversaire n'a aucune unité en déroute à détruire ?\nR : Le Chaos gagne automatiquement 2 @."
+              },
+              {
+                "Phrase": "Marque de Tzeentch",
+                "Main": "Q : Puis-je remplacer un cultiste en déroute par un Space Marine du Chaos ?\nR : Oui. De plus, le Space Marine du Chaos nouvellement placé n'est pas en déroute.\n\nQ : Puis-je remplacer un jeton de renfort par un Space Marine du Chaos ?\nR : Oui. Pendant un combat, les jetons de renfort sont traités à tous égards comme des unités de niveau de commandement 0."
+              }
+            ]
+          },
+          {
+            "Faction": "Orks",
+            "picture": "pictures/icons/ork.png",
+            "items": [
+              {
+                "Phrase": "Mek Boyz",
+                "Main": "Q : Est-ce que je prends une carte dans la main de mon adversaire ?\nR : Non, vous prenez une carte parmi les cartes restantes de la pioche de combat."
+              },
+              {
+                "Phrase": "Weirdboyz",
+                "Main": "Q : Si j'en joue deux, est-ce que je reçois 2 fois les jetons ?\nR : Oui. Ce sont deux effets durables qui se cumulent."
+              }
+            ]
+          },
+          {
+            "Faction": "Eldars",
+            "picture": "pictures/icons/eldar.png",
+            "items": [
+              {
+                "Phrase": "Raid corsaire",
+                "Main": "Q : Puis-je effectuer deux frappes orbitales avec cette amélioration ?\nR : Non. Une frappe orbitale n'est pas un combat, donc l'ordre renforcé ne peut pas être utilisé."
+              },
+              {
+                "Phrase": "Frapper et disparaître",
+                "Main": "Q : Puis-je me déplacer vers une planète en diagonale ?\nR : Non. Il est écrit « zone adjacente », ce qui signifie qu'elles doivent partager une bordure.\n\nQ : Si je déplace ma dernière unité, est-ce que j'inflige encore des dégâts ?\nR : Oui, l'étape d'évaluation des dégâts a quand même lieu, après quoi vous passez à la phase de Résolution.\n\nQ : Si je déplace ma dernière unité, cette unité est-elle encore attaquée durant le round d'exécution ?\nR : Non. L'unité ne fait plus partie du combat ; même si le round d'exécution se termine et que l'étape d'évaluation des dégâts est effectuée, l'unité qui a battu en retraite ne peut pas être ciblée par les dégâts."
+              },
+              {
+                "Phrase": "Lance psychique",
+                "Main": "Q : Mon adversaire peut-il choisir de vous laisser défausser une carte face visible s'il n'en a aucune (la Lance psychique jouée au 1er round en tant qu'attaquant déclenche ce cas) ?\nR : Oui. Dans ce cas, les Eldars ne gagneraient pas 4 #."
+              },
+              {
+                "Phrase": "Guidance du Voyant des Esprits",
+                "Main": "Q : Cela ne s'applique-t-il qu'aux unités Eldars ?\nR : TOUTES les unités, y compris celles de votre adversaire, sont immunisées contre les dégâts.\n\nQ : Un bastion est-il lui aussi protégé contre les dégâts ?\nR : Non. Les bastions ne sont pas des unités pour la résolution des effets de bataille."
+              },
+              {
+                "Phrase": "Serpent d'Onde",
+                "Main": "Q : Puis-je déplacer des unités de niveau de commandement 0 et 1 n'importe où sur le plateau ?\nR : Non, uniquement vers une zone adjacente à la zone de combat. Comme il s'agit d'un déplacement, cela ne peut pas inclure des unités en déroute, mais cela peut déclencher un combat comme indiqué sur la carte.\n\nQ : Puis-je utiliser Serpent d'Onde une seconde fois et créer une seconde zone disputée ?\nR : Non. Le joueur Eldar ne peut déplacer des unités que vers une seule zone disputée, quel que soit le nombre de cartes Serpent d'Onde qu'il joue pendant le combat.\n\nQ : Puis-je utiliser Serpent d'Onde une seconde fois et me déplacer vers un autre endroit que la première fois ?\nR : Oui."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "SubCategory": "Cartes d'événement",
+        "items": [
+          {
+            "Faction": "Space Marines",
+            "picture": "pictures/icons/space_marine.png",
+            "items": [
+              {
+                "Phrase": "L'Empereur protège",
+                "Main": "Q : Cela signifie-t-il que je peux avoir plus d'1 structure par planète ?\nR : Oui. Si vous payez 2 matériels, vous pouvez ajouter un bastion à un monde doté d'une cité ou d'une usine."
+              }
+            ]
+          },
+          {
+            "Faction": "Chaos",
+            "picture": "pictures/icons/chaos.png",
+            "items": [
+              {
+                "Phrase": "Prière aux Dieux Sombres",
+                "Main": "Q : Dois-je attendre le tour suivant pour utiliser cet événement du Chaos ?\nR : Non. Les complots sont disponibles dès le moment où vous les gagnez. Si vous êtes le 1er joueur lors de l'étape Événements et tempêtes du Warp de la phase de Renouvellement, vous pouvez interrompre le déplacement de tempête du Warp de tous les autres joueurs."
+              },
+              {
+                "Phrase": "Séduit par le Chaos",
+                "Main": "Q : Comme il s'agit d'un événement, qui choisit l'unité mise en déroute ?\nR : Sauf précision explicite, c'est le propriétaire de la carte d'événement qui fait le choix.\n\nQ : Puis-je l'utiliser lors du combat d'un autre joueur ?\nR : Non. Sauf précision explicite, les cartes ne peuvent être utilisées que pendant vos propres combats."
+              },
+              {
+                "Phrase": "À travers le Warp",
+                "Main": "Q : Le joueur du Chaos gagne-t-il du moral lorsqu'il ne traverse pas de tempête du Warp ?\nR : Oui."
+              },
+              {
+                "Phrase": "Touché par le Warp",
+                "Main": "Q : Puis-je obtenir une amélioration de combat avec cette carte ?\nR : Oui. Lorsqu'il est écrit « amélioration », cela signifie d'ordre ou de combat."
+              },
+              {
+                "Phrase": "Incantation de Tzeentch",
+                "Main": "Q : Si j'avais plusieurs cartes d'événement à choisir et que j'ai choisi de jouer Incantation de Tzeentch, dois-je remélanger les cartes d'événement restantes avant de résoudre l'Incantation ?\nR : Non. Piochez les 3 cartes supplémentaires de l'Incantation de Tzeentch, résolvez-en 1, puis remélangez toutes les cartes (celles issues des jetons d'ordre et celles de Tzeentch).\n\nQ : Puis-je résoudre le mouvement du Warp de la carte piochée ?\nR : Non. Les mouvements du Warp ont lieu avant la résolution des cartes d'événement."
+              }
+            ]
+          },
+          {
+            "Faction": "Orks",
+            "picture": "pictures/icons/ork.png",
+            "items": [
+              {
+                "Phrase": "Gitz Dem!",
+                "Main": "Q : Le joueur Ork doit-il participer au combat pour utiliser cette carte ?\nR : Oui. Sauf précision explicite, vous ne pouvez utiliser des capacités que dans vos propres combats."
+              },
+              {
+                "Phrase": "Teer It Down!",
+                "Main": "Q : Puis-je l'utiliser lors du combat d'un autre joueur ?\nR : Non. Sauf précision explicite, les cartes ne peuvent être utilisées que lors des combats auxquels vous participez (en tant qu'attaquant ou défenseur)."
+              }
+            ]
+          },
+          {
+            "Faction": "Eldars",
+            "picture": "pictures/icons/eldar.png",
+            "items": [
+              {
+                "Phrase": "Portail du Warp",
+                "Main": "Q : Puis-je déclencher un combat avec cette carte ?\nR : Non, un joueur ne peut pas déclencher de combat avec cette carte. La bonne formulation de la carte est « …prenez n'importe lesquelles de vos unités d'une zone et placez-les sur 1 zone alliée ou non contrôlée de votre choix »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "SubCategory": "Ordres",
+        "items": [
+          {
+            "Faction": "Space Marines",
+            "picture": "pictures/icons/space_marine.png",
+            "items": [
+              {
+                "Phrase": "Croisade",
+                "Main": "Q : Est-ce que je garde le jeton de renfort ou dois-je l'utiliser dans le combat ?\nR : Vous gagnez le jeton dans votre zone de jeu ; vous n'avez donc pas à l'utiliser immédiatement."
+              },
+              {
+                "Phrase": "Capsules de largage",
+                "Main": "Q : Peut-on bombarder un monde non contrôlé dans l'espoir de gagner un Space Marine gratuit ?\nR : Non. Vous ne pouvez effectuer une frappe orbitale que sur un monde ennemi.\n\nQ : Puis-je effectuer une frappe orbitale sur un monde ennemi qui n'a qu'une structure pour gagner un Space Marine gratuit ?\nR : Oui. Vous pouvez effectuer une frappe orbitale sur n'importe quel monde ennemi. Gardez à l'esprit que les cités et les usines n'ont pas de points de vie et ne peuvent pas être détruites, mais qu'elles seront prises par le Space Marine. Si elle est utilisée contre un bastion, cela créera une zone disputée et un combat normal commencera si les dés restants de la frappe orbitale ne l'ont pas détruit.\n\nQ : Y a-t-il une limite au nombre de Space Marines que j'obtiens grâce à une frappe orbitale ?\nR : Oui. Vous avez le droit de dépenser exactement 2 { pour placer 1 Space Marine."
+              },
+              {
+                "Phrase": "Pour l'Empereur (Domination)",
+                "Main": "Q : Dois-je respecter l'exigence de niveau de commandement pour améliorer mon Éclaireur/Space Marine ?\nR : Non. Il s'agit d'un remplacement, pas d'un achat. Seuls les achats doivent respecter les exigences de commandement.\n\nQ : Puis-je utiliser un jeton de cache pour améliorer mon Éclaireur/Space Marine ?\nR : Non. Il s'agit d'un remplacement, pas d'un achat. Les jetons de cache ne peuvent servir que pour les achats."
+              },
+              {
+                "Phrase": "Mondes de recrutement",
+                "Main": "Q : Faut-il au moins 1 usine pour que cela fonctionne ?\nR : Non. Tous les bastions du système actif agissent comme une usine durant cet ordre de Déploiement."
+              }
+            ]
+          },
+          {
+            "Faction": "Chaos",
+            "picture": "pictures/icons/chaos.png",
+            "items": [
+              {
+                "Phrase": "Destruction totale",
+                "Main": "Q : Qui choisit ce qui est détruit ?\nR : Votre adversaire est forcé de choisir l'unité ou la structure détruite."
+              },
+              {
+                "Phrase": "Souillure du Chaos (Domination)",
+                "Main": "Q : Les tempêtes du Warp empêchent-elles de les placer dans un système adjacent ?\nR : Non. Les tempêtes du Warp n'interdisent que le déplacement des unités et ne suppriment pas l'adjacence."
+              },
+              {
+                "Phrase": "Rituel terrifiant",
+                "Main": "Q : Ai-je besoin d'une usine dans le système actif ?\nR : Non. L'unité est achetée en dehors des restrictions de l'ordre de Déploiement, car l'achat se résout après cet ordre, et il vous suffit d'une zone alliée pour placer l'unité.\n\nQ : Ai-je besoin d'une unité ou d'une structure alliée dans le système actif ?\nR : Oui. Au moins 1 zone alliée est requise.\n\nQ : Dois-je respecter l'exigence de commandement ?\nR : Oui. Les achats d'unités doivent toujours respecter la limite de niveau de commandement et la dépense en matériel (ici, réduite du nombre de cultistes).\n\nQ : Puis-je acheter un vaisseau ?\nR : Oui, mais il doit être placé dans un vide allié.\n\nQ : Puis-je acheter un Titan Reaver en utilisant un jeton de forge pour réduire son exigence de commandement à 2 ?\nR : Non. Les jetons de forge sont dépensés pour réduire l'exigence de commandement d'une unité lors de l'achat, mais ils ne réduisent pas réellement le niveau de commandement de l'unité. Pour cette raison, vous ne pouvez pas utiliser de jetons de forge avec Rituel terrifiant pour acheter une unité de niveau de commandement 3. Un jeton de forge peut néanmoins servir à acheter des Helbrutes/Grands croiseurs répugnants lorsque vous êtes actuellement au niveau de commandement 1."
+              },
+              {
+                "Phrase": "Faveur des Dieux Sombres",
+                "Main": "Q : Lorsque j'achète cette amélioration d'ordre, s'applique-t-elle à l'ordre de Planification en cours ?\nR : Non, puisque le jeton d'ordre de Planification est déjà révélé. Elle ne peut s'appliquer qu'aux ordres de Planification suivants."
+              },
+              {
+                "Phrase": "Hors du Warp",
+                "Main": "Q : Puis-je déplacer des unités terrestres ?\nR : Non. Il est explicitement indiqué que cela ne s'applique qu'aux vaisseaux."
+              }
+            ]
+          },
+          {
+            "Faction": "Orks",
+            "picture": "pictures/icons/ork.png",
+            "items": [
+              {
+                "Phrase": "La marée verte",
+                "Main": "Q : Est-ce que je reçois quand même mon événement si je décide que le jeton d'ordre de Planification est autre chose ?\nR : Non. Utiliser La marée verte signifie que ce jeton d'ordre est traité comme autre chose, et seuls les jetons d'ordre de Planification vont au-dessus de votre pioche d'événements après avoir été résolus."
+              },
+              {
+                "Phrase": "Roks orks",
+                "Main": "Q : Puis-je relier un vide vide à un autre vaisseau, puis à une planète ?\nR : Oui.\n\nQ : Peuvent-ils servir à battre en retraite ?\nR : En quelque sorte. En défense, les Roks orks ne peuvent pas être utilisés, puisque votre ordre d'Avancée n'est pas en cours de résolution, et en attaque vous devez battre en retraite vers l'endroit d'où vous êtes venu. Les Roks orks ne peuvent être utilisés qu'une fois par tour, et s'ils ont servi à attaquer, ils ne peuvent plus l'être si l'attaque a échoué. S'ils n'ont pas servi à attaquer, ils ne sont pas utiles pour battre en retraite, puisque l'attaquant a des règles spéciales de retraite."
+              },
+              {
+                "Phrase": "Spores orks (Domination)",
+                "Main": "Q : Peut-on utiliser des jetons de cache/forge ?\nR : Oui. Même ceux que vous venez de gagner grâce à l'action de Domination.\n\nQ : Faut-il une usine pour construire ?\nR : Non. L'usine n'est requise que pour acheter des unités durant l'ordre de Déploiement.\n\nQ : Faut-il respecter l'exigence de niveau de commandement ?\nR : Oui. L'achat d'une unité exige toujours de respecter la limite de niveau de commandement et la dépense en matériel.\n\nQ : Puis-je construire un vaisseau spatial ?\nR : Non. Il est explicitement écrit « sur une planète », donc uniquement des unités terrestres."
+              }
+            ]
+          },
+          {
+            "Faction": "Eldars",
+            "picture": "pictures/icons/eldar.png",
+            "items": [
+              {
+                "Phrase": "Voyants",
+                "Main": "Q : Puis-je acheter une amélioration de combat avec cette carte ?\nR : Oui. La formulation de la carte est maladroite, puisque tous les ordres peuvent être « résolus », mais sans aucun effet. L'intention est que vous puissiez résoudre entièrement l'ordre sans exigence d'unité."
+              },
+              {
+                "Phrase": "Passe de mitraillage",
+                "Main": "Q : Si j'avais 1 vaisseau et que j'ai décidé de le déplacer vers un système adjacent, est-ce que je résous les dés restants ?\nR : Oui. Le joueur Eldar résout les effets de tous les dés lancés, même s'il déplace des vaisseaux hors du système."
+              },
+              {
+                "Phrase": "Chanteurs d'os-spectre",
+                "Main": "Q : Puis-je avoir une seconde structure du même type ?\nR : Non. La seconde structure doit être d'un type différent de celle déjà présente sur le monde.\n\nQ : Si quelqu'un d'autre conquiert ma planète qui compte deux structures, les garde-t-il toutes les deux ?\nR : Oui. Les attaquants prennent le contrôle de toutes les structures ennemies du monde."
+              },
+              {
+                "Phrase": "Portail de la Toile (Domination)",
+                "Main": "Q : Ai-je besoin d'un chemin pour déclencher cela ?\nR : Non. L'action de placement n'exige pas de chemin légal. Prenez une unité du système actif et placez-la sur un monde allié."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Category": "Galaxy in Flames",
+    "items": [
+      {
+        "SubCategory": "Cartes de combat",
+        "items": [
+          {
+            "Faction": "Tyranides",
+            "picture": "pictures/icons/tyranid.png",
+            "items": [
+              {
+                "Phrase": "Horreur ailée",
+                "Main": "Q : Mon adversaire peut-il encore choisir de ne pas me laisser gagner 2 (S) si la capacité d'unité est résolue lors du dernier round d'exécution d'un combat ?\nR : Oui. Le choix de votre adversaire n'est pas limité dans ce cas et il peut choisir l'une ou l'autre option. Mais ne pas vous laisser gagner 2 @ n'ajoutera pas 2 à votre valeur de défense, puisqu'il s'agissait du dernier round."
+              }
+            ]
+          },
+          {
+            "Faction": "Garde impériale",
+            "picture": "pictures/icons/ig.png",
+            "items": [
+              {
+                "Phrase": "Rempart des Bullgryns",
+                "Main": "Q : Dois-je relancer 2 } ou 2 < ?\nR : Non. Vous pouvez mélanger les types."
+              },
+              {
+                "Phrase": "Armes combinées",
+                "Main": "Q : Un seul type d'unité terrestre suffit-il pour gagner 1 jeton de combat ?\nR : Oui, c'est par unité de niveau de commandement différent.\n\nQ : Un seul type de vaisseau suffit-il pour gagner 2 jetons de combat ?\nR : Oui, c'est par unité de niveau de commandement différent."
+              },
+              {
+                "Phrase": "Appui-feu",
+                "Main": "Q : Puis-je relancer les { de mon adversaire avec la capacité secondaire ?\nR : Non. Sauf précision explicite, le propriétaire ne peut utiliser la capacité que sur lui-même."
+              },
+              {
+                "Phrase": "Marteau de l'Empereur",
+                "Main": "Q : Un seul type d'unité terrestre suffit-il pour gagner 2 jetons de combat ?\nR : Oui, c'est par unité de niveau de commandement différent.\n\nQ : Un seul type de vaisseau suffit-il pour gagner 3 jetons de combat ?\nR : Oui, c'est par unité de niveau de commandement différent."
+              },
+              {
+                "Phrase": "Discipline de fer",
+                "Main": "Q : Un seul type d'unité suffit-il pour gagner 1 | ?\nR : Oui, c'est par unité de niveau de commandement différent."
+              },
+              {
+                "Phrase": "Groupe de combat mécanisé",
+                "Main": "Q : Lorsque je résous la capacité de cette carte, est-ce que je décide immédiatement quels jetons mon adversaire perd ?\nR : Non, vous le décidez au début de l'étape d'évaluation des dégâts."
+              },
+              {
+                "Phrase": "Troupes de choc Ogryns",
+                "Main": "Q : Dois-je relancer 2 { ou 2 < ?\nR : Non. Vous pouvez mélanger les types.\n\nQ : Si j'ai relancé 1 {, dois-je encore relancer 1 < ?\nR : Oui. Si vous avez des dés disponibles à relancer, vous devez effectuer 2 relances."
+              },
+              {
+                "Phrase": "Soutien de Titan",
+                "Main": "Q : Un seul type d'unité suffit-il pour que mon adversaire relance 1 } ?\nR : Oui, c'est par unité de niveau de commandement différent."
+              }
+            ]
+          },
+          {
+            "Faction": "T'au",
+            "picture": "pictures/icons/tau.png",
+            "items": [
+              {
+                "Phrase": "Fausse retraite",
+                "Main": "Q : Lors de la résolution de la capacité générale, si j'ai moins de 2 {, puis-je choisir de relancer 2 { ou suis-je obligé de faire battre une unité en retraite ?\nR : La capacité générale vous oblige à choisir. Le choix est soit de relancer 2 {, soit de faire battre en retraite 1 de vos unités. Vous êtes toujours obligé de résoudre la capacité générale lorsque vous jouez cette carte (à cause du terme « doit »), mais vous pouvez toujours choisir l'une ou l'autre option, même si vous ne remplissez pas tout ce qui est requis. Si vous n'avez aucun {, ne relancez aucun dé ; si vous en avez 1, relancez uniquement celui-là.\n\nQ : Et si mes unités ne peuvent pas battre en retraite légalement, pour quelque raison que ce soit ?\nR : Si vous choisissez quand même de battre en retraite, l'unité est détruite."
+              },
+              {
+                "Phrase": "Feu et mouvement",
+                "Main": "Q : Une seule parmi toutes les unités détruites peut-elle battre en retraite ?\nR : Oui."
+              },
+              {
+                "Phrase": "Mont'ka",
+                "Main": "Q : Les dégâts de la 2e étape d'évaluation des dégâts, si Avancée implacable/Avancée blindée a été utilisée, sont-ils perdus ?\nR : Oui. Même si les jetons ne sont pas défaussés, si la première étape d'évaluation des dégâts n'a pas détruit l'unité, la seconde ne la détruira pas non plus. Si elle l'a détruite, une nouvelle unité ne peut pas être choisie et l'excédent de dégâts est perdu."
+              },
+              {
+                "Phrase": "Regroupement",
+                "Main": "Q : Puis-je dépenser un dé si je n'ai aucune unité à rallier (par exemple pour perdre des armes si je veux gagner le combat avec un bastion grâce au moral) ?\nR : Oui. Vous avez le droit de dépenser un nombre quelconque de dés. Le ralliement est un avantage de cette dépense, mais il n'est pas obligatoire."
+              },
+              {
+                "Phrase": "Équipes furtives",
+                "Main": "Cette réponse repose sur la position de FFG, selon une logique de « règles telles qu'écrites ».\n\nQ : Mon adversaire peut-il choisir de mettre en déroute une unité déjà en déroute ?\nR : Non. Les règles précisent qu'on ne peut pas mettre en déroute une unité déjà en déroute.\n\nQ : Si votre adversaire n'a aucune unité à mettre en déroute, perd-il un dé ?\nR : Oui.\n\nQ : Si mon adversaire n'a qu'un bastion, perd-il un dé ?\nR : Oui."
+              },
+              {
+                "Phrase": "Esquive",
+                "Main": "Q : Puis-je utiliser cette capacité sur mes jetons de renfort ?\nR : Oui. Pendant un combat, les jetons de renfort sont traités à tous égards comme des unités de niveau de commandement 0."
+              }
+            ]
+          },
+          {
+            "Faction": "Nécrons",
+            "picture": "pictures/icons/necron.png",
+            "items": [
+              {
+                "Phrase": "Phalange de Monolithes",
+                "Main": "Q : La seconde capacité interfère-t-elle de quelque manière avec la première ?\nR : Non, subir des dégâts et être mis en déroute sont deux choses différentes. Vous pouvez subir des dégâts sans être mis en déroute."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "SubCategory": "Cartes d'événement",
+        "items": [
+          {
+            "Faction": "Tyranides",
+            "picture": "pictures/icons/tyranid.png",
+            "items": [
+              {
+                "Phrase": "Ombre dans le Warp",
+                "Main": "Q : Puis-je utiliser cette carte uniquement lorsque je suis l'attaquant ?\nR : Oui.\n\nQ : Quand puis-je jouer les cartes pour l'utiliser ?\nR : Avant de lancer les dés ou de piocher des cartes. Il est explicitement indiqué « début du combat ».\n\nQ : Ombre dans le Warp empêche-t-elle mon adversaire de placer un jeton de renfort de la réserve dans la zone disputée ?\nR : Oui. La seule exception est Mener les justes, puisque le jeton est déjà utilisé avant le combat."
+              }
+            ]
+          },
+          {
+            "Faction": "Garde impériale",
+            "picture": "pictures/icons/ig.png",
+            "items": [
+              {
+                "Phrase": "Génie tactique",
+                "Main": "Q : Lors de la résolution de cet événement, si je choisis de jouer une carte de combat de ma pioche d'améliorations, que devient cette carte à la fin du combat ?\nR : Une carte jouée depuis la pioche d'améliorations lors de la résolution de Génie tactique retourne dans la pioche d'améliorations à la fin du combat.\n\nQ : Quand exactement cette carte doit-elle être utilisée ?\nR : Lorsque vous devez jouer une carte de combat, vous pouvez la défausser pour jouer une carte de combat de votre pioche de combat ou de votre pioche d'améliorations de combat. Les cartes de combat sont jouées simultanément, votre adversaire ne sait donc pas à l'avance que vous utiliserez ce complot lorsqu'il choisit sa carte de combat."
+              },
+              {
+                "Phrase": "Missile Deathstrike",
+                "Main": "Q : Puis-je utiliser le complot lors des combats d'autres joueurs ?\nR : Non. Sauf précision explicite, les cartes ne peuvent être utilisées que pendant vos propres combats."
+              }
+            ]
+          },
+          {
+            "Faction": "T'au",
+            "picture": "pictures/icons/tau.png",
+            "items": [
+              {
+                "Phrase": "Frappe critique",
+                "Main": "Q : Peut-elle détruire un bastion auquel des dégâts ont été assignés ?\nR : Non. Les bastions ne sont pas des unités.\n\nQ : Si une unité subit des dégâts mais n'est pas mise en déroute à cause de l'effet d'une autre carte, cette carte peut-elle servir à la détruire ?\nR : Oui.\n\nQ : Puis-je utiliser cette carte lorsque l'unité d'un adversaire est mise en déroute par l'effet d'une autre carte ?\nR : Non. Il est explicitement précisé que l'unité doit subir des dégâts. La frappe orbitale ne compte pas non plus, puisqu'il est explicitement précisé que cela doit se produire pendant un combat."
+              },
+              {
+                "Phrase": "Privation de ravitaillement",
+                "Main": "Q : Privation de ravitaillement empêche-t-elle mon adversaire de placer des jetons de renfort de la réserve dans la zone disputée ?\nR : Non. Comme précisé, elle ne s'applique qu'aux jetons de renfort placés depuis la zone de jeu d'un joueur."
+              },
+              {
+                "Phrase": "Philosophie de la guerre",
+                "Main": "Q : Les cartes de combat de base sont-elles considérées comme ayant un niveau de commandement de 0 pour cet événement ?\nR : Non. Les cartes de combat de base n'ont pas de niveau de commandement. Lors de la résolution de Philosophie de la guerre, considérez vos cartes de combat de base comme ayant un niveau de commandement inférieur à celui de toute carte d'amélioration de combat.\nVoir les entrées du livret de référence « Niveau de commandement » (2e puce) et « Cartes de combat et cartes d'amélioration de combat » (5e puce) pour plus d'informations.\n\nQ : Mon adversaire sait-il quelles cartes je remplace ?\nR : Oui. Le contenu de votre pioche de combat est toujours une information publique."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "SubCategory": "Cartes d'amélioration d'ordre",
+        "items": [
+          {
+            "Faction": "Tyranides",
+            "picture": "pictures/icons/tyranid.png",
+            "items": [
+              {
+                "Phrase": "Spores mycétiques",
+                "Main": "Q : Puis-je acheter cette carte d'amélioration d'ordre avant d'acheter l'amélioration Chambres de reproduction ?\nR : Oui, mais pour l'utiliser, vous devez avoir acheté les deux cartes."
+              },
+              {
+                "Phrase": "Sans nombre",
+                "Main": "Q : Le jeton de renfort gratuit compte-t-il dans la limite normale du nombre de jetons de renfort que je peux utiliser dans le combat ?\nR : Non, bien qu'il soit placé dans la zone au début de l'étape de renfort. Voir l'entrée du livret de référence « Jetons de renfort » (dernière puce) pour plus d'informations."
+              }
+            ]
+          },
+          {
+            "Faction": "Garde impériale",
+            "picture": "pictures/icons/ig.png",
+            "items": [
+              {
+                "Phrase": "Departmento Munitorum",
+                "Main": "Q : Lors de la résolution de l'ordre d'Avancée limité du Departmento Munitorum, puis-je résoudre une frappe orbitale ?\nR : Oui. Le texte de la capacité du Departmento Munitorum énonce toutes les limitations applicables aux ordres limités. Dans le cas de l'ordre d'Avancée limité, vous ne pouvez déplacer des unités que depuis 1 zone, ce qui est la seule différence entre l'ordre d'Avancée limité du Departmento Munitorum et un ordre d'Avancée normal.\n\nQ : Les cartes d'amélioration d'ordre peuvent-elles être utilisées lors de la résolution de l'ordre limité ?\nR : Oui."
+              },
+              {
+                "Phrase": "Recrutement forcé",
+                "Main": "Q : La capacité passive fonctionne-t-elle même si Recrutement forcé a été utilisé ?\nR : Oui. La capacité du bas est permanente.\n\nQ : Puis-je utiliser cette amélioration d'ordre lors de la résolution de Production de masse (capacité de faction) ?\nR : Oui."
+              },
+              {
+                "Phrase": "Production de masse (Domination)",
+                "Main": "Q : Puis-je toujours utiliser la partie de la capacité de faction qui me permet de réduire de 1 le coût de 2 unités de niveau de commandement 0 en dépensant un jeton de cache, ou seulement lors de la résolution d'une capacité de faction ?\nR : Uniquement lors de la résolution de votre capacité de faction.\n\nQ : Puis-je acheter des structures avec la capacité de faction ?\nR : Non, vous ne pouvez acheter que des unités."
+              }
+            ]
+          },
+          {
+            "Faction": "T'au",
+            "picture": "pictures/icons/tau.png",
+            "items": [
+              {
+                "Phrase": "Cadres de chasseurs mobilisés",
+                "Main": "Q : Puis-je résoudre une frappe orbitale lors de la résolution du premier ordre d'Avancée, puis engager un combat avec le second ordre d'Avancée ?\nR : Oui.\n\nQ : Lors de la résolution du premier ordre d'Avancée, la capacité dit que si un combat a lieu, un seul round d'exécution est résolu. Que se passe-t-il si les deux camps ont encore des unités et/ou des bastions dans la zone à la fin de ce round d'exécution ?\nR : Dans ce cas, le joueur ayant la valeur de moral la plus élevée remporte le combat, selon les règles normales de résolution des combats.\n\nQ : Puis-je utiliser des renforts en tant que T'au dans un combat qui dure 1 round ?\nR : Oui. Il est considéré comme un combat normal qui ne dure que 1 round d'exécution au lieu des 3 habituels."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Category": "Symphony of War",
+    "items": [
+      {
+        "SubCategory": "Cartes de combat",
+        "items": [
+          {
+            "Faction": "Eldars Noirs",
+            "picture": "pictures/icons/dark_eldar.png",
+            "items": [
+              {
+                "Phrase": "Agents de Vect",
+                "Main": "Q : Est-ce que j'ajoute le jeton de renfort au combat avec la capacité générale ?\nR : Non. Vous le gagnez dans votre zone de jeu et pouvez l'ajouter au combat avec la capacité de l'unité."
+              },
+              {
+                "Phrase": "Creuset de malédiction",
+                "Main": "Q : Si mon adversaire a gagné un | et obtenu du moral, peut-il le conserver ?\nR : Oui. La capacité bloque explicitement le gain de <."
+              }
+            ]
+          },
+          {
+            "Faction": "Sœurs de Bataille",
+            "picture": "pictures/icons/sisters.png",
+            "items": [
+              {
+                "Phrase": "Phare de la foi",
+                "Main": "Q : Puis-je remplacer des Sœurs Repentia en déroute ?\nR : Oui. Tant qu'il y a une Sœur Repentia qui n'est pas en déroute, vous pouvez remplacer celle qui est en déroute.\n\nQ : Puis-je remplacer un jeton de renfort ?\nR : Oui. Pendant un combat, les jetons de renfort sont traités à tous égards comme des unités de niveau de commandement 0."
+              },
+              {
+                "Phrase": "Bénédiction divine",
+                "Main": "Q : Dois-je choisir { ou < exclusivement ?\nR : Non. Vous n'avez pas à dépenser un seul type de dé. Vous pouvez dépenser n'importe quel mélange de dés, et votre adversaire perd autant de } que la somme de tous les dés que vous avez dépensés."
+              }
+            ]
+          },
+          {
+            "Faction": "Inquisition",
+            "picture": "pictures/icons/inquisition.png",
+            "items": [
+              {
+                "Phrase": "Armure en vrai-argent",
+                "Main": "Q : L'effet se cumule-t-il ?\nR : Oui. Si deux cartes ont été jouées, la valeur de santé de vos unités est augmentée de 2.\n\nQ : L'effet persiste-t-il si la carte a été défaussée ?\nR : Non. Le jeu n'a pas de mémoire ; si la carte a été défaussée, l'effet a cessé."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "SubCategory": "Cartes d'événement",
+        "items": [
+          {
+            "Faction": "Eldars Noirs",
+            "picture": "pictures/icons/dark_eldar.png",
+            "items": [
+              {
+                "Phrase": "Projection de champ d'ombre",
+                "Main": "Q : Puis-je d'abord utiliser une frappe orbitale, puis créer une zone disputée et engager un combat ?\nR : Non. La règle selon laquelle il ne peut y avoir qu'1 frappe orbitale ou 1 zone disputée s'applique à l'ensemble du round. Veuillez choisir l'une des deux."
+              }
+            ]
+          },
+          {
+            "Faction": "Sœurs de Bataille",
+            "picture": "pictures/icons/sisters.png",
+            "items": [
+              {
+                "Phrase": "Héroïne en devenir",
+                "Main": "Q : Puis-je déplacer l'unité Sainte vivante en diagonale ?\nR : Non. Résolvez le déplacement par un chemin légal."
+              }
+            ]
+          },
+          {
+            "Faction": "Inquisition",
+            "picture": "pictures/icons/inquisition.png",
+            "items": [
+              {
+                "Phrase": "Théosophie",
+                "Main": "Q : Quelle est la capacité de cette carte d'événement ?\nR : Cette carte permet de déplacer la tempête du Warp dans n'importe quelle direction et n'a aucune capacité supplémentaire.\n\nQ : Puis-je utiliser cette carte si je n'ai pas fait de Planification ce tour-ci ?\nR : Oui."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "SubCategory": "Cartes d'amélioration d'ordre",
+        "items": [
+          {
+            "Faction": "Sœurs de Bataille",
+            "picture": "pictures/icons/sisters.png",
+            "items": [
+              {
+                "Phrase": "Hymnes de guerre",
+                "Main": "Q : Le moral cumulé est-il la somme des valeurs de moral de toutes les unités qui ne sont pas en déroute ?\nR : En partie. Le défenseur ajoute aussi la valeur de moral des bastions qu'il possède sur ce monde.\n\nQ : Dois-je ajouter la valeur de moral de tous mes vaisseaux dans la zone de la frappe ?\nR : Non. Uniquement la somme de tous les vaisseaux qui ne sont pas en déroute."
+              },
+              {
+                "Phrase": "Mener les justes",
+                "Main": "Q : Puis-je ajouter un second jeton de renfort sur le monde du bastion s'il y en a déjà un ?\nR : Non. Il est explicitement précisé que ce doit être un monde sans jeton de renfort.\n\nQ : Si j'ai un bastion avec un jeton de renfort, puis-je ajouter un second jeton de renfort depuis ma zone de jeu (puisqu'un jeton de renfort compte comme une unité) ?\nR : Non. Les règles précisent explicitement que le nombre maximal de jetons de renfort qu'un joueur peut utiliser pendant un combat est égal au nombre d'unités en plastique qu'il a dans ce combat.\n\nQ : Si j'ai un bastion avec un jeton de renfort, puis-je lancer des dés pour le jeton de renfort (puisqu'un jeton de renfort compte comme une unité pendant le combat) ?\nR : Les Sœurs Repentia fournissent 0 dé, cela ne fait donc aucune différence."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

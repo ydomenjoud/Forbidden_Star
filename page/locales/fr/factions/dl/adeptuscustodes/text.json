@@ -1,0 +1,216 @@
+{
+  "materialsText": [
+    {
+      "label": "Gardes Custodes",
+      "value": "3"
+    },
+    {
+      "label": "Croiseurs classifiés",
+      "value": "2"
+    },
+    {
+      "label": "Champions de la Lame",
+      "value": "2"
+    },
+    {
+      "label": "Dreadnoughts Contemptor Galatus",
+      "value": "2"
+    },
+    {
+      "label": "Moiraideis",
+      "value": "3"
+    },
+    {
+      "label": "Trajann Valoris",
+      "value": "1"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Posture Dacatarai",
+        "general": "Gagnez 1 [D]. *newpara* Si votre adversaire a plus d'unités qui ne sont pas en déroute que vous, gagnez 2 (S).",
+        "unit": "Custode/Croiseur : Durant ce round d'exécution, si votre adversaire doit assigner des dégâts, il assigne 2 dégâts supplémentaires."
+      },
+      {
+        "title": "Posture Rendax",
+        "general": "Gagnez 1 [D] ou 1 [M]. *newpara* Si votre adversaire a au moins 1 unité qui n'est pas en déroute et n'est pas de niveau de commandement 0, gagnez 1 (B) et 1 (S).",
+        "unit": "Custode/Croiseur : Au début de l'étape d'évaluation des dégâts de ce round d'exécution, si vous avez 1 [B] ou 1 (B), forcez votre adversaire à choisir 1 de ses unités et à la mettre en déroute."
+      },
+      {
+        "title": "Traverser les flammes",
+        "general": "Votre adversaire choisit 1 de ses unités et la met en déroute.",
+        "unit": "Custode/Croiseur : Au début du prochain round d'exécution, vous pouvez choisir de convertir 1 de vos [B] en [S] pour gagner 2 (B)."
+      },
+      {
+        "title": "Tenir bon",
+        "general": "Gagnez 1 [D]. *newpara* Ralliez 1 de vos unités.",
+        "unit": "Custode : Dépensez 1 [M] pour choisir 1 de vos unités ; durant ce round d'exécution, cette unité ne peut ni être mise en déroute ni battre en retraite."
+      },
+      {
+        "title": "Conviction immortelle",
+        "general": "Gagnez 1 [D]. *newpara* Si votre adversaire a plus d'unités qui ne sont pas en déroute que vous, gagnez 1 (B), 1 (S) ou 1 [M].",
+        "unit": "Custode/Champion/Croiseur : Gagnez 1 (B) ou 1 (S). *newpara* Dépensez 1 [M] pour choisir 1 de vos unités ; durant ce round d'exécution, cette unité ne peut pas être détruite par les capacités des cartes."
+      }
+    ],
+    [
+      {
+        "title": "Charge courageuse",
+        "general": "Gagnez 1 [B]. *newpara* Convertissez 1 de vos [M] en [B].",
+        "unit": "Champion : Gagnez 1 (B) pour chacune des unités de votre adversaire qui ne sont pas en déroute au-delà du nombre de vos unités qui ne sont pas en déroute."
+      },
+      {
+        "title": "Chef inspirant",
+        "general": "Gagnez 1 [D] ou 1 [M]. *newpara* Gagnez 1 [M] ou ralliez 1 de vos unités.",
+        "unit": "Champion/Croiseur : Convertissez jusqu'à 2 de vos [M] en [B] ou en [S]."
+      },
+      {
+        "title": "Purger les faibles",
+        "general": "Pour chacune des unités de niveau de commandement 0 de votre adversaire qui ne sont pas en déroute et pour chacune de ses unités en déroute, gagnez 1 (B), jusqu'à un maximum de 3.",
+        "unit": "Champion/Croiseur : Durant ce round d'exécution, la première fois qu'une unité ennemie est mise en déroute, elle est détruite, à moins que votre adversaire ne choisisse 1 de ses unités et ne la mette en déroute."
+      },
+      {
+        "title": "Défendre notre honneur",
+        "general": "Choisissez 1 de vos unités et gagnez sa valeur de moral en (B) ou en (S).",
+        "unit": "Champion/Croiseur : Choisissez un Champion de la Lame ou un Croiseur classifié ; durant ce round d'exécution, cette unité ne peut pas être mise en déroute."
+      }
+    ],
+    [
+      {
+        "title": "La Mort dorée",
+        "general": "Gagnez 1 [D]. *newpara* Dépensez 1 [B] pour gagner 3 (B). Votre adversaire peut dépenser 1 [M] pour faire battre en retraite 1 de ses unités.",
+        "unit": "Dreadnought Galatus : Choisissez 1 de vos unités de niveau de commandement 3 et mettez-la en déroute pour gagner 3 (B)."
+      },
+      {
+        "title": "Dernier rempart",
+        "general": "Gagnez 1 [D] ou 1 (S). *newpara* Gagnez 1 [D], à moins que votre adversaire ne fasse battre en retraite 1 de ses unités.",
+        "unit": "Dreadnought Galatus/Moiraideis : Durant ce round d'exécution, vos unités de niveau de commandement 3 ne peuvent pas être mises en déroute, et aucune de vos unités ne peut être détruite par les capacités des cartes."
+      },
+      {
+        "title": "Animé par l'honneur",
+        "general": "Gagnez 1 [D]. *newpara* Gagnez 1 (B) ou 1 (S). *newpara* Ralliez 1 de vos unités.",
+        "unit": "Dreadnought Galatus/Moiraideis : Faites battre en retraite 1 de vos unités ; si vous le faites, gagnez 2 (B) et ralliez cette unité."
+      }
+    ],
+    [
+      {
+        "title": "Gloire à l'Empereur !",
+        "general": "Gagnez 3 [D].",
+        "unit": "Valoris : Durant ce combat, votre limite de dés est de 12 dés. *newpara* Gagnez 1 [D]."
+      },
+      {
+        "title": "La Lance de l'Empereur",
+        "general": "Ralliez 1 de vos unités. Piochez une carte de combat.",
+        "unit": "Valoris : Faites battre en retraite toutes vos unités autres que Trajann Valoris pour jouer n'importe quelle carte de combat de votre main autre que La Lance de l'Empereur."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Volonté de l'Empereur",
+      "general": "Lorsque vous révélez ce jeton d'ordre, à partir du round 2, considérez tous les mondes non contrôlés ne contenant pas votre jeton d'objectif comme des mondes alliés pour le reste de la partie. *newline* LIMITE D'UNE FOIS PAR PARTIE."
+    },
+    {
+      "title": "L'Avancée aurique",
+      "general": "Lorsque vous révélez ce jeton d'ordre, vous pouvez le résoudre comme s'il s'agissait d'un ordre d'Avancée. Durant cet ordre d'Avancée, vous ne pouvez déplacer que jusqu'à 2 de vos unités. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Bénédiction de l'Empereur",
+      "general": "Lorsque vous révélez ce jeton d'ordre, vous pouvez rallier 1 de vos unités dans ce système ou dans n'importe quel système adjacent. Cette unité ne peut pas être déplacée pendant la résolution de cet ordre. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Avant-garde solaire",
+      "general": "Pendant la résolution de cet ordre, si vous avez acheté une unité, vous pouvez déplacer 1 de vos unités achetées vers une zone alliée d'un système adjacent contenant vos unités ou structures. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Pas du Jugement",
+      "general": "Après avoir résolu cet ordre, vous pouvez choisir 1 de vos unités dans ce système et la rallier. Vous pouvez ensuite déplacer cette unité vers une zone adjacente. Cela peut déclencher un combat. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "L'Appel du Trône",
+      "general": "Pendant la résolution de cet ordre, au début d'une étape d'évaluation des dégâts d'un combat, vous pouvez faire battre en retraite 1 de vos unités, puis la rallier. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Le Palais intérieur",
+      "general": "Gagnez 1 matériel, ou prenez 1 unité alliée sur n'importe quel monde et placez-la sur un monde allié contenant une cité.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Lex Ultima",
+      "general": "Résolvez un ordre de Déploiement dans 1 système contenant l'une de vos usines.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Les Hykanotoi",
+      "general": "Gagnez 2 jetons de renfort.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Gardiens de l'Humanité",
+      "general": "Achetez une amélioration d'ordre de niveau de commandement 2 même si votre niveau de commandement est inférieur, en réduisant son coût en matériel de 1 pour chaque monde allié fournissant un jeton de prospérité.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Protection de l'Empereur",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* À la fin d'une étape de renfort d'un combat, vous pouvez défausser cette carte pour gagner 1 (S) au début de chaque round d'exécution durant ce combat.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "La Règle d'or",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* À la fin d'une étape de renfort d'un combat, vous pouvez défausser cette carte pour gagner 1 (B) au début de chaque round d'exécution durant ce combat.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Les Yeux de l'Empereur",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Lorsque 1 de vos unités est détruite ou bat en retraite durant un combat, vous pouvez défausser cette carte pour la reprendre et la replacer en déroute dans cette zone. Gagnez 2 (S).",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Les Dix Mille",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au début d'un round d'exécution de combat, vous pouvez défausser cette carte pour piocher 2 cartes de combat.",
+      "type": "COMPLOT"
+    }
+  ],
+  "tierLabels": [
+    "Départ",
+    "Niveau de commandement 0",
+    "Niveau de commandement 3",
+    "Niveau de commandement 4"
+  ],
+  "factionSheet": {
+    "title": "ADEPTUS CUSTODES",
+    "subtitle": "Garde solaire",
+    "abilities": [
+      {
+        "title": "La Voie guidée",
+        "text": "Lorsque vous résolvez un ordre de Domination, vous pouvez placer 1 de vos jetons d'ordre de votre zone de jeu au-dessus de votre pioche d'événements."
+      },
+      {
+        "title": "Les Dix Mille",
+        "text": "Capacité passive. Durant une étape de renfort d'un combat, gagnez 1 [D] pour chaque jeton de renfort que vous avez placé, puis défaussez les jetons."
+      }
+    ]
+  },
+  "componentsText": {
+    "faction_card/sheet_front_1.jpg": {
+      "title": "ADEPTUS CUSTODES · Plateau de faction : capacités et unités",
+      "regions": []
+    },
+    "faction_card/sheet_back_1.jpg": {
+      "title": "ADEPTUS CUSTODES · Forces initiales et récit",
+      "regions": []
+    },
+    "maps/map_A.jpg": {
+      "title": "ADEPTUS CUSTODES · Système d'origine A",
+      "general": "Titus *newpara* Luna *newpara* Terra *newpara* Ceinture d'astéroïdes de Sol",
+      "notice": ""
+    },
+    "maps/map_B.jpg": {
+      "title": "ADEPTUS CUSTODES · Système d'origine B",
+      "general": "La Garde intérieure *newpara* Luna *newpara* Terra *newpara* Titus",
+      "notice": ""
+    }
+  }
+}

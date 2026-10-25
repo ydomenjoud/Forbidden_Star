@@ -1,0 +1,213 @@
+{
+  "materialsText": [
+    {
+      "label": "Tzaangors",
+      "value": "9"
+    },
+    {
+      "label": "Rubrician Frigates",
+      "value": "3"
+    },
+    {
+      "label": "Rubric Marines",
+      "value": "6"
+    },
+    {
+      "label": "Exalted Sorcerers",
+      "value": "2"
+    },
+    {
+      "label": "Silver Towers",
+      "value": "2"
+    },
+    {
+      "label": "Lords of Change",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Staff of Change",
+        "general": "Gain 1 (B) or 1 (S). *newpara* If you are attacking, your opponent discards his facedown combat card and chooses a different combat card to play face down. At the end of this execution round he may draw his discarded combat card.",
+        "unit": "Tzaangor/Frigate: Gain either 1 [D] or 2 (S)."
+      },
+      {
+        "title": "Change of Plans",
+        "general": "If you are attacking, either gain 1 [D] or force your opponent to lose 1 [M]. *newpara* If you are defending, you may play any other card from your hand. If you do, do not resolve the unit ability on this card.",
+        "unit": "Tzaangor/Frigate: Gain 1 [D] and 2 (S)."
+      },
+      {
+        "title": "Embrace the Chaos",
+        "general": "Gain 1 [D]. *newpara* Reroll up to 2 dice.",
+        "unit": "Tzaangor/Frigate: Gain 1 [D] and retreat 1 of your units. *newpara* Your opponent may choose and retreat 1 of his units to gain 1 [D]. If he does not, he loses 1 die of his choice."
+      },
+      {
+        "title": "Replace Casualties",
+        "general": "Convert 1 of your [B] into [M].",
+        "unit": "Tzaangor/Frigate: If any of your units are destroyed during this execution round, place a free command level 0 unit in this area at the end of the assess damage step."
+      },
+      {
+        "title": "Riddled by Dust",
+        "general": "Force your opponent to choose and reveal a combat card from their hand. During the next choose combat cards step, your opponent must play that card instead of any other combat card. Gain the combat icons on that card during this execution round.",
+        "unit": "Tzaangor/Rubric Marine/Frigate: Gain 2 (B)."
+      }
+    ],
+    [
+      {
+        "title": "Swarm of Tzaangor",
+        "general": "Place 1 free reinforcement token in this area.",
+        "unit": "Tzaangor: Gain 1 (B) for each of your unrouted Tzaangors."
+      },
+      {
+        "title": "Terrifying Illusion",
+        "general": "Gain 1 [B], 1 [S], or 1 [M]. *newpara* Spend 1 [M] to force your opponent to choose and rout 1 of his units.",
+        "unit": "Tzaangor/Rubric Marine/Frigate: If your opponent has at least 2 units, force your opponent to choose and retreat 1 of his routed units."
+      },
+      {
+        "title": "All is Dust",
+        "general": "During this execution round, when 1 of your Rubric Marines is destroyed, you may take it and place it back routed in this area.",
+        "unit": "Rubric Marine/Frigate: Gain either 1 [D] or 2 (B)."
+      },
+      {
+        "title": "Dark Portal",
+        "general": "Take either 1 Tzaangor or 1 Rubric Marine from any world and place it on this world. *newpara* Take 1 of your units and place it on a friendly world.",
+        "unit": "Tzaangor/Rubric Marine/Frigate: Convert 1 of your [B] into [M]. *newpara* Spend 1 [S] to gain 2 (S)."
+      }
+    ],
+    [
+      {
+        "title": "Renewal of Death",
+        "general": "Gain 2 (B). *newline* If any of your units are destroyed during this execution round, you may take and place all of them on an uncontested friendly world containing a city at the end of the assess damage step.",
+        "unit": "Sorcerer: During this execution round, the health value of Rubric Marines is increased by 1. *newline* Destroy 1 of your units to place 2 free reinforcement tokens on this world."
+      },
+      {
+        "title": "Return to Dust",
+        "general": "Either gain 2 (B), or for every damage suffered by you during this execution round, gain 1 (B) in the next execution round up to a maximum of 4.",
+        "unit": "Sorcerer/Silver Tower: During this execution round, the health value of Rubric Marines is increased by 1. *newline* When 1 of your units is destroyed during this execution round, you may spend 1 of your dice to take and place that unit routed back in this area."
+      },
+      {
+        "title": "Dark Influence",
+        "general": "Spend 1 [M] to force your opponent to choose and rout 1 of his units. *newline* Convert 1 of your opponent's dice into [M].",
+        "unit": "Sorcerer/Silver Tower: During this execution round, the health value of Rubric Marines is increased by 1. *newline* Spend 1 of your opponent's [M] to force your opponent to choose and destroy 1 of his command level 0 units."
+      }
+    ],
+    [
+      {
+        "title": "Deadly Demise",
+        "general": "Gain 1 [D]. *newpara* Reroll up to 3 dice.",
+        "unit": "Lord of Change/Silver Tower: Gain 2 (B). *newpara* During this execution round, if a Lord of Change is destroyed, destroy 1 enemy unit."
+      },
+      {
+        "title": "Chaotic Future",
+        "general": "Gain 2 (S).",
+        "unit": "Lord of Change/Silver Tower: Reroll all of your dice. Gain 1 (B) for each [B] rolled and gain 1 (S) for each [S] rolled. For each of your dice, you may choose to reroll them one more time, but gain no extra tokens."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "A Thousand Schemes",
+      "general": "When you reveal this order token, you may place 1 of your order tokens from your play area onto the top of your event deck. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Master of Deceit",
+      "general": "After you resolve this order, you may take 1 of your orders that's on top of a stack and place it into any system adjacent to it that has no other order tokens. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Hourglass of Manat",
+      "general": "While resolving this order, once during a combat, at any time 1 of your units is destroyed, you may take that unit and place it routed back in that area. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Blast from the Past",
+      "general": "After resolving this orbital strike, you may resolve your faction ability and place one 1 of your order tokens from your play area onto the top of your event deck. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Temporal Warpstrike",
+      "general": "Enemy bastions do not prevent this orbital strike. During this orbital strike, you may instead roll number of dice equal to the combined combat value of all friendly routed and unrouted ships in this system. *newline* LIMIT ONCE PER ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Times of Change",
+      "general": "Place this card in your play area. *newpara* Before placing an order during the Planning Phase, you may discard this card to reveal 1 of your Strategize Orders from your play area and place it facedown on top of any order stack.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Mere Immortality",
+      "general": "Place this card in your play area. *newpara* During a combat, when a Rubric Marine is destroyed, you may discard this card to place 1 free Rubric Marine on that world.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Existence Erasure",
+      "general": "Place this card in your play area. *newpara* After resolving any of your combat cards, you may discard this card to force your opponent to immediately suffer damage. Ignore the assess damage step for your opponent during this execution round.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Changer of Ways",
+      "general": "Place this card in your play area. *newpara* At the end of a game round, you may discard this card to choose a player. That player gains the first player token at the start of the next game round.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Temporal Stasis",
+      "general": "Place this card in your play area. *newpara* At the start of an assess damage step of combat, you may discard this card to choose 1 of your opponent's faceup combat cards. Your opponent draws that combat card into his hand.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Portal of Change",
+      "general": "Place this card in your play area. *newpara* While resolving an Advance Order, after moving units, you may take up to 2 units from 1 friendly world and place them on 1 world your units moved from.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Change to Violence",
+      "general": "Place this card in your play area. *newpara* Instead of revealing an order during the Operations Phase, you may discard this card to remove 1 of your orders that's on top of an order stack to place 1 of your orders from your play area into any system not containing an order token.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Histories Unwritten",
+      "general": "Place this card in your play area. *newpara* After a roll dice step of combat, you may discard this card to replace 1 pair of combat cards in the opponent's combat deck with 1 pair of combat cards of the same command level from his upgrade deck.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Ninefold Scheme",
+      "general": "Place this card in your play area. *newpara* Instead of revealing an order during the Operations Phase, you may discard this card to draw 2 cards from the top of your event deck. Resolve the ability of 1 of those cards and discard the other.",
+      "type": "SCHEME"
+    }
+  ],
+  "tierLabels": [
+    "Starting",
+    "Command Level 0",
+    "Command Level 2",
+    "Command Level 3"
+  ],
+  "factionSheet": {
+    "title": "THOUSAND SONS",
+    "subtitle": "Cult of Time",
+    "abilities": [
+      {
+        "title": "Shifting Time",
+        "text": "When you resolve a dominate order, you may take 1 of your unrevealed order tokens on top of a stack and place it one lower on that stack. It can be the same stack the current revealed order is in."
+      }
+    ]
+  },
+  "componentsText": {
+    "faction_card/sheet_front_1.jpg": {
+      "title": "THOUSAND SONS · Faction sheet: abilities and units",
+      "regions": []
+    },
+    "faction_card/sheet_back_1.jpg": {
+      "title": "THOUSAND SONS · Initial forces and story",
+      "regions": []
+    },
+    "maps/map_A.jpg": {
+      "title": "THOUSAND SONS · Home system A",
+      "general": "The Screaming Vortex *newpara* Dianixis *newpara* Dessimar *newpara* Q'Sal",
+      "notice": ""
+    },
+    "maps/map_B.jpg": {
+      "title": "THOUSAND SONS · Home system B",
+      "general": "Ultimatus *newpara* Immaterial Rift *newpara* Dessimar *newpara* Sortiarius",
+      "notice": ""
+    }
+  }
+}

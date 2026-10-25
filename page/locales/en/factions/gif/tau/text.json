@@ -1,0 +1,218 @@
+{
+  "materialsText": [
+    {
+      "label": "Firewarriors",
+      "value": "6"
+    },
+    {
+      "label": "Protector Cruisers",
+      "value": "2"
+    },
+    {
+      "label": "XV8 Crisis Battlesuits",
+      "value": "6"
+    },
+    {
+      "label": "TX7 Hammerhead Gunships",
+      "value": "3"
+    },
+    {
+      "label": "Custodian Carriers",
+      "value": "2"
+    },
+    {
+      "label": "KX139 Supremacy Armours",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Kroot Hunting Packs",
+        "general": "If you have fewer units than your opponent, gain 1 (S) and your opponent loses 1 [B]. Otherwise, gain 1 (B).",
+        "unit": "Fire Warrior/Protector: Gain 1 [D]."
+      },
+      {
+        "title": "Stealth Teams",
+        "general": "Gain 1 (S).",
+        "unit": "Fire Warrior/Protector: Your opponent may choose and rout 1 of his units. If he does not, force your opponent to lose 1 [B], 1 [S], or 1 [M]."
+      },
+      {
+        "title": "Crossfire",
+        "general": "At the start of the assess damage step of this execution round, your opponent loses 3 (B).",
+        "unit": "Fire Warrior/Battlesuit/Protector: Gain 2 (B)."
+      },
+      {
+        "title": "Tactical Retreat",
+        "general": "Retreat 1 of your units. If you do, you may spend 1 [M] to rally that unit.",
+        "unit": "Fire Warrior/Protector: Gain 2 (S)."
+      },
+      {
+        "title": "Pathfinder Teams",
+        "general": "",
+        "unit": "Fire Warrior/Protector: If you are attacking, look at your opponent's facedown combat card. *newline* Play 1 combat card from your hand. Then discard this card."
+      }
+    ],
+    [
+      {
+        "title": "Mont'ka",
+        "general": "Gain 2 (B). Choose 1 of your opponent's units or bastions. That unit or bastion suffers damage first during this execution round. Damage in excess of the chosen unit's or bastion's health value is lost.",
+        "unit": "Battlesuit/Protector: Spend up to 2 dice. For each die you spend, gain 2 (B)."
+      },
+      {
+        "title": "Kauyon",
+        "general": "Gain 1 (S). *newline* At the end of this execution round, if you are defending, you may move 1 of your units from an adjacent area to this area. Gain [D] equal to that unit's combat value.",
+        "unit": ""
+      },
+      {
+        "title": "Evasion",
+        "general": "Gain 1 [D].",
+        "unit": "Fire Warrior/Protector: During this execution round, if any of your unrouted command level 0 units become routed or are destroyed, you may take them and place them back in this area at the end of the assess damage step."
+      },
+      {
+        "title": "Feigned Retreat",
+        "general": "Your opponent must reroll all [S]. *newline* You must either reroll 2 [S] or retreat 1 of your units.",
+        "unit": "Fire Warrior/Battlesuit/Protector: If none of your units retreated during this execution round, gain 2 (B)."
+      }
+    ],
+    [
+      {
+        "title": "Firefight",
+        "general": "At the start of the assess damage step of this execution round, your opponent loses 3 (B).",
+        "unit": "Battlesuit/Hammerhead/Custodian: Gain 1 (S). *newline* Force your opponent to lose either 1 [B] or 1 [M]."
+      },
+      {
+        "title": "Regroup",
+        "general": "Spend any number of dice. For every 2 dice you spend, rally 1 of your units.",
+        "unit": "Hammerhead/Custodian: Gain 2 [D]."
+      },
+      {
+        "title": "Fire and Movement",
+        "general": "Reroll all of your [B], [S], or [M].",
+        "unit": "Hammerhead/Custodian: During this execution round, when 1 of your units is destroyed during the assess damage step, you may retreat that unit instead."
+      }
+    ],
+    [
+      {
+        "title": "Supremacy",
+        "general": "Gain 2 (B). *newline* Spend up to 2 [M]. For each [M] you spend, gain either 1 [B] or 1 [S].",
+        "unit": "Supremacy/Custodian: During this execution round, the health value of your opponent's units is reduced to 3."
+      },
+      {
+        "title": "For the Greater Good",
+        "general": "Your opponent must reroll all [B].",
+        "unit": "Supremacy/Custodian: Force your opponent to lose 3 [M]. For each [M] your opponent cannot lose, gain 2 (B)."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Mobilised Hunter Cadres",
+      "general": "Before you resolve this order, you may resolve an additional Advance Order using only 1 of your command level 0 or command level 1 units already in the active system. If combat occurs, resolve 1 execution round only. That unit may not participate in the second Advance Order. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Gue'vesa Allies",
+      "general": "When you reveal this order token in a system containing 1 of your units or structures and a friendly or uncontrolled world, you may spend 1 materiel to place 1 free command level 0 unit on a friendly or uncontrolled area in the active system. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Teachings of Tau'va",
+      "general": "When you reveal this order token, you may place 3 of your order tokens from your play area onto the top of your event deck. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Precision Strikes",
+      "general": "During this orbital strike, gain 1 [D], and you may spend 1 die of your choice to choose 1 enemy unit on the world. That unit must suffer damage first during this orbital strike. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Targeting Array",
+      "general": "Enemy bastions do not prevent this orbital strike. During this orbital strike, gain 1 [D]. *newline* LIMIT ONCE PER ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Critical Strike",
+      "general": "Place this card in your play area and discard all of your schemes except 2. *newpara* When an enemy unit suffers damage during combat, you may discard this card to destroy that unit.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Philosophy of War",
+      "general": "Place this card in your play area and discard all of your schemes except 2. *newpara* You may discard this card at the start of combat. If you do, replace any amount of pairs of combat cards from your combat deck with pairs of combat cards of the same or lower command level from your upgrade deck.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "War Council",
+      "general": "Place this card in your play area and discard all of your schemes except 2. *newpara* Before revealing an order during the Operations Phase, you may discard this card to rally all of your units in any 1 system.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Denial of Supplies",
+      "general": "Place this card in your play area and discard all of your schemes except 2. *newpara* You may discard this card at the start of combat. If you do, your opponent cannot place reinforcement tokens from his play area into the contested area during the reinforce step of combat.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Sabotage",
+      "general": "Destroy 1 of your unrouted units in any system to destroy 1 enemy structure in that system.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Evacuation",
+      "general": "Destroy 1 of your structures in any system to place 1 free structure on a different friendly world not containing a structure in the same or adjacent system.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Autonomous Drones",
+      "general": "Rout 1 enemy unit of command level 2 or less that is in a system containing at least 1 of your units.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Rapid Response",
+      "general": "Choose a system. Move any of your units between friendly or uncontrolled areas in the chosen system.",
+      "type": "TACTIC"
+    }
+  ],
+  "factionSheet": {
+    "title": "TAU EMPIRE",
+    "subtitle": "Vior’la Sept",
+    "abilities": [
+      {
+        "title": "Adaptable Tactics",
+        "text": "When you resolve a dominate order in a system containing at least 1 of your units or structures, you may draw 4 cards from the top of your event deck. Resolve the ability of 1 of those cards and discard the others."
+      }
+    ],
+    "layout": "gif",
+    "initialForcesTitle": "Starting Forces",
+    "initialForces": [
+      "Fire Warriors",
+      "XV8 Crisis Battlesuits",
+      "Factory",
+      "Materiel"
+    ],
+    "lore": "In war there are certain things, whose meaning only the commander of the fire caste can know and judge. It's less his right, but more that it is his responsibility to send thousands to their death, if millions will be saved by this. This is the hardest burden that comes with command and it must be endured alone. *newpara* To follow any path other than the Tau'va is to doom us all. Only together and with courage and discipline shall we stand victorious. *newpara* For the Greater Good! *newpara* O'Shaserra Shadowsun *newline* Commander of the Herakon expeditionary Kor'vattra",
+    "objectives": [
+      "Strategically Important World: The unique natural resources of this world have to be acquired for the Greater Good.",
+      "Aun'va: Let there be no doubt that the Tau empire will bring unity to all species. Let there be no doubt that our time has come.",
+      "Tau'va: No expansion without equilibrium. No conquest without control. Pursue the success of this balance in service of the Tau'va.",
+      "Reconquista: We previously gained control over this world through patience and good will. Now it's time to take it back through force!",
+      "Rescue Mission: There are no more arguments to be traded with them. We have to save our ambassadors.",
+      "Support Our Allies: Although this world is not home to us, it's the home of our allies. We have to liberate the world for the Greater Good."
+    ],
+    "units": [
+      "Fire Warriors",
+      "Protector Cruisers",
+      "XV8 Crisis Battlesuits",
+      "TX7 Hammerhead Gunships",
+      "Custodian Carriers",
+      "KX139 Supremacy Armours"
+    ],
+    "labels": {
+      "objectives": "Objective Tokens",
+      "city": "City",
+      "factory": "Factory",
+      "bastion": "Bastion"
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/gif/tau/faction_card/card.jpg"
+    }
+  }
+}

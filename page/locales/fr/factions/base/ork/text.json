@@ -1,0 +1,219 @@
+{
+  "materialsText": [
+    {
+      "label": "Ork Boyz",
+      "value": "9"
+    },
+    {
+      "label": "Vaisseaux d'attaque Onslaught",
+      "value": "3"
+    },
+    {
+      "label": "Nobz",
+      "value": "6"
+    },
+    {
+      "label": "Battlewagons",
+      "value": "3"
+    },
+    {
+      "label": "Kill Kroozers",
+      "value": "3"
+    },
+    {
+      "label": "Gargants",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Gretchins",
+        "general": "Gagnez 1 (B) et 1 (S). *newline* Votre adversaire relance 1 dé de votre choix.",
+        "unit": "Onslaught : Détruisez 1 Onslaught pour forcer votre adversaire à choisir 1 de ses unités et à la détruire."
+      },
+      {
+        "title": "Mek Boyz",
+        "general": "Gagnez 1 [D].",
+        "unit": "Ork Boyz/Onslaught : Votre adversaire défausse la carte du dessus de sa pioche de combat. Vous gagnez les icônes de combat de cette carte jusqu'à la fin de ce round d'exécution."
+      },
+      {
+        "title": "'Ard Boyz",
+        "general": "Vous devez relancer tous vos [B].",
+        "unit": "Ork Boyz : Votre adversaire doit relancer 1 [B] pour chaque Ork Boyz qui n'est pas en déroute."
+      },
+      {
+        "title": "Shoota Boyz",
+        "general": "Vous devez relancer tous vos [S].",
+        "unit": "Ork Boyz : Votre adversaire doit relancer 1 [S] pour chaque Ork Boyz qui n'est pas en déroute."
+      },
+      {
+        "title": "Slugga Boyz",
+        "general": "Vous et votre adversaire devez relancer tous les [M].",
+        "unit": "Ork Boyz/Onslaught : Ralliez 1 de vos unités."
+      }
+    ],
+    [
+      {
+        "title": "Waaagh!!!!",
+        "general": "Ralliez 1 de vos unités.",
+        "unit": "Ork Boyz/Onslaught : Gagnez 1 (B) pour chaque Ork Boyz ou Onslaught qui n'est pas en déroute."
+      },
+      {
+        "title": "Marée verte",
+        "general": "Placez 1 jeton de renfort gratuit dans cette zone. *newline* Si vous avez plus d'unités qui ne sont pas en déroute que votre adversaire, votre adversaire choisit 1 de ses unités et la met en déroute, à moins qu'il ne dépense 1 [M].",
+        "unit": ""
+      },
+      {
+        "title": "Mega Nobz",
+        "general": "Votre adversaire doit relancer tous les [S].",
+        "unit": "Nob/Onslaught : Gagnez 1 (S)."
+      },
+      {
+        "title": "Biker Nobz",
+        "general": "Votre adversaire doit relancer tous les [B].",
+        "unit": "Nob/Onslaught : Gagnez 1 (B)."
+      }
+    ],
+    [
+      {
+        "title": "Weirdboyz",
+        "general": "Vous et votre adversaire devez relancer tous les dés.",
+        "unit": "Ork Boyz/Onslaught : Durant ce combat, chaque fois que votre adversaire gagne des (B), vous gagnez un nombre égal de (B). Chaque fois que votre adversaire gagne des (S), vous gagnez un nombre égal de (S)."
+      },
+      {
+        "title": "Party Wagon",
+        "general": "Placez 1 jeton de renfort gratuit dans cette zone.",
+        "unit": "Battlewagon/Kill Kroozer : Si vous avez plus d'unités qui ne sont pas en déroute que votre adversaire, gagnez 2 (B) et 2 (S)."
+      },
+      {
+        "title": "Rokkit Wagon",
+        "general": "",
+        "unit": "Battlewagon/Kill Kroozer : Gagnez 3 (B). Votre adversaire peut faire battre en retraite 1 de ses unités."
+      }
+    ],
+    [
+      {
+        "title": "Snapper Gargant",
+        "general": "",
+        "unit": "Gargant/Kill Kroozer : Défaussez 1 des cartes de combat face visible de votre adversaire."
+      },
+      {
+        "title": "Smasher Gargant",
+        "general": "",
+        "unit": "Gargant/Kill Kroozer : Choisissez 1 des unités de votre adversaire. Détruisez cette unité, à moins que votre adversaire ne dépense un nombre de dés égal au niveau de commandement de l'unité choisie."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Roks orks",
+      "general": "Pendant la résolution de cet ordre, vous pouvez déplacer jusqu'à 2 de vos unités à travers 1 vide non contrôlé comme s'il s'agissait d'une zone alliée. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "La marée verte",
+      "general": "Lorsque vous révélez ce jeton d'ordre, vous pouvez le résoudre comme s'il s'agissait d'un ordre d'Avancée, de Domination ou de Déploiement. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Werk Fasta!",
+      "general": "Pendant la résolution de cet ordre, vous pouvez acheter votre structure avant d'acheter des unités. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Lootin'!",
+      "general": "Durant cette frappe orbitale, gagnez 1 [D], et vous pouvez dépenser 1 dé de votre choix pour gagner 1 matériel et forcer votre adversaire à perdre 1 matériel. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Stealin'!",
+      "general": "Les bastions ennemis n'empêchent pas cette frappe orbitale. Durant cette frappe orbitale, vous pouvez dépenser 1 [M] pour choisir et défausser 1 des jetons d'atout de votre adversaire. Ensuite, vous gagnez ce jeton d'atout. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Teer It Down!",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* À la fin d'une étape d'évaluation des dégâts d'un combat, vous pouvez défausser cette carte pour détruire 1 structure sur ce monde.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Warboss",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Lorsque vous achetez une unité, vous pouvez défausser cette carte pour réduire le coût en matériel de cette unité de 1 pour chaque jeton de renfort que vous avez.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Gitz Dem!",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Lorsqu'une unité ennemie est mise en déroute durant un combat, vous pouvez défausser cette carte pour détruire cette unité.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Mob Up!",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au lieu de révéler un ordre pendant la phase d'Opérations, vous pouvez défausser cette carte pour résoudre un ordre d'Avancée dans n'importe quel système contenant au moins 2 de vos unités.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Lootin' 'n Stealin'",
+      "general": "Gagnez 2 matériels, puis choisissez un joueur. Il perd 1 atout de son choix.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Letz Get Fightin'",
+      "general": "Placez 2 Ork Boyz gratuits sur un monde allié contenant un Nob, ou placez 1 Ork Boyz gratuit sur n'importe quel monde allié.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "How We Getz Here?",
+      "general": "Prenez 1 de vos unités sur n'importe quel monde et placez-la sur n'importe quel monde non contrôlé.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Moar Boyz!",
+      "general": "Gagnez 2 jetons de renfort.",
+      "type": "TACTIQUE"
+    }
+  ],
+  "factionSheet": {
+    "title": "ORKS",
+    "subtitle": "Clan des Evil Sunz",
+    "abilities": [
+      {
+        "title": "Spores orks",
+        "text": "Lorsque vous résolvez un ordre de Domination, vous pouvez acheter 1 unité et la placer sur un monde allié du système actif."
+      }
+    ],
+    "layout": "base",
+    "initialForcesTitle": "Forces initiales",
+    "initialForces": [
+      "Ork Boyz",
+      "Nob",
+      "Usine",
+      "Jeton de renfort",
+      "Matériel"
+    ],
+    "lore": "Les bêtes arrivent ! La grande horde verte, grouillant dans ses carcasses tordues, a surgi du Warp pour s’abattre sur nous ! Nulle part dans l’amas d’Herakon on n’est en sécurité. Leurs vaisseaux grossiers seront bientôt sur nos mondes ! *newpara* On ne peut pas raisonner les Orks. On ne peut pas les détourner par la diplomatie ou les négociations. On ne peut même pas les acheter ! Ils ravagent nos mondes pour ce que je ne peux décrire que comme la simple joie du combat ! Comment résister à un tel raz-de-marée de destruction ? Que pouvons-nous faire contre les peaux-vertes ? Si nous ne recevons pas de renforts, nous tomberons à coup sûr, écrasés sous la horde sans fin ! *newpara* Kastor Thrax *newline* Gouverneur planétaire de Medrias",
+    "objectives": [
+      "Bon pillage : Ce monde est plein d’camions, d’chariots et d’chars qu’les ’umains font, y’a qu’à s’baisser pour les prendre !",
+      "Bonne baston : Oï ! Là-bas, y’a des tas d’’umains qui attendent qu’on leur défonce la tronche ! Allons-y !",
+      "Plein d’Boyz ! : ’Ey Boss ! Cette planète est pleine d’boyz qui d’mandent qu’à s’lancer dans l’action !",
+      "Bon pour la course : Là-bas, y’a des kilomètres et des kilomètres de rien ! C’est parfait pour foncer ! Allez chercher les camions !",
+      "Carburant d’camion : Faut du carburant pour les camions pour rouler plus vite et trouver plus d’carburant pour les camions, pour rouler plus vite.",
+      "Bidules et trucmuches : Ce monde-ferraille a plein d’bons bidules et trucmuches pour qu’les mekboyz construisent d’autres stompas avec."
+    ],
+    "units": [
+      "Ork Boyz",
+      "Vaisseaux d'attaque Onslaught",
+      "Nobz",
+      "Battlewagons",
+      "Kill Kroozers",
+      "Gargants"
+    ],
+    "labels": {
+      "objectives": "Jetons d'objectif",
+      "city": "Cité",
+      "factory": "Usine",
+      "bastion": "Bastion"
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/base/ork/faction_card/card.jpg"
+    }
+  }
+}

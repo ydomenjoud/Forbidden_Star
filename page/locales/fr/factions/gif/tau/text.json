@@ -1,0 +1,218 @@
+{
+  "materialsText": [
+    {
+      "label": "Guerriers du Feu",
+      "value": "6"
+    },
+    {
+      "label": "Croiseurs Protecteurs",
+      "value": "2"
+    },
+    {
+      "label": "Combinaisons de Crise XV8",
+      "value": "6"
+    },
+    {
+      "label": "Canonnières Hammerhead TX7",
+      "value": "3"
+    },
+    {
+      "label": "Porteurs Custodian",
+      "value": "2"
+    },
+    {
+      "label": "Armures de Suprématie KX139",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Meutes de chasse Kroots",
+        "general": "Si vous avez moins d'unités que votre adversaire, gagnez 1 (S) et votre adversaire perd 1 [B]. Sinon, gagnez 1 (B).",
+        "unit": "Guerrier du Feu/Protecteur : Gagnez 1 [D]."
+      },
+      {
+        "title": "Équipes furtives",
+        "general": "Gagnez 1 (S).",
+        "unit": "Guerrier du Feu/Protecteur : Votre adversaire peut choisir 1 de ses unités et la mettre en déroute. S'il ne le fait pas, forcez votre adversaire à perdre 1 [B], 1 [S] ou 1 [M]."
+      },
+      {
+        "title": "Tir croisé",
+        "general": "Au début de l'étape d'évaluation des dégâts de ce round d'exécution, votre adversaire perd 3 (B).",
+        "unit": "Guerrier du Feu/Combinaison/Protecteur : Gagnez 2 (B)."
+      },
+      {
+        "title": "Retraite tactique",
+        "general": "Faites battre en retraite 1 de vos unités. Si vous le faites, vous pouvez dépenser 1 [M] pour rallier cette unité.",
+        "unit": "Guerrier du Feu/Protecteur : Gagnez 2 (S)."
+      },
+      {
+        "title": "Équipes d'éclaireurs",
+        "general": "",
+        "unit": "Guerrier du Feu/Protecteur : Si vous attaquez, regardez la carte de combat face cachée de votre adversaire. *newline* Jouez 1 carte de combat de votre main. Défaussez ensuite cette carte."
+      }
+    ],
+    [
+      {
+        "title": "Mont'ka",
+        "general": "Gagnez 2 (B). Choisissez 1 des unités ou bastions de votre adversaire. Cette unité ou ce bastion subit les dégâts en premier durant ce round d'exécution. Les dégâts qui dépassent la valeur de santé de l'unité ou du bastion choisi sont perdus.",
+        "unit": "Combinaison/Protecteur : Dépensez jusqu'à 2 dés. Pour chaque dé dépensé, gagnez 2 (B)."
+      },
+      {
+        "title": "Kauyon",
+        "general": "Gagnez 1 (S). *newline* À la fin de ce round d'exécution, si vous défendez, vous pouvez déplacer 1 de vos unités d'une zone adjacente vers cette zone. Gagnez des [D] égaux à la valeur de combat de cette unité.",
+        "unit": ""
+      },
+      {
+        "title": "Esquive",
+        "general": "Gagnez 1 [D].",
+        "unit": "Guerrier du Feu/Protecteur : Durant ce round d'exécution, si l'une de vos unités de niveau de commandement 0 qui n'est pas en déroute est mise en déroute ou détruite, vous pouvez la reprendre et la replacer dans cette zone à la fin de l'étape d'évaluation des dégâts."
+      },
+      {
+        "title": "Fausse retraite",
+        "general": "Votre adversaire doit relancer tous les [S]. *newline* Vous devez soit relancer 2 [S], soit faire battre en retraite 1 de vos unités.",
+        "unit": "Guerrier du Feu/Combinaison/Protecteur : Si aucune de vos unités n'a battu en retraite durant ce round d'exécution, gagnez 2 (B)."
+      }
+    ],
+    [
+      {
+        "title": "Échange de tirs",
+        "general": "Au début de l'étape d'évaluation des dégâts de ce round d'exécution, votre adversaire perd 3 (B).",
+        "unit": "Combinaison/Hammerhead/Custodian : Gagnez 1 (S). *newline* Forcez votre adversaire à perdre 1 [B] ou 1 [M]."
+      },
+      {
+        "title": "Regroupement",
+        "general": "Dépensez un nombre quelconque de dés. Pour chaque tranche de 2 dés dépensés, ralliez 1 de vos unités.",
+        "unit": "Hammerhead/Custodian : Gagnez 2 [D]."
+      },
+      {
+        "title": "Feu et mouvement",
+        "general": "Relancez tous vos [B], [S] ou [M].",
+        "unit": "Hammerhead/Custodian : Durant ce round d'exécution, lorsque 1 de vos unités est détruite durant l'étape d'évaluation des dégâts, vous pouvez la faire battre en retraite à la place."
+      }
+    ],
+    [
+      {
+        "title": "Suprématie",
+        "general": "Gagnez 2 (B). *newline* Dépensez jusqu'à 2 [M]. Pour chaque [M] dépensé, gagnez 1 [B] ou 1 [S].",
+        "unit": "Suprématie/Custodian : Durant ce round d'exécution, la valeur de santé des unités de votre adversaire est réduite à 3."
+      },
+      {
+        "title": "Pour le plus grand bien",
+        "general": "Votre adversaire doit relancer tous les [B].",
+        "unit": "Suprématie/Custodian : Forcez votre adversaire à perdre 3 [M]. Pour chaque [M] que votre adversaire ne peut pas perdre, gagnez 2 (B)."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Cadres de chasseurs mobilisés",
+      "general": "Avant de résoudre cet ordre, vous pouvez résoudre un ordre d'Avancée supplémentaire en utilisant uniquement 1 de vos unités de niveau de commandement 0 ou 1 déjà présentes dans le système actif. Si un combat a lieu, ne résolvez qu'un seul round d'exécution. Cette unité ne peut pas participer au second ordre d'Avancée. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Alliés Gue'vesa",
+      "general": "Lorsque vous révélez ce jeton d'ordre dans un système contenant 1 de vos unités ou structures et un monde allié ou non contrôlé, vous pouvez dépenser 1 matériel pour placer 1 unité gratuite de niveau de commandement 0 sur une zone alliée ou non contrôlée du système actif. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Enseignements du Tau'va",
+      "general": "Lorsque vous révélez ce jeton d'ordre, vous pouvez placer 3 de vos jetons d'ordre de votre zone de jeu au-dessus de votre pioche d'événements. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Frappes de précision",
+      "general": "Durant cette frappe orbitale, gagnez 1 [D], et vous pouvez dépenser 1 dé de votre choix pour choisir 1 unité ennemie sur le monde. Cette unité doit subir les dégâts en premier durant cette frappe orbitale. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Réseau de ciblage",
+      "general": "Les bastions ennemis n'empêchent pas cette frappe orbitale. Durant cette frappe orbitale, gagnez 1 [D]. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Frappe critique",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos complots sauf 2. *newpara* Lorsqu'une unité ennemie subit des dégâts durant un combat, vous pouvez défausser cette carte pour détruire cette unité.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Philosophie de la guerre",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos complots sauf 2. *newpara* Vous pouvez défausser cette carte au début d'un combat. Si vous le faites, remplacez un nombre quelconque de paires de cartes de combat de votre pioche de combat par des paires de cartes de combat de niveau de commandement identique ou inférieur provenant de votre pioche d'améliorations.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Conseil de guerre",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos complots sauf 2. *newpara* Avant de révéler un ordre pendant la phase d'Opérations, vous pouvez défausser cette carte pour rallier toutes vos unités dans 1 système de votre choix.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Privation de ravitaillement",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos complots sauf 2. *newpara* Vous pouvez défausser cette carte au début d'un combat. Si vous le faites, votre adversaire ne peut pas placer de jetons de renfort de sa zone de jeu dans la zone disputée durant l'étape de renfort du combat.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Sabotage",
+      "general": "Détruisez 1 de vos unités qui n'est pas en déroute dans n'importe quel système pour détruire 1 structure ennemie dans ce système.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Évacuation",
+      "general": "Détruisez 1 de vos structures dans n'importe quel système pour placer 1 structure gratuite sur un autre monde allié ne contenant aucune structure, dans le même système ou dans un système adjacent.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Drones autonomes",
+      "general": "Mettez en déroute 1 unité ennemie de niveau de commandement 2 ou moins située dans un système contenant au moins 1 de vos unités.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Réaction rapide",
+      "general": "Choisissez un système. Déplacez n'importe lesquelles de vos unités entre des zones alliées ou non contrôlées du système choisi.",
+      "type": "TACTIQUE"
+    }
+  ],
+  "factionSheet": {
+    "title": "EMPIRE T'AU",
+    "subtitle": "Sept de Vior’la",
+    "abilities": [
+      {
+        "title": "Tactiques adaptables",
+        "text": "Lorsque vous résolvez un ordre de Domination dans un système contenant au moins 1 de vos unités ou structures, vous pouvez piocher 4 cartes au sommet de votre pioche d'événements. Résolvez la capacité de 1 de ces cartes et défaussez les autres."
+      }
+    ],
+    "layout": "gif",
+    "initialForcesTitle": "Forces de départ",
+    "initialForces": [
+      "Guerriers du Feu",
+      "Combinaisons de Crise XV8",
+      "Usine",
+      "Matériel"
+    ],
+    "lore": "À la guerre, certaines choses ont un sens que seul le commandant de la caste du feu peut connaître et juger. C’est moins son droit que sa responsabilité d’envoyer des milliers des siens à la mort si des millions doivent ainsi être sauvés. C’est le fardeau le plus lourd du commandement, et il doit être porté seul. *newpara* Suivre une autre voie que le Tau’va, c’est nous condamner tous. Ce n’est qu’ensemble, avec courage et discipline, que nous triompherons. *newpara* Pour le plus grand bien ! *newpara* O’Shaserra Shadowsun *newline* Commandant de la Kor’vattra expéditionnaire d’Herakon",
+    "objectives": [
+      "Monde d’importance stratégique : Les ressources naturelles uniques de ce monde doivent être acquises pour le plus grand bien.",
+      "Aun’va : Qu’il n’y ait aucun doute : l’empire T’au apportera l’unité à toutes les espèces. Qu’il n’y ait aucun doute : notre heure est venue.",
+      "Tau’va : Pas d’expansion sans équilibre. Pas de conquête sans contrôle. Poursuivez la réussite de cet équilibre au service du Tau’va.",
+      "Reconquista : Nous avons autrefois pris le contrôle de ce monde par la patience et la bonne volonté. Il est temps de le reprendre par la force !",
+      "Mission de sauvetage : Il n’y a plus d’arguments à échanger avec eux. Nous devons sauver nos ambassadeurs.",
+      "Soutenir nos alliés : Bien que ce monde ne soit pas le nôtre, c’est celui de nos alliés. Nous devons libérer ce monde pour le plus grand bien."
+    ],
+    "units": [
+      "Guerriers du Feu",
+      "Croiseurs Protecteurs",
+      "Combinaisons de Crise XV8",
+      "Canonnières Hammerhead TX7",
+      "Porteurs Custodian",
+      "Armures de Suprématie KX139"
+    ],
+    "labels": {
+      "objectives": "Jetons d'objectif",
+      "city": "Cité",
+      "factory": "Usine",
+      "bastion": "Bastion"
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/gif/tau/faction_card/card.jpg"
+    }
+  }
+}

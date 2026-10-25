@@ -1,0 +1,216 @@
+{
+  "materialsText": [
+    {
+      "label": "Custodian Guards",
+      "value": "3"
+    },
+    {
+      "label": "Classified Cruisers",
+      "value": "2"
+    },
+    {
+      "label": "Blade Champions",
+      "value": "2"
+    },
+    {
+      "label": "Contemptor Galatus Dreadnoughts",
+      "value": "2"
+    },
+    {
+      "label": "Moiraideis",
+      "value": "3"
+    },
+    {
+      "label": "Trajann Valoris",
+      "value": "1"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Dacatarai Stance",
+        "general": "Gain 1 [D]. *newpara* If your opponent has more unrouted units than you, gain 2 (S).",
+        "unit": "Custodian/Cruiser: During this execution round, if your opponent has to assign any damage, he assigns 2 additional damage."
+      },
+      {
+        "title": "Rendax Stance",
+        "general": "Gain either 1 [D] or 1 [M]. *newpara* If your opponent has at least 1 unrouted unit that is not a command level 0 unit, gain 1 (B) and 1 (S).",
+        "unit": "Custodian/Cruiser: At the start of the assess damage step of this execution round, if you have 1 [B] or 1 (B), force your opponent to choose and rout 1 of his units."
+      },
+      {
+        "title": "Fight Through Fire",
+        "general": "Your opponent chooses and routs 1 of his units.",
+        "unit": "Custodian/Cruiser: At the start of the next execution round you may choose to convert 1 of your [B] into [S] to gain 2 (B)."
+      },
+      {
+        "title": "Stand Your Ground",
+        "general": "Gain 1 [D]. *newpara* Rally 1 of your units.",
+        "unit": "Custodian: Spend 1 [M] to choose 1 of your units, during this execution round that unit cannot become routed or retreat."
+      },
+      {
+        "title": "Undying Conviction",
+        "general": "Gain 1 [D]. *newpara* If your opponent has more unrouted units than you, gain 1 (B), 1 (S), or 1 [M].",
+        "unit": "Custodian/Champion/Cruiser: Gain either 1 (B) or 1 (S). *newpara* Spend 1 [M] to choose 1 of your units, during this execution round, that unit cannot be destroyed by abilities on cards."
+      }
+    ],
+    [
+      {
+        "title": "Brave Charge",
+        "general": "Gain 1 [B]. *newpara* Convert 1 of your [M] into [B].",
+        "unit": "Champion: Gain 1 (B) for each of your opponent's unrouted units in excess of your unrouted units."
+      },
+      {
+        "title": "Inspiring Leader",
+        "general": "Gain either 1 [D] or 1 [M]. *newpara* Either gain 1 [M] or rally 1 of your units.",
+        "unit": "Champion/Cruiser: Convert up to 2 of your [M] into either [B] or [S]."
+      },
+      {
+        "title": "Purge the Weak",
+        "general": "For each of your opponent's unrouted command level 0 units and for each of his routed units, gain 1 (B) up to a maximum of 3.",
+        "unit": "Champion/Cruiser: During this execution round, the first time an enemy unit is routed it is destroyed, unless your opponent chooses and routs 1 of his units."
+      },
+      {
+        "title": "Defend Our Honour",
+        "general": "Choose 1 of your units and gain its morale value as either (B) or (S).",
+        "unit": "Champion/Cruiser: Choose either a Blade Champion or a Classified Cruiser, during this execution round that unit cannot become routed."
+      }
+    ],
+    [
+      {
+        "title": "The Golden Death",
+        "general": "Gain 1 [D]. *newpara* Spend 1 [B] to gain 3 (B). Your opponent may spend 1 [M] to retreat 1 of his units.",
+        "unit": "Galatus Dreadnought: Choose and rout 1 of your command level 3 units to gain 3 (B)."
+      },
+      {
+        "title": "Heroic Stand",
+        "general": "Gain either 1 [D] or 1 (S). *newpara* Gain 1 [D] unless your opponent retreats 1 of his units.",
+        "unit": "Galatus Dreadnought/Moiraideis: During this execution round, your command level 3 units cannot be routed, and all of your units cannot be destroyed by abilities on cards."
+      },
+      {
+        "title": "Moved by Honour",
+        "general": "Gain 1 [D]. *newpara* Gain either 1 (B) or 1 (S). *newpara* Rally 1 of your units.",
+        "unit": "Galatus Dreadnought/Moiraideis: Retreat 1 of your units, if you do, gain 2 (B) and rally that unit."
+      }
+    ],
+    [
+      {
+        "title": "Praise to the Emperor!",
+        "general": "Gain 3 [D].",
+        "unit": "Valoris: During this combat you have a dice limit of 12 dice. *newpara* Gain 1 [D]."
+      },
+      {
+        "title": "The Emperor's Spear",
+        "general": "Rally 1 of your units. Draw a combat card.",
+        "unit": "Valoris: Retreat all of your units that are not Trajann Valoris to play any combat card from your hand that is not The Emperor's Spear."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Emperor's Will",
+      "general": "When you reveal this order token, starting in round 2, treat all uncontrolled worlds that do not contain your objective token as friendly worlds for the remainder of the game. *newline* LIMIT ONCE PER GAME."
+    },
+    {
+      "title": "The Auric Advance",
+      "general": "When you reveal this order token, you may resolve it as if it were an Advance Order instead. During this Advance Order you may only move up to 2 of your units. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Blessing of the Emperor",
+      "general": "When you reveal this order token, you may rally 1 of your units in either this system or any adjacent system. That unit may not be moved while resolving this order. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Solar Vanguard",
+      "general": "While resolving this order, if you purchased a unit, you may move 1 of your purchased units to a friendly area that contains your units or structures in an adjacent system. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Step of Judgement",
+      "general": "After you resolve this order, you may choose 1 of your units in this system and rally it. You may then move that unit to an adjacent area. This can start a combat. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "The Throne's Call",
+      "general": "While resolving this order, at the start of an assess damage step of combat, you may retreat 1 of your units and then rally that unit. *newline* LIMIT ONCE PER ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "The Inner Palace",
+      "general": "Either gain 1 materiel or take 1 friendly unit from any world and place it on a friendly world with a city.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Lex Ultima",
+      "general": "Resolve a deploy order in 1 system containing any of your factories.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "The Hykanotoi",
+      "general": "Gain 2 reinforcement tokens.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Guardians of Humanity",
+      "general": "Purchase a command level 2 order upgrade even if your command level is lower, reducing its materiel cost by 1 for each friendly world providing a prosperity token.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Emperor's Protection",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the end of a reinforce step of combat, you may discard this card to gain 1 (S) at the start of each execution round during this combat.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "The Golden Rule",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the end of a reinforce step of combat, you may discard this card to gain 1 (B) at the start of each execution round during this combat.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Eyes of the Emperor",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* When 1 of your units is destroyed or retreats during combat, you may discard this card to take it and place it back routed in this area. Gain 2 (S).",
+      "type": "SCHEME"
+    },
+    {
+      "title": "The Ten Thousand",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the start of an execution round of combat, you may discard this card to draw 2 combat cards.",
+      "type": "SCHEME"
+    }
+  ],
+  "tierLabels": [
+    "Starting",
+    "Command Level 0",
+    "Command Level 3",
+    "Command Level 4"
+  ],
+  "factionSheet": {
+    "title": "ADEPTUS CUSTODES",
+    "subtitle": "Solar Watch",
+    "abilities": [
+      {
+        "title": "The Guided Path",
+        "text": "When you resolve a dominate order, you may place 1 of your order tokens from your play area onto the top of your event deck."
+      },
+      {
+        "title": "The Ten Thousand",
+        "text": "Passive ability. During a reinforcement step of combat, gain 1 [D] for each reinforcement token you placed and then discard the tokens."
+      }
+    ]
+  },
+  "componentsText": {
+    "faction_card/sheet_front_1.jpg": {
+      "title": "ADEPTUS CUSTODES · Faction sheet: abilities and units",
+      "regions": []
+    },
+    "faction_card/sheet_back_1.jpg": {
+      "title": "ADEPTUS CUSTODES · Initial forces and story",
+      "regions": []
+    },
+    "maps/map_A.jpg": {
+      "title": "ADEPTUS CUSTODES · Home system A",
+      "general": "Titus *newpara* Luna *newpara* Terra *newpara* Sol Asteroid Belt",
+      "notice": ""
+    },
+    "maps/map_B.jpg": {
+      "title": "ADEPTUS CUSTODES · Home system B",
+      "general": "The Inner Watch *newpara* Luna *newpara* Terra *newpara* Titus",
+      "notice": ""
+    }
+  }
+}

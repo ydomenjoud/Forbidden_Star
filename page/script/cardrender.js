@@ -155,17 +155,18 @@
 
     var buildTokens = function (p) {
       if (!p.trim() || p === PARA) return [];
-      if (p.trim() === '-или-') return [{ text: '-или-', style:'italic' }];
+      if (/^-(?:или|or)-$/i.test(p.trim())) return [{ text: p.trim(), style:'italic' }];
       var ci = p.indexOf(':');
       var prefixStyle=ctx.fsPrefixStyle || (ctx.fsItalicPrefixes === true ? 'italic' : null);
       if(prefixStyle==='bold') {
         // Ability titles are structured data. A colon inside a description or
         // a later paragraph must not turn ordinary rules text into a heading.
-        var title=(ctx.fsPrefixTitles||[]).find(function(title){return p.startsWith(title+':');});
-        ci=title===undefined?-1:title.length;
+        // French sets a space before the colon; it stays part of the heading.
+        var title=(ctx.fsPrefixTitles||[]).find(function(title){return p.startsWith(title) && /^\s?:/.test(p.slice(title.length));});
+        ci=title===undefined?-1:p.indexOf(':',title.length);
       }
       if (ci !== -1 && prefixStyle) {
-        var before = p.slice(0, ci).replace(/\s+$/, '');
+        var before = p.slice(0, ci).replace(/\s+$/, /\s$/.test(p.slice(0, ci)) && prefixStyle==='bold' ? '\u00A0' : '');
         var after  = p.slice(ci + 1).replace(/^\s+/, '');
         var toks = [];
         if (before) toks.push({ text: before, style:prefixStyle });
@@ -218,7 +219,7 @@
         continue;
       }
       if (p === '') continue;
-      var limit=ctx.fsKind==='orders' && /^ОДИН РАЗ ЗА РАУНД[.!]?$/i.test(p.trim());
+      var limit=ctx.fsKind==='orders' && /^(?:ОДИН РАЗ ЗА РАУНД|LIMIT ONCE PER ROUND)[.!]?$/i.test(p.trim());
       // The frequency label is smaller than its effect and needs its own
       // clear space, including when another effect follows it in the source.
       if(limit||previousLimit){
@@ -227,7 +228,7 @@
         if(limit)yy-=fontSize-lineFontSize;
         if(drew)yy=Math.max(yy,lastBaseline+lineFontSize+fontSize*ORDER_LIMIT.gap);
       }
-      lineAlign=limit || p.trim()==='-или-'?'center':align;
+      lineAlign=limit || /^-(?:или|or)-$/i.test(p.trim())?'center':align;
       lineRole=limit?'limit':ctx.fsTextRole||'body';
       var words = [];
       buildTokens(p).forEach(function (token) {
@@ -433,6 +434,7 @@
     if (!text) return [];
     if (text.regions) return text.regions;
     var sheet=text.sheet;
+    if (sheet && BACK_LAYOUTS[sheet.layout]) return text.side === 'back' ? baseBackRegions(sheet) : baseFrontRegions(sheet);
     if (!sheet || sheet.layout !== 'sow') return [];
     var regions=[], add=function (box,value,heading,size) {
       regions.push({box:box,value:value,role:heading?'heading':'body',size:size,
@@ -440,13 +442,13 @@
     };
     if (text.side === 'front') {
       regions.push({box:[.404,.328,.218,.214],role:'ability'});
-      add([.421,.601,.187,.028],'Жетоны целей',true,.027);
-      add([.775,.087,.034,.019],'Город',true,.018);
-      add([.906,.087,.037,.019],'Фабрика',true,.018);
-      add([.777,.188,.155,.024],'Бастион',true,.021);
+      add([.421,.601,.187,.028],((sheet.labels||{}).objectives||'Жетоны целей'),true,.027);
+      add([.775,.087,.034,.019],((sheet.labels||{}).city||'Город'),true,.018);
+      add([.906,.087,.037,.019],((sheet.labels||{}).factory||'Фабрика'),true,.018);
+      add([.777,.188,.155,.024],((sheet.labels||{}).bastion||'Бастион'),true,.021);
       sheet.units.forEach(function (value,index) {add([.777,.291+index*.1044,.155,.024],value,true,.02);});
     } else {
-      add([.109,.286,.201,.032],'Стартовые силы',true,.03);
+      add([.109,.286,.201,.032],sheet.initialForcesTitle||'Стартовые силы',true,.03);
       regions.push({box:[.442,.224,.311,.31],value:sheet.lore,role:'lore',size:.022});
       var step=.522/sheet.initialForces.length;
       sheet.initialForces.forEach(function (value,index) {add([.194,.335+step*index,.116,step*.79],value,true,.025);regions[regions.length-1].wrap=true;});
@@ -454,6 +456,58 @@
         if (value) regions.push({box:[index<3?.496:.779,.568+(index%3)*.097,.149,.067],value:value,role:'objective',size:.015});
       });
     }
+    return regions;
+  }
+
+  // Back of the English-printed mats (Base Game, Galaxy in Flames, Dark Eldar):
+  // initial forces list, the commander's letter and six objectives, read column
+  // by column like the SoW sheets. Boxes are in source pixels of one 1688 px
+  // wide side, per printed layout; the forces list is split evenly by row count.
+  var BACK_LAYOUTS = {
+    base:{height:1000,title:[190,283,334,38],forces:{x:318,w:198,top:330,bottom:863},lore:[740,215,535,326],
+      objectives:{x:[831,1311],w:[254,254],top:569,pitch:100.2,h:78},
+      front:{ability:{box:[706,292,350,246],title:[720,316,320,40],subtitle:[720,361,320,30],body:[706,396,350,140]},
+        tokens:[745,600,270,34],city:[1308,85,57,19],factory:[1529,85,62,19],bastion:[1312,188,262,24],units:{x:1312,w:262,top:291,pitch:104.4,h:24}}},
+    gif:{height:1016.5,title:[200,297,330,36],forces:{x:342,w:190,top:340,bottom:855},lore:[746,232,523,314],
+      objectives:{x:[841,1310],w:[244,240],top:573,pitch:96.7,h:72},
+      front:{ability:{box:[706,302,350,246],title:[720,322,320,42],subtitle:[720,364,320,28],body:[706,396,350,150]},
+        tokens:[750,603,252,32],city:[1300,100,58,20],factory:[1520,100,62,20],bastion:[1318,201,262,22],units:{x:1318,w:262,top:302,pitch:102.4,h:22}}},
+    darkeldar:{height:844,title:[200,247,330,30],forces:{x:342,w:190,top:280,bottom:710},lore:[746,190,523,262],
+      objectives:{x:[841,1310],w:[244,240],top:477,pitch:80.3,h:58},
+      front:{ability:{box:[690,272,365,182],title:[740,287,270,36],subtitle:[720,324,310,24],body:[700,350,355,100]},
+        tokens:[740,503,260,30],city:[1292,72,52,20],factory:[1527,72,56,20],bastion:[1318,171,262,22],units:{x:1318,w:262,top:273,pitch:101.8,h:22}}}
+  };
+  // Front: faction name, ability panel, objective-token heading and the labels
+  // of the unit table (city, factory, bastion, then the faction's own units).
+  function baseFrontRegions(sheet) {
+    var L=BACK_LAYOUTS[sheet.layout],F=L.front,W=1688,H=L.height,regions=[],labels=sheet.labels||{};
+    var box=function (b) {return [b[0]/W,b[1]/H,b[2]/W,b[3]/H];};
+    var upper=function (value) {return String(value).toLocaleUpperCase(document.documentElement.lang||undefined);};
+    var A=Object.assign({},F.ability,sheet.frontAbility||{});
+    regions.push({box:box(A.box),titleBox:box(A.title),subtitleBox:box(A.subtitle),bodyBox:box(A.body),role:'ability',size:.019*1000/H});
+    var label=function (b,value,size) {if (value) regions.push({box:box(b),value:upper(value),role:'heading',size:size*1000/H,align:'center'});};
+    label(F.tokens,labels.objectives,.027);label(F.city,labels.city,.018);label(F.factory,labels.factory,.018);
+    label(F.bastion,labels.bastion,.021);
+    (sheet.units||[]).forEach(function (value,index) {
+      label([F.units.x,F.units.top+index*F.units.pitch,F.units.w,F.units.h],value,.02);
+    });
+    return regions;
+  }
+  function baseBackRegions(sheet) {
+    var L=BACK_LAYOUTS[sheet.layout],W=1688,H=L.height,regions=[];
+    var box=function (x,y,w,h) {return [x/W,y/H,w/W,h/H];};
+    var upper=function (value) {return String(value).toLocaleUpperCase(document.documentElement.lang||undefined);};
+    if (sheet.initialForcesTitle) regions.push({box:box.apply(null,L.title),value:upper(sheet.initialForcesTitle),role:'heading',size:.03*1000/H,align:'center'});
+    if (sheet.lore) regions.push({box:box.apply(null,L.lore),value:sheet.lore,role:'lore',size:.022*1000/H});
+    var forces=sheet.initialForces||[],pitch=(L.forces.bottom-L.forces.top)/(forces.length||1);
+    forces.forEach(function (value,index) {
+      regions.push({box:box(L.forces.x,L.forces.top+pitch*index+5,L.forces.w,pitch-10),value:upper(value),role:'heading',size:.025*1000/H,align:'center',wrap:true});
+    });
+    var O=L.objectives;
+    (sheet.objectives||[]).forEach(function (value,index) {
+      var column=index<3?0:1;
+      if (value) regions.push({box:box(O.x[column],O.top+(index%3)*O.pitch,O.w[column],O.h),value:value,role:'objective',size:.015*1000/H});
+    });
     return regions;
   }
 
@@ -619,7 +673,7 @@
     if(region.italicPrefixes===false)ctx.fsItalicPrefixes=false;
     var b=region.box,cw=canvasSize(ctx).width,ch=canvasSize(ctx).height;
     var box={x:b[0]*cw,y:b[1]*ch,width:b[2]*cw,height:b[3]*ch};
-    if(ctx.fsKind==='orders'&&/ОДИН РАЗ ЗА РАУНД/i.test(text)){
+    if(ctx.fsKind==='orders'&&/ОДИН РАЗ ЗА РАУНД|LIMIT ONCE PER ROUND/i.test(text)){
       // The order paper has an unprinted footer. Use it for the separated
       // caption before making the effect text smaller on dense cards.
       box.height+=Math.max(0,Math.min(ch*.025,ch*.835-box.y-box.height));
@@ -859,7 +913,7 @@
     ctx.fsPrefixStyle = ['ability','objective'].includes(region.role) ? 'bold' : null;
     ctx.fsSheetProse=!!region.prose;
     ctx.fsParagraphGap=region.paragraphGap;
-    ctx.fsPrefixTitles = (region.abilities|| (region.role==='objective'?[{title:region.value.split(':')[0]}]:[])).map(function(ability){
+    ctx.fsPrefixTitles = (region.abilities|| (region.role==='objective'?[{title:region.value.split(':')[0].trim()}]:[])).map(function(ability){
       return window.FSWord.symbolize(window.FSWord.format(ability.title,wording)).replace(/\s+/g,' ').trim();
     });
     ctx.fsTextRole = region.role || 'body';
@@ -924,11 +978,11 @@
         // Some source illustrations intrude into the panel; their explicit
         // paper/body boxes keep both erasure and translated ink above the art.
         var field=function (y,h) {return [b[0]+inset,b[1]+b[3]*y,b[2]-inset*2,b[3]*h];};
-        drawLabel(ctx,data.sheet.title,{box:field(.07,.13),align:'center'},'heading');
+        drawLabel(ctx,data.sheet.title,{box:region.titleBox||field(.07,.13),align:'center'},'heading');
         var body=drawTextRegion(ctx,{box:region.bodyBox||field(.34,.63),value:data.sheet.abilities.map(function (a) {return a.title+': '+a.text;}).join(' *newpara* '),
-          role:'ability',abilities:data.sheet.abilities,font:FONT.type,prose:true,transparent:true,size:.019,paragraphGap:.35},data.wording);
-        drawTextRegion(ctx,{box:field(.23,.075),value:data.sheet.subtitle,role:'subheading',font:FONT.type,prose:true,
-          transparent:true,align:'center',valign:'center',size:Math.min(.018,body.fontSize/canvasSize(ctx).height)},data.wording);
+          role:'ability',abilities:data.sheet.abilities,font:FONT.type,prose:true,transparent:true,size:region.size||.019,paragraphGap:.35},data.wording);
+        drawTextRegion(ctx,{box:region.subtitleBox||field(.23,.075),value:data.sheet.subtitle,role:'subheading',font:FONT.type,prose:true,
+          transparent:true,align:'center',valign:'center',size:Math.min(.018*(region.size?region.size/.019:1),body.fontSize/canvasSize(ctx).height)},data.wording);
       } else if(region.role==='heading'){
         if(region.wrap)drawTextRegion(ctx,Object.assign({},region,{transparent:true,valign:'center'}),data.wording);
         else {
@@ -1219,7 +1273,7 @@
     return new Promise(function (resolve, reject) {
       if (!document.fonts) { reject(new Error('Браузер не поддерживает проверку шрифтов')); return; }
       var timer = setTimeout(function () { reject(new Error('Не завершена загрузка шрифта ' + name)); }, 15000);
-      document.fonts.load('16px ' + name).then(function (faces) {
+      document.fonts.load('16px ' + name, ' \u00E9\u00C9\u0153').then(function (faces) {
         clearTimeout(timer);
         if (!faces.length || !document.fonts.check('16px ' + name)) reject(new Error('Не загружен шрифт ' + name));
         else resolve();

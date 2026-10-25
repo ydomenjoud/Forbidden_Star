@@ -1,0 +1,220 @@
+{
+  "materialsText": [
+    {
+      "label": "Soldats de la Garde",
+      "value": "12"
+    },
+    {
+      "label": "Croiseurs de classe Lunar",
+      "value": "3"
+    },
+    {
+      "label": "Ogryns",
+      "value": "6"
+    },
+    {
+      "label": "Chars Leman Russ",
+      "value": "6"
+    },
+    {
+      "label": "Cuirassés de classe Emperor",
+      "value": "3"
+    },
+    {
+      "label": "Titans Warhound",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Appui-feu",
+        "general": "Si vous attaquez, votre adversaire perd 2 (S) au début de l'étape d'évaluation des dégâts de ce round d'exécution. *newline* Si vous défendez, gagnez 2 (S).",
+        "unit": "Soldat de la Garde/Croiseur : Relancez 1 [S]."
+      },
+      {
+        "title": "Pour l'Empereur !",
+        "general": "Relancez 1 de vos dés.",
+        "unit": "Soldat de la Garde/Croiseur : Gagnez 1 (B) pour chaque Soldat de la Garde ou Croiseur qui n'est pas en déroute, jusqu'à un maximum de 3."
+      },
+      {
+        "title": "Tir en approche !",
+        "general": "Gagnez 1 [D].",
+        "unit": "Soldat de la Garde/Croiseur : Gagnez 1 (S) pour chaque Soldat de la Garde ou Croiseur qui n'est pas en déroute, jusqu'à un maximum de 3."
+      },
+      {
+        "title": "Discipline de fer",
+        "general": "Gagnez 1 [D] pour chacune de vos unités qui ne sont pas en déroute et ont un niveau de commandement différent.",
+        "unit": "Soldat de la Garde/Croiseur : Ralliez 1 de vos unités."
+      },
+      {
+        "title": "Tireurs d'élite Ratlings",
+        "general": "Au début de l'étape d'évaluation des dégâts de ce round d'exécution, votre adversaire perd 2 (B).",
+        "unit": "Soldat de la Garde/Croiseur : Votre adversaire choisit 1 de ses unités et la met en déroute, à moins qu'il ne dépense 1 dé de son choix."
+      }
+    ],
+    [
+      {
+        "title": "Reconnaissance de Sentinelles",
+        "general": "Si vous avez plus d'unités qui ne sont pas en déroute que votre adversaire, votre adversaire choisit 1 de ses unités et la met en déroute, à moins qu'il ne dépense 1 [M].",
+        "unit": "Ogryn/Croiseur : Si vous attaquez, regardez la carte de combat face cachée de votre adversaire. *newline* Gagnez 2 [B] ou 2 [S]."
+      },
+      {
+        "title": "Troupes de choc Ogryns",
+        "general": "Vous devez relancer 2 [S] ou [M].",
+        "unit": "Ogryn/Croiseur : Gagnez 1 (S) pour chaque Soldat de la Garde ou Croiseur qui n'est pas en déroute, jusqu'à un maximum de 3."
+      },
+      {
+        "title": "Rempart des Bullgryns",
+        "general": "Vous devez relancer 2 [B] ou [M].",
+        "unit": "Ogryn/Croiseur : Gagnez 1 (B) pour chaque Soldat de la Garde ou Croiseur qui n'est pas en déroute, jusqu'à un maximum de 3."
+      },
+      {
+        "title": "Groupe de combat mécanisé",
+        "general": "Au début de l'étape d'évaluation des dégâts de ce round d'exécution, votre adversaire perd 3 (B) ou 3 (S) pour chaque paire formée d'un Soldat de la Garde et d'un Ogryn, ou d'un Croiseur et d'un Cuirassé, qui ne sont pas en déroute.",
+        "unit": ""
+      }
+    ],
+    [
+      {
+        "title": "Tir de suppression des Wyverns",
+        "general": "Si vous avez plus d'unités de niveau de commandement 0 qui ne sont pas en déroute que votre adversaire, votre adversaire choisit 1 de ses unités et la met en déroute.",
+        "unit": "Leman Russ/Cuirassé : Votre adversaire choisit 1 de ses unités de niveau de commandement 0 ou 1 en déroute et la détruit."
+      },
+      {
+        "title": "Fer de lance blindé",
+        "general": "Détruisez jusqu'à 2 Soldats de la Garde qui ne sont pas en déroute pour forcer votre adversaire à perdre 2 dés de son choix par Soldat de la Garde détruit, ou détruisez 1 Croiseur qui n'est pas en déroute pour forcer votre adversaire à perdre 3 dés de son choix.",
+        "unit": "Leman Russ/Cuirassé : Choisissez 1 des unités de niveau de commandement 2 ou 3 de votre adversaire, ou l'un de ses bastions. Cette unité ou ce bastion subit les dégâts en premier durant ce round d'exécution."
+      },
+      {
+        "title": "Armes combinées",
+        "general": "Pour chacune de vos unités terrestres qui ne sont pas en déroute et ont un niveau de commandement différent, gagnez 1 (B) ou 1 (S). *newline* Pour chacun de vos vaisseaux qui ne sont pas en déroute et ont un niveau de commandement différent, gagnez 2 (B) ou 2 (S). *newline* Gagnez 1 [D]. Ralliez 1 de vos unités.",
+        "unit": ""
+      }
+    ],
+    [
+      {
+        "title": "Marteau de l'Empereur",
+        "general": "Forcez votre adversaire à perdre 1 [S].",
+        "unit": "Titan Warhound : Gagnez 2 (B) pour chacune de vos unités qui ne sont pas en déroute et ont un niveau de commandement différent, jusqu'à un maximum de 6. *newline* Cuirassé : Gagnez 3 (B) pour chacune de vos unités qui ne sont pas en déroute et ont un niveau de commandement différent."
+      },
+      {
+        "title": "Soutien de Titan",
+        "general": "Votre adversaire doit relancer 1 [B] pour chacune de vos unités qui ne sont pas en déroute et ont un niveau de commandement différent.",
+        "unit": "Titan Warhound/Cuirassé : Durant ce round d'exécution, vos unités de niveau de commandement 2 ou moins ne peuvent pas être mises en déroute."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Adeptus Astronomica",
+      "general": "Pendant la résolution de cet ordre, vous pouvez déplacer jusqu'à 6 unités vers un monde, si au moins 1 de ces unités est un Soldat de la Garde. Après avoir résolu cet ordre, vous pouvez faire battre en retraite les Soldats de la Garde qui dépassent la capacité d'unités de ce monde. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Recrutement forcé",
+      "general": "Pendant la résolution de cet ordre, vous pouvez considérer toutes vos cités du système actif comme des usines capables de déployer uniquement des Soldats de la Garde. *newline* LIMITE D'UNE FOIS PAR ROUND. *newpara* La capacité d'unités des mondes alliés contenant une cité est augmentée de 2, jusqu'à un maximum de 4. La capacité supplémentaire ne s'applique qu'aux Soldats de la Garde."
+    },
+    {
+      "title": "Departmento Munitorum",
+      "general": "Pendant la résolution de cet ordre, vous pouvez acheter 1 amélioration seulement. Résolvez ensuite un ordre limité de Déploiement (déploiement dans 1 zone), d'Avancée (déplacement depuis 1 zone) ou de Domination (collecte des atouts de 1 monde et/ou résolution de la capacité de votre faction sur ce même monde) dans le système actif. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Bombardement de saturation",
+      "general": "Durant cette frappe orbitale, gagnez 1 [D], et vous pouvez convertir 1 de vos [M] en 1 [B]. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Bombes virales",
+      "general": "Les bastions ennemis n'empêchent pas cette frappe orbitale. Durant cette frappe orbitale, la valeur de santé des unités de votre adversaire est réduite à 3. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Appel des Astropathes",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* À la fin d'une étape de renfort d'un combat, si vous défendez, vous pouvez défausser cette carte pour placer 2 jetons de renfort gratuits dans la zone disputée.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Frappe de lance",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Avant d'effectuer une frappe orbitale, vous pouvez défausser cette carte pour ajouter 2 au total des dégâts subis par les unités de votre adversaire.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Missile Deathstrike",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Vous pouvez défausser cette carte au début d'un combat sur n'importe quel monde. Si vous le faites, détruisez 1 unité de niveau de commandement 0 ou 1 sur ce monde, ou mettez en déroute 1 unité de niveau de commandement 2 sur ce monde à la fin de la première étape d'évaluation des dégâts.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Génie tactique",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au lieu de jouer une carte de combat de votre main, vous pouvez défausser cette carte pour jouer n'importe quelle carte de votre pioche de combat ou de votre pioche d'améliorations, autre qu'une carte déjà jouée.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Ordre du Haut Commandement",
+      "general": "Achetez 1 amélioration de combat, en réduisant son coût en matériel de 1 pour chaque monde allié contenant une usine.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Changement de production militaire",
+      "general": "Choisissez un monde allié. Gagnez les atouts de ce monde et gagnez du matériel égal à sa valeur en matériel.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Scions Tempestus",
+      "general": "Mettez en déroute 1 unité ennemie de niveau de commandement 0 ou 1 située soit dans un système contenant au moins 1 de vos unités, soit dans un système adjacent.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Dîme impériale",
+      "general": "Placez 2 Soldats de la Garde gratuits sur 1 monde allié d'un système contenant au moins 1 de vos usines, ou placez 1 Soldat de la Garde gratuit sur n'importe quel monde allié.",
+      "type": "TACTIQUE"
+    }
+  ],
+  "factionSheet": {
+    "title": "GARDE IMPÉRIALE",
+    "subtitle": "Forces de la croisade d'Herakon",
+    "abilities": [
+      {
+        "title": "Production de masse",
+        "text": "Lorsque vous résolvez un ordre de Domination, vous pouvez résoudre un ordre de Déploiement, uniquement pour acheter 2 unités identiques ou plus et les placer soit sur 1 monde allié contenant une structure, soit sur 1 vide allié ou non contrôlé du système actif. Réduisez le coût en matériel de chaque unité de 1. Vous pouvez utiliser des jetons de cache pour réduire de 1 le coût de 2 unités de niveau de commandement 0."
+      }
+    ],
+    "layout": "gif",
+    "initialForcesTitle": "Forces de départ",
+    "initialForces": [
+      "Soldats de la Garde",
+      "Ogryn",
+      "Croiseur de classe Lunar",
+      "Usine",
+      "Jetons de renfort",
+      "Matériel"
+    ],
+    "lore": "Hommes, nous sommes la première, la dernière et souvent l’unique ligne de défense de l’Imperium contre ce qui rôde là-dehors. Vous et ce bel instrument de guerre impérial que vous tenez entre vos mains, c’est tout ce qui maintient l’humanité en vie. La plupart d’entre vous ne vivront probablement pas jusqu’à leur deuxième année dans la Garde, et les autres ne reverront sans doute jamais leur monde natal. Mais je peux vous garantir que lorsque vous tomberez, une prière au très haut et très puissant Dieu-Empereur sur les lèvres, vous aurez gagné le droit de vous dire un homme ! *newpara* Pour l’Empereur, pour l’Imperium de l’Humanité ! *newpara* Discours prononcé lors de la libération de Delvidar par *newline* Lord Général Militant Barthol Yorin *newline* Commandant des forces de la croisade d’Herakon",
+    "objectives": [
+      "Hérésie : Ce monde a ouvertement fait allégeance à l’archi-ennemi. Cela ne sera pas toléré et cette rébellion hérétique doit être stoppée immédiatement !",
+      "Monde-sanctuaire : Ce monde-sanctuaire revêt une très grande importance pour l’Imperium de l’Humanité. Nos ennemis ne doivent pas être autorisés à profaner ses reliques antiques.",
+      "Couper les approvisionnements : Si nous parvenons à couper les lignes de ravitaillement de ce monde, nous pourrons porter à nos ennemis un coup dévastateur dont ils ne se relèveront peut-être pas.",
+      "Technologie antique : Les prêtres-machines de l’Adeptus Mechanicus ont localisé un artefact technologique antique. Nous devons le sécuriser pour eux.",
+      "L’innocence ne prouve rien : Il n’existe que des degrés de culpabilité. Il est temps qu’une inquisition purge ce monde.",
+      "Monde-forge : Les forges d’armes de ce monde peuvent produire un grand nombre de nouvelles machines de guerre dont le succès de notre croisade a désespérément besoin."
+    ],
+    "units": [
+      "Soldats de la Garde",
+      "Croiseurs de classe Lunar",
+      "Ogryns",
+      "Chars de bataille Leman Russ",
+      "Cuirassés de classe Emperor",
+      "Titans Warhound"
+    ],
+    "labels": {
+      "objectives": "Jetons d'objectif",
+      "city": "Cité",
+      "factory": "Usine",
+      "bastion": "Bastion"
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/gif/ig/faction_card/card.jpg"
+    }
+  }
+}

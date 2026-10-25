@@ -1,0 +1,246 @@
+{
+  "materialsText": [
+    {
+      "label": "Guerriers Nécrons",
+      "value": "4"
+    },
+    {
+      "label": "Vaisseaux de moisson de classe Scythe",
+      "value": "3"
+    },
+    {
+      "label": "Immortels",
+      "value": "3"
+    },
+    {
+      "label": "Monolithes",
+      "value": "2"
+    },
+    {
+      "label": "Vaisseaux-tombes de classe Cairn",
+      "value": "2"
+    },
+    {
+      "label": "Fragment C'tan",
+      "value": "1"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Sous-routines d'attaque",
+        "general": "",
+        "unit": "Guerrier/Vaisseau de moisson : Gagnez 1 [M]."
+      },
+      {
+        "title": "Phalange de Guerriers",
+        "general": "",
+        "unit": "Guerrier/Vaisseau de moisson : Gagnez 1 [M]."
+      },
+      {
+        "title": "Cryptek prophétique",
+        "general": "Gagnez 1 [B], 1 [S] ou 1 [M]. *newline* Dépensez 1 [M] pour prendre 1 de vos unités et la placer en déroute sur un monde allié contenant une structure, ou pour prendre 1 de vos unités de niveau de commandement 0 ou 1 sur un monde contenant une structure et la placer sur ce monde.",
+        "unit": ""
+      },
+      {
+        "title": "Écorcheurs",
+        "general": "Gagnez 2 (B).",
+        "unit": "Guerrier/Vaisseau de moisson : Si votre adversaire a des [M], gagnez 1 [M] et forcez votre adversaire à perdre 1 [M]."
+      },
+      {
+        "title": "Conquête éternelle",
+        "general": "Gagnez 1 [M]. *newline* Ralliez 1 de vos unités.",
+        "unit": "Guerrier/Immortel/Vaisseau de moisson : Pour chaque [M] que vous avez, gagnez 1 [B] ou 1 [S]."
+      }
+    ],
+    [
+      {
+        "title": "Nuée Canoptek",
+        "general": "Gagnez 1 [D]. *newline* Placez 1 jeton de renfort gratuit dans cette zone.",
+        "unit": ""
+      },
+      {
+        "title": "Destroyers",
+        "general": "Dépensez 1 [S] ou 1 [M] pour gagner 2 (B).",
+        "unit": "Immortel/Vaisseau de moisson : Si votre adversaire a au moins 1 unité en déroute, gagnez 2 (B)."
+      },
+      {
+        "title": "Garde-Lych",
+        "general": "Mettez en déroute 1 de vos unités. Si vous le faites, votre adversaire choisit 1 de ses unités et la met en déroute.",
+        "unit": "Immortel/Vaisseau de moisson : Si votre adversaire a au moins 1 unité en déroute, gagnez 2 (S)."
+      },
+      {
+        "title": "Volonté du Seigneur",
+        "general": "Ralliez 1 de vos unités. *newline* Relancez jusqu'à 2 de vos dés.",
+        "unit": ""
+      }
+    ],
+    [
+      {
+        "title": "Phalange de Monolithes",
+        "general": "Si vos unités ou vos bastions ne subissent aucun dégât durant ce round d'exécution, votre adversaire choisit 1 de ses unités et la fait battre en retraite.",
+        "unit": "Monolithe/Vaisseau-tombe : Gagnez 3 (S)."
+      },
+      {
+        "title": "Phalange du Jugement dernier",
+        "general": "Forcez votre adversaire à perdre 1 [S].",
+        "unit": "Monolithe/Vaisseau-tombe : Lorsqu'une unité ennemie est mise en déroute durant l'étape d'évaluation des dégâts de ce round d'exécution, elle est détruite à moins que votre adversaire ne dépense 1 [S]."
+      },
+      {
+        "title": "Prétoriens du Triarche",
+        "general": "Ralliez 1 de vos unités ou placez 1 jeton de renfort gratuit dans cette zone.",
+        "unit": "Guerrier/Vaisseau de moisson : Pour chaque Guerrier ou Vaisseau de moisson qui n'est pas en déroute, dépensez jusqu'à 1 dé pour gagner 1 [B], 1 [S] ou 1 [M]."
+      }
+    ],
+    [
+      {
+        "title": "Fragment du Trompeur",
+        "general": "Jouez la carte du dessus de votre pioche de combat. Ne résolvez pas ses capacités, mais gagnez ses icônes de combat durant ce combat.",
+        "unit": "Fragment C'tan : Prenez votre Fragment C'tan et placez-le sur n'importe quel monde allié."
+      },
+      {
+        "title": "Fragment du Porteur de Nuit",
+        "general": "Gagnez 3 (B) ou détruisez 1 unité de niveau de commandement 0.",
+        "unit": "Fragment C'tan/Vaisseau-tombe : Détruisez 1 unité de niveau de commandement 0 ou 1."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Porte de l'Éternité",
+      "general": "Après avoir déplacé vos unités, vous pouvez prendre n'importe lesquelles de vos unités de niveau de commandement 0 ou 1 sur 1 monde allié contenant une structure et les placer sur n'importe quel monde du système actif contenant un Monolithe qui n'est pas en déroute. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Mondes-tombes",
+      "general": "Après avoir résolu cet ordre, si vous avez acheté au moins 1 unité ou structure, vous pouvez acheter 1 bastion et le placer sur un monde allié ou non contrôlé du système actif ou d'un système adjacent. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Cryptes de translocation",
+      "general": "Pendant la résolution de cet ordre, vous pouvez considérer toutes vos cités du système actif comme des usines. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Protocoles de réanimation",
+      "general": "Lorsque vous révélez ce jeton d'ordre, ralliez toutes vos unités du système actif et toutes vos unités terrestres de tous les autres systèmes. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Raid de moisson",
+      "general": "Durant cette frappe orbitale, gagnez 1 [D], et vous pouvez choisir 1 unité ennemie de niveau de commandement 0 sur le monde. Cette unité doit subir les dégâts en premier durant cette frappe orbitale. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Faux du Destin",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au début d'un round d'exécution de combat, vous pouvez défausser cette carte et mettre en déroute jusqu'à 2 de vos unités. Si vous le faites, votre adversaire détruit 1 jeton de renfort dans cette zone pour chaque unité que vous avez mise en déroute.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Avancée implacable",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au début d'un round d'exécution de combat, vous pouvez défausser cette carte pour résoudre 1 étape d'évaluation des dégâts supplémentaire durant ce round d'exécution.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Marqués de mort",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au début d'un round d'exécution de combat, vous pouvez défausser cette carte pour mettre en déroute 1 unité ennemie de niveau de commandement 0 ou 1.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Chronomancie",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au début d'un round d'exécution de combat, vous pouvez défausser cette carte pour piocher jusqu'à 2 cartes de combat, puis défausser autant de cartes de combat de votre main.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Courroux du Dragon du Vide",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Vous pouvez défausser cette carte au début d'un round d'exécution de combat. Si vous le faites, vous et votre adversaire subissez 3 dégâts supplémentaires durant cette étape d'évaluation des dégâts.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Orbe de résurrection",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Lorsque 1 de vos unités de niveau de commandement 0 ou 1 est mise en déroute ou détruite durant un combat, vous pouvez défausser cette carte pour la reprendre et la replacer, qui n'est plus en déroute, dans cette zone à la fin de l'étape d'évaluation des dégâts.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Éveil d'un monde-tombe",
+      "general": "Achetez 1 structure et placez-la sur un monde allié ne contenant aucune structure.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Archives d'un monde-tombe",
+      "general": "Achetez 1 amélioration de combat.",
+      "type": "TACTIQUE"
+    }
+  ],
+  "factionSheet": {
+    "title": "NÉCRONS",
+    "subtitle": "Dynastie Sautekh",
+    "abilities": [
+      {
+        "title": "Portail sombre",
+        "text": "Lorsque vous résolvez un ordre de Domination, vous pouvez prendre n'importe lesquelles de vos unités d'un monde et les placer sur un monde allié contenant une structure du système actif."
+      }
+    ],
+    "layout": "gif",
+    "initialForcesTitle": "Forces de départ",
+    "initialForces": [
+      "Guerriers",
+      "Immortel",
+      "Usine",
+      "Jeton de forge",
+      "Jeton de renfort",
+      "Matériel"
+    ],
+    "lore": "Vous avez gouverné cette galaxie pendant dix mille de vos années, et pourtant vous avez si peu à montrer de vos efforts. Un tel échec est aussi déprimant à supporter que honteux à contempler ! *newpara* Avec une douzaine de légions d’Immortels sous mes ordres, je pourrais humilier les étoiles elles-mêmes. Une seule suffira largement à écraser vos mondes pitoyables. *newpara* Ordre. Unité. Obéissance. Nous avons enseigné ces choses à la galaxie il y a longtemps, et nous le ferons de nouveau. *newpara* Imotekh le Seigneur de la Tempête *newline* Phaeron de la Dynastie Sautekh",
+    "objectives": [
+      "Gloire passée : Il est temps de faire briller de nouveau, comme jadis, le joyau de notre antique domination sur ce secteur.",
+      "Monde-tombe inactif : Avec le soutien des légions endormies de ce monde, nous détruirons nos ennemis mortels.",
+      "Toucher du C’tan : Un puissant Dieu-Étoile C’tan s’est jadis évadé de sa prison éternelle sur ce monde. Une grande part de son essence s’y trouve encore.",
+      "Mûr pour la moisson : Cet ancien monde central est mûr pour la moisson. Il sera bientôt de nouveau nôtre !",
+      "Arme antique : Un antique canon Annihilateur Gauss est enfoui sur ce monde ; nous devons le récupérer pour nos besoins.",
+      "Savoir arcanique : Le savoir conservé sur ce monde ne doit pas tomber entre les mains des mortels. Protégez-le coûte que coûte."
+    ],
+    "units": [
+      "Guerriers",
+      "Vaisseaux de moisson de classe Scythe",
+      "Immortels",
+      "Monolithes",
+      "Vaisseaux-tombes de classe Cairn",
+      "Fragment du Dieu-Étoile C'tan"
+    ],
+    "labels": {
+      "objectives": "Jetons d'objectif",
+      "city": "Cité",
+      "factory": "Usine",
+      "bastion": "Bastion"
+    },
+    "frontAbility": {
+      "box": [
+        706,
+        324,
+        350,
+        236
+      ],
+      "title": [
+        720,
+        334,
+        320,
+        40
+      ],
+      "subtitle": [
+        720,
+        376,
+        320,
+        28
+      ],
+      "body": [
+        706,
+        408,
+        350,
+        140
+      ]
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/gif/necron/faction_card/card.jpg"
+    }
+  }
+}

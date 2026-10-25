@@ -1,0 +1,228 @@
+{
+  "ordersText": [
+    {
+      "title": "JUGEMENT REDOUTABLE",
+      "general": "Au début de l'étape de résolution d'un combat que vous engagez avec cet ordre, vous pouvez forcer votre adversaire à choisir 1 de ses unités en déroute dans la zone disputée et à la détruire. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "BANNIÈRES PURIFICATRICES",
+      "general": "Après avoir acheté des unités pendant la résolution de cet ordre, vous pouvez déplacer 1 de ces unités vers une zone alliée ou non contrôlée d'un système adjacent. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "SCEAUX DE RÉVÉLATION",
+      "general": "Lorsque vous révélez ce jeton d'ordre, vous pouvez regarder tous les jetons d'ordre d'une pile quelconque. Vous pouvez ensuite défausser 1 de vos jetons d'ordre de cette pile pour placer 2 de vos jetons d'ordre de votre zone de jeu au-dessus de votre pioche d'événements. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "FRAPPE DE TERREUR",
+      "general": "Les bastions ennemis n'empêchent pas cette frappe orbitale. Durant cette frappe orbitale, vous pouvez dépenser 2 [S] pour forcer votre adversaire à choisir 1 de ses unités sur ce monde et à la faire battre en retraite, comme s'il s'agissait d'un défenseur. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "EXÉCUTION INÉVITABLE",
+      "general": "Durant cette frappe orbitale, gagnez 1 [D]. Vous pouvez résoudre cette frappe orbitale contre n'importe quel monde du système actif. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "ACQUISITION VIOLENTE",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Après avoir résolu un ordre d'Avancée, vous pouvez défausser cette carte pour récupérer un jeton d'objectif de l'Inquisition situé sur un monde allié du système actif.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "GUERRE PSIONIQUE",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Lorsque vous révélez un ordre durant la phase d'Opérations, vous pouvez défausser cette carte pour choisir une carte d'amélioration d'ordre dans la zone de jeu de n'importe quel joueur. Cette carte d'amélioration d'ordre est considérée comme utilisée durant ce round.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "SUPPLICE STRATÉGIQUE",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au lieu de révéler un ordre durant la phase d'Opérations, vous pouvez défausser cette carte pour défausser un complot de la zone de jeu d'un autre joueur.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "THÉOSOPHIE",
+      "general": "Défaussez cette carte.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "RADICAUX ET PURITAINS",
+      "general": "Achetez 1 structure, en réduisant son coût en matériel de 1, et placez-la sur un monde allié ne contenant aucune structure, ou détruisez 1 de vos structures sur n'importe quel monde pour gagner du matériel égal à son coût en matériel augmenté de 1.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "TROUPES PARACHUTÉES ÉLYSIENNES",
+      "general": "Placez 1 Stormtrooper gratuit sur un monde non contrôlé d'un système contenant au moins 1 de vos vaisseaux, ou placez 1 Stormtrooper gratuit sur n'importe quel monde allié.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "DOGME DU MINISTORUM",
+      "general": "Achetez 1 amélioration de combat, en réduisant son coût en matériel de 1 pour chaque système sans unité ennemie, jusqu'à un minimum de 1.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "MANDAT IMPÉRIAL",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Après avoir placé votre premier jeton d'ordre durant la phase de Planification, vous pouvez défausser cette carte pour placer 1 jeton d'ordre supplémentaire. Si vous le faites, vous placez 5 jetons d'ordre durant cette phase de Planification.",
+      "type": "COMPLOT"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "SALVE AVEUGLANTE",
+        "general": "Si vous attaquez, votre adversaire ne peut pas résoudre les capacités générales de sa prochaine carte de combat révélée. *newpara* Si vous défendez, gagnez 1 [D].",
+        "unit": "",
+        "icons": "BS"
+      },
+      {
+        "title": "MISSION DANS L'OMBRE",
+        "general": "Gagnez 1 [M]. *newpara* Ralliez 1 de vos unités.",
+        "unit": "Stormtrooper/Marchand libre : Si vous avez plus de [M] que votre adversaire, forcez votre adversaire à choisir 1 de ses unités et à la mettre en déroute, ou à dépenser un dé de votre choix.",
+        "icons": ""
+      },
+      {
+        "title": "BOUCLIER PSYKER",
+        "general": "Gagnez 2 (S).",
+        "unit": "Deathwatch/Marchand libre : Dépensez 2 (S) pour placer 1 jeton de renfort gratuit dans cette zone.",
+        "icons": "S"
+      },
+      {
+        "title": "SAGESSE INCONTESTABLE",
+        "general": "Gagnez 1 [B] ou 1 [S].",
+        "unit": "Stormtrooper/Marchand libre : Défaussez 1 carte de combat de votre main. Gagnez les icônes de combat de cette carte jusqu'à la fin de ce round d'exécution.",
+        "icons": "M"
+      },
+      {
+        "title": "IMPLANTS FRENZON",
+        "general": "Gagnez 2 (B).",
+        "unit": "Stormtrooper/Marchand libre : Dépensez 2 (B) pour convertir tous vos [M] en [B].",
+        "icons": "B"
+      }
+    ],
+    [
+      {
+        "title": "PSYKER SANCTIONNÉ",
+        "general": "Votre adversaire peut dépenser 1 [B] pour gagner 1 (B). S'il ne le fait pas, forcez votre adversaire à perdre 1 [S].",
+        "unit": "Stormtrooper/Marchand libre : Votre adversaire relance 2 dés de son choix. Pour chaque [B] obtenu, gagnez 1 (B) et 1 (S). Pour chaque [S] obtenu, gagnez 1 (S).",
+        "icons": "BS"
+      },
+      {
+        "title": "CROISÉS INFLEXIBLES",
+        "general": "Gagnez 2 (B).",
+        "unit": "Deathwatch/Marchand libre : Si vous défendez, ralliez 1 de vos unités. *newpara* Forcez votre adversaire à perdre 1 [S] ou 2 (B).",
+        "icons": "SS"
+      },
+      {
+        "title": "ASSAUT IMPLACABLE",
+        "general": "Gagnez 2 (S).",
+        "unit": "Deathwatch/Marchand libre : Si vous attaquez, ralliez 1 de vos unités. *newpara* Dépensez 1 [S] pour gagner 2 (B).",
+        "icons": "BB"
+      },
+      {
+        "title": "GUIDANCE DE LA FOI",
+        "general": "Si vous attaquez, votre adversaire ne peut pas résoudre les capacités d'unité de sa prochaine carte de combat révélée. *newpara* Si vous défendez, gagnez 1 | ou faites battre en retraite 1 de vos unités.",
+        "unit": "",
+        "icons": "MMM"
+      }
+    ],
+    [
+      {
+        "title": "REGARD SANS PAUPIÈRES",
+        "general": "Gagnez 1 [D].",
+        "unit": "Deathwatch/Vaisseau Noir : Votre adversaire perd 3 dés de son choix. Ensuite, vous perdez 3 de vos dés. Gagnez 1 [D].",
+        "icons": "BBM"
+      },
+      {
+        "title": "ENVOYÉ DE LA TEMPÊTE",
+        "general": "Relancez 1 [B] ou 1 [M] pour forcer votre adversaire à perdre 1 [B].",
+        "unit": "Valkyrie : Prenez 1 Stormtrooper sur n'importe quel monde et placez-le sur ce monde. *newpara* Vaisseau Noir : Prenez 1 Stormtrooper sur n'importe quel monde et placez-le sur un monde allié ou non contrôlé de ce système.",
+        "icons": "BSS"
+      },
+      {
+        "title": "MISSILES HELLSTRIKE",
+        "general": "Relancez 1 [S] ou 1 [M] pour forcer votre adversaire à perdre 1 [S].",
+        "unit": "Valkyrie/Vaisseau Noir : Détruisez 1 des unités en déroute de votre adversaire.",
+        "icons": "BBS"
+      }
+    ],
+    [
+      {
+        "title": "ARMURE EN VRAI-ARGENT",
+        "general": "Gagnez 1 [S] ou 2 (S).",
+        "unit": "Chevalier Gris/Vaisseau Noir : Durant ce combat, la valeur de santé de vos unités est augmentée de 1.",
+        "icons": "SSMM"
+      },
+      {
+        "title": "FRAPPE EN PROFONDEUR",
+        "general": "Gagnez 1 (B) ou convertissez jusqu'à 3 de vos dés en [B].",
+        "unit": "Chevalier Gris : Lorsqu'une unité ennemie subit des dégâts durant ce round d'exécution, elle est détruite. *newpara* Vaisseau Noir : Mettez en déroute 1 des unités de votre adversaire.",
+        "icons": "BBBM"
+      }
+    ]
+  ],
+  "materialsText": [
+    {
+      "label": "Stormtroopers",
+      "value": "6"
+    },
+    {
+      "label": "Marchands libres",
+      "value": "3"
+    },
+    {
+      "label": "Deathwatch",
+      "value": "3"
+    },
+    {
+      "label": "Valkyries",
+      "value": "3"
+    },
+    {
+      "label": "Vaisseaux Noirs",
+      "value": "3"
+    },
+    {
+      "label": "Chevaliers Gris",
+      "value": "3"
+    }
+  ],
+  "factionSheet": {
+    "title": "INQUISITION",
+    "subtitle": "Force expéditionnaire inquisitoriale XIII",
+    "abilities": [
+      {
+        "title": "Terreur absolue",
+        "text": "Lorsque vous résolvez un ordre de Domination, vous pouvez mettre en déroute 1 Stormtrooper du système actif pour mettre en déroute 1 unité de niveau de commandement 2 ou moins sur un monde du système actif ou d'un système adjacent."
+      }
+    ],
+    "units": [
+      "Stormtroopers inquisitoriaux",
+      "Marchands libres",
+      "Deathwatch",
+      "Valkyries",
+      "Vaisseaux Noirs",
+      "Dreadknights Nemesis"
+    ],
+    "lore": "Les insensés disent en leur cœur : « Il n'y a pas d'Empereur. » Leurs actes sont odieux et corrompus ; nul n'accomplit ce qui est juste ni saint. *newpara* Tous ceux qui se sont égarés sont également pervers. Ils ont alors de bonnes raisons de craindre : le Dieu-Empereur est avec l'assemblée des justes. *newpara* Pour tous les scélérats et les brigands, nous maintiendrons le feu allumé et nous purifierons l'hérésie par lui, quel qu'en soit le prix. Nous sommes irrésistibles dans notre mission de purifier les cœurs et les esprits parmi les étoiles, la terreur marchant d'un pas devant nous. *newpara* Baltazar Namecci *newline* Seigneur Inquisiteur de l'Ordo Malleus",
+    "initialForces": [
+      "Stormtroopers",
+      "Deathwatch",
+      "Vaisseaux Noirs",
+      "Jetons de cache",
+      "Matériel"
+    ],
+    "objectives": [
+      "Grimoire des Vrais Noms : Celui qui connaît le nom d'un démon a sur lui un terrible pouvoir. Nous avons besoin de la dernière copie complète de ce Grimoire, détenue par ce monde impie.",
+      "Liber Heresius : Rédigé pour la première fois à l'Âge de l'Apostasie, ce tome renferme désormais la sagesse de milliers d'Inquisiteurs — reprenez cette source de savoir.",
+      "Pierre magnétique psychique : Au plus profond des cavernes de cette planète se trouve l'artefact unique nécessaire pour forger une arme que même les Démons craindront.",
+      "Pylônes mystérieux : Des constructions inconnues créent une étrange zone de stabilité de l'espace réel, épargnée par les tempêtes du Warp locales. Ce phénomène doit être étudié.",
+      "La Chasse sauvage : Des orages de foudre couvrent toute la planète, signe de la présence d'un psyker Alpha-Plus. C'est le temps de la chasse aux sorcières, où seule la mort par le feu peut convenir.",
+      "Menace de brèche du Warp : Nous avons été appelés pour empêcher l'ouverture d'une faille vers le royaume même du Dieu du Sang. Tout appel à l'aide sera entendu, quel que soit le sang versé sur ce champ de bataille."
+    ],
+    "layout": "sow",
+    "labels": {
+      "objectives": "Jetons d'objectif",
+      "city": "Cité",
+      "factory": "Usine",
+      "bastion": "Bastion"
+    },
+    "initialForcesTitle": "Forces initiales"
+  }
+}

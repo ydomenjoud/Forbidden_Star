@@ -1,0 +1,247 @@
+{
+  "materialsText": [
+    {
+      "label": "Gaunts",
+      "value": "6"
+    },
+    {
+      "label": "Devourer Bio-Ships",
+      "value": "6"
+    },
+    {
+      "label": "Tyranid Warriors",
+      "value": "6"
+    },
+    {
+      "label": "Carnifexes",
+      "value": "3"
+    },
+    {
+      "label": "Leviathan Hive Ships",
+      "value": "3"
+    },
+    {
+      "label": "Hierophant Bio-Titans",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Hormagaunt Brood",
+        "general": "Gain 1 (S).",
+        "unit": "Gaunt/Devourer: Destroy 1 unrouted Gaunt or Devourer to gain 3 (B)."
+      },
+      {
+        "title": "Genestealer Hybrids",
+        "general": "",
+        "unit": "Gaunt/Devourer: Force your opponent to lose 1 [B], 1 [S], or 1 [M], whichever he has most of. If tied, you choose. Then gain 1 [B], 1 [S], or 1 [M], whichever your opponent lost."
+      },
+      {
+        "title": "Hive Tyrant",
+        "general": "Play 1 combat card from your hand. Do not resolve its abilities, but gain its combat icons during this combat.",
+        "unit": "Warrior/Hive Ship: Rally 1 of your units. *newline* Spend 1 [M] to gain either 1 [B] or 1 [S]."
+      },
+      {
+        "title": "Burrowing Organisms",
+        "general": "If you are attacking, gain 2 (S). *newline* If you are defending, either place 1 free reinforcement token in this area or destroy 2 unrouted Gaunts to place 1 free bastion on this world if it does not already contain a structure.",
+        "unit": ""
+      },
+      {
+        "title": "Rain of Spores",
+        "general": "Destroy 1 unrouted Devourer in this system to place 1 free Warrior on this world and then gain 2 [D].",
+        "unit": ""
+      }
+    ],
+    [
+      {
+        "title": "Winged Horror",
+        "general": "Destroy 1 of your unrouted units to gain 3 (B).",
+        "unit": "Warrior/Devourer: Your opponent may allow you to gain 2 (S). If he does not, add 2 to your offence value in the next execution round."
+      },
+      {
+        "title": "Ripper Swarms",
+        "general": "Gain 2 (B).",
+        "unit": "Gaunt/Devourer: At the end of this execution round, gain 1 materiel for each unit destroyed during this execution round, to a maximum of 2."
+      },
+      {
+        "title": "Termagant Brood",
+        "general": "Either gain 1 (B) for each unrouted Gaunt or Devourer or place 1 free reinforcement token in this area. *newline* For each Gaunt or Devourer destroyed or routed during this execution round, reduce the damage you suffer in the next execution round by 1.",
+        "unit": ""
+      },
+      {
+        "title": "Warrior Brood",
+        "general": "Destroy 1 of your unrouted units to gain 2 (S) and reduce the damage you suffer in the next execution round by 2.",
+        "unit": "Warrior/Hive Ship: Reroll all of your [B], [S] or [M]."
+      }
+    ],
+    [
+      {
+        "title": "Scything Talons",
+        "general": "During this execution round, if your opponent has to assign any damage, he assigns 3 additional damage.",
+        "unit": "Carnifex/Hive Ship: Destroy 1 unrouted Carnifex or Hive Ship to gain 3 (B) and 2 (S)."
+      },
+      {
+        "title": "Crushing Claws",
+        "general": "Destroy 1 of your unrouted units to gain 3 (B).",
+        "unit": "Carnifex/Hive Ship: Spend either 1 [B] or 1 [M] to force your opponent to lose 2 [S]."
+      },
+      {
+        "title": "Synaptic Control",
+        "general": "Gain 1 [D]. *newline* Place 1 free reinforcement token in this area.",
+        "unit": "Warrior/Hive Ship: Rally 1 of your units. *newline* Gain either 1 (B) or 1 (S) for each of your unrouted units in excess of the number of your opponent's unrouted units."
+      }
+    ],
+    [
+      {
+        "title": "Glory of the Swarm",
+        "general": "Spend any number of [M]. For each [M] you spend, gain either 1 [B] or 1 [S].",
+        "unit": "Bio-Titan/Hive Ship: Rally all of your units. *newline* During this execution round, you assign damage to your opponent's units and bastions."
+      },
+      {
+        "title": "Overwhelming Presence",
+        "general": "Destroy 1 of your unrouted units to gain either 3 (B) or 3 (S).",
+        "unit": "Bio-Titan/Hive Ship: Force your opponent to choose 3 times to either choose and rout 1 of his units or lose 1 die of his choice."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Without Number",
+      "general": "While resolving this order in a system in which you have an unrouted ship, you may place 1 free reinforcement token in the contested area at the start of a reinforce step of combat. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Breeding Chambers",
+      "general": "After you resolve this order, you may purchase up to 2 units for each unrouted Hive Ship in the active system and place them on any friendly or uncontrolled worlds in the active system. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Capillary Towers",
+      "general": "After you resolve this order, you may destroy any of your units or structures on a world in the active system to temporarily gain materiel equal to their materiel cost. Then use this materiel only to purchase any amount of ships and place them on friendly or uncontrolled voids in the active system. Cache tokens cannot be used and any materiel left is lost. A destroyed city counts toward your command level for the duration of the purchase. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Genestealer Infiltration",
+      "general": "During this orbital strike, gain 1 [D], and you may spend up to 2 [B] to gain 1 reinforcement token for each [B] you spend. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Mycetic Spores",
+      "general": "Enemy bastions do not prevent this orbital strike. During this orbital strike, you may spend up to 2 [B] for each participating Hive Ship. For each [B] you spend, purchase 1 unit of command level 2 or less and place it on the world. This can start a combat after resolving this orbital strike. *newline* LIMIT ONCE PER ROUND. *newline* REQUIRES BREEDING CHAMBERS."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Rise of the Faithful",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* Instead of revealing an order during the Operations Phase, you may discard this card to place 1 free bastion on a friendly world not containing a structure.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Brood Nests",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* Before revealing an order during the Operations Phase, you may discard this card to place 1 free Gaunt on each of 2 different friendly worlds.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Hive Mind",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* While resolving an order, you may discard this card to increase your command level by 1 for each of your Hive Ships.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Shadow in the Warp",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* You may discard this card when you start a combat. If you do, your opponent cannot use reinforcement tokens during this combat.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Rapid Mutation",
+      "general": "Gain 2 forge tokens.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Devourer of Worlds",
+      "general": "Choose a system. Gain materiel equal to the materiel value of friendly worlds in that system.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Infiltration Organisms",
+      "general": "Purchase 1 combat upgrade, reducing its materiel cost by 1 for each of your Hive Ships.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Splinter Fleet",
+      "general": "Place 1 free Devourer in any friendly void.",
+      "type": "TACTIC"
+    }
+  ],
+  "factionSheet": {
+    "title": "TYRANIDS",
+    "subtitle": "Hive Fleet Leviathan",
+    "abilities": [
+      {
+        "title": "The Great Devourer",
+        "text": "When you resolve a dominate order, gain 1 additional asset token of your choice. You can have up to 4 of each asset token in your play area at any time."
+      }
+    ],
+    "layout": "gif",
+    "initialForcesTitle": "Starting Forces",
+    "initialForces": [
+      "Gaunts",
+      "Devourer Bio-Ship",
+      "Leviathan Hive Ship",
+      "Bastion",
+      "Factory",
+      "Reinforcement Token",
+      "Materiel"
+    ],
+    "lore": "There is a cancer eating at the Imperium. With each decade it advances deeper, leaving drained, dead worlds in its wake. This horror, this abomination, has thought and purpose which functions on an unimaginable, galactic scale and all we can do is try to stop the swarms of bio-engineered monsters it unleashes upon us by instinct. *newpara* We have given the horror a name to salve our fears; we call it the Tyranid race, but if it is aware of us at all it must know us only as Prey. *newpara* May the light of the Emperor guide us through these darkest of all times. *newpara* Bronislaw Cevak *newline* Inquisitor of the Ordo Xenos",
+    "objectives": [
+      "Horrors Without Number: This world is almost overrun by nightmarish creatures. Without help it will not stand long against the waves of bio monsters.",
+      "Frozen Nightmare: Beneath the ice caps of this world an enormous dormant creature has been discovered.",
+      "Increased Genestealer Activity: This world shows an increased amount of genestealer activity. This may only be the vanguard of a Tyranid invasion.",
+      "Shadow in the Warp: The astropaths feel a huge shadow nearing through the warp. This usually heralds the approach of a Tyranid hive fleet.",
+      "Abundance of Biomass: The Tyranid swarms of the surrounding areas seem to be unusually attracted to this world.",
+      "The Sky Is Full of Spores: The sky darkens as millions of deadly spores descend upon this world, preparing it to fall prey to the Great Devourer."
+    ],
+    "units": [
+      "Gaunts",
+      "Devourer Bio-Ships",
+      "Warriors",
+      "Carnifexes",
+      "Leviathan Hive Ships",
+      "Hierophant Bio-Titans"
+    ],
+    "labels": {
+      "objectives": "Objective Tokens",
+      "city": "City",
+      "factory": "Factory",
+      "bastion": "Bastion"
+    },
+    "frontAbility": {
+      "box": [
+        706,
+        324,
+        350,
+        236
+      ],
+      "title": [
+        720,
+        334,
+        320,
+        40
+      ],
+      "subtitle": [
+        720,
+        376,
+        320,
+        28
+      ],
+      "body": [
+        706,
+        408,
+        350,
+        140
+      ]
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/gif/tyranid/faction_card/card.jpg"
+    }
+  }
+}

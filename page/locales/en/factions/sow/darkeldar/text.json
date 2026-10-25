@@ -1,0 +1,228 @@
+{
+  "ordersText": [
+    {
+      "title": "SLAVE RAID",
+      "general": "If you rolled at least 2 [B] during this orbital strike, gain 1 reinforcement token. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "MALEVOLENCE MADE FLESH",
+      "general": "After you resolve this order, you may either spend 1 reinforcement token to place 1 free Kabalite Warrior on any friendly world or replace 1 Kabalite Warrior in the active system with 1 free Wych. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "WEB OF TORMENT",
+      "general": "While resolving this order, you may move your units from any number of systems adjacent to the active system. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "POWER FROM PAIN",
+      "general": "While resolving this order, increase your command level by 1. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "ECLIPSING DESCENT",
+      "general": "Enemy bastions do not prevent this orbital strike. During this orbital strike, you may spend 1 [B] to move 1 of your ships in the active system to another void in the active system. This can start a new combat after resolving this orbital strike. *newline* LIMIT ONCE PER ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "REALSPACE RAID",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* Instead of revealing an order during the Operations Phase, you may discard this card to choose an uncontrolled world. Gain assets from this world and gain materiel equal to its materiel value.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "SHADOWFIELD PROJECTION",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* While resolving an Advance Order, you may discard this card to perform its steps in any order. You may not create contested area after Resolved Combat step.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "REVEL IN BLOODSHED",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the end of an execution round of combat, you may discard this card and destroy 1 of your command level 1 or command level 2 units to move any number of your units to an adjacent area. This can start a new combat after resolving this combat. ",
+      "type": "SCHEME"
+    },
+    {
+      "title": "VISIONS OF COMMORRAGH",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* Instead of placing an order during the Planning Phase, you may discard this card.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "SLAVE TRADE",
+      "general": "Either spend up to 2 materiel to gain 1 asset of your choice for each materiel you spend or spend up to 2 assets to gain 2 materiel for each asset you spend.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "GRISLY TROPHIES",
+      "general": "Destroy 1 of your units on any world. Gain materiel equal to its materiel cost and gain reinforcement tokens equal to its morale value.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "SPECTACLE OF MURDER",
+      "general": "Purchase 1 combat upgrade. You may spend reinforcement tokens to reduce its materiel cost by 2 for each token you spend.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "BLACK HEART SPONSORING",
+      "general": "Either place 1 free Frigate on a friendly void or spend 2 materiel and 1 forge token to replace 1 Frigate with 1 free Dying Sun Battleship.",
+      "type": "TACTIC"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "PREY ON THE WEAK",
+        "general": "Either gain 1 [B] or spend 1 of your dice to rally 1 of your units. ",
+        "unit": "Kabalite Warrior/Frigate: Gain 1 [D].",
+        "icons": "B"
+      },
+      {
+        "title": "AGENTS OF VECT",
+        "general": "Gain 1 [S]. *newpara* If you have at least 1 unrouted ship in the active system, gain 1 reinforcement token and force your opponent to discard 1 of his reinforcement tokens.",
+        "unit": "Kabalite Warrior: Spend 1 of your reinforcement tokents to place 1 free reinforcement token in this area.",
+        "icons": "S"
+      },
+      {
+        "title": "HUNT FROM THE SHADOWS",
+        "general": "",
+        "unit": "Kabalite Warrior/Frigate: Your opponent may retreat 1 of his units. If he does not, gain 1 (B) for each unrouted Kabalite Warrior or Frigate. *newpara* Discard this card to retreat 1 of your units.",
+        "icons": "B"
+      },
+      {
+        "title": "FUELLED BY HATRED",
+        "general": "Gain 1 (B). *newpara* Convert 1 of your [M] into [B].",
+        "unit": "Kabalite Warrior/Wych/Frigate: Gain 1 (S). *newpara* Your opponent rerolls 1 die of your choice.",
+        "icons": "B"
+      },
+      {
+        "title": "WINGED STRIKE",
+        "general": "Either gain 1 (B) or draw 1 combat card.",
+        "unit": "Wych/Frigate: Either gain 2 (S) or play 1 combat card from your hand. Do not resolve its abilities, but gain its combat icons during this combat.",
+        "icons": "M"
+      }
+    ],
+    [
+      {
+        "title": "ECSTATIC CARNAGE",
+        "general": "Gain 2 (B) unless your opponent spends 1 [S].",
+        "unit": "Wych/Frigate: Spend 1 of your dice to gain either 1 [B] and 1 (S) or 1 [S] and 1 (B).",
+        "icons": "BB"
+      },
+      {
+        "title": "RAIDER TACTICS",
+        "general": "If you are attacking, gain 2 (B). The first time 1 of your units is destroyed during the assess damage step of this execution round, you may retreat that unit instead. *newpara* If you are defending, gain 2 (S). When an enemy unit is routed during this execution round, it is destroyed unless your opponent spends 1 [M].",
+        "unit": "",
+        "icons": "BS"
+      },
+      {
+        "title": "FIRE AND FADE",
+        "general": "Gain either 1 [B] or 1 [S].",
+        "unit": "Kabalite Warrior/Frigate: Your opponent may retreat 1 of his units. Then you may move 1 of your units to an adjacent friendly or uncontrolled area. If you do, gain either 1 [M] or 2 (B).",
+        "icons": "BM"
+      },
+      {
+        "title": "NEVER STATIONARY",
+        "general": "If you are attacking, your opponent cannot gain (B) during this execution round. *newpara* If you are defending, gain 1 [S] and your opponent loses 2 (B).",
+        "unit": "Wych/Frigate: Spend 1 [M] to place 1 free reinforcement token in this area.",
+        "icons": "SS"
+      }
+    ],
+    [
+      {
+        "title": "CRUCIBLE OF MALEDICTION",
+        "general": "Force your opponent to lose 1 [M]. *newpara* During this combat, your opponent cannot gain or spend [M].",
+        "unit": "",
+        "icons": "BBS"
+      },
+      {
+        "title": "HARROWING EMBRACE",
+        "general": "Your opponent may retreat 1 of his units. If he does not, force your opponent to lose either 1 [B] or 1 [M].",
+        "unit": "Ravager/Dying Sun: If you have fewer [M] than your opponent, your opponent loses 1 [M]. Otherwise, gain 2 (B) and 1 (S).",
+        "icons": "SSM"
+      },
+      {
+        "title": "PICK THEM APART",
+        "general": "Your opponent may retreat 1 of his units. If he does not, force your opponent to lose either 1 [S] or 1 [M].",
+        "unit": "Ravager/Dying Sun: Gain 1 (B) and 2 (S) unless your opponent chooses and destroys 1 of his units.",
+        "icons": "BBM"
+      }
+    ],
+    [
+      {
+        "title": "RAIN OF CRUELTY",
+        "general": "Move either 1 Ravager or 1 of your ships from an area in either the active system or an adjacent system to this area. If you do, gain 2 [D].",
+        "unit": "Ravager: Place 1 free reinforcement token in this area. *newline* Force your opponent to lose 1 [S]. *newpara* Dying Sun: Gain 2 (B).",
+        "icons": "BBSM"
+      },
+      {
+        "title": "MALICIOUS FRENZY",
+        "general": "Gain 2 (B), 2 (S), or spend 1 of your dice to gain 2 (B) and 2 (S).",
+        "unit": "Ravager/Dying Sun: Force your opponent to lose 1 [B], 1 [S], and 1 [M]. ",
+        "icons": "BSM"
+      }
+    ]
+  ],
+  "materialsText": [
+    {
+      "label": "Kabalite Warriors",
+      "value": "6"
+    },
+    {
+      "label": "Venom Blade Frigates",
+      "value": "6"
+    },
+    {
+      "label": "Wychs",
+      "value": "4"
+    },
+    {
+      "label": "Ravagers",
+      "value": "4"
+    },
+    {
+      "label": "Dying Suns Battleships",
+      "value": "3"
+    }
+  ],
+  "factionSheet": {
+    "title": "DARK ELDAR",
+    "subtitle": "Kabal of the Black Heart",
+    "abilities": [
+      {
+        "title": "Unquenchable Thirst",
+        "text": "When you resolve a dominate order in a system containing at least 1 of your unrouted ships, you may gain 1 reinforcement token for each enemy or uncontrolled world in the active system. Then you may take 1 of your ships from any void and place it on a friendly void in the active system."
+      }
+    ],
+    "layout": "darkeldar",
+    "initialForcesTitle": "Initial Forces",
+    "initialForces": [
+      "Kabalite Warriors",
+      "Wyches",
+      "Venom Blade Frigate",
+      "Factory",
+      "Materiel"
+    ],
+    "lore": "The Labyrinthine Dimension unexpectedly meanders and shimmers. The light of a new passage suddenly appears. All across Commorragh, from Catacombs to Court, the name of the Herakon Cluster is on everyone's mind. Prepare the Kabals, ready Cults and Covens, fill Old City factories and workshops with more slaves, then call on all the cut-throats, looters, pillagers and backstabbers. *newpara* From the shadows we shall deliver our darkest nightmares, secure our pound of flesh and delight in the suffering of our Enemies. Ravage this system and everything in it. Feast on your thirst for anguish and despair. But forget not to save, but just a few, for She who thirsts. *newpara* Valossian Sythrac *newline* Archon of the Black Heart Kabal",
+    "objectives": [
+      "Dark Muse: The gift of The Dark Muses is hidden in the depths of this doomed world. Do you hear the litany of screams of locals who stand against you in the way of this mission?",
+      "Fear and Terror: Sow terror and panic in the ranks of your foes. Drink their fear like wine. We need to spread our nightmares across this system to please the dark Gods.",
+      "Death by Thousand Cuts: Watch the enemy's army weaken and die as you bleed it one warrior at a time. It is a time to strike deadly in dark silence for this world.",
+      "Cripple the Power: Punishing raid against shipping lanes whose heart is located on this world is ordered but will be a pleasure. No enemy can outrun us.",
+      "Hidden Portal: A hidden, forgotten portal that links to the Webway has to be revealed. The dark abyss of this world needs to be scanned.",
+      "Trophy Hunter: The lords of Commorragh demand a trophy, either a spirit stone from this field of battle or the head of an enemy champion."
+    ],
+    "units": [
+      "Kabalite Warriors",
+      "Venom Blade Frigates",
+      "Wyches",
+      "Ravagers",
+      "Dying Sun Battleships"
+    ],
+    "labels": {
+      "objectives": "Objective Tokens",
+      "city": "City",
+      "factory": "Factory",
+      "bastion": "Bastion"
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/sow/darkeldar/faction_card/card.jpg"
+    }
+  }
+}

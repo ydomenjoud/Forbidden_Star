@@ -9,25 +9,24 @@
   'use strict';
 
   window.FS_FAQ = {
-    src: 'data/FAQ.json',
-    hero: {
-      kicker: 'Справочник правил и уточнения',
-      title: 'Часто задаваемые вопросы',
-      blurb: 'Разъяснения правил и ответы на вопросы по базовой игре и фанатским дополнениям. Названия карт и термины соответствуют русской картотеке. Уточнения из Note библиотеки FS League отмечены ссылкой на источник; отдельные правила сообщества обозначены в ответах.',
+    src: 'data/FAQ.json', // logical path, resolved by FSI18n
+    get hero() {
+      var t = window.FSI18n.t;
+      return { kicker: t('faq.kicker'), title: t('faq.title'), blurb: t('faq.blurb') };
     },
     // Заполняется из general.json.expansion.color при загрузке
     dots: ['#d8a657'],
 
     flatten: function (raw) {
       var DOTS = this.dots && this.dots.length ? this.dots : ['#d8a657'];
-      var navTopics = [{ key: 'all', name: 'Все вопросы', kind: 'all', dot: DOTS[0] }];
+      var navTopics = [{ key: 'all', name: window.FSI18n.t('faq.all'), kind: 'all', dot: DOTS[0] }];
       var cats = [];
       var count = { all: 0 };
       (raw || []).forEach(function (cat, ci) {
         var ckey = 'c' + ci;
         var catObj = {
           key: ckey,
-          name: cat.Category || ('Раздел ' + (ci + 1)),
+          name: cat.Category || window.FSI18n.t('faq.section', { n: ci + 1 }),
           dot: DOTS[(ci + 1) % DOTS.length],
           subs: [],
         };
@@ -35,7 +34,7 @@
         count[ckey] = 0;
         (cat.items || []).forEach(function (sub, si) {
           var skey = ckey + '_s' + si;
-          var subObj = { key: skey, name: sub.SubCategory || ('Группа ' + (si + 1)), factions: [] };
+          var subObj = { key: skey, name: sub.SubCategory || window.FSI18n.t('faq.group', { n: si + 1 }), factions: [] };
           var subCount = 0;
           (sub.items || []).forEach(function (fac) {
             var facObj = { faction: fac.Faction || '', picture: fac.picture || '', items: [] };

@@ -1,0 +1,219 @@
+{
+  "materialsText": [
+    {
+      "label": "Guerriers des Aspects",
+      "value": "6"
+    },
+    {
+      "label": "Frégates Hellebore",
+      "value": "6"
+    },
+    {
+      "label": "Gardes Fantômes",
+      "value": "3"
+    },
+    {
+      "label": "Faucons",
+      "value": "3"
+    },
+    {
+      "label": "Traqueurs du Vide",
+      "value": "3"
+    },
+    {
+      "label": "Titans de guerre Warlock",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Frapper et disparaître",
+        "general": "Gagnez 2 (B).",
+        "unit": "Guerrier des Aspects/Frégate : Dépensez 1 [M] pour déplacer 1 de vos unités vers une zone adjacente alliée ou non contrôlée."
+      },
+      {
+        "title": "Banshees Hurlantes",
+        "general": "Gagnez 1 [D].",
+        "unit": "Guerrier des Aspects/Frégate : Dépensez 1 [M] pour forcer votre adversaire à choisir 1 de ses unités et à la mettre en déroute."
+      },
+      {
+        "title": "Scorpions Foudroyants",
+        "general": "Gagnez 1 [D].",
+        "unit": "Guerrier des Aspects/Frégate : Votre adversaire perd 1 dé de son choix."
+      },
+      {
+        "title": "Soutien des Rangers",
+        "general": "Si vous attaquez, gagnez 1 (B) et 1 (S). Si vous défendez, vous pouvez faire battre en retraite 1 de vos unités.",
+        "unit": ""
+      },
+      {
+        "title": "Commandement de l'Autarque",
+        "general": "Ralliez 1 de vos unités ou gagnez 1 [M]. *newline* Jouez 1 carte de combat de votre main. Ne résolvez pas ses capacités, mais gagnez ses icônes de combat durant ce combat.",
+        "unit": ""
+      }
+    ],
+    [
+      {
+        "title": "Vengeance des Dragons de Feu",
+        "general": "Si vous attaquez, votre adversaire ne peut pas gagner de (S) durant ce round d'exécution.",
+        "unit": "Guerrier des Aspects/Frégate : Gagnez 2 (S)."
+      },
+      {
+        "title": "Faucons Planeurs",
+        "general": "Si vous défendez, votre adversaire perd 3 (B).",
+        "unit": "Guerrier des Aspects/Frégate : Dépensez 1 [M] pour gagner 2 (B)."
+      },
+      {
+        "title": "Avancée des Gardes Fantômes",
+        "general": "Gagnez 1 [D] ou 1 [M]. *newline* Convertissez jusqu'à 2 de vos [S] en [B].",
+        "unit": "Garde Fantôme/Frégate/Traqueur du Vide : Votre adversaire choisit 1 de ses unités et la met en déroute, à moins qu'il ne dépense 1 [M]."
+      },
+      {
+        "title": "Soutien des Gardes Fantômes",
+        "general": "Gagnez 1 [D] ou 1 [M]. *newline* Convertissez jusqu'à 2 de vos [B] en [S].",
+        "unit": "Garde Fantôme/Frégate/Traqueur du Vide : Dépensez 1 [M] pour rallier 1 de vos unités."
+      }
+    ],
+    [
+      {
+        "title": "Prisme de Feu",
+        "general": "Convertissez n'importe quel nombre de vos [M] en [B].",
+        "unit": "Faucon/Traqueur du Vide : Si vous attaquez, gagnez 2 (B). Si vous défendez, forcez votre adversaire à perdre 5 (S)."
+      },
+      {
+        "title": "Serpent d'Onde",
+        "general": "Gagnez 1 [D]. *newline* Gagnez 3 (S), à moins que votre adversaire ne dépense 1 [M].",
+        "unit": "Faucon/Traqueur du Vide : Dépensez 1 [M] pour déplacer n'importe quel nombre de vos unités de niveau de commandement 0 et de niveau de commandement 1 vers une zone adjacente. Cela peut déclencher un nouveau combat après la résolution de ce combat."
+      },
+      {
+        "title": "Guidance du Voyant des Esprits",
+        "general": "Gagnez 1 [M]. *newline* Mettez en déroute 1 de vos unités. Si vous le faites, les unités ne peuvent subir aucun dégât durant ce round d'exécution.",
+        "unit": ""
+      }
+    ],
+    [
+      {
+        "title": "Émetteur de champ holographique",
+        "general": "Gagnez 1 [D]. *newline* Piochez 1 carte de combat.",
+        "unit": "Titan Warlock/Traqueur du Vide : Jouez 1 carte de combat de votre main. Ne résolvez pas ses capacités, mais gagnez ses icônes de combat durant ce combat."
+      },
+      {
+        "title": "Lance psychique",
+        "general": "Gagnez 1 [D]. *newline* Votre adversaire défausse 1 carte de combat au hasard de sa main.",
+        "unit": "Titan Warlock/Traqueur du Vide : Gagnez 4 (B), à moins que votre adversaire ne vous laisse choisir et défausser 1 de ses cartes de combat face visible."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Raid corsaire",
+      "general": "Après avoir résolu un combat pendant la résolution de cet ordre, vous pouvez effectuer 1 frappe orbitale dans le système actif. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Voyants",
+      "general": "Vous pouvez résoudre cet ordre même si vous n'avez aucune unité dans le système actif. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Chanteurs d'os-spectre",
+      "general": "Lorsque vous achetez une structure pendant la résolution de cet ordre, vous pouvez la placer sur un monde allié qui contient déjà exactement 1 structure différente. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Frappes tactiques",
+      "general": "Durant cette frappe orbitale, gagnez 1 [D], et vous pouvez dépenser 1 [M] pour choisir 1 unité ennemie sur le monde. Cette unité doit subir les dégâts en premier durant cette frappe orbitale. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "Passe de mitraillage",
+      "general": "Les bastions ennemis n'empêchent pas cette frappe orbitale. Durant cette frappe orbitale, vous pouvez dépenser 2 [S] pour déplacer n'importe lesquels de vos vaisseaux du système actif vers 1 vide allié ou non contrôlé d'un système adjacent. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Prescience",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au début d'une étape d'évaluation des dégâts d'un combat, vous pouvez défausser cette carte pour prendre toutes vos unités engagées dans ce combat et les placer sur 1 zone alliée de votre choix.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Portail du Warp",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au lieu de révéler un ordre pendant la phase d'Opérations, vous pouvez défausser cette carte pour prendre n'importe lesquelles de vos unités d'une zone et les placer sur n'importe quelle zone alliée ou non contrôlée.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Manœuvre supérieure",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* À la fin de la phase de Planification, vous pouvez défausser cette carte pour regarder 1 de vos jetons d'ordre n'importe où dans une pile. Placez-le ensuite au-dessus ou au-dessous de cette pile.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Raids vicieux",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Pendant la résolution d'une frappe orbitale, vous pouvez défausser cette carte pour relancer n'importe lesquels de vos dés, puis gagner 1 [B], 1 [S] ou 1 [M].",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "Voie du Guerrier",
+      "general": "Achetez 1 amélioration de combat, en réduisant son coût en matériel de 1 pour chaque monde allié contenant une cité.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Retour des bannis",
+      "general": "Placez 1 Frégate gratuite dans un vide non contrôlé quelconque, ou prenez 1 Frégate dans un vide et placez-la sur un vide non contrôlé quelconque.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Colonie exodite",
+      "general": "Dépensez 1 matériel pour placer 1 cité gratuite sur un monde allié ou non contrôlé qui ne contient ni structure ni jeton d'objectif Eldar.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "Héritage de Vaul",
+      "general": "Gagnez 2 jetons de forge.",
+      "type": "TACTIQUE"
+    }
+  ],
+  "factionSheet": {
+    "title": "ELDARS",
+    "subtitle": "Vaisseau-monde d'Iyanden",
+    "abilities": [
+      {
+        "title": "Portail de la Toile",
+        "text": "Lorsque vous résolvez un ordre de Domination, vous pouvez prendre 1 de vos unités d'un monde du système actif et la placer sur 1 monde allié de n'importe quel système."
+      }
+    ],
+    "layout": "base",
+    "initialForcesTitle": "Forces initiales",
+    "initialForces": [
+      "Guerriers des Aspects",
+      "Gardes Fantômes",
+      "Frégates Hellebore",
+      "Usine",
+      "Matériel"
+    ],
+    "lore": "Depuis des éons, notre peuple arpente les étoiles. Pendant des âges innombrables, nous les avons gouvernées sans opposition. Pourtant, nous ne sommes plus aujourd’hui que l’ombre de ce que nous fûmes. Même Iyanden, la Flamme d’Asuryan, est réduite à guère plus que des braises. Nous sommes les guerriers fantômes, et nous devons préserver ce que nous pouvons de notre peuple. Pourtant, les Eldars suivent la voie du destin, et notre simple survie ne vaut pas qu’on renie notre sort. *newpara* Ce destin nous a menés ici, dans l’étendue ténébreuse du vide que les humains nomment l’amas d’Herakon. Seuls les Voyants savent ce que nous venons y trouver et quelles horreurs nous affronterons, mais le cours du destin ne peut être détourné. *newpara* Iyanna Arienal *newline* Voyante des Esprits du Vaisseau-monde d’Iyanden",
+    "objectives": [
+      "Monde virginal : La galaxie fut jadis nôtre à gouverner. Les artefacts de notre peuple découverts ici pourraient nous rappeler ce que nous possédions avant la Chute.",
+      "Vaisseau-monde sabordé : Il reste bien peu des nôtres dans la galaxie. Peut-être que quelque indice sur notre avenir se cache dans cette antique épave.",
+      "Pierre-esprit d’un héros : Les âmes de nos plus grands héros dispensent assez de lumière pour chasser les ténèbres. Nous devons les préserver à tout prix.",
+      "Artefact d’os-spectre : Un tel trésor ne peut que servir notre dessein dans une galaxie devenue hostile à notre présence.",
+      "Confluence du destin : Les fils du sort s’entrelacent sur ce monde. Nous ignorons où mènera cette voie.",
+      "Sanctuaire d’Aspect perdu : Nous suivons les voies des Guerriers des Aspects pour concentrer notre esprit guerrier. Sans cette concentration, notre peuple serait condamné à revivre la chute."
+    ],
+    "units": [
+      "Guerriers des Aspects",
+      "Frégates Hellebore",
+      "Gardes Fantômes",
+      "Faucons",
+      "Traqueurs du Vide",
+      "Titans de guerre Warlock"
+    ],
+    "labels": {
+      "objectives": "Jetons d'objectif",
+      "city": "Cité",
+      "factory": "Usine",
+      "bastion": "Bastion"
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/base/eldar/faction_card/card.jpg"
+    }
+  }
+}

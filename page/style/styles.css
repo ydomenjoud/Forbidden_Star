@@ -13,10 +13,20 @@
   src: url('../fonts/ForbiddenStars.woff2?v=tokens-1') format('woff2');
   font-display: swap;
 }
+/* EventFont stores Cyrillic glyphs under the Latin-1 accented code points, so
+   French letters would print as Cyrillic. Those code points fall through to
+   the body font instead; plain Latin and Cyrillic stay in EventFont. */
 @font-face {
   font-family: 'EventFont';
   src: url('../fonts/EventFont.woff2') format('woff2');
   font-display: swap;
+  unicode-range: U+0000-007F, U+00A0, U+00A7, U+00A9, U+00AB, U+00AD, U+00AE, U+00B0, U+00B1, U+00B5, U+00B6, U+00BB, U+0400-04FF, U+02C6, U+02DC, U+2013-2014, U+2018-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2116, U+2122;
+}
+@font-face {
+  font-family: 'EventFont';
+  src: url('../fonts/ForbiddenStars.woff2?v=tokens-1') format('woff2');
+  font-display: swap;
+  unicode-range: U+0080-009F, U+00A1-00A3, U+00A5, U+00A8, U+00AA, U+00AF, U+00B2-00B4, U+00B8-00BA, U+00BC-00FF, U+0152-0153, U+0160-0161, U+0178, U+0192;
 }
 
 * { box-sizing: border-box; }
@@ -438,6 +448,10 @@ body {
 .fs-token-image { position: absolute; width: .975em; height: .975em; max-width: none; left: 50%; top: 50%; transform: translate(-50%, -50%); visibility: hidden; }
 .fs-token--image.has-image .fs-token-image { visibility: visible; }
 .fs-token--image.has-image .fs-token-fallback { visibility: hidden; }
+.fs-language { display: flex; align-items: center; gap: 8px; flex-shrink: 0; margin-left: 8px; }
+.fs-lang-flag { display: block; width: 30px; height: 20px; flex-shrink: 0; }
+.fs-lang-flag svg { display: block; width: 100%; height: 100%; border-radius: 2px; box-shadow: 0 0 0 1px #0006; }
+.fs-language select { color: #ece8e1; background: #221f1a; border: 1px solid #d9b45b; padding: 6px 8px; border-radius: 6px; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
 .fs-settings { position: relative; font-size: 13px; margin-left: auto; }
 .fs-settings > summary { cursor: pointer; display: flex; align-items: center; gap: 8px; list-style: none; }
 .fs-settings > summary::-webkit-details-marker { display: none; }
@@ -649,10 +663,13 @@ body {
   .fs-sidebar-section { display: none; }
   .fs-sidebar-section.fs-faq-section { display: block; margin-top: 0; order: 2; }
   .fs-scrollarea { overflow-y: visible; padding: 18px 16px 36px; }
-  .fs-header { position: relative; display: grid; grid-template-columns: minmax(0,1fr) auto; height: auto; gap: 10px; padding: 12px 14px; }
+  .fs-header { position: relative; display: grid; grid-template-columns: minmax(0,1fr) auto auto; height: auto; gap: 10px; padding: 12px 14px; }
   .fs-brand { grid-column: 1; grid-row: 1; gap: 8px; min-height: 44px; }
   .fs-brand-title { font-size: 14px; letter-spacing: .12em; }
   .fs-settings { grid-column: 2; grid-row: 1; position: static; margin-left: 0; }
+  .fs-language { grid-column: 3; grid-row: 1; margin-left: 0; }
+  .fs-language select { min-height: 44px; font-size: 16px; }
+  .fs-language .fs-lang-flag { display: none; }
   .fs-settings summary { min-height: 44px; padding: 12px 10px; }
   .fs-settings-panel { left: 12px; right: 12px; top: calc(100% + 6px); width: auto; max-width: none; max-height: calc(100dvh - 190px); overflow-y: auto; }
   .fs-settings select { min-height: 44px; font-size: 16px; }

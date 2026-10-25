@@ -1,0 +1,219 @@
+{
+  "materialsText": [
+    {
+      "label": "Aspect Warriors",
+      "value": "6"
+    },
+    {
+      "label": "Hellebore Frigates",
+      "value": "6"
+    },
+    {
+      "label": "Wraithguard",
+      "value": "3"
+    },
+    {
+      "label": "Falcons",
+      "value": "3"
+    },
+    {
+      "label": "Void Stalkers",
+      "value": "3"
+    },
+    {
+      "label": "Warlock Battle Titans",
+      "value": "3"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "Hit and Run",
+        "general": "Gain 2 (B).",
+        "unit": "Aspect Warrior/Frigate: Spend 1 [M] to move 1 of your units to an adjacent friendly or uncontrolled area."
+      },
+      {
+        "title": "Howling Banshees",
+        "general": "Gain 1 [D].",
+        "unit": "Aspect Warrior/Frigate: Spend 1 [M] to force your opponent to choose and rout 1 of his units."
+      },
+      {
+        "title": "Striking Scorpions",
+        "general": "Gain 1 [D].",
+        "unit": "Aspect Warrior/Frigate: Your opponent loses 1 die of his choice."
+      },
+      {
+        "title": "Ranger Support",
+        "general": "If you are attacking, gain 1 (B) and 1 (S). If you are defending, you may retreat 1 of your units.",
+        "unit": ""
+      },
+      {
+        "title": "Command of the Autarch",
+        "general": "Either rally 1 of your units or gain 1 [M]. *newline* Play 1 combat card from your hand. Do not resolve its abilities, but gain its combat icons during this combat.",
+        "unit": ""
+      }
+    ],
+    [
+      {
+        "title": "Fire Dragon's Vengeance",
+        "general": "If you are attacking, your opponent cannot gain (S) during this execution round.",
+        "unit": "Aspect Warrior/Frigate: Gain 2 (S)."
+      },
+      {
+        "title": "Swooping Hawks",
+        "general": "If you are defending, your opponent loses 3 (B).",
+        "unit": "Aspect Warrior/Frigate: Spend 1 [M] to gain 2 (B)."
+      },
+      {
+        "title": "Wraithguard Advance",
+        "general": "Gain either 1 [D] or 1 [M]. *newline* Convert up to 2 of your [S] into [B].",
+        "unit": "Wraithguard/Frigate/Void Stalker: Your opponent chooses and routs 1 of his units unless he spends 1 [M]."
+      },
+      {
+        "title": "Wraithguard Support",
+        "general": "Gain either 1 [D] or 1 [M]. *newline* Convert up to 2 of your [B] into [S].",
+        "unit": "Wraithguard/Frigate/Void Stalker: Spend 1 [M] to rally 1 of your units."
+      }
+    ],
+    [
+      {
+        "title": "Fire Prism",
+        "general": "Convert any number of your [M] into [B].",
+        "unit": "Falcon/Void Stalker: If you are attacking, gain 2 (B). If you are defending, force your opponent to lose 5 (S)."
+      },
+      {
+        "title": "Wave Serpent",
+        "general": "Gain 1 [D]. *newline* Gain 3 (S) unless your opponent spends 1 [M].",
+        "unit": "Falcon/Void Stalker: Spend 1 [M] to move any number of your command level 0 and command level 1 units to an adjacent area. This can start a new combat after resolving this combat."
+      },
+      {
+        "title": "Spiritseer's Guidance",
+        "general": "Gain 1 [M]. *newline* Rout 1 of your units. If you do, units cannot suffer any damage during this execution round.",
+        "unit": ""
+      }
+    ],
+    [
+      {
+        "title": "Holofield Emitter",
+        "general": "Gain 1 [D]. *newline* Draw 1 combat card.",
+        "unit": "Warlock Titan/Void Stalker: Play 1 combat card from your hand. Do not resolve its abilities, but gain its combat icons during this combat."
+      },
+      {
+        "title": "Psychic Lance",
+        "general": "Gain 1 [D]. *newline* Your opponent discards 1 random combat card from his hand.",
+        "unit": "Warlock Titan/Void Stalker: Gain 4 (B) unless your opponent allows you to choose and discard 1 of his faceup combat cards."
+      }
+    ]
+  ],
+  "ordersText": [
+    {
+      "title": "Corsair Raid",
+      "general": "After you resolve a combat while resolving this order, you may perform 1 orbital strike in the active system. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Farseers",
+      "general": "You may resolve this order even if you do not have any units in the active system. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Wraithbone Singers",
+      "general": "When you purchase a structure while resolving this order, you may place that structure on a friendly world that already contains exactly 1 different structure. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Tactical Strikes",
+      "general": "During this orbital strike, gain 1 [D], and you may spend 1 [M] to choose 1 enemy unit on the world. That unit must suffer damage first during this orbital strike. *newline* LIMIT ONCE PER ROUND."
+    },
+    {
+      "title": "Strafing Run",
+      "general": "Enemy bastions do not prevent this orbital strike. During this orbital strike, you may spend 2 [S] to move any of your ships in the active system to 1 friendly or uncontrolled void in an adjacent system. *newline* LIMIT ONCE PER ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "Farsight",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the start of an assess damage step of combat, you may discard this card to take all of your units in this combat and place them on any 1 friendly area.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Warp Gate",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* Instead of revealing an order during the Operations Phase, you may discard this card to take any of your units from 1 area and place them on any friendly or uncontrolled area.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Outmanoeuvre",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* At the end of the Planning Phase, you may discard this card to look at 1 of your order tokens anywhere in a stack. Then place it on the top or bottom of that stack.",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Vicious Raids",
+      "general": "Place this card in your play area and discard all of your other schemes. *newpara* While resolving an orbital strike, you may discard this card to reroll any of your dice and then gain 1 [B], 1 [S], or 1 [M].",
+      "type": "SCHEME"
+    },
+    {
+      "title": "Path of the Warrior",
+      "general": "Purchase 1 combat upgrade, reducing its materiel cost by 1 for each friendly world containing a city.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Outcasts Returned",
+      "general": "Either place 1 free Frigate in any uncontrolled void or take 1 Frigate from 1 void and place it on any uncontrolled void.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Exodite Colony",
+      "general": "Spend 1 materiel to place 1 free city on a friendly or uncontrolled world that does not contain a structure or an Eldar objective token.",
+      "type": "TACTIC"
+    },
+    {
+      "title": "Legacy of Vaul",
+      "general": "Gain 2 forge tokens.",
+      "type": "TACTIC"
+    }
+  ],
+  "factionSheet": {
+    "title": "ELDAR",
+    "subtitle": "Craftworld Iyanden",
+    "abilities": [
+      {
+        "title": "Webway Portal",
+        "text": "When you resolve a dominate order, you may take 1 of your units from 1 world in the active system and place it on 1 friendly world in any system."
+      }
+    ],
+    "layout": "base",
+    "initialForcesTitle": "Initial Forces",
+    "initialForces": [
+      "Aspect Warriors",
+      "Wraithguard",
+      "Hellebore Frigates",
+      "Factory",
+      "Materiel"
+    ],
+    "lore": "For aeons our people have walked the stars. For ages uncounted we ruled them without opposition. Yet now we are but a shadow of what we once were. Even Iyanden, the Flame of Asuryan, is diminished to little more than embers. We are the ghost warriors, and we must preserve what we can of our people. Yet, the Eldar walk the path of destiny, and our simple survival is not worth denying our fate. *newpara* That fate has brought us here, to the benighted expanse of the void the humans call the Herakon Cluster. Only the Seers know what we come to find here and what horrors we shall face, but the course of destiny cannot be averted. *newpara* Iyanna Arienal *newline* Spiritseer of Craftworld Iyanden",
+    "objectives": [
+      "Maiden World: The galaxy was once ours to rule. The artefacts of our kind found here could serve as a reminder of what we had before the Fall.",
+      "Scuttled Craftworld: There are precious few of our kind left in the galaxy. Perhaps some clue to our future lies within that ancient wreckage.",
+      "Hero's Spirit Stone: The souls of our greatest heroes cast light enough to drive away the darkness. We must preserve them at any cost.",
+      "Wraith-Wrought Artefact: Such a treasure as this can naught but aid us in our purpose in a galaxy that has grown hostile to our presence.",
+      "Confluence of Destiny: The threads of fate entwine to this world. We know not where this path will lead.",
+      "Lost Aspect Shrine: We walk the paths of the Aspect Warriors to focus our war spirit. Without such focus, our kind would be doomed to relive the fall."
+    ],
+    "units": [
+      "Aspect Warriors",
+      "Hellebore Frigates",
+      "Wraithguard",
+      "Falcons",
+      "Void Stalkers",
+      "Warlock Battle Titans"
+    ],
+    "labels": {
+      "objectives": "Objective Tokens",
+      "city": "City",
+      "factory": "Factory",
+      "bastion": "Bastion"
+    }
+  },
+  "componentsText": {
+    "faction_card/card.jpg": {
+      "image": "locales/en/factions/base/eldar/faction_card/card.jpg"
+    }
+  }
+}

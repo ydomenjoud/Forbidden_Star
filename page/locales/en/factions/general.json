@@ -1,0 +1,36 @@
+{
+  "expansion": {
+    "name": [
+      "Base Game",
+      "Galaxy in Flames",
+      "Symphony of War",
+      "The Dying Light"
+    ]
+  },
+  "cardsDefault": {
+    "name": [
+      "Combat",
+      "Orders",
+      "Events",
+      "Card Backs",
+      "Faction",
+      "Home System"
+    ]
+  },
+  "labels": {
+    "material": "Unit Count",
+    "tiers": [
+      "Starting",
+      "Level 1",
+      "Level 2",
+      "Level 3",
+      "Level 4",
+      "Level 5"
+    ],
+    "backs": {
+      "combat": "Combat deck back",
+      "order": "Order deck back",
+      "event": "Event deck back"
+    }
+  }
+}

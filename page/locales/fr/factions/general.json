@@ -1,0 +1,36 @@
+{
+  "expansion": {
+    "name": [
+      "Jeu de base",
+      "Galaxy in Flames",
+      "Symphony of War",
+      "The Dying Light"
+    ]
+  },
+  "cardsDefault": {
+    "name": [
+      "Combat",
+      "Ordres",
+      "Événements",
+      "Dos de cartes",
+      "Faction",
+      "Système d'origine"
+    ]
+  },
+  "labels": {
+    "material": "Nombre d'unités",
+    "tiers": [
+      "Départ",
+      "Niveau 1",
+      "Niveau 2",
+      "Niveau 3",
+      "Niveau 4",
+      "Niveau 5"
+    ],
+    "backs": {
+      "combat": "Dos du paquet de combat",
+      "order": "Dos du paquet d'ordres",
+      "event": "Dos du paquet d'événements"
+    }
+  }
+}

@@ -16,6 +16,15 @@
     { notation:'(B)', glyph:'#', label:'временная атака' },
     { notation:'(S)', glyph:'@', label:'временная защита' },
   ];
+  // Labels follow the interface language; the Russian text above is the fallback without FSI18n.
+  function localize(list, prefix, id) {
+    list.forEach(function (item) {
+      var ru = item.label;
+      Object.defineProperty(item, 'label', { get: function () { return root.FSI18n ? root.FSI18n.t(prefix + item[id]) : ru; } });
+    });
+  }
+  localize(tokens, 'token.', 'key');
+  localize(symbols, 'symbol.', 'notation');
   function symbolize(text) {
     var value = String(text || '');
     symbols.forEach(function (symbol) { value = value.split(symbol.notation).join(symbol.glyph); });

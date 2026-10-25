@@ -1,0 +1,229 @@
+{
+  "ordersText": [
+    {
+      "title": "DÉLIVRANCE DIVINE",
+      "general": "Lorsque vous lancez les dés durant l'étape de préparation d'un combat que vous engagez avec cet ordre, lancez 1 dé supplémentaire pour chaque Sœur Repentia présente sur le monde disputé. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "AVANCÉE DES FIDÈLES",
+      "general": "Pendant la résolution de cet ordre, vous pouvez déplacer jusqu'à 2 de vos unités à travers 1 monde non contrôlé comme s'il s'agissait d'une zone alliée. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "MENER LES JUSTES",
+      "general": "Après avoir résolu cet ordre, vous pouvez placer 1 jeton de renfort gratuit sur un monde allié du système actif qui contient un bastion et aucun jeton de renfort. Lorsque ce monde devient disputé, ce jeton de renfort participe au combat. Si le bastion est détruit en dehors d'un combat, remettez le jeton de renfort dans la réserve. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "HYMNES DE GUERRE",
+      "general": "Durant cette frappe orbitale, gagnez 1 [D]. Avant de résoudre cette frappe orbitale, si le moral cumulé de vos vaisseaux participant à cette frappe orbitale est supérieur au moral cumulé des unités et bastions qui ne sont pas en déroute sur le monde, forcez votre adversaire à mettre en déroute 1 de ses unités. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    },
+    {
+      "title": "BRASERO DU FEU SACRÉ",
+      "general": "Les bastions ennemis n'empêchent pas cette frappe orbitale. Durant cette frappe orbitale, vous pouvez mettre en déroute un nombre quelconque de vaisseaux participants. Pour chaque vaisseau mis en déroute, convertissez jusqu'à 2 de vos dés en [B]. *newline* LIMITE D'UNE FOIS PAR ROUND."
+    }
+  ],
+  "eventsText": [
+    {
+      "title": "FOI INDIVISE",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Vous pouvez défausser cette carte au début d'un round d'exécution de combat. Si vous le faites, vos unités en déroute contribuent à la moitié de leur valeur de moral, arrondie à l'entier supérieur, à votre moral total durant l'étape de résolution de ce combat.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "HÉROÏNE EN DEVENIR",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Au lieu de révéler un ordre durant la phase d'Opérations, vous pouvez défausser cette carte pour déplacer 1 Sœur Repentia ou 1 Sœur de Bataille vers un monde ennemi et engager un combat. Pendant la résolution de ce combat, ne résolvez qu'un seul round d'exécution et considérez l'unité choisie comme une Sainte vivante. Détruisez-la après avoir résolu le combat.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "CROYANCE INDOMPTABLE",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Vous pouvez défausser cette carte au début d'un round d'exécution de combat. Si vous le faites, vos unités ne peuvent pas être mises en déroute durant ce round d'exécution.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "FAIT ACCOMPLI",
+      "general": "Placez cette carte dans votre zone de jeu et défaussez tous vos autres complots. *newpara* Avant de révéler un ordre durant la phase d'Opérations, vous pouvez défausser cette carte pour prendre 1 Sœur Repentia ou 1 Sœur de Bataille sur n'importe quel monde et la placer sur n'importe quel monde allié.",
+      "type": "COMPLOT"
+    },
+    {
+      "title": "DÉPLOIEMENT DE CATHÉDRALE D'INVASION",
+      "general": "Placez 1 cité gratuite sur un monde allié ne contenant aucune structure, ou dépensez 3 matériels pour placer 1 cité gratuite sur un monde allié ne contenant aucune cité.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "CROISADE DANS LES TÉNÈBRES",
+      "general": "Achetez 1 amélioration de combat, en réduisant son coût en matériel de 1 pour chaque système contenant à la fois des zones alliées et ennemies. La réduction ne peut pas dépasser 3 matériels.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "ORATRICE INSPIRÉE",
+      "general": "Gagnez 1 jeton de renfort, ou gagnez 1 jeton de renfort pour chaque monde allié contenant une cité.",
+      "type": "TACTIQUE"
+    },
+    {
+      "title": "DÉVOTION ULTIME",
+      "general": "Placez 1 Sœur de Bataille gratuite sur un monde allié contenant une unité, ou placez 1 Sœur Repentia gratuite sur n'importe quel monde allié.",
+      "type": "TACTIQUE"
+    }
+  ],
+  "combatText": [
+    [
+      {
+        "title": "POUSSÉE EN AVANT",
+        "general": "Gagnez 2 [B].",
+        "unit": "Sœur Repentia/Croiseur léger : Lorsque 1 de vos Sœurs Repentia ou Croiseurs légers est détruit durant l'étape d'évaluation des dégâts de ce round d'exécution, détruisez 1 des unités de niveau de commandement 0 de votre adversaire.",
+        "icons": ""
+      },
+      {
+        "title": "PHARE DE LA FOI",
+        "general": "",
+        "unit": "Résolvez l'un des effets suivants : *newline* Sœur Repentia : Remplacez 1 de vos Sœurs Repentia sur ce monde par 1 Sœur de Bataille gratuite et gagnez 2 [D]. *newpara* Bastion/Croiseur léger : Gagnez 1 [M] et 2 (S).",
+        "icons": "M"
+      },
+      {
+        "title": "RÉTRIBUTION GUIDÉE",
+        "general": "",
+        "unit": "Bastion/Sœur Repentia/Croiseur léger : Gagnez 1 (B) ou 1 (S). *newline* Jouez 1 carte de combat de votre main. Défaussez ensuite cette carte.",
+        "icons": ""
+      },
+      {
+        "title": "SAINTE TRINITÉ",
+        "general": "Forcez votre adversaire à relancer jusqu'à 3 [B]",
+        "unit": "Bastion/Sœur de Bataille/Croiseur léger : Gagnez 1 (S) pour chaque [B] obtenu par votre adversaire pendant la résolution de la capacité générale de cette carte.",
+        "icons": "SM"
+      },
+      {
+        "title": "CHARGE SANCTIFIÉE",
+        "general": "Gagnez 1 [D] ou relancez 1 dé de votre choix. *newline* Gagnez 1 [D] ou relancez 1 dé de votre choix.",
+        "unit": "Sœur Repentia/Croiseur léger : Pour chaque [B], [S] et [M] obtenu pendant la résolution des capacités générales de cette carte, gagnez respectivement 1 (B), 1 (S) ou 1 [D].",
+        "icons": ""
+      }
+    ],
+    [
+      {
+        "title": "PASSION DU ZÉLOTE",
+        "general": "Gagnez 1 (B). *newpara* Forcez votre adversaire à perdre 1 [M].",
+        "unit": "Sœur de Bataille/Croiseur léger : Durant ce round d'exécution, votre adversaire ne peut ni rallier ses unités ni placer de jetons de renfort dans cette zone. *newline* Si vous défendez, ralliez 1 de vos unités.",
+        "icons": "BSM"
+      },
+      {
+        "title": "MARTYRE",
+        "general": "Convertissez jusqu'à 2 de vos [B] en [M].",
+        "unit": "Sœur de Bataille/Croiseur léger : Lorsque 1 de vos unités est détruite durant l'étape d'évaluation des dégâts de ce round d'exécution, gagnez 1 [S]. Les dégâts qui dépassent la valeur de santé de cette unité sont perdus.",
+        "icons": "SM"
+      },
+      {
+        "title": "FORCE SPIRITUELLE",
+        "general": "Forcez votre adversaire à perdre 1 [B] ou 1 [M]. *newpara* Si vous défendez, votre adversaire perd 2 (B).",
+        "unit": "Sœur de Bataille/Croiseur léger : Gagnez 2 [D].",
+        "icons": "S"
+      },
+      {
+        "title": "DESCENTE ANGÉLIQUE",
+        "general": "Gagnez 1 (S) pour chacune de vos unités qui ne sont pas en déroute, jusqu'à un maximum de 3.",
+        "unit": "Sœur de Bataille/Croiseur léger : Gagnez 2 (B). Durant l'étape d'évaluation des dégâts de ce round d'exécution, votre adversaire assigne les dégâts 1 à la fois. Les dégâts ne se cumulent pas entre les assignations.",
+        "icons": "BM"
+      }
+    ],
+    [
+      {
+        "title": "IMMOLATION DU MARTYR",
+        "general": "Gagnez 3 (S), à moins que votre adversaire ne dépense 1 dé de son choix. S'il le fait, gagnez 1 [M].",
+        "unit": "Résolvez l'un des effets suivants : *newline* Sœur de Bataille/Croiseur léger : Dépensez 1 [S] pour gagner 2 (B). *newline* Exorcist/Grand croiseur : Gagnez 2 (B). *newline* Pour chaque unité détruite durant ce round d'exécution, ne défaussez pas 1 de vos (B) à la fin de ce round d'exécution.",
+        "icons": "BBM"
+      },
+      {
+        "title": "CUIRASSÉE DE FOI",
+        "general": "Gagnez 1 [M] et 1 (S).",
+        "unit": "Résolvez l'un des effets suivants : *newline* Sœur de Bataille/Croiseur léger : Ralliez 1 de vos unités. *newpara* Exorcist/Grand croiseur : Si vous avez plus de [M] que votre adversaire, votre adversaire choisit 1 de ses unités et la met en déroute.",
+        "icons": "BSS"
+      },
+      {
+        "title": "REFRAIN DÉVASTATEUR",
+        "general": "Gagnez 1 (B) pour chacune des unités de votre adversaire, jusqu'à un maximum de 4.",
+        "unit": "Résolvez l'un des effets suivants : *newline* Bastion : Gagnez 1 (S) pour chaque [M] que vous avez. *newline* Sœur Repentia/Sœur de Bataille/Croiseur léger : Gagnez 1 [D].",
+        "icons": "BSM"
+      }
+    ],
+    [
+      {
+        "title": "BÉNÉDICTION DIVINE",
+        "general": "Dépensez un nombre quelconque de [S] ou de [M]. Pour chaque [S] ou [M] dépensé, forcez votre adversaire à perdre 1 [B].",
+        "unit": "Sainte vivante/Grand croiseur : Gagnez 4 [D].",
+        "icons": "BSMM"
+      },
+      {
+        "title": "FRAPPE DIVINE",
+        "general": "Gagnez 1 [M] ou convertissez jusqu'à 2 de vos dés en [M].",
+        "unit": "Sainte vivante/Grand croiseur : Gagnez 1 (B) pour chaque [M] que vous avez. *newline* Durant ce round d'exécution, aucun [B] n'est ajouté aux valeurs d'attaque.",
+        "icons": "BSSM"
+      }
+    ]
+  ],
+  "materialsText": [
+    {
+      "label": "Sœurs Repentia",
+      "value": "6"
+    },
+    {
+      "label": "Croiseurs légers Endurance",
+      "value": "3"
+    },
+    {
+      "label": "Sœurs de Bataille",
+      "value": "6"
+    },
+    {
+      "label": "Chars Exorcist",
+      "value": "3"
+    },
+    {
+      "label": "Cuirassés de classe Apocalypse",
+      "value": "3"
+    },
+    {
+      "label": "Sainte vivante",
+      "value": "1"
+    }
+  ],
+  "factionSheet": {
+    "title": "SŒURS DE BATAILLE",
+    "subtitle": "Ordre de la Rose Sacrée",
+    "abilities": [
+      {
+        "title": "Rite de la Croisade éternelle",
+        "text": "Lorsque vous résolvez un ordre de Domination, vous pouvez acheter 1 structure et la placer sur un monde allié du système actif."
+      }
+    ],
+    "units": [
+      "Sœurs Repentia",
+      "Croiseurs légers Défiant",
+      "Sœurs de Bataille",
+      "Chars Exorcist",
+      "Grands croiseurs Vengeance",
+      "Sainte vivante"
+    ],
+    "lore": "Mes sœurs, devant nous s'étend le vide dévasté de l'amas d'Herakon, où l'obscurité s'attarde et où la radiance de l'Empereur s'amenuise. Notre but est certain, mais la voie que nous foulons est drapée de périls. Ses dangers sont multiples, ses vérités obscurcies par le temps et la traîtrise. Vous apportez la lumière dans ces confins ténébreux — pourtant les ombres qui s'y terrent ne céderont pas sans lutte. *newpara* Aussi, lorsque vos cœurs seront frappés et vos âmes calcinées, lorsque le doute sera semé et que le chagrin s'abattra, ne maudissez pas vos épreuves, mais louez l'Empereur pour les épreuves qui vous façonnent. *newpara* Eithne *newline* Sœur Supérieure, Ordre de la Rose Sacrée",
+    "initialForces": [
+      "Sœurs Repentia",
+      "Sœurs de Bataille",
+      "Croiseurs légers Défiant",
+      "Bastion",
+      "Usine",
+      "Matériel"
+    ],
+    "objectives": [
+      "Abattre l'hérétique : Le confesseur Maltheus a dissimulé sa chute aux Puissances Ruineuses derrière un masque de fausse dévotion. Les flammes du jugement brûlent avec éclat.",
+      "Sépulcre des cœurs vaillants : Ici reposent la Canonesse Phtaroe et les Sœurs qui l'ont suivie avec bravoure jusqu'à la mort. Que nul ne trouble leur veille éternelle.",
+      "Fils de la traîtrise : La radiance de l'Empereur a mis à nu la toile de duplicité tissée ici — et c'est sous Son regard ardent qu'elle s'effondrera en cendres.",
+      "Terre sanctifiée : Des roses blanches poussent là où le sol a bu le sang des héros martyrs. Tenez bon, mes Sœurs, et faites de votre sacrifice un hommage au leur !",
+      "Graines de discorde : Des langues menteuses chuchotent des blasphèmes à des oreilles pieuses, rongeant la foi de l'intérieur. Que les flammes de la pureté dévorent leurs mensonges.",
+      ""
+    ],
+    "layout": "sow",
+    "labels": {
+      "objectives": "Jetons d'objectif",
+      "city": "Cité",
+      "factory": "Usine",
+      "bastion": "Bastion"
+    },
+    "initialForcesTitle": "Forces initiales"
+  }
+}
